@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="aboutus_template" name="About Us">
+            <t t-set="additional_title" t-valuef="About Us"/>
+            <t t-call="website.layout">
+                <div id="wrap" class="oe_structure main__content-area-aboutus">
+
+                </div>
+            </t>
+        </template>
+
+        <record id="aboutus_page" model="theme.website.page">
+            <field name="view_id" ref="aboutus_template"/>
+            <field name="is_published" eval="True"/>
+            <field name="url">/aboutus</field>
+        </record>
+        <!-- Case 1: Create a new navbar menu -->
+        <record id="aboutus_menu" model="theme.website.menu">
+            <field name="name">About Us</field>
+            <field name="url">/aboutus</field>
+            <field name="sequence" type="int">20</field>
+        </record>
+    </data>
+</odoo>

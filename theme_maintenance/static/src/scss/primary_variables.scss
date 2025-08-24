@@ -1,0 +1,207 @@
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+
+$o-theme-h1-font-size-multiplier: (42 / 16);
+$o-theme-h2-font-size-multiplier: (40 / 16);
+$o-theme-h3-font-size-multiplier: (24 / 16);
+$o-theme-h4-font-size-multiplier: (20 / 16);
+$o-theme-h5-font-size-multiplier: (18 / 16);
+$o-theme-h6-font-size-multiplier: (16 / 16);
+$headings-font-weight: 700;
+//------------------------------------------------------------------------------
+// Presets
+//------------------------------------------------------------------------------
+
+$spacer: 1.25rem !default;
+//$spacers: (
+//        0: 0,
+//        1: $spacer * .25,
+//        2: $spacer * .5,
+//        3: $spacer,
+//        4: $spacer * 1.5,
+//        5: $spacer * 3,
+//        6: $spacer * 4.5,
+//        7: $spacer * 5,
+//) !default;
+//$grid-breakpoints: (
+//        xs: 0,
+//        sm: 576px,
+//        md: 768px,
+//        lg: 992px,
+//        xl: 1200px,
+//        xxl: 1400px,
+//        xxxl: 1600px
+//);
+//$container-max-widths: (
+//        sm: 540px,
+//        md: 720px,
+//        lg: 960px,
+//        xl: 1140px,
+//        xxl: 1350px,
+//        xxxl: 1500px
+//);
+//------------------------------------------------------------------------------
+// Website customizations
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+        (
+                'color-palettes-name': 'indoqat_colors',
+                'link-underline': 'never',
+                'line-height-base': '1.5',
+                'btn-padding-y': 10px,
+                'btn-padding-x': 32px,
+                'btn-border-radius': 60px,
+                'input-padding-y': 12px,
+                'input-padding-x': 16px,
+                'input-border-radius': 60px,
+                'display-1-font-size': 56px,
+                'display-2-font-size': 48px,
+        ),
+);
+
+//------------------------------------------------------------------------------
+// Colors
+//------------------------------------------------------------------------------
+
+$o-white: #fff !default;
+$o-black: #0A0A0A !default;
+
+$o-gray-100: #F9FAFB !default;
+$o-gray-200: #eeeeee !default;
+$o-gray-300: #d8dadd !default;
+$o-gray-400: #9a9ca5 !default;
+$o-gray-500: #7c7f89 !default;
+$o-gray-600: #5f636f !default;
+$o-gray-700: #374151 !default;
+$o-gray-800: #1F2937 !default;
+$o-gray-900: #111827 !default;
+
+$o-success: #1dc959 !default;
+$o-info: #6AB5FB !default;
+$o-warning: #FBB56A !default;
+$o-danger: #b83232 !default;
+$light: #eeeeee !default;
+$dark: #0A0A0A !default;
+$body-color: #0A0A0A !default;
+
+
+// Fine-tune contextual text colors.
+$o-color-palettes: map-merge($o-color-palettes,
+        (
+                'indoqat_colors': (
+                        'o-color-1': #B09147,
+                        'o-color-2': #B09147,
+                        'o-color-3': #F7F7F7,
+                        'o-color-4': #ffffff,
+                        'o-color-5': #1C2126,
+                ),
+        )
+);
+
+
+// Compatibility
+$o-theme-color-palettes: map-merge($o-theme-color-palettes,
+        (
+                'indoqat_colors': (
+                        'o-color-1': #B09147,
+                        'o-color-2': #B09147,
+                        'o-color-3': #F7F7F7,
+                        'o-color-4': #ffffff,
+                        'o-color-5': #1C2126,
+                ),
+        )
+);
+
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'indoqat_colors');
+
+$o-color-palettes-compatibility-indexes: (
+        1: 'indoqat_colors-1',
+        2: 'indoqat_colors-2',
+        3: 'indoqat_colors-3',
+        4: 'indoqat_colors-4',
+        5: 'indoqat_colors-5',
+        6: 'indoqat_colors-6',
+);
+
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-font-configs: (
+        'IBM+Plex+Sans+Arabic': (
+                'family': ('IBM Plex Sans Arabic', sans-serif),
+                'url': 'IBM+Plex+Sans+Arabic:100,200,300,400,500,600,700',
+        ),
+        'Inter': (
+                'family': ('Inter', sans-serif),
+                'url': 'Inter:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i',
+        ),
+        'Almarai': (
+                'family': ('Almarai', sans-serif),
+                'url': 'Almarai:300,400,700,900',
+        ),
+        'Poppins': (
+                'family': ('Poppins', sans-serif),
+                'url': 'Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i',
+        ),
+        'Cairo': (
+                'family': ('Cairo', sans-serif),
+                'url': 'Cairo:200,300,400,500,600,700,800,900,1000',
+        ),
+        'Saira': (
+                'family': ('Saira', sans-serif),
+                'url': 'Saira:100,200,300,400,500,600,700,800,900',
+        ),
+        'Montserrat': (
+                'family': ('Montserrat', sans-serif),
+                'url': 'Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i',
+        ),
+        'Shadows Into Light Two': (
+                'family': ('Shadows Into Light Two', cursive),
+                'url': 'Shadows+Into+Light+Two&display=swap',
+        ),
+        'El Messiri': (
+                'family': ('El Messiri', sans-serif),
+                'url': 'El+Messiri:400,500,600,700',
+        ),
+        'PT Serif': (
+                'family': ('PT Serif', sans-serif),
+                'url': 'PT+Serif:400,400i,700',
+        ),
+        'Roboto': (
+                'family': ('Roboto', sans-serif),
+                'url': 'Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i',
+        ),
+        'Open Sans': (
+                'family': ('Open Sans', sans-serif),
+                'url': 'Open+Sans:300,300i,400,400i,700,700i',
+        ),
+        'Source Sans Pro': (
+                'family': ('Source Sans Pro', sans-serif),
+                'url': 'Source+Sans+Pro:300,300i,400,400i,700,700i',
+        ),
+        'Raleway': (
+                'family': ('Raleway', sans-serif),
+                'url': 'Raleway:300,300i,400,400i,700,700i',
+        ),
+        'Noto Serif': (
+                'family': ('Noto Serif', serif),
+                'url': 'Noto+Serif:300,300i,400,400i,700,700i',
+        ),
+        'Arvo': (
+                'family': ('Arvo', Times, serif),
+                'url': 'Arvo:300,300i,400,400i,700,700i',
+        ),
+);
+
+
+//------------------------------------------------------------------------------
+// Shapes
+//------------------------------------------------------------------------------
+
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Wavy/21', (2: 1));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Bold/07_001', (2: 3));

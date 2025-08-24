@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template name="Contact Us" id="contact_us_page" inherit_id="website.contactus"
+                  active="True">
+            <xpath expr="//div[@id='wrap']" position="replace">
+                <div id="wrap" class="oe_structure oe_empty">
+                </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>

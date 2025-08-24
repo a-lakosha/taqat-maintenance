@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="services_template" name="Our Services">
+            <t t-set="additional_title" t-valuef="Our Services"/>
+            <t t-call="website.layout">
+                <div id="wrap" class="oe_structure main__content-area-services">
+
+                </div>
+            </t>
+        </template>
+
+        <record id="services_page" model="theme.website.page">
+            <field name="view_id" ref="services_template"/>
+            <field name="is_published" eval="True"/>
+            <field name="url">/services</field>
+        </record>
+
+        <record id="services_menu" model="theme.website.menu">
+            <field name="name">Our Services</field>
+            <field name="url">/services</field>
+            <field name="sequence" type="int">20</field>
+        </record>
+    </data>
+</odoo>
