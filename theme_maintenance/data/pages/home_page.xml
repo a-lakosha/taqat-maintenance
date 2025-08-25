@@ -1,12 +1,183 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
-        <template name="Indoqat Home" id="indoqat_home_page" inherit_id="website.homepage" active="True">
+        <template name="Taqat Maintenance Home" id="maintenance_home_page" inherit_id="website.homepage" active="True">
 
             <xpath expr="//div[@id='wrap']" position="replace">
                 <div id="wrap" class="oe_structure oe_empty">
+                    <section class="pb72 hero_section text-white">
+                        <div class="hero_section-inner">
+                            <div class="container">
+                                <div class="row pb24 ">
+                                    <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column text-center text-md-start gap-lg-4 hero-txt o_animate o_anim_fade_in o_anim_from_left py-lg-5 py-3 ">
+                                        <h1 class="display-1">Premium maintenance &amp; renovation services</h1>
+                                        <h4>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor
+                                            incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                            nostrum
+                                            exercitationem ullam corporis suscipit laboriosam.
+                                        </h4>
+                                        <div class="d-flex gap-3 flex-column flex-md-row">
 
+
+                                            <a class="btn btn-primary text-dark">Explore our services
+                                                <i class="fa fa-long-arrow-right ps-3"/>
+                                            </a>
+                                            <button class="btn btn-primary text-dark">
+                                                Contact Us
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7 order-1 order-lg-2 d-flex gap-1 gap-lg-4 o_animate o_anim_fade_in  ">
+                                        <img src="/theme_maintenance/static/src/imgs/y_home/hero.png" alt="Hero1"
+                                             class="w-100"/>
+
+                                    </div>
+                                </div>
+
+                                <div class="row pt32 pb32">
+                                    <div class="col-lg-7   second-hero-row o_animate o_anim_fade_in">
+                                        <img src="/theme_maintenance/static/src/imgs/y_home/bulider.png"
+                                             alt="service_bulider" class="w-100 h-100"/>
+                                    </div>
+                                    <div class="col-lg-5  second-hero-row o_animate o_anim_fade_in o_anim_from_bottom">
+                                        <h4 class="mb-lg-3">
+                                            Why Choose Taqat for Facilities Management?
+                                        </h4>
+                                        <h2 class="trusted-heading">
+                                            Trusted &amp; Unified services
+                                        </h2>
+                                        <ul class="list-unstyled d-flex flex-column gap-2 gap-lg-4">
+                                            <li>
+                                                <h3>Years of Trusted Property Services</h3>
+                                                <h4>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+                                                    tempor incidunt ut labore et dolore magna aliqua
+                                                </h4>
+                                            </li>
+                                            <li>
+                                                <h3>Flexible Plans for Homes &amp; Businesses</h3>
+                                                <h4>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+                                                    tempor incidunt ut labore et dolore magna aliqua
+                                                </h4>
+                                            </li>
+                                            <li>
+                                                <h3>Certified Support, Anytime You Need It.</h3>
+                                                <h4>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+                                                    tempor incidunt ut labore et dolore magna aliqua
+                                                </h4>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="pt72 pb72 technical_services">
+                        <div class="container">
+                            <div class="mb-lg-5">
+                                <h1 class="display-1 mb-lg-3">
+                                    First: Technical services
+                                </h1>
+                                <h4>
+                                    are services associated with the building infrastructure that directly affect the
+                                    safety of users and the operation of the facility, and are often legally required
+                                    and difficult to do without. Lorem Ipsum Dollar Set Amet, Concektor Adaiba Yesking
+                                    Alait, Set Do liqua.
+                                </h4>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-lg-3">
+                                    <!--                                    <div class=" p-3 ps-0 bg-white position-relative rounded-2 span-div">-->
+
+
+                                    <!--                                        <span class=" translate-middle-y bg-primary text-white fw-bold px-3 py-1 rounded-pill">-->
+                                    <!--                                            01.-->
+                                    <!--                                        </span>-->
+                                    <!--                                    </div>-->
+                                    <img src="/theme_maintenance/static/src/imgs/y_home/wireman.jpg"
+                                         class="technical_services-img w-100"/>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </section>
+                    <section class="pt72 pb72 technical_services">
+                        <div class="container">
+                            <div class="mb-lg-5">
+                                <h1 class="display-1 mb-lg-3">
+                                    Second: Soft services
+                                </h1>
+                                <h4>are services associated with the building infrastructure that directly affect the
+                                    safety of users and the operation of the facility, and are often legally required
+                                    and difficult to do without. Lorem Ipsum Dollar Set Amet, Concektor Adaiba Yesking
+                                    Alait, Set Do liqua.
+                                </h4>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-lg-3">
+                                    <!--                                    <div class=" p-3 ps-0 bg-white position-relative rounded-2 span-div">-->
+
+
+                                    <!--                                        <span class=" translate-middle-y bg-primary text-white fw-bold px-3 py-1 rounded-pill">-->
+                                    <!--                                            01.-->
+                                    <!--                                        </span>-->
+                                    <!--                                    </div>-->
+                                    <img src="/theme_maintenance/static/src/imgs/y_home/wireman.jpg"
+                                         class="technical_services-img w-100"/>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section class="pb72 pt72 bg-light engineer_section">
+                        <div class="container ">
+                            <div class="row py-lg-5">
+                                <div class="col-lg-6  p-5 o_animate o_anim_fade_in">
+
+                                    <div class="position-relative d-inline-block">
+                                        <!-- Top-left background -->
+                                        <div class="position-absolute bg-white start-0  rounded-3 w-100 h-75 bg-shape1"/>
+
+                                        <!-- Bottom-right background -->
+                                        <div class="position-absolute bg-white rounded-3 w-75 h-75 bg-shape2"/>
+
+                                        <!-- Main image -->
+                                        <img src="/theme_maintenance/static/src/imgs/y_home/engineers.png"
+                                             class="img-fluid rounded-4 position-relative  engineer_img"
+                                             style="z-index:3;"/>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 d-flex flex-column gap-lg-4 justify-content-center o_animate o_anim_fade_in o_anim_from_right">
+                                    <div>
+
+                                        <h4 class="text-primary">About Us</h4>
+                                        <h2>Trusted &amp; Unified services</h2>
+                                    </div>
+                                    <h4>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor
+                                        incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum
+                                        exercitationem ullam corporis suscipit laboriosam.
+                                    </h4>
+
+                                    <a href="#" class="text-dark">
+                                        Read more
+                                        <i class="fa fa-long-arrow-right ps-3"/>
+
+                                    </a>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </section>
                 </div>
+
             </xpath>
         </template>
     </data>
