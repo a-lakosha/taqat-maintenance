@@ -111,6 +111,34 @@ h2, h3 {
 
 }
 
+.reviews_section {
+  border-radius: 50px;
+  background: url(../imgs/y_home/reviews_bg.png) 50% / cover no-repeat, #1C2126;
+
+  .cards_container {
+    overflow-x: auto;
+    scrollbar-width: none;
+
+    .cards_container::-webkit-scrollbar {
+      display: none; /* hide scrollbar Chrome/Safari */
+    }
+
+    .testimonial-card {
+      flex: 0 0 312px; /* fixed width for each card */
+      position: relative;
+      border-radius: 24px;
+      background: rgba(255, 255, 255, 0.14);
+      backdrop-filter: blur(7px);
+      -webkit-backdrop-filter: blur(7px); /* Safari support */
+      .quote-icon {
+        font-size: 75px;
+      }
+
+
+    }
+  }
+
+}
 
 @media (min-width: 992px) {
   .hero_section {
@@ -132,6 +160,13 @@ h2, h3 {
     }
 
   }
+  .cards_container {
+
+    .testimonial-card {
+      flex: 0 0 790px !important; /* fixed width for each card */
+    }
+  }
+
 
 }
 

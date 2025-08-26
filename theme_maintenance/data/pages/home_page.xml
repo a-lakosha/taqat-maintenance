@@ -280,6 +280,54 @@
                         </div>
 
                     </section>
+
+                    <section class="pt120 pb120 reviews_section">
+                        <div class="d-flex flex-column align-items-center py-lg-5">
+                            <h4 class="text-primary">Customer Reviews</h4>
+                            <h1 class="text-white">What our customers say about us</h1>
+                        </div>
+                        <div class="d-flex flex-nowrap justify-content-lg-center justify-content-start  gap-5 cards_container pb-lg-5">
+                            <div class="testimonial-card p-4 text-white">
+                                <!-- Quote Icon -->
+                                <i class="fa fa-quote-right position-absolute end-0 text-white-50 me-3 mb-3 quote-icon"/>
+                                <!-- User info -->
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="/theme_maintenance/static/src/imgs/y_home/person.svg" alt="User"
+                                         class="rounded-circle me-3" width="48"
+                                         height="48"/>
+                                    <div>
+                                        <h6 class="mb-0 fw-bold">Amr Atya</h6>
+                                        <small class="text-light">Lorem ipsum</small>
+                                    </div>
+
+                                </div>
+
+                                <!-- Rating -->
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="text-warning me-2">
+                                        <i class="fa fa-star"/>
+                                        <i class="fa fa-star"/>
+                                        <i class="fa fa-star"/>
+                                        <i class="fa fa-star"/>
+                                        <i class="fa fa-star"/>
+                                    </div>
+                                    <span class="fw-bold">5.0</span>
+                                </div>
+
+                                <!-- Review text -->
+                                <p class="mb-0 small">
+                                    Lorem Ipsum Dolor Sit Amet, Consectetur Adipisici Elit, Sed Eiusmod Tempor
+                                    Incidunt
+                                    Ut
+                                    Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam, Quis Nostrum
+                                    Exercitationem
+                                    Ullam Corporis Suscipit Laboriosam.
+                                </p>
+
+
+                            </div>
+                        </div>
+                    </section>
                 </div>
 
             </xpath>
