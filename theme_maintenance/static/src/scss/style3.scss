@@ -81,7 +81,8 @@ nav {
 }
 
 body {
-  background: var(--white);
+  background-color: var(--dark) !important;
+  color: white !important;
 }
 
 .table-responsive {
