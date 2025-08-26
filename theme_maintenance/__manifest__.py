@@ -18,7 +18,8 @@
     'version': '0.1',
     'depends': ['theme_common', 'social_media', 'mass_mailing', 'website', 'crm'],
     'data': [
-
+        'views/header.xml',
+        "views/custom_footer.xml",
         'data/pages/home_page.xml',
         'data/pages/about_page.xml',
         'data/pages/contact_page.xml',
