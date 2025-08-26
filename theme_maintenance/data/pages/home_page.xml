@@ -120,13 +120,13 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6 col-lg-3">
-                                    <!--                                    <div class=" p-3 ps-0 bg-white position-relative rounded-2 span-div">-->
+                                    <div class=" p-3 ps-0 bg-white position-relative span-div">
 
 
-                                    <!--                                        <span class=" translate-middle-y bg-primary text-white fw-bold px-3 py-1 rounded-pill">-->
-                                    <!--                                            01.-->
-                                    <!--                                        </span>-->
-                                    <!--                                    </div>-->
+                                        <span class=" translate-middle-y bg-primary text-white fw-bold px-3 py-1 rounded-pill">
+                                            01.
+                                        </span>
+                                    </div>
                                     <img src="/theme_maintenance/static/src/imgs/y_home/wireman.jpg"
                                          class="technical_services-img w-100"/>
                                 </div>
@@ -143,10 +143,10 @@
 
                                     <div class="position-relative d-inline-block">
                                         <!-- Top-left background -->
-                                        <div class="position-absolute bg-white start-0  rounded-3 w-100 h-75 bg-shape1"/>
+                                        <div class="position-absolute bg-white   rounded-3 w-75 h-75 bg-shape1"/>
 
                                         <!-- Bottom-right background -->
-                                        <div class="position-absolute bg-white rounded-3 w-75 h-75 bg-shape2"/>
+                                        <div class="position-absolute end-0 bg-white rounded-3 w-75 h-75 bg-shape2"/>
 
                                         <!-- Main image -->
                                         <img src="/theme_maintenance/static/src/imgs/y_home/engineers.png"
@@ -175,6 +175,110 @@
 
                             </div>
                         </div>
+                    </section>
+
+                    <section class="pt72 pb72 facility_managment">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-7 d-flex flex-column gap-lg-4 order-2 pt-5 pt-lg-3 order-lg-1">
+                                    <h2>Facility Management Vision - Taqat</h2>
+                                    <ul class="list-unstyled d-flex flex-column gap-2 gap-lg-4">
+                                        <li class="d-flex gap-3">
+                                            <span class="icon-wrapper d-flex align-items-center p-2 justify-content-center bg-primary rounded-2 ">
+                                                <i class="fa fa-check-circle text-white fs-5"></i>
+                                            </span>
+                                            <div class="d-flex flex-column gap-lg-2">
+                                                <h3 class="mb-1 fw-semibold">Operational quality and rapid response</h3>
+                                                <h6 class="mb-0 text-muted small">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+                                                    tempor
+                                                    incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                                </h6>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex gap-3">
+                                            <span class="icon-wrapper d-flex align-items-center p-2 justify-content-center bg-primary rounded-2 ">
+                                                <i class="fa fa-check-circle text-white fs-5"></i>
+                                            </span>
+                                            <div class="d-flex flex-column gap-lg-2">
+                                                <h3 class="mb-1 fw-semibold">Adherence to international standards (ISO
+                                                    41001)
+                                                </h3>
+                                                <h6 class="mb-0 text-muted small">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+                                                    tempor
+                                                    incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                                </h6>
+                                            </div>
+                                        </li>
+
+                                        <li class="d-flex gap-3">
+                                            <span class="icon-wrapper d-flex align-items-center p-2 justify-content-center bg-primary rounded-2 ">
+                                                <i class="fa fa-check-circle text-white fs-5"></i>
+                                            </span>
+                                            <div class="d-flex flex-column gap-lg-2">
+                                                <h3 class="mb-1 fw-semibold">Data-Driven Performance Improvement</h3>
+                                                <h6 class="mb-0 text-muted small">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+                                                    tempor
+                                                    incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                                </h6>
+                                            </div>
+                                        </li>
+
+                                        <li class="d-flex gap-3">
+                                            <span class="icon-wrapper d-flex align-items-center p-2 justify-content-center bg-primary rounded-2 ">
+                                                <i class="fa fa-check-circle text-white fs-5"></i>
+                                            </span>
+                                            <div class="d-flex flex-column gap-lg-2">
+                                                <h3 class="mb-1 fw-semibold">Sustainability and digital
+                                                    transformation.
+                                                </h3>
+                                                <h6 class="mb-0 text-muted small">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+                                                    tempor
+                                                    incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                                </h6>
+                                            </div>
+                                        </li>
+
+                                        <li class="d-flex gap-3">
+                                            <span class="icon-wrapper d-flex align-items-center p-2 justify-content-center bg-primary rounded-2 ">
+                                                <i class="fa fa-check-circle text-white fs-5"></i>
+                                            </span>
+                                            <div class="d-flex flex-column gap-lg-2">
+                                                <h3 class="mb-1 fw-semibold">Customer Delight Through Experience
+                                                    Excellence
+                                                </h3>
+                                                <h6 class="mb-0 text-muted small">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+                                                    tempor
+                                                    incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                                </h6>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                                <div class="col-lg-5 position-relative order-1 order-lg-2"
+                                     style="max-height:740px;">
+                                    <div class=" rounded-3 position-absolute h-75 w-75 start-0 facility_managment-bg1"/>
+                                    <div class=" rounded-3 position-absolute h-75 w-75  end-0  facility_managment-bg2"/>
+
+                                    <div class="h-100">
+
+
+                                        <img src="/theme_maintenance/static/src/imgs/y_home/group-confident.jpg"
+                                             class="img-fluid position-relative w-100 h-100 facility_managment-img1"/>
+                                        <img src="/theme_maintenance/static/src/imgs/y_home/image-bg.png"
+                                             class="position-absolute w-50  h-100 opacity-50 facility_managment-img2"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </section>
                 </div>
 

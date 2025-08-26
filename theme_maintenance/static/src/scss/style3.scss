@@ -3,11 +3,11 @@ h1 {
   font-weight: 700 !important;
 }
 
-h4 {
+h4, h6 {
   font-weight: 400;
 }
 
-h2 {
+h2, h3 {
   font-weight: 500;
 }
 
@@ -43,6 +43,7 @@ h2 {
     width: fit-content;
     top: 52px;
     left: -6px;
+    border-radius: 0px 0px 40px 56px / 0px 0px 40px 0px;
   }
 
   .technical_services-img {
@@ -62,11 +63,51 @@ h2 {
 }
 
 .bg-shape1 {
-  transform: translate(-10px, -10px);
+  top: -20px;
+  left: -20px;
 }
 
 .bg-shape2 {
-  transform: translate(60px, 20px);
+  left: 150px;
+  top: 50px;
+}
+
+.facility_managment {
+  .facility_managment-img1 {
+    object-fit: cover;
+    border-radius: 20px;
+    z-index: 3;
+  }
+
+  .facility_managment-img2 {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 75%, rgba(255, 255, 255, 0.00) 100%);
+    left: 15px;
+    border-radius: 20px;
+    z-index: 3;
+  }
+
+  .facility_managment-bg1 {
+    z-index: 1;
+    top: -20px;
+    background: #1C21261A;
+  }
+
+  .facility_managment-bg2 {
+    z-index: 1;
+    bottom: -20px;
+    background: #1C21261A;
+
+  }
+
+  .icon-wrapper {
+    width: 40px;
+    height: 40px;
+  }
+
+  div > h6 {
+    max-width: 518px;
+  }
+
 }
 
 
@@ -90,17 +131,6 @@ h2 {
     }
 
   }
-  .bg-shape1 {
-    transform: translate(-30px, -30px);
-  }
-  .bg-shape2 {
-    transform: translate(120px, 40px);
-  }
 
 }
 
-@media (min-width: 1200px) {
-  .bg-shape2 {
-    transform: translate(160px, 40px);
-  }
-}
