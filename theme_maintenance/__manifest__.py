@@ -38,6 +38,7 @@
             'theme_maintenance/static/src/scss/style3.scss',
             'theme_maintenance/static/src/js/snippets.component.js',
             'theme_maintenance/static/src/js/script.js',
+            'theme_maintenance/static/src/js/lib-call.js',
 
         ],
         'web._assets_primary_variables': [

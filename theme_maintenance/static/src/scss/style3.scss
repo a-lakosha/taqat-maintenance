@@ -1,104 +1,104 @@
-nav {
-
-  .o_dropdown_menu {
-    background-color: var(--dark);
-
-    a {
-      background-color: var(--white);
-
-      .text-primary {
-        color: var(--primary) !important;
-      }
-    }
-
-    a:hover {
-      background-color: var(--primary);
-
-      .text-primary {
-        color: var(--dark) !important;
-      }
-    }
-  }
-
-
-  .active {
-    color: var(--white) !important;
-    font-weight: 600 !important;
-  }
-
-
-  background-color: #1c2126 !important;
-  color: white !important;
-
-  li {
-    list-style: none;
-  }
-
-  form {
-    .input-group {
-      .input_search {
-        border: 0.862px solid rgba(255, 255, 255, 0.6) !important;
-        border-left: 0.862px solid rgba(255, 255, 255, 0.6) !important;
-        background: rgba(255, 255, 255, 0.05) !important;
-        backdrop-filter: blur(4px) !important;
-        color: white !important;
-        z-index: 1 !important;
-        padding: 18px 0;
-        width: 450px !important;
-        border-radius: 25px !important;
-      }
-
-      position: relative !important;
-
-      .oe_search_button {
-        position: absolute !important;
-        z-index: 2 !important;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-      }
-    }
-  }
-
-  .oe_search_button {
-    i {
-      color: var(--white) !important;
-      font-size: 16px !important;
-      font-weight: 600 !important;
-      padding: 12px !important;
-      background-color: var(--primary) !important;
-      border-radius: 25px !important;
-    }
-  }
-
-  ul {
-    li {
-      a {
-        color: white !important;
-      }
-    }
-  }
-}
-
-body {
-  background-color: var(--dark) !important;
-  color: white !important;
-}
-
-.table-responsive {
-  background-color: white !important;
-}
-
-//@media (max-width: 1200px) {
-//  nav {
-//    form {
-//      margin: 20px 0;
+//nav {
 //
-//      .input-group {
-//        .input_search {
-//          width: 100% !important;
-//        }
+//  .o_dropdown_menu {
+//    background-color: var(--dark);
+//
+//    a {
+//      background-color: var(--white);
+//
+//      .text-primary {
+//        color: var(--primary) !important;
+//      }
+//    }
+//
+//    a:hover {
+//      background-color: var(--primary);
+//
+//      .text-primary {
+//        color: var(--dark) !important;
+//      }
+//    }
+//  }
+//
+//
+//  .active {
+//    color: var(--white) !important;
+//    font-weight: 600 !important;
+//  }
+//
+//
+//  background-color: #1c2126 !important;
+//  color: white !important;
+//
+//  li {
+//    list-style: none;
+//  }
+//
+//  form {
+//    .input-group {
+//      .input_search {
+//        border: 0.862px solid rgba(255, 255, 255, 0.6) !important;
+//        border-left: 0.862px solid rgba(255, 255, 255, 0.6) !important;
+//        background: rgba(255, 255, 255, 0.05) !important;
+//        backdrop-filter: blur(4px) !important;
+//        color: white !important;
+//        z-index: 1 !important;
+//        padding: 18px 0;
+//        width: 450px !important;
+//        border-radius: 25px !important;
+//      }
+//
+//      position: relative !important;
+//
+//      .oe_search_button {
+//        position: absolute !important;
+//        z-index: 2 !important;
+//        right: 0;
+//        top: 50%;
+//        transform: translateY(-50%);
+//      }
+//    }
+//  }
+//
+//  .oe_search_button {
+//    i {
+//      color: var(--white) !important;
+//      font-size: 16px !important;
+//      font-weight: 600 !important;
+//      padding: 12px !important;
+//      background-color: var(--primary) !important;
+//      border-radius: 25px !important;
+//    }
+//  }
+//
+//  ul {
+//    li {
+//      a {
+//        color: white !important;
 //      }
 //    }
 //  }
 //}
+//
+//body {
+//  background-color: var(--dark) !important;
+//  color: white !important;
+//}
+//
+//.table-responsive {
+//  background-color: white !important;
+//}
+//
+////@media (max-width: 1200px) {
+////  nav {
+////    form {
+////      margin: 20px 0;
+////
+////      .input-group {
+////        .input_search {
+////          width: 100% !important;
+////        }
+////      }
+////    }
+////  }
+////}

@@ -1,0 +1,279 @@
+h1 {
+  font-weight: 700 !important;
+}
+
+h4, h6 {
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+.hero {
+  background: linear-gradient(180deg, #1C2126 0%, #22282D 24.36%);
+
+
+  .inner-hero {
+    background-image: url("../imgs/image 78.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+  }
+
+
+  .heading {
+    position: relative;
+    padding-bottom: 16px;
+
+  }
+
+  .heading::after {
+    content: "";
+    position: absolute;
+    top: 90%;
+    left: 0;
+    width: 90%;
+    height: 4px;
+    background-color: #fff;
+    transform: translateY(-50%, 50%);
+  }
+
+}
+
+.pt70 {
+  padding-top: 70px;
+}
+
+.p20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+
+/***********************************Technical-services****************************/
+.Technical-services {
+
+}
+
+
+.engineer-section {
+  background: url("../imgs/bgeng.png") bottom no-repeat;
+}
+
+.engineer-img {
+  box-shadow: 0px 11px 16px -6px gray;;
+}
+
+.image-wrapper::before {
+  content: "";
+  position: absolute;
+  top: -3%;
+  left: -3%;
+  height: 80%;
+  width: 80%;
+  background: #fff;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.image-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 17%;
+  right: -3%;
+  height: 60%;
+  width: 50%;
+  background: #fff;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.image-wrapper img {
+  z-index: 2;
+}
+
+// //////////////////////////taqat\\\\\\\\\\\\\\\\\\\\\\
+.image-employee::after {
+  content: "";
+  position: absolute;
+  bottom: -3%;
+  right: -3%;
+  height: 80%;
+  width: 80%;
+  z-index: 1;
+  border-radius: 20px;
+  background: rgba(28, 33, 38, 0.10);
+}
+
+.image-employee::before {
+  content: "";
+  position: absolute;
+  top: -3%;
+  left: -3%;
+  height: 80%;
+  width: 80%;
+  border-radius: 20px;
+  background: rgba(28, 33, 38, 0.10);
+  z-index: 1;
+}
+
+.taqat-img {
+  z-index: 2;
+}
+
+.taqat-img {
+  box-shadow: 0px 11px 16px -2px gray;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 75%, rgba(255, 255, 255, 0.00) 100%);
+
+}
+
+
+.icon-bord {
+  width: 32px;
+  height: 32px;
+  border-radius: 8.293px;
+  border: 1.445px solid #B09147;
+  background-color: #B09147;
+}
+
+.testimonial {
+  border-radius: 50px;
+  background-image: url("../imgs/bg-testem.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.item {
+  border-radius: 24px;
+  padding: 21px;
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(7px);
+}
+
+.content-center {
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 24px;
+  width: 87%;
+  height: 49%;
+}
+
+
+.test-img {
+  max-width: 55px;
+  max-height: 55px;
+}
+
+.context {
+  max-width: 920px;
+}
+
+.testimonial-blogs .owl-nav {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  right: 5px;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none;
+
+}
+
+.testimonial-blogs .owl-nav .owl-prev i,
+.testimonial-blogs .owl-nav .owl-next i {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: all;
+  padding: 11px;
+  border-radius: 26.087px;
+  background: #FFF;
+  box-shadow: 0 7.031px 19.531px 0 rgba(0, 0, 0, 0.06);
+  font-size: 20px;
+}
+
+
+///////////////////////////////////media//////////////////////////
+
+@media (max-width: 575.98px) {
+
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .heading::after {
+    content: "";
+    position: absolute;
+    top: 90%;
+    left: 5px;
+    width: 96%;
+    height: 4px;
+    background-color: #fff;
+    transform: translateY(-50%, 50%);
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+  .content-center {
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 24px;
+    padding: -5px;
+    width: 90%;
+    height: 81%;
+  }
+}
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+}
+
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .Blog {
+    padding-top: 160px
+  }
+
+  element.style {
+  }
+  .content-center {
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 24px;
+    padding: 2px;
+    width: 90%;
+    height: 71%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .Blog {
+    padding-top: 160px
+  }
+}
+
+
+
