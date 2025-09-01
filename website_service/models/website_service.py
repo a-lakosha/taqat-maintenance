@@ -8,7 +8,7 @@ from odoo.tools.translate import html_translate
 class WebsiteService(models.Model):
     _name = 'website.service'
     _inherit = ['mail.thread', 'mail.activity.mixin', 'image.mixin',
-                'website.seo.metadata', 'website.published.multi.mixin', 
+                'website.seo.metadata', 'website.published.multi.mixin',
                 'website.searchable.mixin']
     _description = 'Service'
     _order = 'sequence, id'
@@ -174,14 +174,14 @@ class WebsiteService(models.Model):
             search_fields.append('description')
             fetch_fields.append('description')
             mapping['description'] = {'name': 'description', 'type': 'text', 'match': True}
-        
+
         return {
             'model': 'website.service',
-            'base_domain': [website.website_domain(), ('website_published', '=', True)],
+            'base_domain': [],
             'search_fields': search_fields,
             'fetch_fields': fetch_fields,
             'mapping': mapping,
-            'icon': 'fa-wrench',
+            'icon': 'fa-gears',
             'order': 'name desc, id desc' if 'name desc' in order else 'name asc, id desc',
         }
 
