@@ -91,100 +91,124 @@
                             </div>
                             <div class="row cards-container ">
                                 <div class="col-lg-6 col-xl-3 cards-container-item">
-                                    <div class=" position-relative span-div ">
-                                        <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
-                                             class="span-div position-relative"/>
-                                        <span class=" position-absolute bg-primary w-50 text-center text-white fw-bold px-3 py-1 rounded-pill"/>
-                                    </div>
-                                    <img src="/theme_maintenance/static/src/imgs/y_home/wireman.jpg"
-                                         class="technical_services-img w-100"/>
-                                    <div class="bg-light d-flex  p-2 mt-2 rounded-5 justify-content-center">
-                                        <h5>HVAC &amp; Cooling System Care</h5>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-xl-3 cards-container-item">
-                                    <div class=" position-relative span-div ">
-                                        <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
-                                             class="span-div position-relative"/>
-                                        <span class=" position-absolute bg-primary w-50 text-center text-white fw-bold px-3 py-1 rounded-pill"/>
-                                    </div>
-                                    <img src="/theme_maintenance/static/src/imgs/y_home/Electrical1.png"
-                                         class="technical_services-img w-100"/>
-                                    <div class="bg-light d-flex  p-2 mt-2 rounded-5 justify-content-center">
-                                        <h5>Electrical maintenance</h5>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-xl-3 cards-container-item">
-                                    <div class=" position-relative span-div ">
-                                        <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
-                                             class="span-div position-relative"/>
-                                        <span class=" position-absolute bg-primary w-50 text-center text-white fw-bold px-3 py-1 rounded-pill"/>
-                                    </div>
-                                    <img src="/theme_maintenance/static/src/imgs/y_home/Plumber2.png    "
-                                         class="technical_services-img w-100"/>
-                                    <div class="bg-light d-flex  p-2 mt-2 rounded-5 justify-content-center">
-                                        <h5>Plumbing</h5>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-xl-3 cards-container-item">
-                                    <div class=" position-relative span-div ">
-                                        <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
-                                             class="span-div position-relative"/>
-                                        <span class=" position-absolute bg-primary w-50 text-center text-white fw-bold px-3 py-1 rounded-pill"/>
-                                    </div>
-                                    <img src="/theme_maintenance/static/src/imgs/y_home/fire-saftey.png"
-                                         class="technical_services-img w-100"/>
-                                    <div class="bg-light d-flex  p-2 mt-2 rounded-5 justify-content-center">
-                                        <h5>Fire and safety systems</h5>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-xl-3 cards-container-item">
-                                    <div class=" position-relative span-div ">
-                                        <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
-                                             class="span-div position-relative"/>
-                                        <span class=" position-absolute bg-primary w-50 text-center text-white fw-bold px-3 py-1 rounded-pill"/>
-                                    </div>
-                                    <img src="/theme_maintenance/static/src/imgs/y_home/esclator4.png"
-                                         class="technical_services-img w-100"/>
-                                    <div class="bg-light d-flex  p-2 mt-2 rounded-5 justify-content-center">
-                                        <h5>Lift &amp; Escalator Care Services</h5>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-xl-3 cards-container-item">
-                                    <div class=" position-relative span-div ">
-                                        <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
-                                             class="span-div position-relative"/>
-                                        <span class=" position-absolute bg-primary w-50 text-center text-white fw-bold px-3 py-1 rounded-pill"/>
-                                    </div>
-                                    <img src="/theme_maintenance/static/src/imgs/y_home/cctv5.png"
-                                         class="technical_services-img w-100"/>
-                                    <div class="bg-light d-flex  p-2 mt-2 rounded-5 justify-content-center">
-                                        <h5>Smart Control &amp; Monitoring</h5>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-xl-3 cards-container-item">
-                                    <div class=" position-relative span-div ">
-                                        <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
-                                             class="span-div position-relative"/>
-                                        <span class=" position-absolute bg-primary w-50 text-center text-white fw-bold px-3 py-1 rounded-pill"/>
-                                    </div>
-                                    <img src="/theme_maintenance/static/src/imgs/y_home/construction-site6.png"
-                                         class="technical_services-img w-100"/>
-                                    <div class="bg-light d-flex  p-2 mt-2 rounded-5 justify-content-center">
-                                        <h5>Infrastructure works</h5>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-xl-3 d-flex flex-column align-items-center justify-content-center cards-container-item ">
-
-                                    <div class="bg-dark contact-bg p-4 h-100 mt-5 d-flex align-items-center text-center">
-
-                                        <h3 class="text-white">Contact us now and get the best quote</h3>
-                                    </div>
+                                    <a href="#" class="d-block w-100">
 
 
-                                    <div class="bg-light d-flex  p-2 mt-2 rounded-5 justify-content-center w-100">
-                                        <h5>Contact us</h5>
-                                    </div>
+                                        <div class=" position-relative span-div w-100"
+                                             style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
+                                            <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
+                                                 class="position-absolute"/>
+                                            <span class="bg-primary text-white fw-bold px-3 py-1 rounded-pill position-absolute"/>
+                                        </div>
+                                        <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
+                                            <h5>HVAC &amp; Cooling System Care</h5>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-xl-3 cards-container-item">
+                                    <a href="#" class="d-block w-100">
+
+
+                                        <div class=" position-relative span-div w-100"
+                                             style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
+                                            <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
+                                                 class="position-absolute"/>
+                                            <span class="bg-primary text-white fw-bold px-3 py-1 rounded-pill position-absolute"/>
+                                        </div>
+                                        <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
+                                            <h5>HVAC &amp; Cooling System Care</h5>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-xl-3 cards-container-item">
+                                    <a href="#" class="d-block w-100">
+
+
+                                        <div class=" position-relative span-div w-100"
+                                             style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
+                                            <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
+                                                 class="position-absolute"/>
+                                            <span class="bg-primary text-white fw-bold px-3 py-1 rounded-pill position-absolute"/>
+                                        </div>
+                                        <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
+                                            <h5>HVAC &amp; Cooling System Care</h5>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-xl-3 cards-container-item">
+                                    <a href="#" class="d-block w-100">
+
+
+                                        <div class=" position-relative span-div w-100"
+                                             style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
+                                            <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
+                                                 class="position-absolute"/>
+                                            <span class="bg-primary text-white fw-bold px-3 py-1 rounded-pill position-absolute"/>
+                                        </div>
+                                        <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
+                                            <h5>HVAC &amp; Cooling System Care</h5>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-xl-3 cards-container-item">
+                                    <a href="#" class="d-block w-100">
+
+
+                                        <div class=" position-relative span-div w-100"
+                                             style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
+                                            <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
+                                                 class="position-absolute"/>
+                                            <span class="bg-primary text-white fw-bold px-3 py-1 rounded-pill position-absolute"/>
+                                        </div>
+                                        <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
+                                            <h5>HVAC &amp; Cooling System Care</h5>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-xl-3 cards-container-item">
+                                    <a href="#" class="d-block w-100">
+
+
+                                        <div class=" position-relative span-div w-100"
+                                             style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
+                                            <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
+                                                 class="position-absolute"/>
+                                            <span class="bg-primary text-white fw-bold px-3 py-1 rounded-pill position-absolute"/>
+                                        </div>
+                                        <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
+                                            <h5>HVAC &amp; Cooling System Care</h5>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-xl-3 cards-container-item">
+                                    <a href="#" class="d-block w-100">
+
+
+                                        <div class=" position-relative span-div w-100"
+                                             style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
+                                            <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
+                                                 class="position-absolute"/>
+                                            <span class="bg-primary text-white fw-bold px-3 py-1 rounded-pill position-absolute"/>
+                                        </div>
+                                        <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
+                                            <h5>HVAC &amp; Cooling System Care</h5>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-xl-3 d-flex flex-column align-items-center justify-content-end cards-container-item ">
+                                    <a href="#">
+
+
+                                        <div class="bg-dark contact-bg p-4 h-100 mt-5 d-flex align-items-center text-center cards-container-item">
+
+                                            <h3 class="text-white">Contact us now and get the best quote</h3>
+                                        </div>
+
+
+                                        <div class="bg-light d-flex  p-2 mt-2 rounded-5 justify-content-center w-100">
+                                            <h5>Contact us</h5>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
 
@@ -206,102 +230,126 @@
                             <div class="row cards-container">
 
                                 <div class="col-lg-6 col-xl-3 cards-container-item">
-                                    <div class=" position-relative span-div ">
-                                        <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
-                                             class="span-div position-relative"/>
-                                        <span class=" position-absolute bg-primary w-50 text-center text-white fw-bold px-3 py-1 rounded-pill"/>
-                                    </div>
-                                    <img src="/theme_maintenance/static/src/imgs/y_home/soft1.png"
-                                         class="technical_services-img w-100"/>
-                                    <div class="bg-light d-flex  p-2 mt-2 rounded-5 justify-content-center">
-                                        <h5>Interior and exterior cleaning</h5>
-                                    </div>
+                                    <a href="#" class="d-block w-100">
+
+
+                                        <div class=" position-relative span-div w-100"
+                                             style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
+                                            <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
+                                                 class="position-absolute"/>
+                                            <span class="bg-primary text-white fw-bold px-3 py-1 rounded-pill position-absolute"/>
+                                        </div>
+                                        <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
+                                            <h5>HVAC &amp; Cooling System Care</h5>
+                                        </div>
+                                    </a>
                                 </div>
                                 <div class="col-lg-6 col-xl-3 cards-container-item">
-                                    <div class=" position-relative span-div ">
-                                        <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
-                                             class="span-div position-relative"/>
-                                        <span class=" position-absolute bg-primary w-50 text-center text-white fw-bold px-3 py-1 rounded-pill"/>
-                                    </div>
-                                    <img src="/theme_maintenance/static/src/imgs/y_home/soft2.png"
-                                         class="technical_services-img w-100"/>
-                                    <div class="bg-light d-flex  p-2 mt-2 rounded-5 justify-content-center">
-                                        <h5>Security services</h5>
-                                    </div>
+                                    <a href="#" class="d-block w-100">
+
+
+                                        <div class=" position-relative span-div w-100"
+                                             style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
+                                            <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
+                                                 class="position-absolute"/>
+                                            <span class="bg-primary text-white fw-bold px-3 py-1 rounded-pill position-absolute"/>
+                                        </div>
+                                        <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
+                                            <h5>HVAC &amp; Cooling System Care</h5>
+                                        </div>
+                                    </a>
                                 </div>
                                 <div class="col-lg-6 col-xl-3 cards-container-item">
-                                    <div class=" position-relative span-div ">
-                                        <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
-                                             class="span-div position-relative"/>
-                                        <span class=" position-absolute bg-primary w-50 text-center text-white fw-bold px-3 py-1 rounded-pill"/>
-                                    </div>
-                                    <img src="/theme_maintenance/static/src/imgs/y_home/soft3.png"
-                                         class="technical_services-img w-100"/>
-                                    <div class="bg-light d-flex  p-2 mt-2 rounded-5 justify-content-center">
-                                        <h5>Landscape &amp; Garden Services</h5>
-                                    </div>
+                                    <a href="#" class="d-block w-100">
+
+
+                                        <div class=" position-relative span-div w-100"
+                                             style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
+                                            <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
+                                                 class="position-absolute"/>
+                                            <span class="bg-primary text-white fw-bold px-3 py-1 rounded-pill position-absolute"/>
+                                        </div>
+                                        <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
+                                            <h5>HVAC &amp; Cooling System Care</h5>
+                                        </div>
+                                    </a>
                                 </div>
                                 <div class="col-lg-6 col-xl-3 cards-container-item">
-                                    <div class=" position-relative span-div ">
-                                        <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
-                                             class="span-div position-relative"/>
-                                        <span class=" position-absolute bg-primary w-50 text-center text-white fw-bold px-3 py-1 rounded-pill"/>
-                                    </div>
-                                    <img src="/theme_maintenance/static/src/imgs/y_home/soft4.png"
-                                         class="technical_services-img w-100"/>
-                                    <div class="bg-light d-flex  p-2 mt-2 rounded-5 justify-content-center">
-                                        <h5>Waste management</h5>
-                                    </div>
+                                    <a href="#" class="d-block w-100">
+
+
+                                        <div class=" position-relative span-div w-100"
+                                             style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
+                                            <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
+                                                 class="position-absolute"/>
+                                            <span class="bg-primary text-white fw-bold px-3 py-1 rounded-pill position-absolute"/>
+                                        </div>
+                                        <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
+                                            <h5>HVAC &amp; Cooling System Care</h5>
+                                        </div>
+                                    </a>
                                 </div>
                                 <div class="col-lg-6 col-xl-3 cards-container-item">
-                                    <div class=" position-relative span-div ">
-                                        <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
-                                             class="span-div position-relative"/>
-                                        <span class=" position-absolute bg-primary w-50 text-center text-white fw-bold px-3 py-1 rounded-pill"/>
-                                    </div>
-                                    <img src="/theme_maintenance/static/src/imgs/y_home/soft5.png"
-                                         class="technical_services-img w-100"/>
-                                    <div class="bg-light d-flex  p-2 mt-2 rounded-5 justify-content-center">
-                                        <h5>Customer service/call center</h5>
-                                    </div>
+                                    <a href="#" class="d-block w-100">
+
+
+                                        <div class=" position-relative span-div w-100"
+                                             style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
+                                            <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
+                                                 class="position-absolute"/>
+                                            <span class="bg-primary text-white fw-bold px-3 py-1 rounded-pill position-absolute"/>
+                                        </div>
+                                        <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
+                                            <h5>HVAC &amp; Cooling System Care</h5>
+                                        </div>
+                                    </a>
                                 </div>
                                 <div class="col-lg-6 col-xl-3 cards-container-item">
-                                    <div class=" position-relative span-div ">
-                                        <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
-                                             class="span-div position-relative"/>
-                                        <span class=" position-absolute bg-primary w-50 text-center text-white fw-bold px-3 py-1 rounded-pill"/>
-                                    </div>
-                                    <img src="/theme_maintenance/static/src/imgs/y_home/soft6.png"
-                                         class="technical_services-img w-100"/>
-                                    <div class="bg-light d-flex  p-2 mt-2 rounded-5 justify-content-center">
-                                        <h5>Tenant &amp; Resident Support</h5>
-                                    </div>
+                                    <a href="#" class="d-block w-100">
+
+
+                                        <div class=" position-relative span-div w-100"
+                                             style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
+                                            <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
+                                                 class="position-absolute"/>
+                                            <span class="bg-primary text-white fw-bold px-3 py-1 rounded-pill position-absolute"/>
+                                        </div>
+                                        <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
+                                            <h5>HVAC &amp; Cooling System Care</h5>
+                                        </div>
+                                    </a>
                                 </div>
                                 <div class="col-lg-6 col-xl-3 cards-container-item">
-                                    <div class=" position-relative span-div ">
-                                        <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
-                                             class="span-div position-relative"/>
-                                        <span class=" position-absolute bg-primary w-50 text-center text-white fw-bold px-3 py-1 rounded-pill"/>
-                                    </div>
-                                    <img src="/theme_maintenance/static/src/imgs/y_home/soft7.png"
-                                         class="technical_services-img w-100"/>
-                                    <div class="bg-light d-flex  p-2 mt-2 rounded-5 justify-content-center">
-                                        <h5>Logistics and warehousing</h5>
-                                    </div>
+                                    <a href="#" class="d-block w-100">
+
+
+                                        <div class=" position-relative span-div w-100"
+                                             style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
+                                            <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
+                                                 class="position-absolute"/>
+                                            <span class="bg-primary text-white fw-bold px-3 py-1 rounded-pill position-absolute"/>
+                                        </div>
+                                        <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
+                                            <h5>HVAC &amp; Cooling System Care</h5>
+                                        </div>
+                                    </a>
                                 </div>
 
 
-                                <div class="col-lg-6 col-xl-3 d-flex flex-column align-items-center justify-content-center cards-container-item ">
-
-                                    <div class="bg-dark contact-bg p-4 h-100 mt-5 d-flex align-items-center text-center">
-
-                                        <h3 class="text-white">Contact us now and get the best quote</h3>
-                                    </div>
+                                <div class="col-lg-6 col-xl-3 d-flex flex-column align-items-center justify-content-end cards-container-item ">
+                                    <a href="#">
 
 
-                                    <div class="bg-light d-flex  p-2 mt-2 rounded-5 justify-content-center w-100">
-                                        <h5>Contact us</h5>
-                                    </div>
+                                        <div class="bg-dark contact-bg p-4 h-100 mt-5 d-flex align-items-center text-center cards-container-item">
+
+                                            <h3 class="text-white">Contact us now and get the best quote</h3>
+                                        </div>
+
+
+                                        <div class="bg-light d-flex  p-2 mt-2 rounded-5 justify-content-center w-100">
+                                            <h5>Contact us</h5>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
 
@@ -503,7 +551,7 @@
                         <div class="container position-relative">
 
                             <!-- Left arrow -->
-                            <button class="scroll-btn scroll-left btn btn-light position-absolute top-50 start-0 translate-middle-y z-3">
+                            <button class="scroll-btn scroll-left btn btn-light position-absolute top-50 start-0 translate-middle-y z-3 p-2">
                                 <i class="fa fa-long-arrow-left"/>
                             </button>
 
@@ -570,9 +618,17 @@
                             </div>
 
                             <!-- Right arrow -->
-                            <button class="scroll-btn scroll-right btn btn-light position-absolute top-50 end-0 translate-middle-y z-3">
+                            <button class="scroll-btn scroll-right btn btn-light position-absolute top-50 end-0 translate-middle-y z-3 p-2">
                                 <i class="fa fa-long-arrow-right"/>
                             </button>
+
+                            <!-- Button-->
+                            <div class="d-flex justify-content-center mt-lg-5">
+
+                                <a class="btn btn-primary text-dark">Discover All Blogs
+                                    <i class="fa fa-long-arrow-right"/>
+                                </a>
+                            </div>
 
                         </div>
                     </section>
