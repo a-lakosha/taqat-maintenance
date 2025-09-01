@@ -1,14 +1,25 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const container = document.querySelector('.cards_container');
-    if (container) {
-        const testimonials = container.querySelectorAll('.testimonial-card');
-
-        if (testimonials.length === 1) {
-            container.classList.remove('justify-content-start');
-            container.classList.add('justify-content-center');
-        } else {
-            container.classList.remove('justify-content-center');
-            container.classList.add('justify-content-start');
+$(document).ready(function () {
+    // Initialize carousel
+    $(".blog-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        nav: false, // disable default nav, we’ll use custom buttons
+        responsive: {
+            0: {items: 1},
+            768: {items: 2},
+            1200: {items: 3}
         }
-    }
+    });
+
+    // Custom navigation buttons
+    $(".scroll-left").click(function () {
+        $(".blog-carousel").trigger("prev.owl.carousel");
+    });
+
+    $(".scroll-right").click(function () {
+        $(".blog-carousel").trigger("next.owl.carousel");
+    });
 });

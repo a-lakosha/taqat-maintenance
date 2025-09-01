@@ -40,20 +40,88 @@ h2, h3 {
 
 .technical_services {
 
+  .cards-container {
+    counter-reset: service-counter; /* start counting at 0 */
+    .cards-container-item {
+
+      transition: transform 0.6s ease; /* smooth zoom */
+      transform-origin: center center;
+    }
+
+    h5 {
+      font-weight: 600;
+    }
+
+    .contact-bg {
+      border-radius: 50px;
+    }
+
+
+  }
+
+  .cards-container-item:hover {
+    transform: scale(1.05); /* zoom-in effect */
+  }
+
   .span-div {
+    counter-increment: service-counter;
     width: fit-content;
-    top: 52px;
     left: -6px;
     border-radius: 0px 0px 40px 56px / 0px 0px 40px 0px;
+    top: 35px;
+
+    img {
+      top: 50px;
+
+    }
+
+
+    span {
+      top: 60px;
+      left: 10px;
+    }
+  }
+
+  .span-div span::before {
+    content: counter(service-counter, decimal-leading-zero) ".";
   }
 
   .technical_services-img {
-    border-radius: 50px 50px 80px 0 / 40px 40px 100px 0;
-
+    border-radius: 50px;
+    object-fit: cover;
   }
 
-
 }
+
+/* Image container with clipped corners */
+.service-card {
+  border-radius: 40px 40px 100px 0 / 50px 50px 80px 0;
+  overflow: hidden; /* Important for clipping */
+  position: relative;
+}
+
+/* Image styling */
+.service-img {
+  display: block;
+  width: 100%;
+  height: 220px; /* Same height for all cards */
+  object-fit: cover; /* Crops image neatly */
+  object-position: center;
+  border-radius: inherit; /* Optional if you want radius on img itself */
+}
+
+/* Badge (01.) */
+.order-badge {
+  position: absolute;
+  top: 12px;
+  inset-inline-start: 12px; /* works for LTR and RTL */
+  padding: .35rem .8rem;
+  border-radius: 0 0 40px 56px / 0 0 40px 0;
+  z-index: 2;
+  line-height: 1;
+  display: inline-block;
+}
+
 
 .engineer_section {
   background: url(../imgs/y_home/bg2.png) bottom no-repeat;
@@ -140,6 +208,35 @@ h2, h3 {
 
 }
 
+.contain-card-txt {
+  bottom: 50px;
+  text-align: center;
+
+}
+
+.blog-carousel .item {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.owl-nav button {
+  background: #fff !important;
+  border-radius: 50% !important;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.darkGrey-bg {
+  background: #8F9096;
+}
+
+.scroll-bar {
+  scrollbar-width: none;
+}
+
+
 @media (min-width: 992px) {
   .hero_section {
     .hero_section-inner {
@@ -166,7 +263,6 @@ h2, h3 {
       flex: 0 0 790px !important; /* fixed width for each card */
     }
   }
-
 
 }
 
