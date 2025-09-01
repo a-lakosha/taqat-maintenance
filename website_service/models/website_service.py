@@ -8,7 +8,8 @@ from odoo.tools.translate import html_translate
 class WebsiteService(models.Model):
     _name = 'website.service'
     _inherit = ['mail.thread', 'mail.activity.mixin', 'image.mixin',
-                'website.seo.metadata', 'website.published.multi.mixin']
+                'website.seo.metadata', 'website.published.multi.mixin', 
+                'website.searchable.mixin']
     _description = 'Service'
     _order = 'sequence, id'
     _rec_name = 'name'
@@ -150,7 +151,46 @@ class WebsiteService(models.Model):
     def _compute_website_url(self):
         super(WebsiteService, self)._compute_website_url()
         for service in self:
-            service.website_url = "/service/%s" % slug(service)
+            if service.id:
+                service.website_url = "/service/%s" % slug(service)
+            else:
+                service.website_url = "#"
+
+    def open_website_url(self):
+        """Open the service page on the website"""
+        return self.env['website'].get_client_action(self.website_url)
+
+    @api.model
+    def _search_get_detail(self, website, order, options):
+        """Define search configuration for website search"""
+        with_description = options.get('displayDescription', True)
+        search_fields = ['name']
+        fetch_fields = ['id', 'name']
+        mapping = {
+            'name': {'name': 'name', 'type': 'text', 'match': True},
+            'website_url': {'name': 'url', 'type': 'text', 'truncate': False},
+        }
+        if with_description:
+            search_fields.append('description')
+            fetch_fields.append('description')
+            mapping['description'] = {'name': 'description', 'type': 'text', 'match': True}
+        
+        return {
+            'model': 'website.service',
+            'base_domain': [website.website_domain(), ('website_published', '=', True)],
+            'search_fields': search_fields,
+            'fetch_fields': fetch_fields,
+            'mapping': mapping,
+            'icon': 'fa-wrench',
+            'order': 'name desc, id desc' if 'name desc' in order else 'name asc, id desc',
+        }
+
+    def _search_render_results(self, fetch_fields, mapping, icon, limit):
+        """Customize search result URLs"""
+        results_data = super()._search_render_results(fetch_fields, mapping, icon, limit)
+        for data in results_data:
+            data['url'] = '/service/%s' % slug(self.browse(data['id']))
+        return results_data
 
     def _default_website_meta(self):
         res = super(WebsiteService, self)._default_website_meta()

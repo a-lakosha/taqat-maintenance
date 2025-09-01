@@ -26,4 +26,11 @@
               parent="menu_website_service_root"
               action="action_website_service_tag"
               sequence="30"/>
+
+    <!--    &lt;!&ndash; Website Service Pages Menu &ndash;&gt;-->
+    <!--    <menuitem id="menu_website_service_pages"-->
+    <!--              name="Service Pages"-->
+    <!--              parent="website.menu_website_pages"-->
+    <!--              action="action_website_service_pages"-->
+    <!--              sequence="50"/>-->
 </odoo>

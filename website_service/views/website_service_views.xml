@@ -1,16 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- Tree View -->
-    <record id="view_website_service_tree" model="ir.ui.view">
-        <field name="name">website.service.tree</field>
+
+    <!-- add new for Website Projects -->
+    <record id="website_service_view_form_add" model="ir.ui.view">
+        <field name="name">website.service.view.form.add</field>
         <field name="model">website.service</field>
         <field name="arch" type="xml">
-            <tree string="Services">
-                <field name="sequence" widget="handle"/>
+            <form js_class="website_new_content_form">
+                <group>
+                    <field name="website_url" invisible="1"/>
+                    <field name="name" placeholder="Project Title"/>
+                    <field name="type_id" string="Select the Type"/>
+                </group>
+            </form>
+        </field>
+    </record>
+    <record id="website_service_action_add" model="ir.actions.act_window">
+        <field name="name">New Project</field>
+        <field name="res_model">website.service</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="view_id" ref="website_service_view_form_add"/>
+    </record>
+
+    <!-- Website Pages List Tree View -->
+    <record id="view_website_service_pages_list" model="ir.ui.view">
+        <field name="name">website.service.pages.list</field>
+        <field name="model">website.service</field>
+        <field name="priority">99</field>
+        <field name="arch" type="xml">
+            <tree js_class="website_pages_list" type="object" action="open_website_url" multi_edit="1">
+                <field name="website_published" column_invisible="True"/>
                 <field name="name"/>
-                <field name="type_id"/>
-                <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}"/>
-                <field name="website_published" string="Published"/>
+                <field name="website_url"/>
+                <field name="create_uid" optional="hide"/>
+                <field name="write_uid" optional="hide"/>
+                <field name="write_date" optional="hide"/>
+                <field name="is_seo_optimized"/>
+                <field name="website_published"/>
+                <field name="website_id" groups="website.group_multi_website"/>
             </tree>
         </field>
     </record>
@@ -22,9 +50,10 @@
         <field name="arch" type="xml">
             <form string="Service">
                 <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <field name="website_published" widget="website_redirect_button"/>
+                    </div>
                     <field name="image_1920" widget="image" class="oe_avatar" options="{'preview_image': 'image_128'}"/>
-                    <widget name="web_ribbon" title="Published" bg_color="bg-success" attrs="{'invisible': [('website_published', '=', False)]}"/>
-                    <widget name="web_ribbon" title="Not Published" bg_color="bg-danger" attrs="{'invisible': [('website_published', '=', True)]}"/>
                     <div class="oe_title">
                         <label for="name" string="Service Name"/>
                         <h1>
@@ -48,7 +77,8 @@
                                 <field name="description" placeholder="Brief description..."/>
                             </group>
                             <separator string="Website Content"/>
-                            <field name="website_description" placeholder="Use the HTML editor to design your service page..."/>
+                            <field name="website_description"
+                                   placeholder="Use the HTML editor to design your service page..."/>
                         </page>
                         <page string="SEO" name="seo">
                             <group>
@@ -74,18 +104,20 @@
         <field name="name">website.service.kanban</field>
         <field name="model">website.service</field>
         <field name="arch" type="xml">
-            <kanban>
+            <kanban js_class="website_pages_kanban">
                 <field name="id"/>
                 <field name="name"/>
                 <field name="type_id"/>
                 <field name="tag_ids"/>
                 <field name="image_1920"/>
                 <field name="website_published"/>
+                <field name="website_url"/>
                 <templates>
                     <t t-name="kanban-box">
                         <div class="oe_kanban_global_click">
                             <div class="o_kanban_image">
-                                <img t-att-src="kanban_image('website.service', 'image_128', record.id.raw_value)" alt="Service"/>
+                                <img t-att-src="kanban_image('website.service', 'image_128', record.id.raw_value)"
+                                     alt="Service"/>
                             </div>
                             <div class="oe_kanban_details">
                                 <strong class="o_kanban_record_title">
@@ -100,8 +132,20 @@
                                     <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}"/>
                                 </div>
                                 <div class="mt-2">
-                                    <span t-if="record.website_published.raw_value" class="badge badge-success">Published</span>
+                                    <span t-if="record.website_published.raw_value" class="badge badge-success">
+                                        Published
+                                    </span>
                                     <span t-else="" class="badge badge-danger">Not Published</span>
+                                </div>
+                                <div class="o_kanban_record_bottom mt-2">
+                                    <div class="oe_kanban_bottom_left">
+                                        <button name="open_website_url" type="object"
+                                                class="btn btn-sm btn-link p-0"
+                                                title="View on Website">
+                                            <i class="fa fa-globe"/>
+                                            View
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -136,6 +180,7 @@
         <field name="name">Services</field>
         <field name="res_model">website.service</field>
         <field name="view_mode">tree,kanban,form</field>
+        <field name="context">{'create_action': 'website_service.website_service_action_add'}</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
                 Create your first service
