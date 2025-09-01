@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Main Menu -->
+    <menuitem id="menu_website_service_root"
+              name="Services"
+              parent="website.menu_website_configuration"
+              sequence="40"/>
+
+    <!-- Services Menu -->
+    <menuitem id="menu_website_service"
+              name="Services"
+              parent="menu_website_service_root"
+              action="action_website_service"
+              sequence="10"/>
+
+    <!-- Service Types Menu -->
+    <menuitem id="menu_website_service_type"
+              name="Service Types"
+              parent="menu_website_service_root"
+              action="action_website_service_type"
+              sequence="20"/>
+
+    <!-- Service Tags Menu -->
+    <menuitem id="menu_website_service_tag"
+              name="Service Tags"
+              parent="menu_website_service_root"
+              action="action_website_service_tag"
+              sequence="30"/>
+</odoo>
