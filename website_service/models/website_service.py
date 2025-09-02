@@ -25,6 +25,15 @@ class WebsiteService(models.Model):
         default=10,
         help="Gives the sequence order when displaying a list of services."
     )
+    tec_name = fields.Text(
+        string='Technical Name',
+        translate=True,
+        help="Brief description of the service"
+    )
+    icon = fields.Char(
+        string='Icon Class',
+        help="CSS class for the icon (e.g., 'fa fa-star' or 'bi bi-star')"
+    )
     description = fields.Text(
         string='Short Description',
         translate=True,
@@ -42,14 +51,6 @@ class WebsiteService(models.Model):
         string='Service Type',
         ondelete='restrict'
     )
-    tag_ids = fields.Many2many(
-        'website.service.tag',
-        'website_service_tag_rel',
-        'service_id',
-        'tag_id',
-        string='Tags'
-    )
-
     # Website fields
     website_id = fields.Many2one(
         'website',

@@ -16,7 +16,7 @@
     ],
     'category': 'Theme',
     'version': '0.1',
-    'depends': ['theme_common', 'social_media', 'mass_mailing', 'website', 'crm'],
+    'depends': ['theme_common', 'social_media', 'mass_mailing', 'website', 'crm', 'website_service'],
     'data': [
 
         'data/pages/home_page.xml',

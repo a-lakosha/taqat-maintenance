@@ -63,12 +63,13 @@
                     <group>
                         <group>
                             <field name="type_id"/>
+                            <field name="icon"/>
+                            <field name="tec_name"/>
+                        </group>
+                        <group>
                             <field name="sequence"/>
                             <field name="website_published"/>
                             <field name="website_id" groups="website.group_multi_website"/>
-                        </group>
-                        <group>
-                            <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}"/>
                         </group>
                     </group>
                     <notebook>
@@ -108,7 +109,6 @@
                 <field name="id"/>
                 <field name="name"/>
                 <field name="type_id"/>
-                <field name="tag_ids"/>
                 <field name="image_1920"/>
                 <field name="website_published"/>
                 <field name="website_url"/>
@@ -128,9 +128,9 @@
                                         <field name="type_id"/>
                                     </span>
                                 </div>
-                                <div>
-                                    <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}"/>
-                                </div>
+                                <!--                                <div>-->
+                                <!--                                    <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}"/>-->
+                                <!--                                </div>-->
                                 <div class="mt-2">
                                     <span t-if="record.website_published.raw_value" class="badge badge-success">
                                         Published
@@ -163,7 +163,6 @@
             <search string="Search Services">
                 <field name="name"/>
                 <field name="type_id"/>
-                <field name="tag_ids"/>
                 <filter string="Published" name="published" domain="[('website_published', '=', True)]"/>
                 <filter string="Not Published" name="not_published" domain="[('website_published', '=', False)]"/>
                 <separator/>

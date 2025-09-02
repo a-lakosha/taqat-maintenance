@@ -21,7 +21,6 @@
         'security/website_service_security.xml',
         'views/website_service_views.xml',
         'views/website_service_type_views.xml',
-        'views/website_service_tag_views.xml',
         'views/website_service_menu.xml',
         'views/service_templates.xml',
     ],

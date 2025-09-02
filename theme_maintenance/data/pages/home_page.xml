@@ -4,6 +4,12 @@
         <template name="Taqat Maintenance Home" id="maintenance_home_page" inherit_id="website.homepage" active="True">
 
             <xpath expr="//div[@id='wrap']" position="replace">
+                <t t-set="additional_title" t-valuef="Maintenance Home"/>
+                <t t-set="service_type_ids"
+                   t-value="request.env['website.service.type'].search([])"/>
+                <t t-set="latest_posts"
+                   t-value="request.env['blog.post'].search([], order='create_date desc', limit=7)"/>
+
                 <div id="wrap" class="oe_structure oe_empty">
                     <section class="pb72 hero_section text-white">
                         <div class="hero_section-inner">
@@ -78,343 +84,49 @@
 
                     <section class="pt72 pb72 technical_services">
                         <div class="container">
-                            <div class="mb-lg-5 pb-3">
-                                <h1 class="display-1 mb-lg-3">
-                                    First: Technical services
-                                </h1>
-                                <h4>
-                                    are services associated with the building infrastructure that directly affect the
-                                    safety of users and the operation of the facility, and are often legally required
-                                    and difficult to do without. Lorem Ipsum Dollar Set Amet, Concektor Adaiba Yesking
-                                    Alait, Set Do liqua.
-                                </h4>
-                            </div>
-                            <div class="row cards-container ">
-                                <div class="col-lg-6 col-xl-3 cards-container-item">
-                                    <a href="#" class="d-block w-100">
-
-
-                                        <div class=" position-relative span-div w-100"
-                                             style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
-                                            <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
-                                                 class="position-absolute"/>
-                                            <span class="flip-badge  text-white fw-bold pe-4 ps-5 py-3  ">
-                                                <span class="front bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute"/>   <!-- number comes from CSS counter -->
-                                                <span class="back bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute">
-                                                    <i class="fa fa-wrench"/>
-                                                </span> <!-- icon (custom per card) -->
-                                            </span>
-                                        </div>
-                                        <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
-                                            <h5>HVAC &amp; Cooling System Care</h5>
-                                        </div>
-                                    </a>
+                            <t t-foreach="service_type_ids" t-as="service_type">
+                                <div class="mb-lg-5 pb-3">
+                                    <h1 class="display-1 mb-lg-3" t-field="service_type.name"/>
+                                    <h4 t-field="service_type.description"/>
                                 </div>
-                                <div class="col-lg-6 col-xl-3 cards-container-item">
-                                    <a href="#" class="d-block w-100">
+                                <div class="row cards-container ">
+                                    <t t-foreach="service_type.service_ids" t-as="service">
+                                        <div class="col-lg-6 col-xl-3 cards-container-item">
+                                            <a t-attf-href="/service/{{slug(service)}}" class="d-block w-100">
 
 
-                                        <div class=" position-relative span-div w-100"
-                                             style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
-                                            <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
-                                                 class="position-absolute"/>
-                                            <span class="flip-badge  text-white fw-bold pe-4 ps-5 py-3  ">
-                                                <span class="front bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute"/>   <!-- number comes from CSS counter -->
-                                                <span class="back bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute">
-                                                    <i class="fa fa-wrench"/>
-                                                </span> <!-- icon (custom per card) -->
-                                            </span>
+                                                <div class=" position-relative span-div w-100"
+                                                     t-attf-style="background-image:url(/web/image/website.service/{{service.id}}/image_512)">
+                                                    <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
+                                                         class="position-absolute"/>
+                                                    <span class="flip-badge  text-white fw-bold pe-4 ps-5 py-3">
+                                                        <span class="front bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute"
+                                                              t-out="service_index + 1"/>   <!-- number comes from CSS counter -->
+                                                        <span class="back bg-primary rounded-pill d-flex align-items-center justify-content-center position-absolute">
+                                                            <i t-attf-class="bi text-white {{service.icon}}"/>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
+                                                    <h5 t-field="service.tec_name"/>
+                                                </div>
+                                            </a>
                                         </div>
-                                        <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
-                                            <h5>HVAC &amp; Cooling System Care</h5>
+                                        <div class="col-lg-6 col-xl-3 d-flex flex-column align-items-center justify-content-start cards-container-item ">
+                                            <a href="#" class="w-100  "
+                                               style="aspect-ratio:3/2;">
+                                                <div class="bg-dark position-relative contact-bg p-4 h-100 d-flex justify-content-center align-items-center  text-center    ">
+
+                                                    <h3 class="text-white">Contact us now and get the best quote</h3>
+                                                </div>
+                                                <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center w-100">
+                                                    <h5>Contact us</h5>
+                                                </div>
+                                            </a>
                                         </div>
-                                    </a>
+                                    </t>
                                 </div>
-                                <div class="col-lg-6 col-xl-3 cards-container-item">
-                                    <a href="#" class="d-block w-100">
-
-
-                                        <div class=" position-relative span-div w-100"
-                                             style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
-                                            <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
-                                                 class="position-absolute"/>
-                                            <span class="flip-badge  text-white fw-bold pe-4 ps-5 py-3  ">
-                                                <span class="front bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute"/>   <!-- number comes from CSS counter -->
-                                                <span class="back bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute">
-                                                    <i class="fa fa-wrench"/>
-                                                </span> <!-- icon (custom per card) -->
-                                            </span>
-                                        </div>
-                                        <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
-                                            <h5>HVAC &amp; Cooling System Care</h5>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-lg-6 col-xl-3 cards-container-item">
-                                    <a href="#" class="d-block w-100">
-
-
-                                        <div class=" position-relative span-div w-100"
-                                             style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
-                                            <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
-                                                 class="position-absolute"/>
-                                            <span class="flip-badge  text-white fw-bold pe-4 ps-5 py-3  ">
-                                                <span class="front bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute"/>   <!-- number comes from CSS counter -->
-                                                <span class="back bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute">
-                                                    <i class="fa fa-wrench"/>
-                                                </span> <!-- icon (custom per card) -->
-                                            </span>
-                                        </div>
-                                        <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
-                                            <h5>HVAC &amp; Cooling System Care</h5>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-lg-6 col-xl-3 cards-container-item">
-                                    <a href="#" class="d-block w-100">
-
-
-                                        <div class=" position-relative span-div w-100"
-                                             style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
-                                            <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
-                                                 class="position-absolute"/>
-                                            <span class="flip-badge  text-white fw-bold pe-4 ps-5 py-3  ">
-                                                <span class="front bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute"/>   <!-- number comes from CSS counter -->
-                                                <span class="back bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute">
-                                                    <i class="fa fa-wrench"/>
-                                                </span> <!-- icon (custom per card) -->
-                                            </span>
-                                        </div>
-                                        <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
-                                            <h5>HVAC &amp; Cooling System Care</h5>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-lg-6 col-xl-3 cards-container-item">
-                                    <a href="#" class="d-block w-100">
-
-
-                                        <div class=" position-relative span-div w-100"
-                                             style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
-                                            <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
-                                                 class="position-absolute"/>
-                                            <span class="flip-badge  text-white fw-bold pe-4 ps-5 py-3  ">
-                                                <span class="front bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute"/>   <!-- number comes from CSS counter -->
-                                                <span class="back bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute">
-                                                    <i class="fa fa-wrench"/>
-                                                </span> <!-- icon (custom per card) -->
-                                            </span>
-                                        </div>
-                                        <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
-                                            <h5>HVAC &amp; Cooling System Care</h5>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-lg-6 col-xl-3 cards-container-item">
-                                    <a href="#" class="d-block w-100">
-
-
-                                        <div class=" position-relative span-div w-100"
-                                             style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
-                                            <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
-                                                 class="position-absolute"/>
-                                            <span class="flip-badge  text-white fw-bold pe-4 ps-5 py-3  ">
-                                                <span class="front bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute"/>   <!-- number comes from CSS counter -->
-                                                <span class="back bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute">
-                                                    <i class="fa fa-wrench"/>
-                                                </span> <!-- icon (custom per card) -->
-                                            </span>
-                                        </div>
-                                        <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
-                                            <h5>HVAC &amp; Cooling System Care</h5>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-lg-6 col-xl-3 d-flex flex-column align-items-center justify-content-start cards-container-item ">
-                                    <a href="#" class="w-100  "
-                                       style="aspect-ratio:3/2;">
-                                        <div class="bg-dark position-relative contact-bg p-4 h-100 d-flex justify-content-center align-items-center  text-center    ">
-
-                                            <h3 class="text-white">Contact us now and get the best quote</h3>
-                                        </div>
-                                        <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center w-100">
-                                            <h5>Contact us</h5>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </section>
-                    <section class="pt72 pb72 soft_services pb-3">
-                        <div class="container">
-                            <div class="mb-lg-5 pb-3">
-                                <h1 class="display-1 mb-lg-3">
-                                    Second: Soft services
-                                </h1>
-                                <h4>are services associated with the building infrastructure that directly affect the
-                                    safety of users and the operation of the facility, and are often legally required
-                                    and difficult to do without. Lorem Ipsum Dollar Set Amet, Concektor Adaiba Yesking
-                                    Alait, Set Do liqua.
-                                </h4>
-                            </div>
-                            <div class="row cards-container">
-
-                                <div class="col-lg-6 col-xl-3 cards-container-item">
-                                    <a href="#" class="d-block w-100">
-
-
-                                        <div class=" position-relative span-div w-100"
-                                             style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
-                                            <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
-                                                 class="position-absolute"/>
-                                            <span class="flip-badge  text-white fw-bold pe-4 ps-5 py-3  ">
-                                                <span class="front bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute"/>   <!-- number comes from CSS counter -->
-                                                <span class="back bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute">
-                                                    <i class="fa fa-wrench"/>
-                                                </span> <!-- icon (custom per card) -->
-                                            </span>
-                                        </div>
-                                        <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
-                                            <h5>HVAC &amp; Cooling System Care</h5>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-lg-6 col-xl-3 cards-container-item">
-                                    <a href="#" class="d-block w-100">
-
-
-                                        <div class=" position-relative span-div w-100"
-                                             style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
-                                            <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
-                                                 class="position-absolute"/>
-                                            <span class="flip-badge  text-white fw-bold pe-4 ps-5 py-3  ">
-                                                <span class="front bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute"/>   <!-- number comes from CSS counter -->
-                                                <span class="back bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute">
-                                                    <i class="fa fa-wrench"/>
-                                                </span> <!-- icon (custom per card) -->
-                                            </span>
-                                        </div>
-                                        <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
-                                            <h5>HVAC &amp; Cooling System Care</h5>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-lg-6 col-xl-3 cards-container-item">
-                                    <a href="#" class="d-block w-100">
-
-
-                                        <div class=" position-relative span-div w-100"
-                                             style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
-                                            <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
-                                                 class="position-absolute"/>
-                                            <span class="flip-badge  text-white fw-bold pe-4 ps-5 py-3  ">
-                                                <span class="front bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute"/>   <!-- number comes from CSS counter -->
-                                                <span class="back bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute">
-                                                    <i class="fa fa-wrench"/>
-                                                </span> <!-- icon (custom per card) -->
-                                            </span>
-                                        </div>
-                                        <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
-                                            <h5>HVAC &amp; Cooling System Care</h5>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-lg-6 col-xl-3 cards-container-item">
-                                    <a href="#" class="d-block w-100">
-
-
-                                        <div class=" position-relative span-div w-100"
-                                             style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
-                                            <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
-                                                 class="position-absolute"/>
-                                            <span class="flip-badge  text-white fw-bold pe-4 ps-5 py-3  ">
-                                                <span class="front bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute"/>   <!-- number comes from CSS counter -->
-                                                <span class="back bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute">
-                                                    <i class="fa fa-wrench"/>
-                                                </span> <!-- icon (custom per card) -->
-                                            </span>
-                                        </div>
-                                        <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
-                                            <h5>HVAC &amp; Cooling System Care</h5>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-lg-6 col-xl-3 cards-container-item">
-                                    <a href="#" class="d-block w-100">
-
-
-                                        <div class=" position-relative span-div w-100"
-                                             style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
-                                            <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
-                                                 class="position-absolute"/>
-                                            <span class="flip-badge  text-white fw-bold pe-4 ps-5 py-3  ">
-                                                <span class="front bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute"/>   <!-- number comes from CSS counter -->
-                                                <span class="back bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute">
-                                                    <i class="fa fa-wrench"/>
-                                                </span> <!-- icon (custom per card) -->
-                                            </span>
-                                        </div>
-                                        <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
-                                            <h5>HVAC &amp; Cooling System Care</h5>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-lg-6 col-xl-3 cards-container-item">
-                                    <a href="#" class="d-block w-100">
-
-
-                                        <div class=" position-relative span-div w-100"
-                                             style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
-                                            <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
-                                                 class="position-absolute"/>
-                                            <span class="flip-badge  text-white fw-bold pe-4 ps-5 py-3  ">
-                                                <span class="front bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute"/>   <!-- number comes from CSS counter -->
-                                                <span class="back bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute">
-                                                    <i class="fa fa-wrench"/>
-                                                </span> <!-- icon (custom per card) -->
-                                            </span>
-                                        </div>
-                                        <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
-                                            <h5>HVAC &amp; Cooling System Care</h5>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-lg-6 col-xl-3 cards-container-item">
-                                    <a href="#" class="d-block w-100">
-
-
-                                        <div class=" position-relative span-div w-100"
-                                             style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
-                                            <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
-                                                 class="position-absolute"/>
-                                            <span class="flip-badge  text-white fw-bold pe-4 ps-5 py-3  ">
-                                                <span class="front bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute"/>   <!-- number comes from CSS counter -->
-                                                <span class="back bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute">
-                                                    <i class="fa fa-wrench"/>
-                                                </span> <!-- icon (custom per card) -->
-                                            </span>
-                                        </div>
-                                        <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
-                                            <h5>HVAC &amp; Cooling System Care</h5>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-lg-6 col-xl-3 d-flex flex-column align-items-center justify-content-start cards-container-item ">
-                                    <a href="#" class="w-100  "
-                                       style="aspect-ratio:3/2;">
-                                        <div class="bg-dark position-relative contact-bg p-4 h-100 d-flex justify-content-center align-items-center  text-center    ">
-
-                                            <h3 class="text-white">Contact us now and get the best quote</h3>
-                                        </div>
-                                        <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center w-100">
-                                            <h5>Contact us</h5>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
+                            </t>
                         </div>
 
                     </section>
@@ -862,62 +574,29 @@
                             <div class="d-flex flex-column align-items-center gap-lg-3 pb-lg-5 pb-3 text-center">
                                 <h4 class="text-primary">Blogs</h4>
                                 <h1>Our Blog - Insights &amp; Inspiration</h1>
-                                <h4>
-                                    Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt
-                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum
-                                    exercitationem ullam
-                                </h4>
+                                <h4>Lorem ipsum dolor sit amet, consectetur adipisci elit...</h4>
                             </div>
 
                             <!-- Owl Carousel -->
                             <div class="owl-carousel blog-carousel">
-                                <div class="item">
-                                    <div class="contain-card d-flex justify-content-center position-relative">
-                                        <img src="/theme_maintenance/static/src/imgs/y_home/blog_home1.png"
-                                             class="w-100 blog_img" alt="blog1"/>
-                                        <div class="position-absolute bg-white d-flex flex-column align-items-center rounded-3 p-3 w-75 gap-lg-2 contain-card-txt">
-                                            <h4 class="fw-bold">Digital Transformation in Facilities Management</h4>
-                                            <h6>Learn how preventive maintenance reduces breakdowns, lowers operational
-                                                costs, and improves asset
-                                            </h6>
-                                            <a href="#" class="text-dark">Read More
-                                                <i class="fa fa-long-arrow-right ps-3"></i>
-                                            </a>
+                                <t t-foreach="latest_posts" t-as="post">
+                                    <div class="item">
+                                        <div class="contain-card d-flex justify-content-center position-relative">
+                                            <t t-set="image_url"
+                                               t-value="post._get_background(height=_resize_height, width=_resize_width).replace('url(', '').replace(')', '').strip('\'\'')"
+                                            />
+                                            <img t-att-src="image_url"
+                                                 class="w-100 blog_img" t-att-alt="post.name"/>
+                                            <div class="position-absolute bg-white d-flex flex-column align-items-center rounded-3 p-3 w-75 gap-lg-2 contain-card-txt">
+                                                <h4 class="fw-bold" t-field="post.name"/>
+                                                <h6 t-out="post.subtitle or ''"/>
+                                                <a t-att-href="post.website_url" class="text-dark">Read More
+                                                    <i class="fa fa-long-arrow-right ps-3"/>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-
-                                <div class="item">
-                                    <div class="contain-card d-flex justify-content-center position-relative">
-                                        <img src="/theme_maintenance/static/src/imgs/y_home/blog_home2.png"
-                                             class="w-100 blog_img" alt="blog2"/>
-                                        <div class="position-absolute bg-white d-flex flex-column align-items-center rounded-3 p-3 w-75 gap-lg-2 contain-card-txt">
-                                            <h4 class="fw-bold">The importance of preventive maintenance</h4>
-                                            <h6>Learn how preventive maintenance reduces breakdowns, lowers operational
-                                                costs, and improves asset
-                                            </h6>
-                                            <a href="#" class="text-dark">Read More
-                                                <i class="fa fa-long-arrow-right ps-3"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="item">
-                                    <div class="contain-card d-flex justify-content-center position-relative">
-                                        <img src="/theme_maintenance/static/src/imgs/y_home/blog_home3.png"
-                                             class="w-100 blog_img" alt="blog3"/>
-                                        <div class="position-absolute bg-white d-flex flex-column align-items-center rounded-3 p-3 w-75 gap-lg-2 contain-card-txt">
-                                            <h4 class="fw-bold">The importance of preventive maintenance</h4>
-                                            <h6>Learn how preventive maintenance reduces breakdowns, lowers operational
-                                                costs, and improves asset
-                                            </h6>
-                                            <a href="#" class="text-dark">Read More
-                                                <i class="fa fa-long-arrow-right ps-3"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                                </t>
                             </div>
 
                             <!-- Right arrow -->
@@ -927,8 +606,7 @@
 
                             <!-- Button-->
                             <div class="d-flex justify-content-center mt-lg-5">
-
-                                <a class="btn btn-primary text-dark">Discover All Blogs
+                                <a href="/blog" class="btn btn-primary text-dark">Discover All Blogs
                                     <i class="fa fa-long-arrow-right"/>
                                 </a>
                             </div>
