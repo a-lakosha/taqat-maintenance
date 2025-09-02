@@ -1,0 +1,227 @@
+// Website Service Styles
+
+// Hero Section
+.service-hero-section {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    position: relative;
+    overflow: hidden;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        right: -10%;
+        width: 60%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%);
+        border-radius: 50%;
+    }
+    
+    .hero-content {
+        padding: 60px 40px;
+        position: relative;
+        z-index: 2;
+        
+        .hero-inner {
+            max-width: 600px;
+        }
+        
+        .badge-light {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            font-weight: 500;
+            padding: 8px 16px;
+            font-size: 0.9rem;
+        }
+        
+        h1 {
+            color: white;
+            line-height: 1.2;
+        }
+        
+        .lead {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        
+        .btn-warning {
+            background: #f0ad4e;
+            border: none;
+            padding: 12px 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            
+            &:hover {
+                background: #ec971f;
+                transform: translateY(-2px);
+                box-shadow: 0 5px 15px rgba(240, 173, 78, 0.4);
+            }
+            
+            i {
+                transition: transform 0.3s ease;
+            }
+            
+            &:hover i {
+                transform: translateX(5px);
+            }
+        }
+    }
+    
+    .hero-image {
+        padding: 40px;
+        
+        img {
+            max-height: 500px;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+}
+
+// Features Section
+.feature-card {
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        border-color: #f0ad4e;
+    }
+    
+    .icon-wrapper {
+        width: 80px;
+        height: 80px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    
+    h5 {
+        color: #333;
+        font-size: 1.1rem;
+    }
+    
+    p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+}
+
+// Info Cards
+.info-card {
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+    
+    &:hover {
+        border-left-color: #f0ad4e;
+        transform: translateX(5px);
+    }
+    
+    h5 {
+        color: #333;
+        font-size: 1.15rem;
+    }
+}
+
+// FAQ Section
+.answer-content {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #555;
+    
+    p {
+        margin-bottom: 1rem;
+    }
+    
+    ul, ol {
+        margin: 1rem 0;
+        padding-left: 2rem;
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+
+// Service Description
+.service-description {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #555;
+    
+    h2, h3, h4 {
+        color: #333;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin: 1.5rem 0;
+    }
+}
+
+// Responsive Design
+@media (max-width: 991px) {
+    .service-hero-section {
+        .hero-content {
+            padding: 40px 20px;
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+        
+        .hero-image {
+            padding: 20px;
+        }
+    }
+    
+    .feature-card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .service-hero-section {
+        .hero-content {
+            text-align: center;
+            
+            .hero-inner {
+                margin: 0 auto;
+            }
+        }
+        
+        .hero-image img {
+            max-height: 300px;
+        }
+    }
+    
+    .feature-card {
+        .icon-wrapper {
+            width: 60px;
+            height: 60px;
+        }
+    }
+}
+
+// Utility Classes
+.min-vh-50 {
+    min-height: 50vh;
+}
+
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.bg-opacity-10 {
+    opacity: 0.1;
+}

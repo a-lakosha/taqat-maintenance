@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_website_service_public,website.service.public,model_website_service,,1,0,0,0
+access_website_service_user,website.service.user,model_website_service,base.group_user,1,1,1,1
+access_website_service_type_public,website.service.type.public,model_website_service_type,,1,0,0,0
+access_website_service_type_user,website.service.type.user,model_website_service_type,base.group_user,1,1,1,1
+access_website_service_tag_public,website.service.tag.public,model_website_service_tag,,1,0,0,0
+access_website_service_tag_user,website.service.tag.user,model_website_service_tag,base.group_user,1,1,1,1
