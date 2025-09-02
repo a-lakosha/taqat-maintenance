@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Service Detail Page Template -->
+    <template id="service_detail_template" name="Service Detail">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure">
+                <!-- Hero Section with Service Name and Image -->
+                <section class="service-hero-section">
+                    <div class="container-fluid">
+                        <div class="row align-items-center min-vh-50">
+                            <div class="col-lg-6 hero-content">
+                                <div class="hero-inner">
+                                    <h1 class="display-4 fw-bold text-white mb-4">
+                                        <t t-esc="service.name"/>
+                                    </h1>
+                                    <p class="lead text-white-50 mb-4" t-if="service.description">
+                                        <t t-esc="service.description"/>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="hero-image">
+                                    <img t-att-src="'/web/image/website.service/%s/image_1920' % service.id" 
+                                         t-att-alt="service.name" 
+                                         class="img-fluid rounded-3 shadow"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Main Content from website_description -->
+                <section class="py-5" t-if="service.website_description">
+                    <div class="container">
+                        <div class="service-content">
+                            <t t-raw="service.website_description"/>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+</odoo>
