@@ -98,7 +98,12 @@
                                              style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
                                             <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
                                                  class="position-absolute"/>
-                                            <span class="bg-primary text-white fw-bold px-3 py-1 rounded-pill position-absolute"/>
+                                            <span class="flip-badge  text-white fw-bold pe-4 ps-5 py-3  ">
+                                                <span class="front bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute"/>   <!-- number comes from CSS counter -->
+                                                <span class="back bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute">
+                                                    <i class="fa fa-wrench"/>
+                                                </span> <!-- icon (custom per card) -->
+                                            </span>
                                         </div>
                                         <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
                                             <h5>HVAC &amp; Cooling System Care</h5>
@@ -113,7 +118,12 @@
                                              style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
                                             <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
                                                  class="position-absolute"/>
-                                            <span class="bg-primary text-white fw-bold px-3 py-1 rounded-pill position-absolute"/>
+                                            <span class="flip-badge  text-white fw-bold pe-4 ps-5 py-3  ">
+                                                <span class="front bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute"/>   <!-- number comes from CSS counter -->
+                                                <span class="back bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute">
+                                                    <i class="fa fa-wrench"/>
+                                                </span> <!-- icon (custom per card) -->
+                                            </span>
                                         </div>
                                         <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
                                             <h5>HVAC &amp; Cooling System Care</h5>
@@ -128,7 +138,12 @@
                                              style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
                                             <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
                                                  class="position-absolute"/>
-                                            <span class="bg-primary text-white fw-bold px-3 py-1 rounded-pill position-absolute"/>
+                                            <span class="flip-badge  text-white fw-bold pe-4 ps-5 py-3  ">
+                                                <span class="front bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute"/>   <!-- number comes from CSS counter -->
+                                                <span class="back bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute">
+                                                    <i class="fa fa-wrench"/>
+                                                </span> <!-- icon (custom per card) -->
+                                            </span>
                                         </div>
                                         <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
                                             <h5>HVAC &amp; Cooling System Care</h5>
@@ -143,7 +158,12 @@
                                              style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
                                             <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
                                                  class="position-absolute"/>
-                                            <span class="bg-primary text-white fw-bold px-3 py-1 rounded-pill position-absolute"/>
+                                            <span class="flip-badge  text-white fw-bold pe-4 ps-5 py-3  ">
+                                                <span class="front bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute"/>   <!-- number comes from CSS counter -->
+                                                <span class="back bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute">
+                                                    <i class="fa fa-wrench"/>
+                                                </span> <!-- icon (custom per card) -->
+                                            </span>
                                         </div>
                                         <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
                                             <h5>HVAC &amp; Cooling System Care</h5>
@@ -158,7 +178,12 @@
                                              style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
                                             <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
                                                  class="position-absolute"/>
-                                            <span class="bg-primary text-white fw-bold px-3 py-1 rounded-pill position-absolute"/>
+                                            <span class="flip-badge  text-white fw-bold pe-4 ps-5 py-3  ">
+                                                <span class="front bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute"/>   <!-- number comes from CSS counter -->
+                                                <span class="back bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute">
+                                                    <i class="fa fa-wrench"/>
+                                                </span> <!-- icon (custom per card) -->
+                                            </span>
                                         </div>
                                         <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
                                             <h5>HVAC &amp; Cooling System Care</h5>
@@ -173,7 +198,12 @@
                                              style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
                                             <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
                                                  class="position-absolute"/>
-                                            <span class="bg-primary text-white fw-bold px-3 py-1 rounded-pill position-absolute"/>
+                                            <span class="flip-badge  text-white fw-bold pe-4 ps-5 py-3  ">
+                                                <span class="front bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute"/>   <!-- number comes from CSS counter -->
+                                                <span class="back bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute">
+                                                    <i class="fa fa-wrench"/>
+                                                </span> <!-- icon (custom per card) -->
+                                            </span>
                                         </div>
                                         <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
                                             <h5>HVAC &amp; Cooling System Care</h5>
@@ -188,24 +218,26 @@
                                              style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
                                             <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
                                                  class="position-absolute"/>
-                                            <span class="bg-primary text-white fw-bold px-3 py-1 rounded-pill position-absolute"/>
+                                            <span class="flip-badge  text-white fw-bold pe-4 ps-5 py-3  ">
+                                                <span class="front bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute"/>   <!-- number comes from CSS counter -->
+                                                <span class="back bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute">
+                                                    <i class="fa fa-wrench"/>
+                                                </span> <!-- icon (custom per card) -->
+                                            </span>
                                         </div>
                                         <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
                                             <h5>HVAC &amp; Cooling System Care</h5>
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col-lg-6 col-xl-3 d-flex flex-column align-items-center justify-content-end cards-container-item ">
-                                    <a href="#">
-
-
-                                        <div class="bg-dark contact-bg p-4 h-100 mt-5 d-flex align-items-center text-center cards-container-item">
+                                <div class="col-lg-6 col-xl-3 d-flex flex-column align-items-center justify-content-start cards-container-item ">
+                                    <a href="#" class="w-100  "
+                                       style="aspect-ratio:3/2;">
+                                        <div class="bg-dark position-relative contact-bg p-4 h-100 d-flex justify-content-center align-items-center  text-center    ">
 
                                             <h3 class="text-white">Contact us now and get the best quote</h3>
                                         </div>
-
-
-                                        <div class="bg-light d-flex  p-2 mt-2 rounded-5 justify-content-center w-100">
+                                        <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center w-100">
                                             <h5>Contact us</h5>
                                         </div>
                                     </a>
@@ -215,7 +247,7 @@
                         </div>
 
                     </section>
-                    <section class="pt72 pb72 technical_services">
+                    <section class="pt72 pb72 soft_services">
                         <div class="container">
                             <div class="mb-lg-5">
                                 <h1 class="display-1 mb-lg-3">
@@ -237,7 +269,12 @@
                                              style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
                                             <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
                                                  class="position-absolute"/>
-                                            <span class="bg-primary text-white fw-bold px-3 py-1 rounded-pill position-absolute"/>
+                                            <span class="flip-badge  text-white fw-bold pe-4 ps-5 py-3  ">
+                                                <span class="front bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute"/>   <!-- number comes from CSS counter -->
+                                                <span class="back bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute">
+                                                    <i class="fa fa-wrench"/>
+                                                </span> <!-- icon (custom per card) -->
+                                            </span>
                                         </div>
                                         <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
                                             <h5>HVAC &amp; Cooling System Care</h5>
@@ -252,7 +289,12 @@
                                              style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
                                             <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
                                                  class="position-absolute"/>
-                                            <span class="bg-primary text-white fw-bold px-3 py-1 rounded-pill position-absolute"/>
+                                            <span class="flip-badge  text-white fw-bold pe-4 ps-5 py-3  ">
+                                                <span class="front bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute"/>   <!-- number comes from CSS counter -->
+                                                <span class="back bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute">
+                                                    <i class="fa fa-wrench"/>
+                                                </span> <!-- icon (custom per card) -->
+                                            </span>
                                         </div>
                                         <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
                                             <h5>HVAC &amp; Cooling System Care</h5>
@@ -267,7 +309,12 @@
                                              style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
                                             <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
                                                  class="position-absolute"/>
-                                            <span class="bg-primary text-white fw-bold px-3 py-1 rounded-pill position-absolute"/>
+                                            <span class="flip-badge  text-white fw-bold pe-4 ps-5 py-3  ">
+                                                <span class="front bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute"/>   <!-- number comes from CSS counter -->
+                                                <span class="back bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute">
+                                                    <i class="fa fa-wrench"/>
+                                                </span> <!-- icon (custom per card) -->
+                                            </span>
                                         </div>
                                         <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
                                             <h5>HVAC &amp; Cooling System Care</h5>
@@ -282,7 +329,12 @@
                                              style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
                                             <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
                                                  class="position-absolute"/>
-                                            <span class="bg-primary text-white fw-bold px-3 py-1 rounded-pill position-absolute"/>
+                                            <span class="flip-badge  text-white fw-bold pe-4 ps-5 py-3  ">
+                                                <span class="front bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute"/>   <!-- number comes from CSS counter -->
+                                                <span class="back bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute">
+                                                    <i class="fa fa-wrench"/>
+                                                </span> <!-- icon (custom per card) -->
+                                            </span>
                                         </div>
                                         <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
                                             <h5>HVAC &amp; Cooling System Care</h5>
@@ -297,7 +349,12 @@
                                              style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
                                             <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
                                                  class="position-absolute"/>
-                                            <span class="bg-primary text-white fw-bold px-3 py-1 rounded-pill position-absolute"/>
+                                            <span class="flip-badge  text-white fw-bold pe-4 ps-5 py-3  ">
+                                                <span class="front bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute"/>   <!-- number comes from CSS counter -->
+                                                <span class="back bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute">
+                                                    <i class="fa fa-wrench"/>
+                                                </span> <!-- icon (custom per card) -->
+                                            </span>
                                         </div>
                                         <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
                                             <h5>HVAC &amp; Cooling System Care</h5>
@@ -312,7 +369,12 @@
                                              style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
                                             <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
                                                  class="position-absolute"/>
-                                            <span class="bg-primary text-white fw-bold px-3 py-1 rounded-pill position-absolute"/>
+                                            <span class="flip-badge  text-white fw-bold pe-4 ps-5 py-3  ">
+                                                <span class="front bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute"/>   <!-- number comes from CSS counter -->
+                                                <span class="back bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute">
+                                                    <i class="fa fa-wrench"/>
+                                                </span> <!-- icon (custom per card) -->
+                                            </span>
                                         </div>
                                         <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
                                             <h5>HVAC &amp; Cooling System Care</h5>
@@ -327,26 +389,26 @@
                                              style="background-image:url('/theme_maintenance/static/src/imgs/y_home/wireman.png')">
                                             <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
                                                  class="position-absolute"/>
-                                            <span class="bg-primary text-white fw-bold px-3 py-1 rounded-pill position-absolute"/>
+                                            <span class="flip-badge  text-white fw-bold pe-4 ps-5 py-3  ">
+                                                <span class="front bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute"/>   <!-- number comes from CSS counter -->
+                                                <span class="back bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute">
+                                                    <i class="fa fa-wrench"/>
+                                                </span> <!-- icon (custom per card) -->
+                                            </span>
                                         </div>
                                         <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
                                             <h5>HVAC &amp; Cooling System Care</h5>
                                         </div>
                                     </a>
                                 </div>
-
-
-                                <div class="col-lg-6 col-xl-3 d-flex flex-column align-items-center justify-content-end cards-container-item ">
-                                    <a href="#">
-
-
-                                        <div class="bg-dark contact-bg p-4 h-100 mt-5 d-flex align-items-center text-center cards-container-item">
+                                <div class="col-lg-6 col-xl-3 d-flex flex-column align-items-center justify-content-start cards-container-item ">
+                                    <a href="#" class="w-100  "
+                                       style="aspect-ratio:3/2;">
+                                        <div class="bg-dark position-relative contact-bg p-4 h-100 d-flex justify-content-center align-items-center  text-center    ">
 
                                             <h3 class="text-white">Contact us now and get the best quote</h3>
                                         </div>
-
-
-                                        <div class="bg-light d-flex  p-2 mt-2 rounded-5 justify-content-center w-100">
+                                        <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center w-100">
                                             <h5>Contact us</h5>
                                         </div>
                                     </a>
@@ -362,10 +424,10 @@
                             <div class="row py-lg-5">
                                 <div class="col-lg-6 position-relative   p-5 o_animate o_anim_fade_in">
                                     <!-- Top-left background -->
-                                    <div class="position-absolute bg-white   rounded-3 w-75 h-75 bg-shape1"/>
+                                    <div class="position-absolute bg-white rounded-3 w-50 h-50 bg-shape1"/>
 
                                     <!-- Bottom-right background -->
-                                    <div class="position-absolute end-0 bg-white rounded-3 w-75 h-75 bg-shape2"/>
+                                    <div class="position-absolute  bg-white rounded-3 w-50 h-50 bg-shape2"/>
 
                                     <!-- Main image -->
                                     <img src="/theme_maintenance/static/src/imgs/y_home/engineers.png"
@@ -393,6 +455,167 @@
 
                             </div>
                         </div>
+                    </section>
+
+                    <section class="pb72 pt72 our_clients">
+                        <div class="d-flex flex-column align-items-center py-lg-5">
+                            <h4 class="text-primary">Our Clients</h4>
+                            <h1 class="text-white">We are honored to serve</h1>
+                        </div>
+                        <div class="owl-carousel client-carousel">
+                            <div class="item">
+                                <div class="row p-4 text-white justify-content-evenly ">
+
+                                    <div class="col-lg-6 card-bg-light p-4 d-flex flex-column gap-2 mb-4">
+                                        <h2 class="h2">Lusail Towers</h2>
+                                        <h4 class="h4">We are privileged to provide a suite of high-quality facility
+                                            management services to this iconic Qatari landmark, including:
+                                        </h4>
+                                        <h4 class="h4">HVAC System Maintenance</h4>
+                                        <h4 class="h4">Electrical maintenance</h4>
+                                        <h4 class="h4">Fire &amp; Safety Systems Maintenance</h4>
+                                        <h4 class="h4">External infrastructure</h4>
+                                    </div>
+                                    <div class="col-lg-5 ">
+                                        <div class="row h-100">
+                                            <div class="col-lg-4 mb-4">
+
+                                                <div class=" card-bg-light w-100 h-100 "/>
+                                            </div>
+                                            <div class="col-lg-4 mb-4">
+
+                                                <div class=" card-bg-light w-100 h-100"/>
+                                            </div>
+                                            <div class="col-lg-4 mb-4">
+
+                                                <div class=" card-bg-light w-100 h-100"/>
+                                            </div>
+                                            <div class="col-lg-4 mb-4">
+
+                                                <div class=" card-bg-light w-100 h-100"/>
+                                            </div>
+                                            <div class="col-lg-4 mb-4">
+
+                                                <div class=" card-bg-light w-100 h-100"/>
+                                            </div>
+                                            <div class="col-lg-4 mb-4">
+
+                                                <div class=" card-bg-light  w-100 h-100"/>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row p-4 text-white justify-content-evenly ">
+
+                                    <div class="col-lg-6 card-bg-light p-4 d-flex flex-column gap-2 mb-4">
+                                        <h2 class="h2">Lusail Towers</h2>
+                                        <h4 class="h4">We are privileged to provide a suite of high-quality facility
+                                            management services to this iconic Qatari landmark, including:
+                                        </h4>
+                                        <h4 class="h4">HVAC System Maintenance</h4>
+                                        <h4 class="h4">Electrical maintenance</h4>
+                                        <h4 class="h4">Fire &amp; Safety Systems Maintenance</h4>
+                                        <h4 class="h4">External infrastructure</h4>
+                                    </div>
+                                    <div class="col-lg-5 ">
+                                        <div class="row h-100">
+                                            <div class="col-lg-4 mb-4">
+
+                                                <div class=" card-bg-light w-100 h-100 "/>
+                                            </div>
+                                            <div class="col-lg-4 mb-4">
+
+                                                <div class=" card-bg-light w-100 h-100"/>
+                                            </div>
+                                            <div class="col-lg-4 mb-4">
+
+                                                <div class=" card-bg-light w-100 h-100"/>
+                                            </div>
+                                            <div class="col-lg-4 mb-4">
+
+                                                <div class=" card-bg-light w-100 h-100"/>
+                                            </div>
+                                            <div class="col-lg-4 mb-4">
+
+                                                <div class=" card-bg-light w-100 h-100"/>
+                                            </div>
+                                            <div class="col-lg-4 mb-4">
+
+                                                <div class=" card-bg-light  w-100 h-100"/>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="row p-4 text-white justify-content-evenly ">
+
+                                    <div class="col-lg-6 card-bg-light p-4 d-flex flex-column gap-2 mb-4">
+                                        <h2 class="h2">Lusail Towers</h2>
+                                        <h4 class="h4">We are privileged to provide a suite of high-quality facility
+                                            management services to this iconic Qatari landmark, including:
+                                        </h4>
+                                        <h4 class="h4">HVAC System Maintenance</h4>
+                                        <h4 class="h4">Electrical maintenance</h4>
+                                        <h4 class="h4">Fire &amp; Safety Systems Maintenance</h4>
+                                        <h4 class="h4">External infrastructure</h4>
+                                    </div>
+                                    <div class="col-lg-5 ">
+                                        <div class="row h-100">
+                                            <div class="col-lg-4 mb-4">
+
+                                                <div class=" card-bg-light w-100 h-100 "/>
+                                            </div>
+                                            <div class="col-lg-4 mb-4">
+
+                                                <div class=" card-bg-light w-100 h-100"/>
+                                            </div>
+                                            <div class="col-lg-4 mb-4">
+
+                                                <div class=" card-bg-light w-100 h-100"/>
+                                            </div>
+                                            <div class="col-lg-4 mb-4">
+
+                                                <div class=" card-bg-light w-100 h-100"/>
+                                            </div>
+                                            <div class="col-lg-4 mb-4">
+
+                                                <div class=" card-bg-light w-100 h-100"/>
+                                            </div>
+                                            <div class="col-lg-4 mb-4">
+
+                                                <div class=" card-bg-light  w-100 h-100"/>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="d-flex justify-content-center gap-lg-4 gap-2">
+
+                            <button class="scroll-btn scroll-left btn btn-light  start-50  z-3 px-3">
+                                <i class="fa fa-long-arrow-left"/>
+                            </button>
+                            <button class="scroll-btn scroll-right btn btn-light start-50 z-3 px-3">
+                                <i class="fa fa-long-arrow-right"/>
+                            </button>
+                        </div>
+
+
                     </section>
 
                     <section class="pt72 pb72 facility_managment">
@@ -505,7 +728,7 @@
                             <h1 class="text-white">What our customers say about us</h1>
                         </div>
                         <div class="d-flex flex-nowrap justify-content-lg-center justify-content-start  gap-5 cards_container pb-lg-5">
-                            <div class="testimonial-card p-4 text-white">
+                            <div class="card-bg-light p-4 text-white">
                                 <!-- Quote Icon -->
                                 <i class="fa fa-quote-right position-absolute end-0 text-white-50 me-3 mb-3 quote-icon"/>
                                 <!-- User info -->

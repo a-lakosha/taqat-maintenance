@@ -38,7 +38,7 @@ h2, h3 {
   }
 }
 
-.technical_services {
+.technical_services, .soft_services {
 
   .cards-container {
     counter-reset: service-counter; /* start counting at 0 */
@@ -53,13 +53,12 @@ h2, h3 {
     }
 
     .contact-bg {
-      border-radius: 50px;
-
+      border-radius: 30px;
     }
   }
 
   .cards-container-item {
-
+    margin-bottom: 60px;
 
     .span-div {
       counter-increment: service-counter;
@@ -81,9 +80,39 @@ h2, h3 {
       background-size: 120%;
     }
 
-    .span-div span::before {
+    .flip-badge {
+      position: relative;
+      display: inline-block;
+      perspective: 600px; /* enable 3D space */
+    }
+
+    /* both faces */
+    .flip-badge .front,
+    .flip-badge .back {
+      inset: 0;
+      backface-visibility: hidden;
+      transition: transform 0.6s ease;
+    }
+
+    /* Front → number from counter */
+    .flip-badge .front::before {
       content: counter(service-counter, decimal-leading-zero) ".";
     }
+
+    /* Back → icon (custom in HTML) */
+    .flip-badge .back {
+      transform: rotateY(180deg);
+    }
+
+    /* Hover → flip badge */
+    .span-div:hover .front {
+      transform: rotateY(180deg);
+    }
+
+    .span-div:hover .back {
+      transform: rotateY(360deg);
+    }
+
 
     .technical_services-img {
       border-radius: 50px;
@@ -91,36 +120,6 @@ h2, h3 {
     }
   }
 }
-
-/* Image container with clipped corners */
-.service-card {
-  border-radius: 40px 40px 100px 0 / 50px 50px 80px 0;
-  overflow: hidden; /* Important for clipping */
-  position: relative;
-}
-
-/* Image styling */
-.service-img {
-  display: block;
-  width: 100%;
-  height: 220px; /* Same height for all cards */
-  object-fit: cover; /* Crops image neatly */
-  object-position: center;
-  border-radius: inherit; /* Optional if you want radius on img itself */
-}
-
-/* Badge (01.) */
-.order-badge {
-  position: absolute;
-  top: 12px;
-  inset-inline-start: 12px; /* works for LTR and RTL */
-  padding: .35rem .8rem;
-  border-radius: 0 0 40px 56px / 0 0 40px 0;
-  z-index: 2;
-  line-height: 1;
-  display: inline-block;
-}
-
 
 .engineer_section {
   background: url(../imgs/y_home/bg2.png) bottom no-repeat;
@@ -131,13 +130,13 @@ h2, h3 {
 }
 
 .bg-shape1 {
-  top: -20px;
-  left: -20px;
+  top: 30px;
+  left: 30px;
 }
 
 .bg-shape2 {
-  left: 150px;
-  top: 50px;
+  right: 30px;
+  top: 105px;
 }
 
 .facility_managment {
@@ -190,7 +189,7 @@ h2, h3 {
       display: none; /* hide scrollbar Chrome/Safari */
     }
 
-    .testimonial-card {
+    .card-bg-light {
       flex: 0 0 312px; /* fixed width for each card */
       position: relative;
       border-radius: 24px;
@@ -228,6 +227,21 @@ h2, h3 {
 }
 
 
+.our_clients {
+  border-radius: 50px;
+  background: url(../imgs/y_home/reviews_bg.png) 50% / cover no-repeat, #1C2126;
+
+  .card-bg-light {
+    position: relative;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px); /* Safari support */
+    padding: 48px;
+  }
+
+}
+
 @media (min-width: 992px) {
   .hero_section {
     .hero_section-inner {
@@ -250,17 +264,12 @@ h2, h3 {
   }
   .cards_container {
 
-    .testimonial-card {
+    .card-bg-light {
       flex: 0 0 790px !important; /* fixed width for each card */
     }
   }
 
 
 }
-
-
-
-
-
 
 
