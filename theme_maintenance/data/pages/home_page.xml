@@ -8,7 +8,7 @@
                     <section class="pb72 hero_section text-white">
                         <div class="hero_section-inner">
                             <div class="container">
-                                <div class="row pb24 ">
+                                <div class="row ">
                                     <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column text-center text-md-start gap-lg-4 hero-txt o_animate o_anim_fade_in o_anim_from_left py-lg-5 py-3 ">
                                         <h1 class="display-1">Premium maintenance &amp; renovation services</h1>
                                         <h4>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor
@@ -34,7 +34,7 @@
                                     </div>
                                 </div>
 
-                                <div class="row pt32 pb32">
+                                <div class="row pt32">
                                     <div class="col-lg-7   second-hero-row o_animate o_anim_fade_in">
                                         <img src="/theme_maintenance/static/src/imgs/y_home/bulider.png"
                                              alt="service_bulider" class="w-100 h-100"/>
@@ -78,7 +78,7 @@
 
                     <section class="pt72 pb72 technical_services">
                         <div class="container">
-                            <div class="mb-lg-5">
+                            <div class="mb-lg-5 pb-3">
                                 <h1 class="display-1 mb-lg-3">
                                     First: Technical services
                                 </h1>
@@ -247,9 +247,9 @@
                         </div>
 
                     </section>
-                    <section class="pt72 pb72 soft_services">
+                    <section class="pt72 pb72 soft_services pb-3">
                         <div class="container">
-                            <div class="mb-lg-5">
+                            <div class="mb-lg-5 pb-3">
                                 <h1 class="display-1 mb-lg-3">
                                     Second: Soft services
                                 </h1>
@@ -622,11 +622,11 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-7 d-flex flex-column gap-lg-4 order-2 pt-5 pt-lg-3 order-lg-1">
-                                    <h2>Facility Management Vision - Taqat</h2>
+                                    <h2 class="pb-2 ">Facility Management Vision - Taqat</h2>
                                     <ul class="list-unstyled d-flex flex-column gap-2 gap-lg-4">
                                         <li class="d-flex gap-3">
                                             <span class="icon-wrapper d-flex align-items-center p-2 justify-content-center bg-primary rounded-2 ">
-                                                <i class="fa fa-check-circle text-white fs-5"></i>
+                                                <i class="fa fa-check-circle text-white fs-5"/>
                                             </span>
                                             <div class="d-flex flex-column gap-lg-2">
                                                 <h3 class="mb-1 fw-semibold">Operational quality and rapid response</h3>
@@ -725,9 +725,9 @@
                     <section class="pt120 pb120 reviews_section">
                         <div class="d-flex flex-column align-items-center py-lg-5">
                             <h4 class="text-primary">Customer Reviews</h4>
-                            <h1 class="text-white">What our customers say about us</h1>
+                            <h1 class="text-white text-center">What our customers say about us</h1>
                         </div>
-                        <div class="d-flex flex-nowrap justify-content-lg-center justify-content-start  gap-5 cards_container pb-lg-5">
+                        <div class="d-flex flex-nowrap justify-content-lg-start  gap-5 cards_container pb-lg-5">
                             <div class="card-bg-light p-4 text-white">
                                 <!-- Quote Icon -->
                                 <i class="fa fa-quote-right position-absolute end-0 text-white-50 me-3 mb-3 quote-icon"/>
@@ -767,6 +767,86 @@
 
 
                             </div>
+                            <div class="card-bg-light p-4 text-white">
+                                <!-- Quote Icon -->
+                                <i class="fa fa-quote-right position-absolute end-0 text-white-50 me-3 mb-3 quote-icon"/>
+                                <!-- User info -->
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="/theme_maintenance/static/src/imgs/y_home/person.svg" alt="User"
+                                         class="rounded-circle me-3" width="48"
+                                         height="48"/>
+                                    <div>
+                                        <h6 class="mb-0 fw-bold">Amr Atya</h6>
+                                        <small class="text-light">Lorem ipsum</small>
+                                    </div>
+
+                                </div>
+
+                                <!-- Rating -->
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="text-warning me-2">
+                                        <i class="fa fa-star"/>
+                                        <i class="fa fa-star"/>
+                                        <i class="fa fa-star"/>
+                                        <i class="fa fa-star"/>
+                                        <i class="fa fa-star"/>
+                                    </div>
+                                    <span class="fw-bold">5.0</span>
+                                </div>
+
+                                <!-- Review text -->
+                                <p class="mb-0 small">
+                                    Lorem Ipsum Dolor Sit Amet, Consectetur Adipisici Elit, Sed Eiusmod Tempor
+                                    Incidunt
+                                    Ut
+                                    Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam, Quis Nostrum
+                                    Exercitationem
+                                    Ullam Corporis Suscipit Laboriosam.
+                                </p>
+
+
+                            </div>
+                            <div class="card-bg-light p-4 text-white">
+                                <!-- Quote Icon -->
+                                <i class="fa fa-quote-right position-absolute end-0 text-white-50 me-3 mb-3 quote-icon"/>
+                                <!-- User info -->
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="/theme_maintenance/static/src/imgs/y_home/person.svg" alt="User"
+                                         class="rounded-circle me-3" width="48"
+                                         height="48"/>
+                                    <div>
+                                        <h6 class="mb-0 fw-bold">Amr Atya</h6>
+                                        <small class="text-light">Lorem ipsum</small>
+                                    </div>
+
+                                </div>
+
+                                <!-- Rating -->
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="text-warning me-2">
+                                        <i class="fa fa-star"/>
+                                        <i class="fa fa-star"/>
+                                        <i class="fa fa-star"/>
+                                        <i class="fa fa-star"/>
+                                        <i class="fa fa-star"/>
+                                    </div>
+                                    <span class="fw-bold">5.0</span>
+                                </div>
+
+                                <!-- Review text -->
+                                <p class="mb-0 small">
+                                    Lorem Ipsum Dolor Sit Amet, Consectetur Adipisici Elit, Sed Eiusmod Tempor
+                                    Incidunt
+                                    Ut
+                                    Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam, Quis Nostrum
+                                    Exercitationem
+                                    Ullam Corporis Suscipit Laboriosam.
+                                </p>
+
+
+                            </div>
+
+
                         </div>
                     </section>
 
@@ -779,10 +859,10 @@
                             </button>
 
                             <!-- Section Header -->
-                            <div class="d-flex flex-column align-items-center gap-lg-3 pb-lg-5 pb-3">
+                            <div class="d-flex flex-column align-items-center gap-lg-3 pb-lg-5 pb-3 text-center">
                                 <h4 class="text-primary">Blogs</h4>
                                 <h1>Our Blog - Insights &amp; Inspiration</h1>
-                                <h4 class="text-center">
+                                <h4>
                                     Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt
                                     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum
                                     exercitationem ullam
