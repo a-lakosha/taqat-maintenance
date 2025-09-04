@@ -174,157 +174,161 @@
                             <h4 class="text-primary">Our Clients</h4>
                             <h1 class="text-white">We are honored to serve</h1>
                         </div>
-                        <div class="owl-carousel client-carousel">
-                            <div class="item">
-                                <div class="row p-4 text-white justify-content-evenly ">
+                        <div id="clientCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="8000">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row p-4 text-white justify-content-evenly ">
 
-                                    <div class="col-lg-6 card-bg-light p-4 d-flex flex-column gap-2 mb-4">
-                                        <h2 class="h2">Lusail Towers</h2>
-                                        <h4 class="h4">We are privileged to provide a suite of high-quality facility
-                                            management services to this iconic Qatari landmark, including:
-                                        </h4>
-                                        <h4 class="h4">HVAC System Maintenance</h4>
-                                        <h4 class="h4">Electrical maintenance</h4>
-                                        <h4 class="h4">Fire &amp; Safety Systems Maintenance</h4>
-                                        <h4 class="h4">External infrastructure</h4>
-                                    </div>
-                                    <div class="col-lg-5 ">
-                                        <div class="row h-100">
-                                            <div class="col-lg-4 mb-4">
+                                        <div class="col-lg-6 card-bg-light p-4 d-flex flex-column gap-2 mb-4">
+                                            <h2 class="h2">Lusail Towers</h2>
+                                            <h4 class="h4">We are privileged to provide a suite of high-quality facility
+                                                management services to this iconic Qatari landmark, including:
+                                            </h4>
+                                            <h4 class="h4">HVAC System Maintenance</h4>
+                                            <h4 class="h4">Electrical maintenance</h4>
+                                            <h4 class="h4">Fire &amp; Safety Systems Maintenance</h4>
+                                            <h4 class="h4">External infrastructure</h4>
+                                        </div>
+                                        <div class="col-lg-5 ">
+                                            <div class="row h-100">
+                                                <div class="col-lg-4 mb-4">
 
-                                                <div class=" card-bg-light w-100 h-100 "/>
-                                            </div>
-                                            <div class="col-lg-4 mb-4">
+                                                    <div class=" card-bg-light w-100 h-100 "/>
+                                                </div>
+                                                <div class="col-lg-4 mb-4">
 
-                                                <div class=" card-bg-light w-100 h-100"/>
-                                            </div>
-                                            <div class="col-lg-4 mb-4">
+                                                    <div class=" card-bg-light w-100 h-100"/>
+                                                </div>
+                                                <div class="col-lg-4 mb-4">
 
-                                                <div class=" card-bg-light w-100 h-100"/>
-                                            </div>
-                                            <div class="col-lg-4 mb-4">
+                                                    <div class=" card-bg-light w-100 h-100"/>
+                                                </div>
+                                                <div class="col-lg-4 mb-4">
 
-                                                <div class=" card-bg-light w-100 h-100"/>
-                                            </div>
-                                            <div class="col-lg-4 mb-4">
+                                                    <div class=" card-bg-light w-100 h-100"/>
+                                                </div>
+                                                <div class="col-lg-4 mb-4">
 
-                                                <div class=" card-bg-light w-100 h-100"/>
-                                            </div>
-                                            <div class="col-lg-4 mb-4">
+                                                    <div class=" card-bg-light w-100 h-100"/>
+                                                </div>
+                                                <div class="col-lg-4 mb-4">
 
-                                                <div class=" card-bg-light  w-100 h-100"/>
+                                                    <div class=" card-bg-light  w-100 h-100"/>
+                                                </div>
+
                                             </div>
 
                                         </div>
 
                                     </div>
-
                                 </div>
-                            </div>
-                            <div class="item">
-                                <div class="row p-4 text-white justify-content-evenly ">
+                                <div class="carousel-item">
+                                    <div class="row p-4 text-white justify-content-evenly ">
 
-                                    <div class="col-lg-6 card-bg-light p-4 d-flex flex-column gap-2 mb-4">
-                                        <h2 class="h2">Lusail Towers</h2>
-                                        <h4 class="h4">We are privileged to provide a suite of high-quality facility
-                                            management services to this iconic Qatari landmark, including:
-                                        </h4>
-                                        <h4 class="h4">HVAC System Maintenance</h4>
-                                        <h4 class="h4">Electrical maintenance</h4>
-                                        <h4 class="h4">Fire &amp; Safety Systems Maintenance</h4>
-                                        <h4 class="h4">External infrastructure</h4>
-                                    </div>
-                                    <div class="col-lg-5 ">
-                                        <div class="row h-100">
-                                            <div class="col-lg-4 mb-4">
+                                        <div class="col-lg-6 card-bg-light p-4 d-flex flex-column gap-2 mb-4">
+                                            <h2 class="h2">Lusail</h2>
+                                            <h4 class="h4">We are privileged to provide a suite of high-quality facility
+                                                management services to this iconic Qatari landmark, including:
+                                            </h4>
+                                            <h4 class="h4">HVAC System Maintenance</h4>
+                                            <h4 class="h4">Electrical maintenance</h4>
+                                            <h4 class="h4">Fire &amp; Safety Systems Maintenance</h4>
+                                            <h4 class="h4">External infrastructure</h4>
+                                        </div>
+                                        <div class="col-lg-5 ">
+                                            <div class="row h-100">
+                                                <div class="col-lg-4 mb-4">
 
-                                                <div class=" card-bg-light w-100 h-100 "/>
-                                            </div>
-                                            <div class="col-lg-4 mb-4">
+                                                    <div class=" card-bg-light w-100 h-100 "/>
+                                                </div>
+                                                <div class="col-lg-4 mb-4">
 
-                                                <div class=" card-bg-light w-100 h-100"/>
-                                            </div>
-                                            <div class="col-lg-4 mb-4">
+                                                    <div class=" card-bg-light w-100 h-100"/>
+                                                </div>
+                                                <div class="col-lg-4 mb-4">
 
-                                                <div class=" card-bg-light w-100 h-100"/>
-                                            </div>
-                                            <div class="col-lg-4 mb-4">
+                                                    <div class=" card-bg-light w-100 h-100"/>
+                                                </div>
+                                                <div class="col-lg-4 mb-4">
 
-                                                <div class=" card-bg-light w-100 h-100"/>
-                                            </div>
-                                            <div class="col-lg-4 mb-4">
+                                                    <div class=" card-bg-light w-100 h-100"/>
+                                                </div>
+                                                <div class="col-lg-4 mb-4">
 
-                                                <div class=" card-bg-light w-100 h-100"/>
-                                            </div>
-                                            <div class="col-lg-4 mb-4">
+                                                    <div class=" card-bg-light w-100 h-100"/>
+                                                </div>
+                                                <div class="col-lg-4 mb-4">
 
-                                                <div class=" card-bg-light  w-100 h-100"/>
+                                                    <div class=" card-bg-light  w-100 h-100"/>
+                                                </div>
+
                                             </div>
 
                                         </div>
 
                                     </div>
-
                                 </div>
-                            </div>
 
-                            <div class="item">
-                                <div class="row p-4 text-white justify-content-evenly ">
+                                <div class="carousel-item">
+                                    <div class="row p-4 text-white justify-content-evenly ">
 
-                                    <div class="col-lg-6 card-bg-light p-4 d-flex flex-column gap-2 mb-4">
-                                        <h2 class="h2">Lusail Towers</h2>
-                                        <h4 class="h4">We are privileged to provide a suite of high-quality facility
-                                            management services to this iconic Qatari landmark, including:
-                                        </h4>
-                                        <h4 class="h4">HVAC System Maintenance</h4>
-                                        <h4 class="h4">Electrical maintenance</h4>
-                                        <h4 class="h4">Fire &amp; Safety Systems Maintenance</h4>
-                                        <h4 class="h4">External infrastructure</h4>
-                                    </div>
-                                    <div class="col-lg-5 ">
-                                        <div class="row h-100">
-                                            <div class="col-lg-4 mb-4">
+                                        <div class="col-lg-6 card-bg-light p-4 d-flex flex-column gap-2 mb-4">
+                                            <h2 class="h2">Lusail Towers</h2>
+                                            <h4 class="h4">We are privileged to provide a suite of high-quality facility
+                                                management services to this iconic Qatari landmark, including:
+                                            </h4>
+                                            <h4 class="h4">HVAC System Maintenance</h4>
+                                            <h4 class="h4">Electrical maintenance</h4>
+                                            <h4 class="h4">Fire &amp; Safety Systems Maintenance</h4>
+                                            <h4 class="h4">External infrastructure</h4>
+                                        </div>
+                                        <div class="col-lg-5 ">
+                                            <div class="row h-100">
+                                                <div class="col-lg-4 mb-4">
 
-                                                <div class=" card-bg-light w-100 h-100 "/>
-                                            </div>
-                                            <div class="col-lg-4 mb-4">
+                                                    <div class=" card-bg-light w-100 h-100 "/>
+                                                </div>
+                                                <div class="col-lg-4 mb-4">
 
-                                                <div class=" card-bg-light w-100 h-100"/>
-                                            </div>
-                                            <div class="col-lg-4 mb-4">
+                                                    <div class=" card-bg-light w-100 h-100"/>
+                                                </div>
+                                                <div class="col-lg-4 mb-4">
 
-                                                <div class=" card-bg-light w-100 h-100"/>
-                                            </div>
-                                            <div class="col-lg-4 mb-4">
+                                                    <div class=" card-bg-light w-100 h-100"/>
+                                                </div>
+                                                <div class="col-lg-4 mb-4">
 
-                                                <div class=" card-bg-light w-100 h-100"/>
-                                            </div>
-                                            <div class="col-lg-4 mb-4">
+                                                    <div class=" card-bg-light w-100 h-100"/>
+                                                </div>
+                                                <div class="col-lg-4 mb-4">
 
-                                                <div class=" card-bg-light w-100 h-100"/>
-                                            </div>
-                                            <div class="col-lg-4 mb-4">
+                                                    <div class=" card-bg-light w-100 h-100"/>
+                                                </div>
+                                                <div class="col-lg-4 mb-4">
 
-                                                <div class=" card-bg-light  w-100 h-100"/>
+                                                    <div class=" card-bg-light  w-100 h-100"/>
+                                                </div>
+
                                             </div>
 
                                         </div>
 
                                     </div>
-
                                 </div>
+
+
                             </div>
+                            <div class="d-flex justify-content-center gap-lg-4 gap-2">
 
-
-                        </div>
-                        <div class="d-flex justify-content-center gap-lg-4 gap-2">
-
-                            <button class="scroll-btn scroll-left btn btn-light  start-50  z-3 px-3">
-                                <i class="fa fa-long-arrow-left"/>
-                            </button>
-                            <button class="scroll-btn scroll-right btn btn-light start-50 z-3 px-3">
-                                <i class="fa fa-long-arrow-right"/>
-                            </button>
+                                <a class="scroll-btn scroll-left btn btn-light  start-50  z-3 px-3"
+                                   href="#clientCarousel" role="button" data-bs-slide="prev">
+                                    <i class="fa fa-long-arrow-left"/>
+                                </a>
+                                <a class="scroll-btn scroll-right btn btn-light start-50 z-3 px-3"
+                                   href="#clientCarousel" role="button" data-bs-slide="next">
+                                    <i class="fa fa-long-arrow-right"/>
+                                </a>
+                            </div>
                         </div>
 
 
@@ -434,133 +438,65 @@
 
                     </section>
 
-                    <section class="pt120 pb120 reviews_section">
-                        <div class="d-flex flex-column align-items-center py-lg-5">
-                            <h4 class="text-primary">Customer Reviews</h4>
-                            <h1 class="text-white text-center">What our customers say about us</h1>
-                        </div>
-                        <div class="d-flex flex-nowrap justify-content-lg-start  gap-5 cards_container pb-lg-5">
-                            <div class="card-bg-light p-4 text-white">
-                                <!-- Quote Icon -->
-                                <i class="fa fa-quote-right position-absolute end-0 text-white-50 me-3 mb-3 quote-icon"/>
-                                <!-- User info -->
-                                <div class="d-flex align-items-center mb-3">
-                                    <img src="/theme_maintenance/static/src/imgs/y_home/person.svg" alt="User"
-                                         class="rounded-circle me-3" width="48"
-                                         height="48"/>
-                                    <div>
-                                        <h6 class="mb-0 fw-bold">Amr Atya</h6>
-                                        <small class="text-light">Lorem ipsum</small>
-                                    </div>
+                    <!--                    <section class="pt120 pb120 reviews_section">-->
+                    <!--                        <div class="d-flex flex-column align-items-center py-lg-5">-->
+                    <!--                            <h4 class="text-primary">Customer Reviews</h4>-->
+                    <!--                            <h1 class="text-white text-center">What our customers say about us</h1>-->
+                    <!--                        </div>-->
 
-                                </div>
+                    <!--                        <div class="d-flex flex-nowrap justify-content-lg-start gap-5 cards_container pb-lg-5">-->
+                    <!--                            <t t-foreach="request.env['website.review'].search([], limit=6)" t-as="review">-->
+                    <!--                                <div class="card-bg-light p-4 text-white position-relative">-->
 
-                                <!-- Rating -->
-                                <div class="d-flex align-items-center mb-3">
-                                    <div class="text-warning me-2">
-                                        <i class="fa fa-star"/>
-                                        <i class="fa fa-star"/>
-                                        <i class="fa fa-star"/>
-                                        <i class="fa fa-star"/>
-                                        <i class="fa fa-star"/>
-                                    </div>
-                                    <span class="fw-bold">5.0</span>
-                                </div>
+                    <!--                                    &lt;!&ndash; Quote Icon &ndash;&gt;-->
+                    <!--                                    <i class="fa fa-quote-right position-absolute end-0 text-white-50 me-3 mb-3 quote-icon"/>-->
 
-                                <!-- Review text -->
-                                <p class="mb-0 small">
-                                    Lorem Ipsum Dolor Sit Amet, Consectetur Adipisici Elit, Sed Eiusmod Tempor
-                                    Incidunt
-                                    Ut
-                                    Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam, Quis Nostrum
-                                    Exercitationem
-                                    Ullam Corporis Suscipit Laboriosam.
-                                </p>
+                    <!--                                    &lt;!&ndash; User info &ndash;&gt;-->
+                    <!--                                    <div class="d-flex align-items-center mb-3">-->
+                    <!--                                        <img t-att-src="review.image_1920 and '/web/image/website.review/%s/image_1920' % review.id or '/theme_maintenance/static/src/imgs/y_home/person.svg'"-->
+                    <!--                                             t-att-alt="review.name"-->
+                    <!--                                             class="rounded-circle me-3"-->
+                    <!--                                             width="48" height="48"/>-->
+                    <!--                                        <div>-->
+                    <!--                                            <h6 class="mb-0 fw-bold" t-field="review.name"/>-->
+                    <!--                                            <small class="text-light" t-out="review.designation or ''"/>-->
+                    <!--                                        </div>-->
+                    <!--                                    </div>-->
 
+                    <!--                                    &lt;!&ndash; Rating &ndash;&gt;-->
+                    <!--                                    &lt;!&ndash; Rating &ndash;&gt;-->
+                    <!--                                    <div class="d-flex align-items-center mb-3">-->
+                    <!--                                        <div class="text-warning me-2">-->
+                    <!--                                            <t t-set="full_stars" t-value="int(review.rating)"/>-->
+                    <!--                                            <t t-set="has_half_star" t-value="(review.rating % 1) &gt;= 0.5"/>-->
+                    <!--                                            <t t-set="empty_stars"-->
+                    <!--                                               t-value="5 - full_stars - (1 if has_half_star else 0)"/>-->
 
-                            </div>
-                            <div class="card-bg-light p-4 text-white">
-                                <!-- Quote Icon -->
-                                <i class="fa fa-quote-right position-absolute end-0 text-white-50 me-3 mb-3 quote-icon"/>
-                                <!-- User info -->
-                                <div class="d-flex align-items-center mb-3">
-                                    <img src="/theme_maintenance/static/src/imgs/y_home/person.svg" alt="User"
-                                         class="rounded-circle me-3" width="48"
-                                         height="48"/>
-                                    <div>
-                                        <h6 class="mb-0 fw-bold">Amr Atya</h6>
-                                        <small class="text-light">Lorem ipsum</small>
-                                    </div>
+                    <!--                                            &lt;!&ndash; Full stars &ndash;&gt;-->
+                    <!--                                            <t t-foreach="range(full_stars)" t-as="star">-->
+                    <!--                                                <i class="fa fa-star"/>-->
+                    <!--                                            </t>-->
 
-                                </div>
+                    <!--                                            &lt;!&ndash; Half star &ndash;&gt;-->
+                    <!--                                            <t t-if="has_half_star">-->
+                    <!--                                                <i class="fa fa-star-half-o"/>-->
+                    <!--                                            </t>-->
 
-                                <!-- Rating -->
-                                <div class="d-flex align-items-center mb-3">
-                                    <div class="text-warning me-2">
-                                        <i class="fa fa-star"/>
-                                        <i class="fa fa-star"/>
-                                        <i class="fa fa-star"/>
-                                        <i class="fa fa-star"/>
-                                        <i class="fa fa-star"/>
-                                    </div>
-                                    <span class="fw-bold">5.0</span>
-                                </div>
-
-                                <!-- Review text -->
-                                <p class="mb-0 small">
-                                    Lorem Ipsum Dolor Sit Amet, Consectetur Adipisici Elit, Sed Eiusmod Tempor
-                                    Incidunt
-                                    Ut
-                                    Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam, Quis Nostrum
-                                    Exercitationem
-                                    Ullam Corporis Suscipit Laboriosam.
-                                </p>
+                    <!--                                            &lt;!&ndash; Empty stars &ndash;&gt;-->
+                    <!--                                            <t t-foreach="range(empty_stars)" t-as="star">-->
+                    <!--                                                <i class="fa fa-star-o"/>-->
+                    <!--                                            </t>-->
+                    <!--                                        </div>-->
+                    <!--                                        <span class="fw-bold" t-out="review.rating"/>-->
+                    <!--                                    </div>-->
 
 
-                            </div>
-                            <div class="card-bg-light p-4 text-white">
-                                <!-- Quote Icon -->
-                                <i class="fa fa-quote-right position-absolute end-0 text-white-50 me-3 mb-3 quote-icon"/>
-                                <!-- User info -->
-                                <div class="d-flex align-items-center mb-3">
-                                    <img src="/theme_maintenance/static/src/imgs/y_home/person.svg" alt="User"
-                                         class="rounded-circle me-3" width="48"
-                                         height="48"/>
-                                    <div>
-                                        <h6 class="mb-0 fw-bold">Amr Atya</h6>
-                                        <small class="text-light">Lorem ipsum</small>
-                                    </div>
-
-                                </div>
-
-                                <!-- Rating -->
-                                <div class="d-flex align-items-center mb-3">
-                                    <div class="text-warning me-2">
-                                        <i class="fa fa-star"/>
-                                        <i class="fa fa-star"/>
-                                        <i class="fa fa-star"/>
-                                        <i class="fa fa-star"/>
-                                        <i class="fa fa-star"/>
-                                    </div>
-                                    <span class="fw-bold">5.0</span>
-                                </div>
-
-                                <!-- Review text -->
-                                <p class="mb-0 small">
-                                    Lorem Ipsum Dolor Sit Amet, Consectetur Adipisici Elit, Sed Eiusmod Tempor
-                                    Incidunt
-                                    Ut
-                                    Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam, Quis Nostrum
-                                    Exercitationem
-                                    Ullam Corporis Suscipit Laboriosam.
-                                </p>
-
-
-                            </div>
-
-
-                        </div>
-                    </section>
+                    <!--                                    &lt;!&ndash; Review text &ndash;&gt;-->
+                    <!--                                    <p class="mb-0 small" t-out="review.review"/>-->
+                    <!--                                </div>-->
+                    <!--                            </t>-->
+                    <!--                        </div>-->
+                    <!--                    </section>-->
 
                     <section class="more_blogs pt72 pb72">
                         <div class="container position-relative">
