@@ -542,7 +542,7 @@
 
                             <!-- Button-->
                             <div class="d-flex justify-content-center mt-lg-5">
-                                <a href="/blog" class="btn btn-primary text-dark">Discover All Blogs
+                                <a t-attf-href="/blog" class="btn btn-primary text-dark">Discover All Blogs
                                     <i class="fa fa-long-arrow-right"/>
                                 </a>
                             </div>
