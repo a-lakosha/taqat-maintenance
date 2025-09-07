@@ -5,7 +5,7 @@
             <t t-set="additional_title" t-valuef="About Us"/>
             <t t-call="website.layout">
                 <div id="wrap" class="oe_structure main__content-area-aboutus">
-                    <section class="hero_section">
+                    <section class="hero_section pt72 pb72">
                         <div class="hero">
                             <!-- Decorative images -->
                             <div class="hero__media" aria-hidden="true">
@@ -77,19 +77,319 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-flex flex-nowrap overflow-x-auto gap-4 justify-content-start about-mission">
+                            <div class="row flex-lg-nowrap flex-wrap pt-lg-5 pt-2 overflow-x-auto justify-content-start about-mission">
+
                                 <img src="/theme_maintenance/static/src/imgs/y_about/person-working.png"
-                                     alt="working-man"/>
+                                     alt="working-man" class="col-lg-3 py-lg-0 py-2"/>
                                 <img src="/theme_maintenance/static/src/imgs/y_about/bearded-gardener.png"
-                                     alt="gardner"/>
+                                     alt="gardner" class="col-lg-3 col-6 py-lg-0 py-2"/>
                                 <img src="/theme_maintenance/static/src/imgs/y_about/manager-supervisor.png"
-                                     alt="supervisor"/>
-                                <img src="/theme_maintenance/static/src/imgs/y_about/unrecognizable-man.png" alt="man"/>
+                                     alt="supervisor" class="col-lg-3 col-6 py-lg-0 py-2"/>
+                                <img src="/theme_maintenance/static/src/imgs/y_about/unrecognizable-man.png" alt="man"
+                                     class="col-lg-3 col-6 py-lg-0 py-2"/>
                                 <img src="/theme_maintenance/static/src/imgs/y_about/team-leader.png"
-                                     alt="team-leader"/>
+                                     alt="team-leader" class="col-lg-3 col-6 py-lg-0 py-2"/>
                             </div>
                         </div>
                     </section>
+                    <section class="pb72 pt72 bg-light engineer_section position-relative">
+                        <div class="engineer_section-inner">
+                            <div class="container pt-lg-5 ">
+
+
+                                <div class="row py-lg-5">
+                                    <div class="col-xl-6 position-relative   p-5 o_animate o_anim_fade_in">
+                                        <!-- Top-left background -->
+                                        <div class="position-absolute bg-white rounded-3 w-50 h-50 bg-shape1"/>
+
+                                        <!-- Bottom-right background -->
+                                        <div class="position-absolute  bg-white rounded-3 w-50 h-50 bg-shape2"/>
+
+                                        <!-- Main image -->
+                                        <img src="/theme_maintenance/static/src/imgs/y_about/business-manager.png"
+                                             class="img-fluid rounded-4 position-relative  engineer_img"
+                                             style="z-index:3;"/>
+                                    </div>
+                                    <div class="col-xl-6 d-flex flex-column gap-lg-4 justify-content-center o_animate o_anim_fade_in o_anim_from_right">
+                                        <div>
+
+                                            <h4 class="text-primary">Our Values</h4>
+                                            <h2>Values at the Core of Every Step</h2>
+                                        </div>
+                                        <h4>At Taqaat, we believe that quality work starts from within, from the
+                                            principles
+                                            we uphold every day. We seek to build relationships based on trust,
+                                            commitment,
+                                            and mutual respect.
+                                        </h4>
+                                        <ul class="list-unstyled values-list-bs">
+                                            <li class="row g-3 align-items-start py-2">
+                                                <div class="col-12 col-md-4 col-lg-3">
+                                                    <h3 class="h5 fw-semibold mb-0">Professionalism</h3>
+                                                </div>
+                                                <div class="col-12 col-md-8 col-lg-9 desc">
+                                                    <h6 class="mb-0">Through providing services with extraordinary
+                                                        quality
+                                                        and discipline to exceed client expectations.
+                                                    </h6>
+                                                </div>
+                                            </li>
+
+                                            <li class="row g-3 align-items-start py-2">
+                                                <div class="col-12 col-md-4 col-lg-3">
+                                                    <h3 class="h5 fw-semibold mb-0">Collaboration</h3>
+                                                </div>
+                                                <div class="col-12 col-md-8 col-lg-9 desc">
+                                                    <h6 class="mb-0">By harnessing the power of teamwork to achieve
+                                                        excellence in every project.
+                                                    </h6>
+                                                </div>
+                                            </li>
+                                            <li class="row g-3 align-items-start py-2">
+                                                <div class="col-12 col-md-4 col-lg-3">
+                                                    <h3 class="h5 fw-semibold mb-0">Sustainability</h3>
+                                                </div>
+                                                <div class="col-12 col-md-8 col-lg-9 desc">
+                                                    <h6 class="mb-0">Through embedding eco-friendly practices and green
+                                                        technologies to protect future resources.
+                                                    </h6>
+                                                </div>
+                                            </li>
+                                            <li class="row g-3 align-items-start py-2">
+                                                <div class="col-12 col-md-4 col-lg-3">
+                                                    <h3 class="h5 fw-semibold mb-0">Digital Transformation &amp;
+                                                        Innovation
+                                                    </h3>
+                                                </div>
+                                                <div class="col-12 col-md-8 col-lg-9 desc">
+                                                    <h6 class="mb-0">We are committed to leveraging the latest
+                                                        technologies
+                                                        in facility management to provide innovative, efficient, and
+                                                        cost-effective solutions.
+                                                    </h6>
+                                                </div>
+                                            </li>
+                                            <li class="row g-3 align-items-start py-2">
+                                                <div class="col-12 col-md-4 col-lg-3">
+                                                    <h3 class="h5 fw-semibold mb-0">Client Focus</h3>
+                                                </div>
+                                                <div class="col-12 col-md-8 col-lg-9 desc">
+                                                    <h6 class="mb-0">We prioritize customer experience in every stage of
+                                                        our
+                                                        solutions development, creating enduring relationships based on
+                                                        trust and satisfaction.
+                                                    </h6>
+                                                </div>
+                                            </li>
+                                            <li class="row g-3 align-items-start py-2">
+                                                <div class="col-12 col-md-4 col-lg-3">
+                                                    <h3 class="h5 fw-semibold mb-0">Agility</h3>
+                                                </div>
+                                                <div class="col-12 col-md-8 col-lg-9 desc">
+                                                    <h6 class="mb-0">By acting quickly and efficiently to address all
+                                                        needs
+                                                        and urgent situations
+                                                    </h6>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                        <a href="#" class="text-dark">
+                                            Read more
+                                            <i class="fa fa-long-arrow-right ps-3"/>
+
+                                        </a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <img src="/theme_maintenance/static/src/imgs/y_home/bg2.png" class="position-absolute"/>
+                    </section>
+                    <section class="pb72 pt72 dark-bg text-white">
+                        <div class="container">
+                            <div class="row justify-content-evenly align-items-center">
+
+
+                                <div class="col-lg-6" style="max-width:321px;">
+                                    <h4 class="text-primary">Our Achievements in Numbers</h4>
+                                    <h2>Milestones That Define Our Journey</h2>
+                                    <h4>Since our launch, we have consistently delivered high-quality results,
+                                        strengthened
+                                        by diverse projects and long-term client trust.
+                                    </h4>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="row justify-content-between">
+                                        <div class="col-lg-6 pb-3">
+                                            <h2>95%</h2>
+                                            <h4>client satisfaction rate</h4>
+                                        </div>
+                                        <div class="col-lg-6 pb-3">
+                                            <h2>+300</h2>
+                                            <h4>Facilities with full maintenance works completed</h4>
+                                        </div>
+                                        <div class="col-lg-6 pb-3">
+                                            <h2>50+</h2>
+                                            <h4>active maintenance and management projects</h4>
+                                        </div>
+                                        <div class="col-lg-6 pb-3">
+                                            <h2>10+</h2>
+                                            <h4>Years of proven experience</h4>
+                                        </div>
+                                        <div class="col-lg-6 pb-3">
+                                            <h2>60 minutes</h2>
+                                            <h4>Average emergency response time</h4>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="pt72 pb72">
+                        <div class="container text-center">
+
+                            <div class="row justify-content-center mb-5">
+                                <div class="col-lg-10 col-xl-8">
+                                    <h2 class="mb-3">Your Questions Matter… Let’s Connect!</h2>
+                                    <h4>
+                                        Whether you’re a first-time client or a long-term partner, here are answers to
+                                        some of the most Frequently Asked Questions to help you enjoy a smooth
+                                        experience with Taqat for Facility Management.
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-center g-0">
+                                <div class="col-lg-10 col-xl-8">
+
+                                    <!-- Item -->
+                                    <div class="py-4 border-top border-bottom border-1 border-primary">
+                                        <h3 class="fw-bold mb-2">What services do you provide?</h3>
+                                        <h6 class="mb-0 text-muted small">
+                                            We provide a full suite of solutions, including system maintenance,
+                                            cleaning, security, landscaping, waste management, and customized services
+                                            for residential and commercial properties.
+                                        </h6>
+                                    </div>
+
+                                    <div class="py-4 border-top border-bottom border-1 border-primary">
+                                        <h3 class="fw-bold mb-2">Are emergency services available 24/7?</h3>
+                                        <h6 class="mb-0 text-muted small">Absolutely… Our technical teams are on standby
+                                            day and night, ensuring a rapid response within 60 minutes in our coverage
+                                            areas.
+                                        </h6>
+                                    </div>
+
+                                    <div class="py-4 border-top border-bottom border-1 border-primary">
+                                        <h3 class="fw-bold mb-2">Do I need an annual contract?</h3>
+                                        <h6 class="mb-0 text-muted small">Not at all, as we provide flexible service
+                                            models, from annual contracts to on-demand requests, with packages designed
+                                            to fit every requirement.
+                                        </h6>
+                                    </div>
+
+                                    <div class="py-4 border-top border-bottom border-1 border-primary">
+                                        <h3 class="fw-bold mb-2">Why choose Taqat for Facility Management?</h3>
+                                        <h6 class="mb-0 text-muted small">We provide an experienced team, advanced
+                                            technologies, competitive fees, and fast response times… all dedicated to
+                                            delivering quality and efficiency in every project.
+                                        </h6>
+                                    </div>
+
+                                    <div class="py-4 b">
+                                        <h3 class="fw-bold mb-2">Do you serve only residential properties?</h3>
+                                        <h6 class="mb-0 text-muted small">No, we cater to a wide range of properties,
+                                            including residential communities, commercial towers, government facilities,
+                                            and industrial sites, with solutions customized for each.
+                                        </h6>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                    <section class="s_three_columns o_cc o_cc2 pt32 pb32 o_colored_level" data-vcss="001"
+                             data-snippet="s_three_columns" data-name="Columns" style="background-image: none;">
+                        <div class="container">
+                            <div class="d-flex flex-column text-center gap-3">
+                                <h4 class="text-primary">Our team</h4>
+                                <h1>Professionalism Inspiring Excellence…Expertise Creating Impact</h1>
+
+                                <h4>We believe outstanding facility management starts with exceptional people. That’s
+                                    why our team consists of a distinguished team of experts, technicians, and
+                                    consultants who have the passion and possess exceptional skills to uphold the
+                                    highest standards of quality and sustainability to deliver results that go beyond
+                                    your expectations.
+                                </h4>
+
+                            </div>
+                            <div class="row d-flex align-items-stretch mt-lg-5 mt-3">
+                                <div class="col-lg-3 s_col_no_bgcolor pt16 pb16">
+                                    <div class=" card rounded-5 rounded-3 text-bg-white h-100 d-flex align-items-center justify-content-end">
+                                        <img class="card-img-top h-100"
+                                             src="/theme_maintenance/static/src/imgs/y_about/person_1.png" alt=""
+                                             loading="lazy" data-mimetype="image/jpeg" data-original-id="259"
+                                             data-original-src="/web/image/website.library_image_11"
+                                             data-mimetype-before-conversion="image/jpeg"/>
+                                        <div class="bg-white p-3 rounded-4  position-absolute   w-75 mb-4">
+                                            <h3 class="card-title o_default_snippet_text">Shikabala</h3>
+                                            <p class="card-text o_default_snippet_text">Consultant at Lorem Ipsum
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 s_col_no_bgcolor pt16 pb16">
+                                    <div class=" card rounded-5 text-bg-white h-100 d-flex align-items-center justify-content-end">
+                                        <img class="card-img-top h-100"
+                                             src="/theme_maintenance/static/src/imgs/y_about/person_2.png" alt=""
+                                             loading="lazy" data-mimetype="image/jpeg" data-original-id="259"
+                                             data-original-src="/web/image/website.library_image_11"
+                                             data-mimetype-before-conversion="image/jpeg"/>
+                                        <div class="bg-white p-3 rounded-4  position-absolute   w-75 mb-4">
+                                            <h3 class="card-title o_default_snippet_text">Shikabala</h3>
+                                            <p class="card-text o_default_snippet_text">Consultant at Lorem Ipsum
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 s_col_no_bgcolor pt16 pb16">
+                                    <div class=" card rounded-5 text-bg-white h-100 d-flex align-items-center justify-content-end">
+                                        <img class="card-img-top h-100"
+                                             src="/theme_maintenance/static/src/imgs/y_about/person_3.png" alt=""
+                                             loading="lazy" data-mimetype="image/jpeg" data-original-id="259"
+                                             data-original-src="/web/image/website.library_image_11"
+                                             data-mimetype-before-conversion="image/jpeg"/>
+                                        <div class="bg-white p-3 rounded-4  rounded-4  position-absolute   w-75 mb-4">
+                                            <h3 class="card-title o_default_snippet_text">Shikabala</h3>
+                                            <p class="card-text o_default_snippet_text">Consultant at Lorem Ipsum
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 s_col_no_bgcolor pt16 pb16">
+                                    <div class=" card rounded-5 text-bg-white h-100 d-flex align-items-center justify-content-end">
+                                        <img class="card-img-top h-100"
+                                             src="/theme_maintenance/static/src/imgs/y_about/person_1.png" alt=""
+                                             loading="lazy" data-mimetype="image/jpeg" data-original-id="259"
+                                             data-original-src="/web/image/website.library_image_11"
+                                             data-mimetype-before-conversion="image/jpeg"/>
+                                        <div class="bg-white p-3  rounded-4  position-absolute   w-75 mb-4">
+                                            <h3 class="card-title o_default_snippet_text">Shikabala</h3>
+                                            <p class="card-text o_default_snippet_text">Consultant at Lorem Ipsum
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </section>
+
 
                 </div>
             </t>

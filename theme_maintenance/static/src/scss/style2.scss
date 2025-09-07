@@ -115,9 +115,6 @@ h2, h3 {
   }
 }
 
-.engineer_section {
-  background: url(../imgs/y_home/bg2.png) bottom no-repeat;
-}
 
 .engineer_img {
   box-shadow: 0 15px 15px gray;
@@ -345,14 +342,14 @@ img_hero4 {
     grid-row: 2;
     align-self: end;
     position: absolute;
-    bottom: -25px;
+    bottom: -96px;
   }
   .hero__media img:nth-child(4) {
     grid-column: 10 / span 3;
     grid-row: 2;
     align-self: end;
     position: absolute;
-    bottom: -25px;
+    bottom: -96px;
   }
 
   /* Optional: readability panel under text */
@@ -392,15 +389,16 @@ img_hero4 {
   }
   .hero__media img:nth-child(3) {
     position: relative;
-    left: 70px;
+    left: 100pxpx;
     top: 50px;
-    width: 70%;
-    opacity: 0.6;
+    width: 79%;
+    opacity: 0.4;
   }
   .hero__media img:nth-child(4) {
     position: relative;
-    right: 10px;
-    bottom: 55px;
+    max-width: 200px;
+    left: 33px;
+    bottom: 80px;
   }
 }
 
@@ -409,5 +407,9 @@ img_hero4 {
 }
 
 
+.dark-bg {
+  background: url(../imgs/y_home/reviews_bg.png) 50% / cover no-repeat, #1C2126;
+  border-radius: 50px;
+}
 
 
