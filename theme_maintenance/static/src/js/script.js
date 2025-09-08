@@ -3,7 +3,7 @@ $(document).ready(function () {
     $(".blog-carousel").owlCarousel({
         loop: true,
         margin: 30,
-        autoplay: true,
+        // autoplay: true,
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
         nav: false, // disable default nav, we’ll use custom buttons
@@ -50,6 +50,15 @@ $(document).ready(function () {
                 $col.data('grid-classes', $col.attr('class')); // e.g., "col-lg-4 ... pt16 pb16"
             }
             $col.attr('class', 'item'); // let Owl own the width
+
+            // Attach custom nav buttons
+            $('.scroll-left').off('click').on('click', function () {
+                $row.trigger('prev.owl.carousel');
+            });
+            $('.scroll-right').off('click').on('click', function () {
+                $row.trigger('next.owl.carousel');
+            });
+
         });
 
         $row.addClass('owl-carousel').owlCarousel({
@@ -93,5 +102,6 @@ $(document).ready(function () {
     // 2) If the editor is toggled after load, watch <html> classes and react
     const mo = new MutationObserver(toggle);
     mo.observe(document.documentElement, {attributes: true, attributeFilter: ['class']});
-    
+
 })(jQuery);
+

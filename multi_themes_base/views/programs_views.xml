@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="id_form_view_programs" model="ir.ui.view">
+            <field name="name">Programs</field>
+            <field name="model">website.programs</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="logo" widget="image" options="{'size': [200,'']}"
+                                       invisible="company_filter not in ['taqat']"
+                                       required="company_filter in ['taqat']"/>
+                                <field name="website_image" widget="image"
+                                       options="{'size': [200,'']}"
+                                       invisible="company_filter not in ['taqat','relief_center']"
+                                       required="company_filter in ['taqat','relief_center']"/>
+                                <field name="title"
+                                       invisible="company_filter not in ['taqat','relief_center']"
+                                       required="company_filter in ['taqat','relief_center']"/>
+                                <field name="desc" invisible="company_filter not in ['taqat']"
+                                       required="company_filter in ['taqat']"/>
+                                <field name="details" invisible="company_filter not in ['taqat']"
+                                       required="company_filter in ['taqat']"/>
+                                <field name="href" invisible="company_filter not in ['taqat']"
+                                       required="company_filter in ['taqat']"/>
+                                <field name="website_id" invisible="1"/>
+                                <field name="company_filter" invisible="1"/>
+                                <field name="sequence" invisible="1"/>
+                                <field name="company_id" invisible="1"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="id_tree_view_programs" model="ir.ui.view">
+            <field name="name">Programs</field>
+            <field name="model">website.programs</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="sequence" widget="handle"/>
+                    <field name="title"/>
+                    <field name="desc"/>
+                    <field name="details"/>
+                    <field name="href"/>
+                    <field name="logo" class="oe_avatar" widget="image" options="{'size': [0, 100]}"/>
+                    <field name="website_image" class="oe_avatar" widget="image"
+                           options="{'size': [0, 100]}"/>
+                    <field name="website_id"/>
+                    <field name="company_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="id_action_programs" model="ir.actions.act_window">
+            <field name="name">Programs</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">website.programs</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_ids"
+                   eval="[(5, 0, 0),
+                (0, 0, {'view_mode': 'tree', 'view_id': ref('id_tree_view_programs')}),
+                (0, 0, {'view_mode': 'form', 'view_id': ref('id_form_view_programs')}),
+            ]"/>
+        </record>
+
+        <menuitem id="menu_programs" parent="multi_themes_base.menu_website_content"
+                  sequence="20" name="Programs" action="id_action_programs"/>
+
+        <record id="website_programs_rule" model="ir.rule">
+            <field name="name">Programs</field>
+            <field name="model_id" ref="model_website_programs"/>
+            <field name="domain_force">[('company_id', 'in', company_ids + [False])]</field>
+        </record>
+
+    </data>
+</odoo>

@@ -92,7 +92,7 @@
                             </div>
                         </div>
                     </section>
-                    <section class="pb72 pt72 bg-light engineer_section position-relative">
+                    <section class="pb72 pt72 bg-light engineer_section">
                         <div class="engineer_section-inner">
                             <div class="container pt-lg-5 ">
 
@@ -205,7 +205,6 @@
                                 </div>
                             </div>
                         </div>
-                        <img src="/theme_maintenance/static/src/imgs/y_home/bg2.png" class="position-absolute"/>
                     </section>
                     <section class="pb72 pt72 dark-bg text-white">
                         <div class="container">
@@ -266,7 +265,7 @@
                                 <div class="col-lg-10 col-xl-8">
 
                                     <!-- Item -->
-                                    <div class="py-4 border-top border-bottom border-1 border-primary">
+                                    <div class="pb-5 pt-4 border-top border-bottom border-1 border-primary">
                                         <h3 class="fw-bold mb-2">What services do you provide?</h3>
                                         <h6 class="mb-0 text-muted small">
                                             We provide a full suite of solutions, including system maintenance,
@@ -275,7 +274,7 @@
                                         </h6>
                                     </div>
 
-                                    <div class="py-4 border-top border-bottom border-1 border-primary">
+                                    <div class="pb-5 pt-4 border-top border-bottom border-1 border-primary">
                                         <h3 class="fw-bold mb-2">Are emergency services available 24/7?</h3>
                                         <h6 class="mb-0 text-muted small">Absolutely… Our technical teams are on standby
                                             day and night, ensuring a rapid response within 60 minutes in our coverage
@@ -283,7 +282,7 @@
                                         </h6>
                                     </div>
 
-                                    <div class="py-4 border-top border-bottom border-1 border-primary">
+                                    <div class="pb-5 pt-4 border-top border-bottom border-1 border-primary">
                                         <h3 class="fw-bold mb-2">Do I need an annual contract?</h3>
                                         <h6 class="mb-0 text-muted small">Not at all, as we provide flexible service
                                             models, from annual contracts to on-demand requests, with packages designed
@@ -291,7 +290,7 @@
                                         </h6>
                                     </div>
 
-                                    <div class="py-4 border-top border-bottom border-1 border-primary">
+                                    <div class="pb-5 pt-4 border-top border-bottom border-1 border-primary">
                                         <h3 class="fw-bold mb-2">Why choose Taqat for Facility Management?</h3>
                                         <h6 class="mb-0 text-muted small">We provide an experienced team, advanced
                                             technologies, competitive fees, and fast response times… all dedicated to
@@ -299,7 +298,7 @@
                                         </h6>
                                     </div>
 
-                                    <div class="py-4 b">
+                                    <div class="pb-5 pt-4 ">
                                         <h3 class="fw-bold mb-2">Do you serve only residential properties?</h3>
                                         <h6 class="mb-0 text-muted small">No, we cater to a wide range of properties,
                                             including residential communities, commercial towers, government facilities,
@@ -387,6 +386,15 @@
 
 
                             </div>
+                            <div class="carousel-nav text-center mt-4">
+                                <button class="scroll-left scroll-btn btn btn-light position-absolute top-50 start-0 translate-middle-y p-2 mx-3">
+                                    <i class="fa fa-long-arrow-left"/>
+                                </button>
+                                <button class="scroll-right scroll-btn btn btn-light position-absolute top-50 end-0 translate-middle-y  p-2 mx-3">
+                                    <i class="fa fa-long-arrow-right"/>
+                                </button>
+                            </div>
+
                         </div>
                     </section>
 

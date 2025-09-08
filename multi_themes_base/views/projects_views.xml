@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="id_form_view_projects" model="ir.ui.view">
+            <field name="name">Projects</field>
+            <field name="model">website.projects</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="website_image" widget="image"
+                                       options="{'size': [400,'']}"
+                                       invisible="company_filter not in ['edama', 'indoqat']"
+                                       required="company_filter in ['edama', 'indoqat']"/>
+                                <field name="title"
+                                       invisible="company_filter not in ['edama', 'indoqat']"
+                                       required="company_filter in ['edama', 'indoqat']"/>
+                                <field name="sub_title"
+                                       invisible="company_filter not in ['edama', 'indoqat']"
+                                       required="company_filter in ['edama', 'indoqat']"/>
+                                <field name="teaser"
+                                       invisible="company_filter not in ['indoqat']"
+                                       required="company_filter in ['indoqat']"/>
+                                <field name="desc" widget="html" invisible="company_filter not in ['edama', 'indoqat']"
+                                       required="company_filter in ['edama', 'indoqat']"/>
+                                <field name="company_filter" invisible="1"/>
+                                <field name="sequence" invisible="1"/>
+                                <field name="website_id" invisible="1"/>
+                                <field name="company_id" invisible="1"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="id_tree_view_projects" model="ir.ui.view">
+            <field name="name">Projects</field>
+            <field name="model">website.projects</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="sequence" widget="handle"/>
+                    <field name="title"/>
+                    <field name="desc"/>
+                    <field name="website_image" class="oe_avatar" widget="image"
+                           options="{'size': [0, 100]}"/>
+                    <field name="website_id"/>
+                    <field name="company_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="id_action_projects" model="ir.actions.act_window">
+            <field name="name">Projects</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">website.projects</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_ids"
+                   eval="[(5, 0, 0),
+                (0, 0, {'view_mode': 'tree', 'view_id': ref('id_tree_view_projects')}),
+                (0, 0, {'view_mode': 'form', 'view_id': ref('id_form_view_projects')}),
+            ]"/>
+        </record>
+
+        <menuitem id="menu_projects" parent="multi_themes_base.menu_website_content"
+                  sequence="20" name="Projects" action="id_action_projects"/>
+
+        <record id="website_projects_rule" model="ir.rule">
+            <field name="name">Projects</field>
+            <field name="model_id" ref="model_website_projects"/>
+            <field name="domain_force">[('company_id', 'in', company_ids + [False])]</field>
+        </record>
+
+    </data>
+</odoo>

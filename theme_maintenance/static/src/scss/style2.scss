@@ -18,103 +18,108 @@ h2, h3 {
   .hero_section-inner {
     background: url(../imgs/y_home/bg_hero.png) center / cover no-repeat;
 
-    .trusted-heading {
-      position: relative;
-    }
-
-    .trusted-heading::after {
-      content: " ";
-      display: block;
-      max-width: 92px;
-      height: 8px;
-      background-color: #ffffff;
-      margin: 8px 0 16px;
+    .hero-txt {
+      @media (min-width: 992px) {
+        padding-top: 105px;
+        padding-bottom: 105px;
+      }
     }
 
     .second-hero-row {
       padding-top: 20px;
       padding-bottom: 20px;
+
+      @media (min-width: 992px) {
+        padding-top: 220px;
+      }
+    }
+
+    .trusted-heading {
+      position: relative;
+
+      &::after {
+        content: " ";
+        display: block;
+        max-width: 92px;
+        height: 8px;
+        background-color: #ffffff;
+        margin: 8px 0 16px;
+
+        @media (min-width: 992px) {
+          margin: 32px 0 !important;
+        }
+      }
     }
   }
 }
 
-.technical_services, .soft_services {
-
+.technical_services {
   .cards-container {
     .cards-container-item {
-
-      transition: transform 0.6s ease; /* smooth zoom */
+      transition: transform 0.6s ease;
       transform-origin: center center;
+
+      .span-div {
+        border-radius: 30px;
+        overflow: hidden;
+        aspect-ratio: 3 / 2;
+        background-size: 100%;
+        background-position: center top;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          background-size: 120%;
+        }
+
+        span {
+          left: 10px;
+        }
+
+        .flip-badge {
+          position: relative;
+          display: inline-block;
+          perspective: 600px;
+
+          .front,
+          .back {
+            inset: 0;
+            backface-visibility: hidden;
+            transition: transform 0.6s ease;
+          }
+
+          .back {
+            transform: rotateY(180deg);
+          }
+        }
+
+        &:hover .front {
+          transform: rotateY(180deg);
+        }
+
+        &:hover .back {
+          transform: rotateY(360deg);
+        }
+      }
+
+      .technical_services-img {
+        border-radius: 50px;
+        object-fit: cover;
+      }
+
+      .contact-bg {
+        border-radius: 30px;
+      }
     }
 
     h5 {
       font-weight: 600;
     }
-
-    .contact-bg {
-      border-radius: 30px;
-    }
-  }
-
-  .cards-container-item {
-    margin-bottom: 60px;
-
-    .span-div {
-      border-radius: 30px;
-      overflow: hidden;
-      aspect-ratio: 3/2;
-      background-size: 100%;
-      background-position-y: top;
-      background-position-x: center;
-      transition: all .3s ease-in-out;
-
-      span {
-        left: 10px;
-      }
-
-    }
-
-    &:hover .span-div {
-      background-size: 120%;
-    }
-
-    .flip-badge {
-      position: relative;
-      display: inline-block;
-      perspective: 600px; /* enable 3D space */
-    }
-
-    /* both faces */
-    .flip-badge .front,
-    .flip-badge .back {
-      inset: 0;
-      backface-visibility: hidden;
-      transition: transform 0.6s ease;
-    }
-
-
-    /* Back → icon (custom in HTML) */
-    .flip-badge .back {
-      transform: rotateY(180deg);
-    }
-
-    /* Hover → flip badge */
-    .span-div:hover .front {
-      transform: rotateY(180deg);
-    }
-
-    .span-div:hover .back {
-      transform: rotateY(360deg);
-    }
-
-
-    .technical_services-img {
-      border-radius: 50px;
-      object-fit: cover;
-    }
   }
 }
 
+.engineer_section {
+  background: url(../imgs/y_home/bg2.png) bottom / contain no-repeat;
+}
 
 .engineer_img {
   box-shadow: 0 15px 15px gray;
@@ -197,11 +202,22 @@ h2, h3 {
 
 }
 
+.contain-card {
+  height: 476px;
+  object-fit: cover;
+}
+
 .contain-card-txt {
   bottom: 50px;
   text-align: center;
 
 }
+
+
+.blog_img {
+  border-radius: 12px; /* Optional */
+}
+
 
 .blog-carousel .item {
   position: relative;
@@ -211,6 +227,7 @@ h2, h3 {
 
 .scroll-btn {
   z-index: 10;
+  border-radius: 50%;
 }
 
 .scroll-bar {
@@ -380,7 +397,7 @@ img_hero4 {
     position: relative;
     left: 60px;
     top: 50px;
-
+    z-index: 15;
   }
   .hero__media img:nth-child(2) {
     position: relative;
@@ -389,7 +406,7 @@ img_hero4 {
   }
   .hero__media img:nth-child(3) {
     position: relative;
-    left: 100pxpx;
+    left: 100px;
     top: 50px;
     width: 79%;
     opacity: 0.4;
@@ -397,7 +414,6 @@ img_hero4 {
   .hero__media img:nth-child(4) {
     position: relative;
     max-width: 200px;
-    left: 33px;
     bottom: 80px;
   }
 }
@@ -413,3 +429,10 @@ img_hero4 {
 }
 
 
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="id_testimonials_form" model="ir.ui.view">
+            <field name="name">testimonials.model.form</field>
+            <field name="model">testimonials.model</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field
+                                        name="img_url"
+                                        class="oe_avatar"
+                                        widget="image"
+                                        options="{'size': [90, 90]}"
+                                        invisible="company_filter not in ['tawridat','avrasya','maintenance']"
+                                        required="company_filter in ['tawridat','avrasya','maintenance']"
+                                />
+                                <field
+                                        name="name"
+                                        invisible="company_filter not in ['tawridat','avrasya','maintenance']"
+                                        required="company_filter in ['tawridat','avrasya','maintenance']"
+                                />
+                                <field
+                                        name="job_title"
+                                        invisible="company_filter not in ['tawridat','avrasya','maintenance']"
+                                        required="company_filter in ['tawridat','avrasya','maintenance']"
+                                />
+                                <field
+                                        name="rating"
+                                        invisible="company_filter not in ['maintenance']"
+                                        required="company_filter in ['maintenance']"
+                                />
+                                <field
+                                        name="description"
+                                        invisible="company_filter not in ['tawridat','avrasya','maintenance']"
+                                        required="company_filter in ['tawridat','avrasya','maintenance']"
+                                />
+                                <field name="website_id" invisible="1"/>
+                                <field name="sequence" invisible="1"/>
+                                <field name="company_id" invisible="1"/>
+                                <field name="company_filter" invisible="1"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="id_tree_testimonials" model="ir.ui.view">
+            <field name="name">website.team.tree</field>
+            <field name="model">testimonials.model</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="sequence" widget="handle"/>
+                    <field name="name"/>
+                    <field name="job_title"/>
+                    <field name="description"/>
+                    <field name="website_id"/>
+                    <field name="company_id"/>
+                    <field name="company_filter" invisible="1"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="id_testimonials_actions" model="ir.actions.act_window">
+            <field name="name">Testimonials</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">testimonials.model</field>
+            <field name="view_mode">tree,form</field>
+            <field
+                    name="view_ids"
+                    eval="[(5, 0, 0),
+                (0, 0, {'view_mode': 'tree', 'view_id': ref('id_tree_testimonials')}),
+                (0, 0, {'view_mode': 'form', 'view_id': ref('id_testimonials_form')}),
+            ]"
+            />
+        </record>
+
+        <menuitem
+                id="menu_testimonials"
+                parent="multi_themes_base.menu_website_content"
+                sequence="27"
+                name="Testimonials"
+                action="id_testimonials_actions"
+        />
+
+        <record id="website_testimonials_rule" model="ir.rule">
+            <field name="name">Success Stories</field>
+            <field name="model_id" ref="model_testimonials_model"/>
+            <field name="domain_force"
+            >[('company_id', 'in', company_ids + [False])]
+            </field
+            >
+        </record>
+    </data>
+</odoo>

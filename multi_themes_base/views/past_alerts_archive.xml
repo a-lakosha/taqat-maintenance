@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="id_form_view_past_alerts_archive" model="ir.ui.view">
+            <field name="name">Past Alerts Archive</field>
+            <field name="model">website.past.alerts.archive</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="company_filter" invisible="1"/>
+                                <field name="image" widget="image" options="{'size': [200,'']}"
+                                       invisible="company_filter not in ['relief_center']"
+                                       required="company_filter in ['relief_center']"/>
+                                <field name="name"
+                                       invisible="company_filter not in ['relief_center']"
+                                       required="company_filter in ['relief_center']"/>
+                                <field name="affected_areas"
+                                       invisible="company_filter not in ['relief_center']"
+                                       required="company_filter in ['relief_center']"/>
+                                <field name="affected_areas_description"
+                                       invisible="company_filter not in ['relief_center']"
+                                       required="company_filter in ['relief_center']"/>
+                                <field name="size_of_intervention"
+                                       invisible="company_filter not in ['relief_center']"
+                                       required="company_filter in ['relief_center']"/>
+                                <field name="number_of_beneficiaries"
+                                       invisible="company_filter not in ['relief_center']"
+                                       required="company_filter in ['relief_center']"/>
+                                <field name="sequence" invisible="1"/>
+                                <field name="company_id" invisible="1"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="id_tree_view_past_alerts_archive" model="ir.ui.view">
+            <field name="name">Past Alerts Archive</field>
+            <field name="model">website.past.alerts.archive</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="sequence" widget="handle"/>
+                    <field name="image" widget="image" options="{'size': [200,'']}"/>
+                    <field name="name"/>
+                    <field name="affected_areas"/>
+                    <field name="affected_areas_description"/>
+                    <field name="size_of_intervention"/>
+                    <field name="number_of_beneficiaries"/>
+                    <field name="website_id"/>
+                    <field name="company_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="id_action_past_alerts_archive" model="ir.actions.act_window">
+            <field name="name">Past Alerts Archive</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">website.past.alerts.archive</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_ids"
+                   eval="[(5, 0, 0),
+                (0, 0, {'view_mode': 'tree', 'view_id': ref('id_tree_view_past_alerts_archive')}),
+                (0, 0, {'view_mode': 'form', 'view_id': ref('id_form_view_past_alerts_archive')}),
+            ]"/>
+        </record>
+
+        <menuitem id="menu_past_alerts_archive" parent="multi_themes_base.menu_website_content"
+                  sequence="25" name="Past Alerts Archive" action="id_action_past_alerts_archive"/>
+
+        <record id="website_past_alerts_archive_rule" model="ir.rule">
+            <field name="name">Past Alerts Archive</field>
+            <field name="model_id" ref="model_website_past_alerts_archive"/>
+            <field name="domain_force">[('company_id', 'in', company_ids + [False])]</field>
+        </record>
+
+    </data>
+</odoo>

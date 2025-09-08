@@ -9,75 +9,68 @@
                    t-value="request.env['website.service.type'].search([])"/>
                 <t t-set="latest_posts"
                    t-value="request.env['blog.post'].search([], order='create_date desc', limit=7)"/>
+                <t t-set="testimonial_ids"
+                   t-value="request.env['testimonials.model'].search([], limit=7)"/>
 
                 <div id="wrap" class="oe_structure oe_empty">
                     <section class="pb72 hero_section text-white">
                         <div class="hero_section-inner">
                             <div class="container">
-                                <div class="row ">
-                                    <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column text-center text-md-start gap-lg-4 hero-txt o_animate o_anim_fade_in o_anim_from_left py-lg-5 py-3 ">
-                                        <h1 class="display-1">Premium maintenance &amp; renovation services</h1>
-                                        <h4>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor
-                                            incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                            nostrum
-                                            exercitationem ullam corporis suscipit laboriosam.
+                                <div class="row">
+                                    <!-- Text Column -->
+                                    <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column text-center text-md-start gap-lg-4 hero-txt o_animate o_anim_fade_in o_anim_from_left py-lg-5 py-3">
+                                        <h1 class="display-1 fw-bold">Premium maintenance &amp; renovation services</h1>
+                                        <h4 class="fw-normal">
+                                            Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor
+                                            incidunt ut labore et dolore magna aliqua...
                                         </h4>
                                         <div class="d-flex gap-3 flex-column flex-md-row">
-
-
-                                            <a class="btn btn-primary text-dark">Explore our services
+                                            <a class="btn btn-primary text-dark">
+                                                Explore our services
                                                 <i class="fa fa-long-arrow-right ps-3"/>
                                             </a>
-                                            <button class="btn btn-primary text-dark">
-                                                Contact Us
-                                            </button>
+                                            <button class="btn btn-primary text-dark">Contact Us</button>
                                         </div>
                                     </div>
-                                    <div class="col-lg-7 order-1 order-lg-2 d-flex gap-1 gap-lg-4 o_animate o_anim_fade_in  ">
+
+                                    <!-- Image Column -->
+                                    <div class="col-lg-7 order-1 order-lg-2 d-flex gap-1 gap-lg-4 o_animate o_anim_fade_in">
                                         <img src="/theme_maintenance/static/src/imgs/y_home/hero.png" alt="Hero1"
                                              class="w-100"/>
-
                                     </div>
                                 </div>
 
+                                <!-- Second Row -->
                                 <div class="row pt32">
-                                    <div class="col-lg-7   second-hero-row o_animate o_anim_fade_in">
+                                    <div class="col-lg-7 second-hero-row o_animate o_anim_fade_in">
                                         <img src="/theme_maintenance/static/src/imgs/y_home/bulider.png"
                                              alt="service_bulider" class="w-100 h-100"/>
                                     </div>
-                                    <div class="col-lg-5  second-hero-row o_animate o_anim_fade_in o_anim_from_bottom">
-                                        <h4 class="mb-lg-3">
-                                            Why Choose Taqat for Facilities Management?
-                                        </h4>
-                                        <h2 class="trusted-heading">
-                                            Trusted &amp; Unified services
-                                        </h2>
+                                    <div class="col-lg-5 second-hero-row o_animate o_anim_fade_in o_anim_from_bottom">
+                                        <h4 class="mb-lg-3">Why Choose Taqat for Facilities Management?</h4>
+                                        <h2 class="trusted-heading fw-semibold">Trusted &amp; Unified services</h2>
                                         <ul class="list-unstyled d-flex flex-column gap-2 gap-lg-4">
                                             <li>
-                                                <h3>Years of Trusted Property Services</h3>
-                                                <h4>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
-                                                    tempor incidunt ut labore et dolore magna aliqua
+                                                <h3 class="fw-semibold">Years of Trusted Property Services</h3>
+                                                <h4 class="fw-normal">Lorem ipsum dolor sit amet, consectetur adipisci
+                                                    elit...
                                                 </h4>
                                             </li>
                                             <li>
-                                                <h3>Flexible Plans for Homes &amp; Businesses</h3>
-                                                <h4>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
-                                                    tempor incidunt ut labore et dolore magna aliqua
+                                                <h3 class="fw-semibold">Flexible Plans for Homes &amp; Businesses</h3>
+                                                <h4 class="fw-normal">Lorem ipsum dolor sit amet, consectetur adipisci
+                                                    elit...
                                                 </h4>
                                             </li>
                                             <li>
-                                                <h3>Certified Support, Anytime You Need It.</h3>
-                                                <h4>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
-                                                    tempor incidunt ut labore et dolore magna aliqua
+                                                <h3 class="fw-semibold">Certified Support, Anytime You Need It.</h3>
+                                                <h4 class="fw-normal">Lorem ipsum dolor sit amet, consectetur adipisci
+                                                    elit...
                                                 </h4>
                                             </li>
-
                                         </ul>
                                     </div>
-
                                 </div>
-
-
                             </div>
                         </div>
                     </section>
@@ -86,49 +79,47 @@
                         <div class="container">
                             <t t-foreach="service_type_ids" t-as="service_type">
                                 <div class="mb-lg-5 pb-3">
-                                    <h1 class="display-1 mb-lg-3" t-field="service_type.name"/>
-                                    <h4 t-field="service_type.description"/>
+                                    <h1 class="display-1 mb-lg-3 fw-bold" t-field="service_type.name"/>
+                                    <h4 class="fw-normal" t-field="service_type.description"/>
                                 </div>
-                                <div class="row cards-container ">
+                                <div class="row cards-container">
                                     <t t-foreach="service_type.service_ids" t-as="service">
-                                        <div class="col-lg-6 col-xl-3 cards-container-item">
+                                        <div class="col-lg-6 col-xl-3 cards-container-item mb-5">
                                             <a t-attf-href="/service/{{slug(service)}}" class="d-block w-100">
-
-
-                                                <div class=" position-relative span-div w-100"
+                                                <div class="position-relative span-div w-100"
                                                      t-attf-style="background-image:url(/web/image/website.service/{{service.id}}/image_512)">
                                                     <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
                                                          class="position-absolute"/>
-                                                    <span class="flip-badge  text-white fw-bold pe-4 ps-5 py-3">
-                                                        <span class="front bg-primary rounded-pill d-flex align-items-center justify-content-center  position-absolute"
-                                                              t-out="service_index + 1"/>   <!-- number comes from CSS counter -->
+                                                    <span class="flip-badge text-white fw-bold pe-4 ps-5 py-3">
+                                                        <span class="front bg-primary rounded-pill d-flex align-items-center justify-content-center position-absolute"
+                                                              t-out="service_index + 1"/>
                                                         <span class="back bg-primary rounded-pill d-flex align-items-center justify-content-center position-absolute">
                                                             <i t-attf-class="bi text-white {{service.icon}}"/>
                                                         </span>
                                                     </span>
                                                 </div>
                                                 <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
-                                                    <h5 t-field="service.tec_name"/>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-lg-6 col-xl-3 d-flex flex-column align-items-center justify-content-start cards-container-item ">
-                                            <a href="#" class="w-100  "
-                                               style="aspect-ratio:3/2;">
-                                                <div class="bg-dark position-relative contact-bg p-4 h-100 d-flex justify-content-center align-items-center  text-center    ">
-
-                                                    <h3 class="text-white">Contact us now and get the best quote</h3>
-                                                </div>
-                                                <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center w-100">
-                                                    <h5>Contact us</h5>
+                                                    <h5 class="fw-semibold" t-field="service.tec_name"/>
                                                 </div>
                                             </a>
                                         </div>
                                     </t>
+                                    <!-- Contact Card -->
+                                    <div class="col-lg-6 col-xl-3 d-flex flex-column align-items-center justify-content-start cards-container-item mb-5">
+                                        <a href="#" class="w-100" style="aspect-ratio:3/2;">
+                                            <div class="bg-dark position-relative contact-bg p-4 h-100 d-flex justify-content-center align-items-center text-center">
+                                                <h3 class="text-white fw-semibold">Contact us now and get the best
+                                                    quote
+                                                </h3>
+                                            </div>
+                                            <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center w-100">
+                                                <h5 class="fw-semibold">Contact us</h5>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </t>
                         </div>
-
                     </section>
 
                     <section class="pb72 pt72 bg-light engineer_section">
@@ -443,96 +434,108 @@
 
                     </section>
 
-                    <!--                    <section class="pt120 pb120 reviews_section">-->
-                    <!--                        <div class="d-flex flex-column align-items-center py-lg-5">-->
-                    <!--                            <h4 class="text-primary">Customer Reviews</h4>-->
-                    <!--                            <h1 class="text-white text-center">What our customers say about us</h1>-->
-                    <!--                        </div>-->
+                    <section class="pt120 pb120 reviews_section" t-if="testimonial_ids">
+                        <div class="d-flex flex-column align-items-center py-lg-5">
+                            <h4 class="text-primary">Customer Reviews</h4>
+                            <h1 class="text-white text-center">What our customers say about us</h1>
+                        </div>
 
-                    <!--                        <div class="d-flex flex-nowrap justify-content-lg-start gap-5 cards_container pb-lg-5">-->
-                    <!--                            <t t-foreach="request.env['website.review'].search([], limit=6)" t-as="review">-->
-                    <!--                                <div class="card-bg-light p-4 text-white position-relative">-->
+                        <div class="d-flex flex-nowrap justify-content-lg-start gap-5 cards_container pb-lg-5">
+                            <t t-foreach="testimonial_ids" t-as="review">
+                                <div class="card-bg-light p-4 text-white position-relative">
 
-                    <!--                                    &lt;!&ndash; Quote Icon &ndash;&gt;-->
-                    <!--                                    <i class="fa fa-quote-right position-absolute end-0 text-white-50 me-3 mb-3 quote-icon"/>-->
+                                    <!-- Quote Icon -->
+                                    <i class="fa fa-quote-right position-absolute end-0 text-white-50 me-3 mb-3 quote-icon"/>
 
-                    <!--                                    &lt;!&ndash; User info &ndash;&gt;-->
-                    <!--                                    <div class="d-flex align-items-center mb-3">-->
-                    <!--                                        <img t-att-src="review.image_1920 and '/web/image/website.review/%s/image_1920' % review.id or '/theme_maintenance/static/src/imgs/y_home/person.svg'"-->
-                    <!--                                             t-att-alt="review.name"-->
-                    <!--                                             class="rounded-circle me-3"-->
-                    <!--                                             width="48" height="48"/>-->
-                    <!--                                        <div>-->
-                    <!--                                            <h6 class="mb-0 fw-bold" t-field="review.name"/>-->
-                    <!--                                            <small class="text-light" t-out="review.designation or ''"/>-->
-                    <!--                                        </div>-->
-                    <!--                                    </div>-->
+                                    <!-- User info -->
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img t-att-src="'/web/image/testimonials.model/%s/img_url' % review.id or '/theme_maintenance/static/src/imgs/y_home/person.svg'"
+                                             t-att-alt="review.name"
+                                             class="rounded-circle me-3"
+                                             width="48" height="48" style="object-fit:cover;"/>
+                                        <div>
+                                            <h6 class="mb-0 fw-bold" t-field="review.name"/>
+                                            <small class="text-light" t-field="review.job_title"/>
+                                        </div>
+                                    </div>
 
-                    <!--                                    &lt;!&ndash; Rating &ndash;&gt;-->
-                    <!--                                    &lt;!&ndash; Rating &ndash;&gt;-->
-                    <!--                                    <div class="d-flex align-items-center mb-3">-->
-                    <!--                                        <div class="text-warning me-2">-->
-                    <!--                                            <t t-set="full_stars" t-value="int(review.rating)"/>-->
-                    <!--                                            <t t-set="has_half_star" t-value="(review.rating % 1) &gt;= 0.5"/>-->
-                    <!--                                            <t t-set="empty_stars"-->
-                    <!--                                               t-value="5 - full_stars - (1 if has_half_star else 0)"/>-->
+                                    <!-- Rating -->
+                                    <div class="d-flex align-items-center mb-3">
+                                        <div class="text-warning me-2">
+                                            <!-- Set full_stars (integer value) and half_star as boolean (True/False) -->
+                                            <t t-set="full_stars" t-value="int(float(review.rating))"/>
+                                            <t t-set="half_star" t-value="(float(review.rating) - full_stars) >= 0.5"/>
 
-                    <!--                                            &lt;!&ndash; Full stars &ndash;&gt;-->
-                    <!--                                            <t t-foreach="range(full_stars)" t-as="star">-->
-                    <!--                                                <i class="fa fa-star"/>-->
-                    <!--                                            </t>-->
+                                            <!-- Empty stars calculation -->
+                                            <t t-set="empty_stars" t-value="5 - full_stars - (1 if half_star else 0)"/>
 
-                    <!--                                            &lt;!&ndash; Half star &ndash;&gt;-->
-                    <!--                                            <t t-if="has_half_star">-->
-                    <!--                                                <i class="fa fa-star-half-o"/>-->
-                    <!--                                            </t>-->
+                                            <!-- Full stars -->
+                                            <t t-foreach="range(full_stars)" t-as="star">
+                                                <i class="fa fa-star"/>
+                                            </t>
 
-                    <!--                                            &lt;!&ndash; Empty stars &ndash;&gt;-->
-                    <!--                                            <t t-foreach="range(empty_stars)" t-as="star">-->
-                    <!--                                                <i class="fa fa-star-o"/>-->
-                    <!--                                            </t>-->
-                    <!--                                        </div>-->
-                    <!--                                        <span class="fw-bold" t-out="review.rating"/>-->
-                    <!--                                    </div>-->
+                                            <!-- Half star -->
+                                            <t t-if="half_star">
+                                                <i class="fa fa-star-half-o"/>
+                                            </t>
+
+                                            <!-- Empty stars -->
+                                            <t t-foreach="range(empty_stars)" t-as="star">
+                                                <i class="fa fa-star-o"/>
+                                            </t>
+                                        </div>
+                                        <span class="fw-bold" t-out="review.rating"/>
+                                    </div>
 
 
-                    <!--                                    &lt;!&ndash; Review text &ndash;&gt;-->
-                    <!--                                    <p class="mb-0 small" t-out="review.review"/>-->
-                    <!--                                </div>-->
-                    <!--                            </t>-->
-                    <!--                        </div>-->
-                    <!--                    </section>-->
+                                    <!-- Review text -->
+                                    <p class="mb-0 small" t-out="review.description"/>
+                                </div>
+                            </t>
+                        </div>
+                    </section>
 
                     <section class="more_blogs pt72 pb72">
                         <div class="container position-relative">
 
                             <!-- Left arrow -->
-                            <button class="scroll-btn scroll-left btn btn-light position-absolute top-50 start-0 translate-middle-y z-3 p-2">
-                                <i class="fa fa-long-arrow-left"/>
+                            <button class="scroll-btn scroll-left btn btn-light position-absolute top-50 start-0 translate-middle-y z-3 p-2 d-flex justify-content-center align-items-center">
+                                <i class="fa fa-long-arrow-left"></i>
                             </button>
 
                             <!-- Section Header -->
                             <div class="d-flex flex-column align-items-center gap-lg-3 pb-lg-5 pb-3 text-center">
                                 <h4 class="text-primary">Blogs</h4>
-                                <h1>Our Blog - Insights &amp; Inspiration</h1>
-                                <h4>Lorem ipsum dolor sit amet, consectetur adipisci elit...</h4>
+                                <h1>Latest trends &amp; Inspiring Ideas</h1>
+                                <h4 class="text-700">Discover trends and expert perspectives in facility management,
+                                    with in-depth
+                                    analyses on best practices and innovative solutions.
+                                    Gain valuable knowledge from our experts on sustainability, digital transformation,
+                                    and intelligent maintenance strategies.
+                                    Our blog is your reliable hub for insights that drive operational efficiency,
+                                    sustainable practices, and excellence in facility management.
+                                </h4>
                             </div>
 
                             <!-- Owl Carousel -->
                             <div class="owl-carousel blog-carousel">
                                 <t t-foreach="latest_posts" t-as="post">
+                                    <t t-set="image_url"
+                                       t-value="post._get_background(height=_resize_height, width=_resize_width).replace('url(', '').replace(')', '').strip('\'\'')"/>
                                     <div class="item">
-                                        <div class="contain-card d-flex justify-content-center position-relative">
-                                            <t t-set="image_url"
-                                               t-value="post._get_background(height=_resize_height, width=_resize_width).replace('url(', '').replace(')', '').strip('\'\'')"
-                                            />
-                                            <img t-att-src="image_url"
-                                                 class="w-100 blog_img" t-att-alt="post.name"/>
-                                            <div class="position-absolute bg-white d-flex flex-column align-items-center rounded-3 p-3 w-75 gap-lg-2 contain-card-txt">
-                                                <h4 class="fw-bold" t-field="post.name"/>
-                                                <h6 t-out="post.subtitle or ''"/>
+                                        <div class="contain-card position-relative overflow-hidden rounded-3 w-100">
+                                            <!-- Background image -->
+                                            <div t-att-style="'background-image: url(%s);' % image_url"
+                                                 class="blog_img position-absolute top-0 start-0 w-100 h-100 bg-cover bg-center">
+                                            </div>
+
+                                            <!-- Text overlay -->
+                                            <div class="position-absolute bg-white d-flex flex-column align-items-center rounded-3 p-3 w-75 gap-lg-2 contain-card-txt"
+                                                 style="bottom: 20px; left: 50%; transform: translateX(-50%);">
+                                                <h4 class="fw-bold text-center" t-field="post.name"/>
+                                                <h6 class="text-center" t-out="post.subtitle or ''"/>
                                                 <a t-att-href="post.website_url" class="text-dark">Read More
-                                                    <i class="fa fa-long-arrow-right ps-3"/>
+                                                    <i class="fa fa-long-arrow-right ps-3"></i>
                                                 </a>
                                             </div>
                                         </div>
@@ -541,14 +544,14 @@
                             </div>
 
                             <!-- Right arrow -->
-                            <button class="scroll-btn scroll-right btn btn-light position-absolute top-50 end-0 translate-middle-y z-3 p-2">
-                                <i class="fa fa-long-arrow-right"/>
+                            <button class="scroll-btn scroll-right btn btn-light position-absolute top-50 end-0 translate-middle-y z-3 p-2 d-flex justify-content-center align-items-center">
+                                <i class="fa fa-long-arrow-right"></i>
                             </button>
 
-                            <!-- Button-->
+                            <!-- Button -->
                             <div class="d-flex justify-content-center mt-lg-5">
                                 <a t-attf-href="/blog" class="btn btn-primary text-dark">Discover All Blogs
-                                    <i class="fa fa-long-arrow-right"/>
+                                    <i class="fa fa-long-arrow-right"></i>
                                 </a>
                             </div>
 
