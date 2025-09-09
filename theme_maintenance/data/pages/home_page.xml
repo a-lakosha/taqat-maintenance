@@ -78,7 +78,7 @@
                     <section class="pt72 pb72 technical_services">
                         <div class="container">
                             <t t-foreach="service_type_ids" t-as="service_type">
-                                <div class="mb-lg-5 pb-3">
+                                <div class="my-lg-5 my-3 pb-3">
                                     <h1 class="display-1 mb-lg-3 fw-bold" t-field="service_type.name"/>
                                     <h4 class="fw-normal" t-field="service_type.description"/>
                                 </div>

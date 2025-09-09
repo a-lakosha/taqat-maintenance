@@ -57,7 +57,7 @@
                         </div>
                     </section>
                     <section class="pt72 pb72">
-                        <div class="container">
+                        <div class="container pt-lg-4">
                             <div class="row justify-content-evenly ">
                                 <div class="col-lg-5 d-flex flex-column gap-2 gap-lg-4">
                                     <h4 class="text-primary">
@@ -123,45 +123,53 @@
                         </div>
                     </section>
                     <section class="pt72 pb72">
-                        <div class="d-flex flex-column align-items-center  mb-5">
-                            <h2 class="text-primary">
-                                The value of the service to the beneficiary
-                            </h2>
-                            <h2 class="mb-2 mb-lg-4">How does this service contribute to real estate preservation?</h2>
-                            <h4 class="text-center" style="max-width:870px;">Lorem ipsum dolor sit amet, consectetur
-                                adipisci elit, sed eiusmod tempor incidunt ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem
-                                ullam corporis
-                            </h4>
-                        </div>
-                        <div class="d-flex flex-lg-row flex-column gap-3 gap-lg-4 align-items-center justify-content-center">
-                            <div class="d-flex flex-column p-4 bg-light rounded-4 w-service-card text-center">
-                                <h3>Lorem ipsum dolor</h3>
-                                <h4>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt
-                                    ut labore et dolore magna aliqua. Ut enim
+                        <div class="container pb-lg-4">
+
+
+                            <div class="d-flex flex-column align-items-center  mb-5">
+                                <h2 class="text-primary">
+                                    The value of the service to the beneficiary
+                                </h2>
+                                <h2 class="mb-2 mb-lg-4">How does this service contribute to real estate preservation?
+                                </h2>
+                                <h4 class="text-center" style="max-width:870px;">Lorem ipsum dolor sit amet, consectetur
+                                    adipisci elit, sed eiusmod tempor incidunt ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem
+                                    ullam corporis
                                 </h4>
+                            </div>
+                            <div class="d-flex flex-lg-row flex-column gap-3 gap-lg-4 align-items-center justify-content-center">
+                                <div class="d-flex flex-column p-4 bg-light rounded-4 w-service-card text-center">
+                                    <h3>Lorem ipsum dolor</h3>
+                                    <h4>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor
+                                        incidunt
+                                        ut labore et dolore magna aliqua. Ut enim
+                                    </h4>
+
+                                </div>
+                                <div class="d-flex flex-column p-4 bg-light rounded-4 w-service-card text-center">
+                                    <h3>Lorem ipsum dolor</h3>
+                                    <h4>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor
+                                        incidunt
+                                        ut labore et dolore magna aliqua. Ut enim
+                                    </h4>
+
+                                </div>
+                                <div class="d-flex flex-column p-4 bg-light rounded-4 w-service-card text-center">
+                                    <h3>Lorem ipsum dolor</h3>
+                                    <h4>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor
+                                        incidunt
+                                        ut labore et dolore magna aliqua. Ut enim
+                                    </h4>
+
+                                </div>
+
 
                             </div>
-                            <div class="d-flex flex-column p-4 bg-light rounded-4 w-service-card text-center">
-                                <h3>Lorem ipsum dolor</h3>
-                                <h4>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt
-                                    ut labore et dolore magna aliqua. Ut enim
-                                </h4>
-
-                            </div>
-                            <div class="d-flex flex-column p-4 bg-light rounded-4 w-service-card text-center">
-                                <h3>Lorem ipsum dolor</h3>
-                                <h4>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt
-                                    ut labore et dolore magna aliqua. Ut enim
-                                </h4>
-
-                            </div>
-
-
                         </div>
                     </section>
                     <section class="pb72 pt72 dark-bg text-white">
-                        <div class="container">
+                        <div class="container py-lg-4">
                             <div class="row justify-content-center gap-5 align-items-center">
 
 
@@ -177,23 +185,23 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="row ">
-                                        <div class="col-lg-6 pb-3">
+                                        <div class="col-md-4 col-lg-6 pb-3">
                                             <h2>Businesses</h2>
                                             <h4>Lorem ipsum dolor sita</h4>
                                         </div>
-                                        <div class="col-lg-6 pb-3">
+                                        <div class="col-md-4 col-lg-6 pb-3">
                                             <h2>Compunds</h2>
                                             <h4>Lorem ipsum dolor sita</h4>
                                         </div>
-                                        <div class="col-lg-6 pb-3">
+                                        <div class="col-md-4 col-lg-6 pb-3">
                                             <h2>Hospitals</h2>
                                             <h4>Lorem ipsum dolor sita</h4>
                                         </div>
-                                        <div class="col-lg-6 pb-3">
+                                        <div class="col-md-4 col-lg-6 pb-3">
                                             <h2>Hotels</h2>
                                             <h4>Lorem ipsum dolor sita</h4>
                                         </div>
-                                        <div class="col-lg-6 pb-3">
+                                        <div class="col-md-4 col-lg-6 pb-3">
                                             <h2>Facilities</h2>
                                             <h4>Lorem ipsum dolor sita</h4>
                                         </div>
@@ -207,7 +215,7 @@
                         <div class="pb72 pt72 bottom_bg">
 
 
-                            <div class="container ">
+                            <div class="container py-lg-4 ">
                                 <div class="d-flex flex-column gap-2 gap-lg-4">
 
                                     <div>
@@ -374,12 +382,13 @@
                     </section>
                     <section class="contact_us">
                         <div class="contact_us-inner ">
-                            <div class="container p-5">
+                            <div class="container py-5">
                                 <form action="/website/form/" method="post" enctype="multipart/form-data"
                                       class="o_mark_required bg-white p-4 rounded-5" data-mark="*" data-pre-fill="true"
                                       data-model_name="mail.mail" data-success-mode="redirect"
                                       data-success-page="/contactus-thank-you" style="max-width:800px;">
                                     <div class="s_website_form_rows row s_col_no_bgcolor">
+                                        <h1 class="mb-lg-4 mb-3">Contact us</h1>
 
                                         <div data-name="Field"
                                              class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required"
@@ -412,15 +421,23 @@
                                             </label>
 
 
-                                            <select class="form-select s_website_form_input" name="Service type"
-                                                    id="omx1lb8s61d" required="">
+                                            <select class="form-select s_website_form_input"
+                                                    name="service_type_id"
+                                                    id="service_type_id"
+                                                    required="required">
+
+                                                <!-- Placeholder (default) -->
+                                                <option value="" selected="selected" disabled="disabled">Choose a
+                                                    service
+                                                </option>
+
+                                                <!-- Real options -->
                                                 <t t-foreach="service_type_ids" t-as="service_type">
-                                                    <option value="Core" selected="selected"
-                                                            t-field="service_type.name"/>
+                                                    <option t-att-value="service_type.id">
+                                                        <t t-out="service_type.name"/>
+                                                    </option>
                                                 </t>
-
                                             </select>
-
                                         </div>
                                         <div data-name="Field"
                                              class="s_website_form_field mb-3 col-12 s_website_form_model_required d-lg-none o_snippet_desktop_invisible"
@@ -479,7 +496,7 @@
 
                     </section>
                     <section class="more_blogs pt72 pb72">
-                        <div class="container position-relative">
+                        <div class="container position-relative py-lg-4 ">
 
                             <!-- Left arrow -->
                             <button class="scroll-btn scroll-left btn btn-light position-absolute top-50 start-0 translate-middle-y z-3 p-2 d-flex justify-content-center align-items-center">

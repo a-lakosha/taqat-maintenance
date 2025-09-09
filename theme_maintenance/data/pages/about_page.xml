@@ -311,7 +311,7 @@
 
                         </div>
                     </section>
-                    <section class="s_three_columns o_cc o_cc2 pt32 pb32 o_colored_level" data-vcss="001"
+                    <section class="s_three_columns o_cc  pt32 pb32 o_colored_level" data-vcss="001"
                              data-snippet="s_three_columns" data-name="Columns" style="background-image: none;">
                         <div class="container">
                             <div class="d-flex flex-column text-center gap-3">
