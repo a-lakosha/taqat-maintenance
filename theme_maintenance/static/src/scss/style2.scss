@@ -11,6 +11,23 @@ h2, h3 {
   font-weight: 500;
 }
 
+.w-fit {
+  width: fit-content;
+}
+
+.w-service-card {
+  max-width: 352px;
+}
+
+.dot-position {
+  top: -28px;
+  left: 25px;
+}
+
+.dot-vertical {
+  left: -22px;
+}
+
 //Hero Styles
 .hero_section {
   background: linear-gradient(180deg, #1C2126 0%, #22282D 24.36%);
@@ -117,7 +134,7 @@ h2, h3 {
   }
 }
 
-.engineer_section {
+.bottom_bg {
   background: url(../imgs/y_home/bg2.png) bottom / contain no-repeat;
 }
 
@@ -435,4 +452,16 @@ img_hero4 {
 
 .bg-center {
   background-position: center;
+}
+
+.contact_us {
+  background: url(../imgs/y_services/two-colleagues-factory.png) lightgray 50% / cover no-repeat;
+  border-radius: 50px;
+
+
+  .contact_us-inner {
+    border-radius: 50px;
+    background: linear-gradient(270deg, #1C2126 0%, rgba(28, 33, 38, 0.80) 100%);
+
+  }
 }
