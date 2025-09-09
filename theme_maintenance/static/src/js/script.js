@@ -70,7 +70,7 @@ $(document).ready(function () {
                 0: {items: 1},
                 576: {items: 1},
                 768: {items: 2},
-                992: {items: 3} // matches your 3 columns on desktop
+                992: {items: 4} // matches your 3 columns on desktop
             }
         });
     }
