@@ -5,11 +5,7 @@
                   active="True">
             <xpath expr="//div[@id='wrap']" position="replace">
                 <div id="wrap" class="oe_structure oe_empty">
-                    <section>
-                        <div class="container">
 
-                        </div>
-                    </section>
                 </div>
             </xpath>
         </template>

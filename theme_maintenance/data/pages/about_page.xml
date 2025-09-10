@@ -5,7 +5,354 @@
             <t t-set="additional_title" t-valuef="About Us"/>
             <t t-call="website.layout">
                 <div id="wrap" class="oe_structure main__content-area-aboutus">
+                    <section class="hero overflow-hidden py-5">
+                        <div class="inner-about">
+                            <div class="container-fluid">
+                                <div class="hero-img">
+                                    <img src="\theme_maintenance\static\src\imgs\y-about\hero_about1.png"/>
+                                    <img src="\theme_maintenance\static\src\imgs\y-about\hero_about4.png"/>
+                                    <img src="\theme_maintenance\static\src\imgs\y-about\hero_about2 .png"/>
+                                    <img src="\theme_maintenance\static\src\imgs\y-about\hero_about3.png"/>
 
+                                </div>
+                                <div class="d-flex flex-column text-center justify-content-center align-items-center gap-lg-4 gap-3 py-lg-5 py-3 mx-auto hero-content z-index-3">
+                                    <h1 class="display-1 ">Pioneers of Facility Management in
+                                        Qatar
+                                    </h1>
+                                    <h4>Drawing on proven expertise and innovative
+                                        vision,
+                                        we provide extraordinary
+                                        facility management solutions founded on quality, sustainability, and
+                                        creative transformation.
+                                        As leaders in Qatar’s facility management industry, we harmonize human
+                                        expertise and advanced technology to shape secure, high-performing, and
+                                        future-focused environments that foster success for organizations and
+                                        individuals.
+                                    </h4>
+                                    <div class="hero-btn d-flex gap-3 flex-md-row hero-btn-about">
+                                        <button class="btn btn-primary text-dark">Explore our services
+                                            <i class="fa fa-long-arrow-right ps-3"></i>
+                                        </button>
+                                        <button class="btn btn-primary text-dark">Contact us</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                    <section class=" facility-management pt72">
+                        <div class="container pt-5">
+                            <div class="row gy-4 ">
+                                <div class="col-lg-6 order-2 order-lg-1 ">
+                                    <div class="row gy-3">
+                                        <div class="col-md-6">
+                                            <h4 class="text-primary ">Our Vision</h4>
+                                            <h2>To be the first choice in maintenance</h2>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h4>To lead the facility management industry in Qatar, and
+                                                become the top
+                                                choice for Qatari clients by delivering creative and sustainable
+                                                solutions that boost facilities performance, while adhering to the
+                                                highest international standards and fostering continuous innovation.
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 order-1 order-lg-2 ">
+                                    <div class="row gy-3">
+                                        <div class="col-md-6">
+                                            <h4 class="text-primary ">Our Mission</h4>
+                                            <h2>Keeping every property safe and efficient</h2>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h4>We are committed to providing integrated facility
+                                                management services
+                                                through innovative experts and intelligent technology. 
+                                            </h4>
+                                            <h4>With passion, we strive to create safe, efficient, and
+                                                sustainable
+                                                facilities to meet our clients’ needs and exceed their expectations.
+                                            </h4>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row flex-lg-nowrap flex-wrap pt-lg-5 pt-2 overflow-x-auto justify-content-start about-person">
+
+                            <img src="\theme_maintenance\static\src\imgs\y-about\person-working.png"
+                                 alt="working-man" class="col-lg-3 py-lg-0 py-2"/>
+                            <img src="\theme_maintenance\static\src\imgs\y-about\bearded-gardener.png"
+                                 alt="gardner" class="col-lg-3 col-6 py-lg-0 py-2"/>
+                            <img src="\theme_maintenance\static\src\imgs\y-about\manager-supervisor.png"
+                                 alt="supervisor" class="col-lg-3 col-6 py-lg-0 py-2"/>
+                            <img src="\theme_maintenance\static\src\imgs\y-about\unrecognizable-man.png" alt="man"
+                                 class="col-lg-3 col-6 py-lg-0 py-2"/>
+                            <img src="\theme_maintenance\static\src\imgs\y-about\team-leader.png"
+                                 alt="team-leader" class="col-lg-3 col-6 py-lg-0 py-2"/>
+                        </div>
+                    </section>
+                    <section class="engineer-section pt72 pb72 ">
+                        <div class="inner-manger pt-lg-5 pb-lg-5 ">
+                            <div class="container pb-lg-5">
+                                <div class="row gy-4 ">
+                                    <div class="col-lg-5">
+                                        <div class="position-relative about-manager h-100">
+                                            <img src="\theme_maintenance\static\src\imgs\y-about\business-manager-engineer.png"
+                                                 class="img-fluid rounded-4 position-relative taqat-img w-100 h-100"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7 ps-lg-5">
+                                        <h4 class="text-primary">Our Values</h4>
+                                        <h2>Values at the Core of Every Step</h2>
+                                        <h4>At Taqaat, we believe that quality work starts from within, from the
+                                            principles we uphold every day. We seek to build relationships based on
+                                            trust, commitment, and mutual respect.
+                                        </h4>
+                                        <ul class="list-unstyled values-list-bs">
+                                            <li class="row g-3 align-items-start py-2">
+                                                <div class="col-12 col-md-4 col-lg-3">
+                                                    <h3 class="h5 fw-semibold mb-0">Professionalism</h3>
+                                                </div>
+                                                <div class="col-12 col-md-8 col-lg-9 desc">
+                                                    <h6 class="mb-0">Through providing services with extraordinary
+                                                        quality
+                                                        and discipline to exceed client expectations.
+                                                    </h6>
+                                                </div>
+                                            </li>
+
+                                            <li class="row g-3 align-items-start py-2">
+                                                <div class="col-12 col-md-4 col-lg-3">
+                                                    <h3 class="h5 fw-semibold mb-0">Collaboration</h3>
+                                                </div>
+                                                <div class="col-12 col-md-8 col-lg-9 desc">
+                                                    <h6 class="mb-0">By harnessing the power of teamwork to achieve
+                                                        excellence in every project.
+                                                    </h6>
+                                                </div>
+                                            </li>
+                                            <li class="row g-3 align-items-start py-2">
+                                                <div class="col-12 col-md-4 col-lg-3">
+                                                    <h3 class="h5 fw-semibold mb-0">Sustainability</h3>
+                                                </div>
+                                                <div class="col-12 col-md-8 col-lg-9 desc">
+                                                    <h6 class="mb-0">Through embedding eco-friendly practices and green
+                                                        technologies to protect future resources.
+                                                    </h6>
+                                                </div>
+                                            </li>
+                                            <li class="row g-3 align-items-start py-2">
+                                                <div class="col-12 col-md-4 col-lg-3">
+                                                    <h3 class="h5 fw-semibold mb-0">Digital Transformation &amp;
+                                                        Innovation
+                                                    </h3>
+                                                </div>
+                                                <div class="col-12 col-md-8 col-lg-9 desc">
+                                                    <h6 class="mb-0">We are committed to leveraging the latest
+                                                        technologies
+                                                        in facility management to provide innovative, efficient, and
+                                                        cost-effective solutions.
+                                                    </h6>
+                                                </div>
+                                            </li>
+                                            <li class="row g-3 align-items-start py-2">
+                                                <div class="col-12 col-md-4 col-lg-3">
+                                                    <h3 class="h5 fw-semibold mb-0">Client Focus</h3>
+                                                </div>
+                                                <div class="col-12 col-md-8 col-lg-9 desc">
+                                                    <h6 class="mb-0">We prioritize customer experience in every stage of
+                                                        our
+                                                        solutions development, creating enduring relationships based on
+                                                        trust and satisfaction.
+                                                    </h6>
+                                                </div>
+                                            </li>
+                                            <li class="row g-3 align-items-start py-2">
+                                                <div class="col-12 col-md-4 col-lg-3">
+                                                    <h3 class="h5 fw-semibold mb-0">Agility</h3>
+                                                </div>
+                                                <div class="col-12 col-md-8 col-lg-9 desc">
+                                                    <h6 class="mb-0">By acting quickly and efficiently to address all
+                                                        needs
+                                                        and urgent situations
+                                                    </h6>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="questions pt72 pb72">
+                        <div class="container text-center py-lg-4">
+                            <div class="row  justify-content-center text-center">
+                                <div class="col-lg-10 col-xl-8 ">
+                                    <div class="py-4 border-bottom border-2 border-primary">
+                                        <h2>Your Questions Matter… Let’s Connect!</h2>
+                                        <h4>Whether you're a new client or a
+                                            long-term
+                                            partner, we know
+                                            you have questions.
+                                            Here
+                                            we answer the most common queries to make your experience with Taqat
+                                            Property
+                                            Maintenance easier.
+                                        </h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row justify-content-center text-center">
+                                <div class="col-lg-10 col-xl-8">
+                                    <div class="py-4  border-bottom border-2 border-primary">
+                                        <h3 class="pb16">What services does Taqat Property Maintenance offer
+                                            specifically?
+                                        </h3>
+                                        <h6>We offer a full range of maintenance
+                                            services, including hard
+                                            maintenance such as: Maintenance of infrastructure, equipment, and technical
+                                            systems, as well as soft maintenance such as: Cleaning, hospitality,
+                                            security,
+                                            landscaping, waste management, and recreational facility services. All of
+                                            our
+                                            services are designed to meet the needs of residential, commercial, and
+                                            industrial properties.
+                                        </h6>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row justify-content-center g-0">
+                                <div class="col-lg-10 col-xl-8">
+                                    <div class="py-4  border-bottom border-2 border-primary">
+                                        <h3 class="fw-bold mb-2">What services do you provide?</h3>
+                                        <h6 class="mb-0 text-muted small">
+                                            We provide a full suite of solutions, including system maintenance,
+                                            cleaning, security, landscaping, waste management, and customized services
+                                            for residential and commercial properties.
+                                        </h6>
+                                    </div>
+                                    <div class="py-4 border-bottom border-2 border-primary">
+                                        <h3 class="fw-bold mb-2">Are emergency services available 24/7?</h3>
+                                        <h6 class="mb-0 text-muted small">Absolutely… Our technical teams are on standby
+                                            day and night, ensuring a rapid response within 60 minutes in our coverage
+                                            areas.
+                                        </h6>
+                                    </div>
+
+                                    <div class="py-4  border-bottom border-2 border-primary">
+                                        <h3 class="fw-bold mb-2">Do I need an annual contract?</h3>
+                                        <h6 class="mb-0 text-muted small">Not at all, as we provide flexible service
+                                            models, from annual contracts to on-demand requests, with packages designed
+                                            to fit every requirement.
+                                        </h6>
+                                    </div>
+
+                                    <div class="py-4  border-bottom border-2 border-primary">
+                                        <h3 class="fw-bold mb-2">Why choose Taqat for Facility Management?</h3>
+                                        <h6 class="mb-0 text-muted small">We provide an experienced team, advanced
+                                            technologies, competitive fees, and fast response times… all dedicated to
+                                            delivering quality and efficiency in every project.
+                                        </h6>
+                                    </div>
+
+                                    <div class="py-4 ">
+                                        <h3 class="fw-bold mb-2">Do you serve only residential properties?</h3>
+                                        <h6 class="mb-0 text-muted small">No, we cater to a wide range of properties,
+                                            including residential communities, commercial towers, government facilities,
+                                            and industrial sites, with solutions customized for each.
+                                        </h6>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </section>
+                    <section class="pt72 pb72">
+                        <div class="container">
+                            <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                                <h6 class="text-primary">Our team</h6>
+                                <h1>Professionalism Inspiring Excellence… Expertise Creating Impact</h1>
+                                <h4 class="text-muted small">We believe outstanding facility management starts with
+                                    exceptional
+                                    people. That’s why our team consists of a distinguished team of experts,
+                                    technicians, and consultants who have the passion and possess exceptional skills to
+                                    uphold the highest standards of quality and sustainability to deliver results that
+                                    go beyond your expectations.
+                                </h4>
+                            </div>
+                            <div class="owl-carousel team">
+                                <div class="item">
+                                    <div class="position-relative rounded-3">
+                                        <img src="\theme_maintenance\static\src\imgs\y-about\item1.png"
+                                             class="w-100"/>
+                                        <div class="position-absolute bg-white rounded-3 p-3 text-item mb-4 d-flex flex-column justify-content-center align-items-center text-center ">
+                                            <h4>Shikabala</h4>
+                                            <h6 class="small text-muted">Consultant at Lorem
+                                                Ipsum
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="position-relative rounded-3">
+                                        <img src="\theme_maintenance\static\src\imgs\y-about\item2.png"
+                                             class="w-100"/>
+                                        <div class="position-absolute bg-white rounded-3 p-3 text-item mb-4 d-flex flex-column justify-content-center align-items-center text-center">
+                                            <h4>Shikabala</h4>
+                                            <h6 class="small text-wrap text-lg-nowrap text-muted">Consultant at Lorem
+                                                Ipsum
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="position-relative rounded-3">
+                                        <img src="\theme_maintenance\static\src\imgs\y-about\item3.png"
+                                             class="w-100"/>
+                                        <div class="position-absolute bg-white rounded-3 p-3 text-item mb-4 d-flex flex-column justify-content-center align-items-center text-center">
+                                            <h4>Shikabala</h4>
+                                            <h6 class="small text-wrap text-lg-nowrap text-muted">Consultant at Lorem
+                                                Ipsum
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="position-relative rounded-3">
+                                        <img src="\theme_maintenance\static\src\imgs\y-about\item4.png"
+                                             class="w-100"/>
+                                        <div class="position-absolute bg-white rounded-3 p-3 text-item mb-4 d-flex flex-column justify-content-center align-items-center text-center">
+                                            <h4>Shikabala</h4>
+                                            <h6 class="small text-wrap text-lg-nowrap text-muted">Consultant at Lorem
+                                                Ipsum
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="position-relative rounded-3">
+                                        <img src="\theme_maintenance\static\src\imgs\y-about\item1.png"
+                                             class="w-100"/>
+                                        <div class="position-absolute bg-white rounded-3 p-3 text-item mb-4 d-flex flex-column justify-content-center align-items-center text-center">
+                                            <h4>Shikabala</h4>
+                                            <h6 class="small text-wrap text-lg-nowrap text-muted">Consultant at Lorem
+                                                Ipsum
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </t>
         </template>

@@ -5,7 +5,470 @@
             <t t-set="additional_title" t-valuef="Our Services"/>
             <t t-call="website.layout">
                 <div id="wrap" class="oe_structure main__content-area-services">
+                    <section class="service-header text-white">
+                        <div class="engineer-section">
+                            <div class="container">
+                                <div class="row pt72 pb72 gy-4">
+                                    <div class="col-lg-7 order-lg-1 order-2 text-center text-lg-start">
+                                        <div class="d-inline-flex align-items-center justify-content-center border border-1 rounded-5 border-light gap-2 py-1 px-3 "
+                                             style="height:44px; width:300px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                 viewBox="0 0 24 24" fill="none">
+                                                <path d="M3.75 5.654C3.75 4.611 4.611 3.75 5.654 3.75H18.346C19.389 3.75 20.25 4.611 20.25 5.654V11.424C20.2469 11.9279 20.0452 12.4103 19.6888 12.7665C19.3324 13.1227 18.8499 13.3241 18.346 13.327H5.654C5.14992 13.3241 4.6673 13.1226 4.31086 12.7661C3.95441 12.4097 3.75289 11.9271 3.75 11.423V5.654ZM15.865 11.827V10.269C15.862 10.1628 15.8184 10.0618 15.7433 9.98668C15.6682 9.91156 15.5672 9.86802 15.461 9.865H8.539C8.43298 9.86827 8.33222 9.91192 8.25731 9.98701C8.1824 10.0621 8.13901 10.163 8.136 10.269V11.827H15.865ZM8.538 14.71C8.73691 14.71 8.92768 14.789 9.06833 14.9297C9.20898 15.0703 9.288 15.2611 9.288 15.46C9.288 16.085 9.274 16.95 8.983 17.665C8.82713 18.0727 8.55701 18.4269 8.205 18.685C7.817 18.962 7.345 19.095 6.808 19.095C6.60909 19.095 6.41832 19.016 6.27767 18.8753C6.13702 18.7347 6.058 18.5439 6.058 18.345C6.058 18.1461 6.13702 17.9553 6.27767 17.8147C6.41832 17.674 6.60909 17.595 6.808 17.595C7.091 17.595 7.245 17.528 7.335 17.464C7.429 17.397 7.518 17.287 7.593 17.101C7.758 16.695 7.788 16.117 7.788 15.461C7.788 15.2621 7.86702 15.0713 8.00767 14.9307C8.14832 14.79 8.33909 14.711 8.538 14.711M12 14.711C12.1989 14.711 12.3897 14.79 12.5303 14.9307C12.671 15.0713 12.75 15.2621 12.75 15.461V19.5C12.75 19.6989 12.671 19.8897 12.5303 20.0303C12.3897 20.171 12.1989 20.25 12 20.25C11.8011 20.25 11.6103 20.171 11.4697 20.0303C11.329 19.8897 11.25 19.6989 11.25 19.5V15.461C11.25 15.2621 11.329 15.0713 11.4697 14.9307C11.6103 14.79 11.8011 14.711 12 14.711ZM15.461 14.711C15.6599 14.711 15.8507 14.79 15.9913 14.9307C16.132 15.0713 16.211 15.2621 16.211 15.461C16.211 16.118 16.241 16.696 16.407 17.102C16.482 17.288 16.571 17.398 16.665 17.465C16.755 17.529 16.909 17.596 17.192 17.596C17.3909 17.596 17.5817 17.675 17.7223 17.8157C17.863 17.9563 17.942 18.1471 17.942 18.346C17.942 18.5449 17.863 18.7357 17.7223 18.8763C17.5817 19.017 17.3909 19.096 17.192 19.096C16.655 19.096 16.182 18.963 15.795 18.686C15.443 18.4279 15.1729 18.0737 15.017 17.666C14.727 16.951 14.711 16.086 14.711 15.461C14.711 15.2621 14.79 15.0713 14.9307 14.9307C15.0713 14.79 15.2621 14.711 15.461 14.711Z"
+                                                      fill="white"/>
+                                            </svg>
+                                            <h6 class="m-0">HVAC &amp; Cooling System Care</h6>
+                                        </div>
+                                        <div class="d-flex flex-column gap-lg-5 gap-3 pt16">
+                                            <h1 class="display-1">Innovative maintenance solutions to ensure year-round
+                                                efficiency
+                                            </h1>
+                                            <h4 style="max-width:690px;">At Taqat, we provide both scheduled and
+                                                emergency
+                                                maintenance services
+                                                for all types of air conditioning and cooling systems, using advanced
+                                                tools and certified technicians. Our goal is to maintain optimal
+                                                performance, reduce energy consumption, and prevent unexpected
+                                                breakdowns.
+                                                Our services include system inspection, filter cleaning, gas refilling,
+                                                and effective leak treatment. With Taqat, you'll enjoy cool, safe, and
+                                                highly efficient air conditioning systems throughout the year.
+                                            </h4>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <button class="btn btn-primary text-dark">Book Your AC Maintenance
+                                                        <i class="fa fa-long-arrow-right ps-3"></i>
+                                                    </button>
+                                                </div>
 
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 order-lg-2 order-1 ">
+                                        <img src="\theme_maintenance\static\src\imgs\y-services\services-hero.png"
+                                             class="w-100 h-100"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="pt72 pb72">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <h4 class="text-primary">Why us</h4>
+                                    <h2>What sets us apart in providing ....</h2>
+                                    <h4 class=" text-muted pt32" style="max-width:400px">Lorem ipsum dolor sit
+                                        amet,
+                                        consectetur adipisci elit,
+                                        sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                        veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.Lorem
+                                        ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod temp
+                                    </h4>
+                                </div>
+                                <div class="col-lg-6 offset-lg-1">
+                                    <div class="row gy-3">
+                                        <div class="col-6">
+                                            <div class=" d-flex flex-column gap-2 align-items-center justify-content-center border border-light rounded-5 py-4 px-2">
+                                                <div class="border border-primary bg-primary  d-flex align-items-center justify-content-center rounded-3 p-1 ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                         viewBox="0 0 32 32" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                              d="M16 28C17.5759 28 19.1363 27.6896 20.5922 27.0866C22.0481 26.4835 23.371 25.5996 24.4853 24.4853C25.5996 23.371 26.4835 22.0481 27.0866 20.5922C27.6896 19.1363 28 17.5759 28 16C28 14.4241 27.6896 12.8637 27.0866 11.4078C26.4835 9.95189 25.5996 8.62902 24.4853 7.51472C23.371 6.40042 22.0481 5.5165 20.5922 4.91345C19.1363 4.31039 17.5759 4 16 4C12.8174 4 9.76516 5.26428 7.51472 7.51472C5.26428 9.76515 4 12.8174 4 16C4 19.1826 5.26428 22.2348 7.51472 24.4853C9.76516 26.7357 12.8174 28 16 28ZM15.6907 20.8533L22.3573 12.8533L20.3093 11.1467L14.576 18.0253L11.6093 15.0573L9.724 16.9427L13.724 20.9427L14.756 21.9747L15.6907 20.8533Z"
+                                                              fill="white"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="d-flex flex-column gap-2 align-items-center justify-content-center text-center">
+                                                    <h3>Responsiveness</h3>
+                                                    <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+                                                </div>
+                                            </div>
+                                            <div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class=" d-flex flex-column gap-2 align-items-center justify-content-center border border-light rounded-5 py-4 px-2">
+                                                <div class="border border-primary bg-primary  d-flex align-items-center justify-content-center rounded-3 p-1 ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                         viewBox="0 0 32 32" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                              d="M16 28C17.5759 28 19.1363 27.6896 20.5922 27.0866C22.0481 26.4835 23.371 25.5996 24.4853 24.4853C25.5996 23.371 26.4835 22.0481 27.0866 20.5922C27.6896 19.1363 28 17.5759 28 16C28 14.4241 27.6896 12.8637 27.0866 11.4078C26.4835 9.95189 25.5996 8.62902 24.4853 7.51472C23.371 6.40042 22.0481 5.5165 20.5922 4.91345C19.1363 4.31039 17.5759 4 16 4C12.8174 4 9.76516 5.26428 7.51472 7.51472C5.26428 9.76515 4 12.8174 4 16C4 19.1826 5.26428 22.2348 7.51472 24.4853C9.76516 26.7357 12.8174 28 16 28ZM15.6907 20.8533L22.3573 12.8533L20.3093 11.1467L14.576 18.0253L11.6093 15.0573L9.724 16.9427L13.724 20.9427L14.756 21.9747L15.6907 20.8533Z"
+                                                              fill="white"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="d-flex flex-column gap-2 align-items-center justify-content-center text-center">
+                                                    <h3>Responsiveness</h3>
+                                                    <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+                                                </div>
+                                            </div>
+                                            <div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class=" d-flex flex-column gap-2 align-items-center justify-content-center border border-light rounded-5 py-4 px-2">
+                                                <div class="border border-primary bg-primary  d-flex align-items-center justify-content-center rounded-3 p-1 ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                         viewBox="0 0 32 32" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                              d="M16 28C17.5759 28 19.1363 27.6896 20.5922 27.0866C22.0481 26.4835 23.371 25.5996 24.4853 24.4853C25.5996 23.371 26.4835 22.0481 27.0866 20.5922C27.6896 19.1363 28 17.5759 28 16C28 14.4241 27.6896 12.8637 27.0866 11.4078C26.4835 9.95189 25.5996 8.62902 24.4853 7.51472C23.371 6.40042 22.0481 5.5165 20.5922 4.91345C19.1363 4.31039 17.5759 4 16 4C12.8174 4 9.76516 5.26428 7.51472 7.51472C5.26428 9.76515 4 12.8174 4 16C4 19.1826 5.26428 22.2348 7.51472 24.4853C9.76516 26.7357 12.8174 28 16 28ZM15.6907 20.8533L22.3573 12.8533L20.3093 11.1467L14.576 18.0253L11.6093 15.0573L9.724 16.9427L13.724 20.9427L14.756 21.9747L15.6907 20.8533Z"
+                                                              fill="white"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="d-flex flex-column gap-2 align-items-center justify-content-center text-center">
+                                                    <h3>Responsiveness</h3>
+                                                    <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+                                                </div>
+                                            </div>
+                                            <div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class=" d-flex flex-column gap-2 align-items-center justify-content-center border border-light rounded-5 py-4 px-2">
+                                                <div class="border border-primary bg-primary  d-flex align-items-center justify-content-center rounded-3 p-1 ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                         viewBox="0 0 32 32" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                              d="M16 28C17.5759 28 19.1363 27.6896 20.5922 27.0866C22.0481 26.4835 23.371 25.5996 24.4853 24.4853C25.5996 23.371 26.4835 22.0481 27.0866 20.5922C27.6896 19.1363 28 17.5759 28 16C28 14.4241 27.6896 12.8637 27.0866 11.4078C26.4835 9.95189 25.5996 8.62902 24.4853 7.51472C23.371 6.40042 22.0481 5.5165 20.5922 4.91345C19.1363 4.31039 17.5759 4 16 4C12.8174 4 9.76516 5.26428 7.51472 7.51472C5.26428 9.76515 4 12.8174 4 16C4 19.1826 5.26428 22.2348 7.51472 24.4853C9.76516 26.7357 12.8174 28 16 28ZM15.6907 20.8533L22.3573 12.8533L20.3093 11.1467L14.576 18.0253L11.6093 15.0573L9.724 16.9427L13.724 20.9427L14.756 21.9747L15.6907 20.8533Z"
+                                                              fill="white"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="d-flex flex-column gap-2 align-items-center justify-content-center text-center">
+                                                    <h3>Responsiveness</h3>
+                                                    <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+                                                </div>
+                                            </div>
+                                            <div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                    <section class="pt72 pb72">
+                        <div class="container pb-lg-5">
+                            <div class="d-flex flex-column align-items-center justify-content-center text-center">
+                                <h4 class="text-primary">The value of the service to the beneficiary</h4>
+                                <h2>How does this service contribute to real estate preservation?</h2>
+                                <h4 class="pt32 pb40 text-muted" style="max-width: 872px;">Lorem ipsum dolor sit
+                                    amet,
+                                    consectetur
+                                    adipisci elit, sed eiusmod
+                                    tempor incidunt
+                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum
+                                    exercitationem ullam corporis
+                                </h4>
+                            </div>
+
+                            <div class="row gy-3">
+                                <div class="col-lg-4">
+                                    <div class="border border-light bg-light text-center d-flex flex-column align-items-center justify-content-center gap-2 py-4 px-3 rounded-4">
+                                        <h3>Lorem ipsum dolor</h3>
+                                        <h4 class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisci elit,
+                                            sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="border border-light bg-light text-center d-flex flex-column align-items-center justify-content-center gap-2 py-4 px-3 rounded-4">
+                                        <h3>Lorem ipsum dolor</h3>
+                                        <h4 class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisci elit,
+                                            sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="border border-light bg-light text-center d-flex flex-column align-items-center justify-content-center gap-2 py-4 px-3 rounded-4">
+                                        <h3>Lorem ipsum dolor</h3>
+                                        <h4 class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisci elit,
+                                            sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="pt72 pb72 Achievements text-white">
+                        <div class="container-fluid">
+                            <div class="row justify-content-evenly align-items-center text-center text-lg-start">
+                                <div class="col-lg-6" style="max-width:321px;">
+                                    <h4 class="text-primary">Our Achievements in Numbers</h4>
+                                    <h2 class="pb24">Milestones That Define Our Journey</h2>
+                                    <h4 class="pb48">Since our launch, we have consistently delivered high-quality
+                                        results,
+                                        strengthened
+                                        by diverse projects and long-term client trust.
+                                    </h4>
+
+                                </div>
+                                <div class="col-lg-5 offset-lg-1">
+                                    <div class="row justify-content-between text-center text-lg-start gy-3  ">
+                                        <div class="col-lg-6 pb-3">
+                                            <h2>95%</h2>
+                                            <h4>client satisfaction rate</h4>
+                                        </div>
+                                        <div class="col-lg-6 pb-3">
+                                            <h2>+300</h2>
+                                            <h4>Facilities with full maintenance works completed</h4>
+                                        </div>
+                                        <div class="col-lg-6 pb-3">
+                                            <h2>50+</h2>
+                                            <h4>active maintenance and management projects</h4>
+                                        </div>
+                                        <div class="col-lg-6 pb-3">
+                                            <h2>10+</h2>
+                                            <h4>Years of proven experience</h4>
+                                        </div>
+                                        <div class="col-lg-6 pb-3">
+                                            <h2>60 minutes</h2>
+                                            <h4>Average emergency response time</h4>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                    <section class="" style="background: #F7F7F7;">
+                        <div class="inner z-2 pt72 pb72">
+                            <div class="container py-lg-4">
+                                <h4 class="text-primary">Service Delivery Mechanism</h4>
+                                <h2>Implementation steps: From request to fulfillment</h2>
+                                <h4 class="pt32 pb32">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+                                    tempor
+                                    incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum
+                                    laboriosam.
+                                </h4>
+                                <h4 class="pb64">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+                                    tempor
+                                    incidunt ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum laboriosam.
+                                </h4>
+                                <div class="position-relative">
+                                    <div class="border  border-3 border-dark start-0 end-0 position-absolute d-none d-lg-block">
+                                    </div>
+                                    <div class="border  border-3 border-dark top-0 bottom-0 position-absolute d-block d-lg-none">
+                                    </div>
+                                    <ul class="list-unstyled d-flex flex-wrap flex-lg-nowrap justify-content-between ">
+
+                                        <li>
+                                            <div class="row  gx-3">
+                                                <div class="col-12 col-lg d-flex flex-column  position-relative ">
+                                                    <span class="position-absolute start-0 translate-middle-lg-y rounded-circle bg-primary border border-4 border-dark p-2  z-1"/>
+                                                    <h5 class="fw-semibold ms-3 ms-md-0 mt-lg-3">Ask for service</h5>
+                                                    <h6 class="text-muted small ms-3 ms-md-0" style="max-width: 210px;">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisci elit,
+                                                        eiusmod t
+                                                    </h6>
+                                                </div>
+
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row  gx-3">
+                                                <div class="col-12 col-lg d-flex flex-column  position-relative ">
+                                                    <span class="position-absolute start-0 translate-middle-lg-y rounded-circle bg-primary border border-4 border-dark p-2  z-1"/>
+                                                    <h5 class="fw-semibold ms-3 ms-md-0 mt-lg-3">Ask for service</h5>
+                                                    <h6 class="text-muted small ms-3 ms-md-0 "
+                                                        style="max-width: 210px;">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisci elit,
+                                                        eiusmod t
+                                                    </h6>
+                                                </div>
+
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row  gx-3">
+                                                <div class="col-12 col-lg d-flex flex-column  position-relative ">
+                                                    <span class="position-absolute start-0 translate-middle-lg-y  rounded-circle bg-primary border border-4 border-dark p-2  z-1"/>
+                                                    <h5 class="fw-semibold ms-3 ms-md-0 mt-lg-3 ">Ask for service</h5>
+                                                    <h6 class="text-muted small ms-3 ms-md-0" style="max-width: 210px;">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisci elit,
+                                                        eiusmod t
+                                                    </h6>
+                                                </div>
+
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row  gx-3">
+                                                <div class="col-12 col-lg d-flex flex-column  position-relative ">
+                                                    <span class="position-absolute start-0 translate-middle-lg-y rounded-circle bg-primary border border-4 border-dark p-2  z-1"/>
+                                                    <h5 class="fw-semibold ms-3 ms-md-0 mt-lg-3">Ask for service</h5>
+                                                    <h6 class="text-muted small ms-3 ms-md-0 "
+                                                        style="max-width: 210px;">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisci elit,
+                                                        eiusmod t
+                                                    </h6>
+                                                </div>
+
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row  gx-3">
+                                                <div class="col-12 col-lg d-flex  flex-column  position-relative ">
+                                                    <span class="position-absolute start-0 translate-middle-lg-y rounded-circle bg-primary border border-4 border-dark p-2  z-1"/>
+                                                    <h5 class="fw-semibold ms-3 ms-md-0 mt-lg-3">Ask for service</h5>
+                                                    <h6 class="text-muted small ms-3 ms-md-0 "
+                                                        style="max-width: 210px;">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisci elit,
+                                                        eiusmod t
+                                                    </h6>
+                                                </div>
+
+                                            </div>
+                                        </li>
+
+
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="contact-us">
+                        <div class="inner-contact pt72 pb72">
+                            <div class="container">
+                                <div class="me-auto  bg-white p-4 rounded-4 d-flex flex-column gap-4"
+                                     style="max-width:800px">
+                                    <h1 class="display-2">Contact us</h1>
+                                    <form class="d-flex flex-column gap-4">
+                                        <div>
+                                            <label for="name" class="ps-3 fw-bold">Name</label>
+                                            <input type="text" class="form-control rounded-pill" id="name" name="name"/>
+                                        </div>
+                                        <div>
+                                            <label for="email" class="ps-3 fw-bold">Email address</label>
+                                            <input type="text" class="form-control rounded-pill" id="email"
+                                                   name="email"/>
+                                        </div>
+                                        <div>
+                                            <label for="service" class="form-label ps-3 fw-bold">Service type</label>
+                                            <select class="form-select rounded-pill" id="service">
+                                                <option>Choose a service</option>
+                                                <option>Service 1</option>
+                                                <option>Service 2</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <label for="message" class="form-label ps-3 fw-bold">Message (optional)
+                                            </label>
+                                            <textarea class="form-control" id="message" rows="2"></textarea>
+                                        </div>
+                                        <button class="btn btn-primary py-2 text-dark">Send
+                                            <i class="fa fa-long-arrow-right ps-3"></i>
+                                        </button>
+
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="Blog pt72 pb72 ">
+                        <div class="container py-lg-5">
+                            <div class="d-flex justify-content-center flex-column align-items-center text-center">
+                                <h4 class="text-primary" style="font-weight: 500;">Blogs</h4>
+                                <h1>Our Blog - Insights &amp; Inspiration</h1>
+                                <h4 class="text-center context pb40">Lorem ipsum dolor sit amet, consectetur adipisci
+                                    elit, sed
+                                    eiusmod tempor incidunt
+                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum
+                                    exercitationem ullam
+                                </h4>
+                            </div>
+                            <div class="owl-carousel testimonial-blogs">
+                                <div class="item">
+                                    <div class="position-relative">
+                                        <img src="\theme_maintenance\static\src\imgs\y-home\item1.png"
+                                             class="w-100 "/>
+                                        <div class=" content-center py-lg-4 p-2 d-flex flex-column justify-content-center gap-2 ">
+                                            <h4 style="font-weight: 700;">Digital Transformation in Facilities
+                                                Management
+                                            </h4>
+                                            <h6>Learn how preventive maintenance reduces breakdowns, lowers
+                                                operational costs, and improves asset
+                                            </h6>
+                                            <a href="#" class="text-dark" style="font-weight: 500;">
+                                                Read more
+                                                <i class="fa fa-long-arrow-right ps-3"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="position-relative">
+                                        <img src="\theme_maintenance\static\src\imgs\y-home\item2.png"
+                                             class="w-100 "/>
+                                        <div class=" content-center py-lg-4 p-2 d-flex flex-column justify-content-center gap-2 ">
+                                            <h4 style="font-weight: 700;">Digital Transformation in Facilities
+                                                Management
+                                            </h4>
+                                            <h6>Learn how preventive maintenance reduces breakdowns, lowers
+                                                operational costs, and improves asset
+                                            </h6>
+                                            <a href="#" class="text-dark" style="font-weight: 500;">
+                                                Read more
+                                                <i class="fa fa-long-arrow-right ps-3"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="position-relative">
+                                        <img src="\theme_maintenance\static\src\imgs\y-home\item3.png"
+                                             class="w-100 "/>
+                                        <div class=" content-center py-lg-4 p-2 d-flex flex-column justify-content-center gap-2 ">
+                                            <h4 style="font-weight: 700;">Digital Transformation in Facilities
+                                                Management
+                                            </h4>
+                                            <h6>Learn how preventive maintenance reduces breakdowns, lowers
+                                                operational costs, and improves asset
+                                            </h6>
+                                            <a href="#" class="text-dark" style="font-weight: 500;">
+                                                Read more
+                                                <i class="fa fa-long-arrow-right ps-3"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="position-relative">
+                                        <img src="\theme_maintenance\static\src\imgs\y-home\item1.png"
+                                             class="w-100 "/>
+                                        <div class="content-center d-flex flex-column justify-content-center gap-2  py-lg-4 p-2">
+                                            <h4 style="font-weight: 700;">Digital Transformation in Facilities
+                                                Management
+                                            </h4>
+                                            <h6>Learn how preventive maintenance reduces breakdowns, lowers
+                                                operational costs, and improves asset
+                                            </h6>
+                                            <a href="#" class="text-dark" style="font-weight: 500;">
+                                                Read more
+                                                <i class="fa fa-long-arrow-right ps-3"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center flex-column align-items-center pt40">
+                                <button type="button" class="btn btn-primary text-nowrap">
+                                    All Blogs
+                                    <i class="fa fa-long-arrow-right ps-3"></i>
+                                </button>
+                            </div>
+
+
+                        </div>
+                    </section>
                 </div>
             </t>
         </template>
