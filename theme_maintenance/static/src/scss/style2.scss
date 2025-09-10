@@ -19,6 +19,10 @@ h2, h3 {
   max-width: 352px;
 }
 
+.w-cover {
+  object-fit: cover;
+}
+
 .dot-position {
   top: -28px;
   left: 25px;
@@ -137,6 +141,43 @@ h2, h3 {
 
 .bottom_bg {
   background: url(../imgs/y_home/bg2.png) bottom / contain no-repeat;
+}
+
+.engineer_about_container {
+  &::before {
+    content: "";
+    position: absolute;
+    background: #FFFFFF;
+    border-radius: 20px;
+    width: 60%;
+    height: 55%;
+    top: 42px;
+    left: 38px;
+    box-shadow: 0 20px 7px 0 #e0e0e0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: #FFFFFF;
+    border-radius: 20px;
+    width: 60%;
+    height: 45%;
+    right: 40px;
+    top: 115px;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    &::after {
+      height: 60%;
+    }
+  }
+
+  .engineer_img {
+    box-shadow: 0 17px 10px 0 gray;
+  }
+
+
 }
 
 .engineer_container {
@@ -353,6 +394,9 @@ img_hero4 {
 
 }
 
+.fixed-card-height {
+  height: 476px;
+}
 
 /* Tunables */
 :root {
@@ -363,7 +407,7 @@ img_hero4 {
 /* Base layout */
 .hero {
   position: relative;
-  background: url(../imgs/y_home/bg_hero.png) top / cover no-repeat;
+  background: url(../imgs/y_home/bg2.png) bottom / contain no-repeat;
 
 }
 
@@ -404,9 +448,11 @@ img_hero4 {
 
   /* Place each image where you want in the collage */
   .hero__media img:nth-child(1) {
+    position: absolute;
     grid-column: 1 / span 4;
     grid-row: 1;
     align-self: start;
+    top: 50px;
   }
   .hero__media img:nth-child(2) {
     grid-column: 9 / span 4;
@@ -422,14 +468,16 @@ img_hero4 {
     grid-row: 2;
     align-self: end;
     position: absolute;
-    bottom: -96px;
+    bottom: -24px;
+
   }
   .hero__media img:nth-child(4) {
     grid-column: 10 / span 3;
     grid-row: 2;
     align-self: end;
     position: absolute;
-    bottom: -96px;
+    bottom: -24px;
+    right: 30px;
   }
 
   /* Optional: readability panel under text */
@@ -478,6 +526,7 @@ img_hero4 {
     position: relative;
     bottom: 80px;
     padding-right: 24px;
+
   }
 }
 

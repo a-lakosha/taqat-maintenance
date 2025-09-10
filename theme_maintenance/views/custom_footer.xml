@@ -16,8 +16,8 @@
             <xpath expr="//footer" position="replace">
                 <footer class="footer bg-dark pt-5" t-ignore="true" t-if="not no_footer">
                     <div class="container pt-3 ">
-                        <div class="row border-bottom pb-lg-5 pb-4 mb-lg-5 justify-content-lg-between">
-                            <div class="col-lg-9">
+                        <div class="row border-bottom border-light pb-lg-5 pb-4 mb-lg-5 justify-content-lg-between">
+                            <div class="col-lg-9 text-white">
                                 <h1>Need Help? Reach Out Anytime</h1>
                             </div>
                             <div class="col-lg-3 mt-3 mt-lg-0">
