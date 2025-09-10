@@ -33,7 +33,7 @@ h2, h3 {
   background: linear-gradient(180deg, #1C2126 0%, #22282D 24.36%);
 
   .hero_section-inner {
-    background: url(../imgs/y_home/bg_hero.png) center / cover no-repeat;
+    background: url(../imgs/y_home/bg_hero.png) center / contain no-repeat;
 
     .hero-txt {
       @media (min-width: 992px) {
@@ -58,12 +58,13 @@ h2, h3 {
         content: " ";
         display: block;
         max-width: 92px;
-        height: 8px;
+        height: 4px;
         background-color: #ffffff;
         margin: 8px 0 16px;
 
         @media (min-width: 992px) {
           margin: 32px 0 !important;
+          height: 8px;
         }
       }
     }
@@ -138,19 +139,44 @@ h2, h3 {
   background: url(../imgs/y_home/bg2.png) bottom / contain no-repeat;
 }
 
-.engineer_img {
-  box-shadow: 0 15px 15px gray;
+.engineer_container {
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: #FFFFFF;
+    border-radius: 20px;
+    width: 60%;
+    height: 55%;
+    top: 42px;
+    left: 38px;
+    box-shadow: 0 20px 7px 0 #e0e0e0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: #FFFFFF;
+    border-radius: 20px;
+    width: 60%;
+    height: 45%;
+    right: 40px;
+    top: 115px;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    &::after {
+      height: 60%;
+    }
+  }
+
+  .engineer_img {
+    box-shadow: 0 17px 10px 0 gray;
+  }
+
+
 }
 
-.bg-shape1 {
-  top: 30px;
-  left: 30px;
-}
-
-.bg-shape2 {
-  right: 30px;
-  top: 105px;
-}
 
 .facility_managment {
   .facility_managment-img1 {
@@ -222,6 +248,26 @@ h2, h3 {
 .contain-card {
   height: 476px;
   object-fit: cover;
+
+
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* clamp to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: calc(1.2em * 2); /* optional: ensures consistent box height */
+}
+
+.line-clamp-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* clamp to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: calc(1.2em * 2); /* optional: ensures consistent box height */
 }
 
 .contain-card-txt {
@@ -244,7 +290,7 @@ h2, h3 {
 
 .scroll-btn {
   z-index: 10;
-  border-radius: 50%;
+  bottom: 350px;
 }
 
 .scroll-bar {
