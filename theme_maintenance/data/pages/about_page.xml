@@ -78,35 +78,36 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row flex-lg-nowrap flex-wrap pt-lg-5 pt-2 overflow-x-auto justify-content-start about-mission">
+                        </div>
+                        <div class="row flex-lg-nowrap flex-wrap pt-lg-5 pt-2 overflow-x-auto justify-content-start about-mission">
 
-                                <div class="col-lg-3">
-                                    <img src="/theme_maintenance/static/src/imgs/y_about/person-working.jpg"
-                                         alt="working-man" class=" py-lg-0 py-2 w-100 w-100 h-100 rounded-5 w-cover"/>
-                                </div>
-                                <div class="col-lg-3 col-6">
+                            <div class="col-lg-3">
+                                <img src="/theme_maintenance/static/src/imgs/y_about/person-working.jpg"
+                                     alt="working-man" class=" py-lg-0 py-2 w-100 w-100 h-100 rounded-5 w-cover"/>
+                            </div>
+                            <div class="col-lg-3 col-6">
 
-                                    <img src="/theme_maintenance/static/src/imgs/y_about/bearded-gardener.png"
-                                         alt="gardner" class=" py-lg-0 py-2 w-100 h-100 rounded-5 w-cover"/>
-                                </div>
-                                <div class="col-lg-3 col-6">
+                                <img src="/theme_maintenance/static/src/imgs/y_about/bearded-gardener.png"
+                                     alt="gardner" class=" py-lg-0 py-2 w-100 h-100 rounded-5 w-cover"/>
+                            </div>
+                            <div class="col-lg-3 col-6">
 
-                                    <img src="/theme_maintenance/static/src/imgs/y_about/manager-supervisor.png"
-                                         alt="supervisor" class="w-100 h-100 rounded-5 w-cover py-lg-0 py-2"/>
-                                </div>
-                                <div class="col-lg-3 col-6">
+                                <img src="/theme_maintenance/static/src/imgs/y_about/manager-supervisor.png"
+                                     alt="supervisor" class="w-100 h-100 rounded-5 w-cover py-lg-0 py-2"/>
+                            </div>
+                            <div class="col-lg-3 col-6">
 
-                                    <img src="/theme_maintenance/static/src/imgs/y_about/unrecognizable-man.png"
-                                         alt="man"
-                                         class="w-100 h-100 rounded-5 w-cover py-lg-0 py-2"/>
-                                </div>
-                                <div class="col-lg-3 col-6">
+                                <img src="/theme_maintenance/static/src/imgs/y_about/unrecognizable-man.png"
+                                     alt="man"
+                                     class="w-100 h-100 rounded-5 w-cover py-lg-0 py-2"/>
+                            </div>
+                            <div class="col-lg-3 col-6">
 
-                                    <img src="/theme_maintenance/static/src/imgs/y_about/team-leader.jpg"
-                                         alt="team-leader" class=" py-lg-0 py-2 w-100 h-100 rounded-5 w-cover"/>
-                                </div>
+                                <img src="/theme_maintenance/static/src/imgs/y_about/team-leader.jpg"
+                                     alt="team-leader" class=" py-lg-0 py-2 w-100 h-100 rounded-5 w-cover"/>
                             </div>
                         </div>
+
                     </section>
                     <section class="pb72 pt72 bg-light bottom_bg ">
                         <div class="engineer_section-inner">

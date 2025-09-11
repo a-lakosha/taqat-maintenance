@@ -4,7 +4,277 @@
         <template name="Contact Us" id="contact_us_page" inherit_id="website.contactus"
                   active="True">
             <xpath expr="//div[@id='wrap']" position="replace">
+                <t t-set="service_type_ids"
+                   t-value="request.env['website.service.type'].search([])"/>
                 <div id="wrap" class="oe_structure oe_empty">
+                    <section class="hero_section pt48">
+                        <div class="hero" style="margin-bottom:500px ; height:500px;">
+                            <div class="container d-flex justify-content-center ">
+                                <div class="d-flex flex-column align-items-center justify-content-center gap-3 gap-lg-4 text-white position-relative"
+                                     style="max-width:800px;">
+                                    <h1 class="display-1 text-center">Contact us... Your service starts here</h1>
+                                    <h4 class="text-center mb-3 mb-lg-4">Need urgent maintenance or long-term support?
+                                        Taqaat is
+                                        ready to respond—fast,
+                                        efficient, and tailored to your needs.Get in touch and take the first step
+                                        toward a safer, more reliable property.
+                                    </h4>
+                                    <form action="/website/form/" method="post" enctype="multipart/form-data"
+                                          class="o_mark_required form_shadow bg-white p-4 rounded-5 position-absolute top-100 mb-lg-5 mb-3 "
+                                          data-mark="*"
+                                          data-pre-fill="true"
+                                          data-model_name="mail.mail" data-success-mode="redirect"
+                                          data-success-page="/contactus-thank-you" style="max-width:800px;">
+                                        <div class="s_website_form_rows row s_col_no_bgcolor">
+                                            <h1 class="mb-lg-4 mb-3">Contact us</h1>
+
+                                            <div data-name="Field"
+                                                 class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required"
+                                                 data-type="char" data-translated-name="Field">
+                                                <label class="s_website_form_label" style="width: 200px"
+                                                       for="oimwbkudje5c">
+                                                    <span class="s_website_form_label_content fw-bold">Name</span>
+                                                </label>
+                                                <input class="form-control s_website_form_input" type="text" name="Name"
+                                                       required="1" placeholder="" id="oimwbkudje5c"
+                                                       data-fill-with="name"/>
+                                            </div>
+
+                                            <div data-name="Field"
+                                                 class="s_website_form_field mb-3 col-12 s_website_form_model_required"
+                                                 data-type="email" data-translated-name="Field">
+                                                <label class="s_website_form_label" style="width: 200px"
+                                                       for="o2upiogvfyzs">
+                                                    <span class="s_website_form_label_content fw-bold">Email address
+                                                    </span>
+                                                </label>
+                                                <input class="form-control s_website_form_input" type="email"
+                                                       name="email_from" required="" placeholder="" id="o2upiogvfyzs"
+                                                       data-fill-with="email"/>
+                                            </div>
+                                            <div data-name="Field"
+                                                 class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required"
+                                                 data-type="many2one" data-translated-name="Field">
+                                                <label class="s_website_form_label" style="width: 200px"
+                                                       for="omx1lb8s61d">
+                                                    <span class="s_website_form_label_content fw-bold">Service type
+                                                    </span>
+                                                </label>
+
+
+                                                <select class="form-select s_website_form_input"
+                                                        name="service_type_id"
+                                                        id="service_type_id"
+                                                        required="required">
+
+                                                    <!-- Placeholder (default) -->
+                                                    <option value="" selected="selected" disabled="disabled">Choose a
+                                                        service
+                                                    </option>
+
+                                                    <!-- Real options -->
+                                                    <t t-foreach="service_type_ids" t-as="service_type">
+                                                        <option t-att-value="service_type.id">
+                                                            <t t-out="service_type.name"/>
+                                                        </option>
+                                                    </t>
+                                                </select>
+                                            </div>
+                                            <div data-name="Field"
+                                                 class="s_website_form_field mb-3 col-12 s_website_form_custom"
+                                                 data-type="text" data-translated-name="Field">
+                                                <label class="s_website_form_label" style="width: 200px"
+                                                       for="o2yw2t9kholt">
+                                                    <span class="s_website_form_label_content fw-bold">Message
+                                                        <span class="fw-semibold text-muted">(optional)</span>
+                                                    </span>
+                                                </label>
+                                                <textarea class="form-control s_website_form_input"
+                                                          name="Message (optional)" placeholder="" id="o2yw2t9kholt"
+                                                          rows="3"/>
+                                            </div>
+                                            <div data-name="Field"
+                                                 class="s_website_form_field mb-3 col-12 s_website_form_dnone">
+                                                <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                    <label class="col-form-label col-sm-auto s_website_form_label"
+                                                           style="width: 200px">
+                                                        <span class="s_website_form_label_content"/>
+                                                    </label>
+                                                    <div class="col-sm">
+                                                        <input type="hidden" class="form-control s_website_form_input"
+                                                               name="email_to" value="info@yourcompany.example.com"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-0 py-2 col-12 s_website_form_submit"
+                                                 data-name="Submit Button">
+                                                <div style="width: 200px;" class="s_website_form_label"/>
+                                                <a href="#" role="button"
+                                                   class="btn btn-primary s_website_form_send o_default_snippet_text d-flex justify-content-center align-items-center text-dark"
+                                                   data-bs-original-title="" title="">
+                                                    Send
+                                                    <i class="bi bi-arrow-right ms-lg-3 ms-1"/>
+
+                                                </a>
+                                                <span id="s_website_form_result"/>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                    <section class=" pt120 pb120 dark-bg">
+                        <div class="container">
+                            <div class="row justify-content-between text-white">
+                                <div class="col-lg-4">
+                                    <h4 class="text-primary">Reach Out</h4>
+                                    <h2 class="mb-3">Reach Us Your Way – We’re Always Here to Help</h2>
+                                    <h4 class="mb-lg-0 mb-5">
+                                        You can reach us however you prefer — by phone, email, or social media.  Our
+                                        team is ready to respond quickly and professionally to all your inquiries,
+                                        wherever you are.
+                                    </h4>
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="row gap-4 gap-lg-0">
+                                        <div class="col-lg-4 d-flex flex-lg-column gap-2 gap-lg-4">
+                                            <span class="icon-wrapper d-flex align-items-center w-fit h-fit p-2 justify-content-center bg-primary rounded-2 ">
+                                                <i class="bi bi-geo-alt-fill"/>
+                                            </span>
+                                            <div>
+
+                                                <h3>Headquarters</h3>
+                                                <h6 class="mb-lg-4 line-clamp-3">Visit us at our office</h6>
+                                                <h6>8th Floor, Al Khair Tower, Street 901, Al Sadd - Doha- Qatar</h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 d-flex flex-lg-column gap-2 gap-lg-4">
+                                            <span class="icon-wrapper w-fit h-fit d-flex align-items-center p-2 justify-content-center bg-primary rounded-2 ">
+                                                <i class="bi bi-telephone-fill"/>
+                                            </span>
+                                            <div>
+
+                                                <h3>Phone</h3>
+                                                <h6 class="mb-lg-4 line-clamp-3">We are available Sunday through
+                                                    Thursday from 8 a.m.
+                                                    to 5 p.m.
+                                                </h6>
+                                                <h6>+97444249494</h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 d-flex flex-lg-column gap-2 gap-lg-4">
+                                            <span class="icon-wrapper w-fit h-fit    d-flex align-items-center p-2 justify-content-center bg-primary rounded-2 ">
+                                                <i class="bi bi-envelope-fill"/>
+                                            </span>
+                                            <div>
+
+                                                <h3>Email</h3>
+                                                <h6 class="mb-lg-4 line-clamp-3">We will respond within one business
+                                                    day
+                                                </h6>
+                                                <h6>ex.maintenance@taqat.com</h6>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </section>
+                    <section class="pt72 pb72">
+                        <div class="container text-center  pt-lg-4 pb-lg-5">
+
+                            <div class="row justify-content-center mb-5">
+                                <div class="col-lg-10 col-xl-8">
+                                    <h2 class="mb-3">Your questions... Here's what you need to know</h2>
+                                    <h4>
+                                        Whether you're a new client or a long-term partner, we know you have questions.
+                                        Here we answer the most common queries to make your experience with Taqat
+                                        Property Maintenance easier.
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-center g-0 pb-lg-4">
+                                <div class="col-lg-10 col-xl-8">
+
+                                    <!-- Item -->
+                                    <div class="pb-5 pt-4 border-top border-bottom border-1 border-primary">
+                                        <h3 class="mb-2">What services does Taqat Property Maintenance offer
+                                            specifically?
+                                        </h3>
+                                        <h6 class="mb-0 text-muted small">
+                                            We offer a full range of maintenance services, including hard maintenance
+                                            such as: Maintenance of infrastructure, equipment, and technical systems, as
+                                            well as soft maintenance such as: Cleaning, hospitality, security,
+                                            landscaping, waste management, and recreational facility services. All of
+                                            our services are designed to meet the needs of residential, commercial, and
+                                            industrial properties.
+                                        </h6>
+                                    </div>
+
+                                    <div class="pb-5 pt-4 border-top border-bottom border-1 border-primary">
+                                        <h3 class="mb-2">How are emergency breakdowns handled and is 24/7
+                                            support available?
+                                        </h3>
+                                        <h6 class="mb-0 text-muted">Yes, we provide 24/7 emergency support. Once the
+                                            issue is reported, our technical team assesses the situation immediately,
+                                            and a maintenance team is dispatched to your location in less than 60
+                                            minutes (within the coverage area). We recognize the importance of time in
+                                            emergency situations and work to ensure a quick and efficient response that
+                                            minimizes potential damage.
+                                        </h6>
+                                    </div>
+
+                                    <div class="pb-5 pt-4 border-top border-bottom border-1 border-primary">
+                                        <h3 class="mb-2">Do I need to sign an annual contract for your
+                                            services?
+                                        </h3>
+                                        <h6 class="mb-0 text-muted">An annual contract is not required to utilize our
+                                            services. You can request our services on a one-time basis, but we recommend
+                                            periodic contracts as they provide additional benefits such as: Special
+                                            discounts, free inspection visits, and priority in the response schedule. We
+                                            offer flexible contract options (monthly, quarterly, yearly) depending on
+                                            each client's needs to ensure convenience.
+                                        </h6>
+                                    </div>
+
+                                    <div class="pb-5 pt-4 border-top border-bottom border-1 border-primary">
+                                        <h3 class=" mb-2">What sets Taqat apart from other maintenance
+                                            companies
+                                            in the market?
+                                        </h3>
+                                        <h6 class="mb-0 text-muted">We are distinguished by our local expertise, our
+                                            specialized staff, and our use of the latest technologies and systems in
+                                            maintenance management. We pay close attention to detail, and are completely
+                                            transparent on pricing and quality. Moreover, we work in long-term
+                                            partnership with our clients to provide customized solutions that fit the
+                                            nature of each facility, with regular reporting and accurate performance
+                                            tracking.
+                                        </h6>
+                                    </div>
+
+                                    <div class="pb-5 pt-4 ">
+                                        <h3 class=" mb-2">How do I request a service or get a quote?</h3>
+                                        <h6 class="mb-0 text-muted">You can easily request the service through the
+                                            website via the “Order Now” form, or contact us directly by phone or email.
+                                            We will arrange a site visit (if needed), assess the condition of the
+                                            property, and then provide a detailed quote that includes scope of work,
+                                            duration, and total cost without any initial commitments.
+                                        </h6>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
                 </div>
             </xpath>
         </template>

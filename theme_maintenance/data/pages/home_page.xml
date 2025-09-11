@@ -32,7 +32,7 @@
                                             <a t-attf-href="/services"
                                                class="btn btn-primary text-dark d-flex align-items-center justify-content-center p-2 ">
                                                 Explore our services
-                                                <i class="bi bi-arrow-right ms-lg-3 ms-1"/>
+
                                             </a>
                                             <a t-attf-href="/contactus" class="btn btn-primary text-dark p-2  ">
                                                 Get in Touch
