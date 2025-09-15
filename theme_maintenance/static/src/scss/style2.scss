@@ -293,8 +293,11 @@ h2, h3 {
 .contain-card {
   height: 476px;
   object-fit: cover;
+}
 
-
+.website_blog #o_wblog_posts_loop .o_record_cover_container {
+  height: 476px !important; /* fill parent */
+  padding-top: 0 !important;
 }
 
 @media (min-width: 992px) {
@@ -337,7 +340,7 @@ h2, h3 {
 
 
 .blog_img {
-  border-radius: 12px; /* Optional */
+  border-radius: 12px;
 }
 
 
@@ -581,4 +584,25 @@ img_hero4 {
 
 .form_shadow {
   box-shadow: 0 24px 32px -12px rgba(54, 74, 54, 0.24), 0 1px 2px 0 rgba(167, 185, 164, 0.16), 0 0 0 1px rgba(18, 105, 63, 0.08);
+}
+
+.blog_top {
+  top: 80px;
+
+  .blog_top_content {
+    left: 60px;
+    bottom: 35px;
+    @media (max-width: 767px) {
+      left: 30px;
+    }
+  }
+}
+
+.pagination {
+  align-items: center !important;
+}
+
+.page-link {
+  padding: 10px 20px;
+  color: var(--text-dark) !important;
 }

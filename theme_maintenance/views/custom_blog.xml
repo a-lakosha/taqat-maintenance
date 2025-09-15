@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--    top Banner override-->
+    <template id="top_banner_maintenance" inherit_id="website_blog.opt_blog_cover_post" priority="2">
+        <xpath expr="//div[@t-if='first_post or blog']" position="replace">
+            <!-- Get latest posts -->
+            <t t-set="latest_posts"
+               t-value="request.env['blog.post'].search([], order='create_date desc')"/>
+            <t t-set="first_latest_post" t-value="latest_posts[0] if latest_posts else False"/>
+
+            <!-- Custom hero -->
+            <section class="hero_section">
+                <div class="bottom_bg mb104" style="height:500px;">
+                    <div class="container pt64 text-white">
+                        <div class="position-relative blog_top" t-if="first_latest_post or blog" style="z-index:20;">
+
+                            <!-- Cover image -->
+                            <div t-if="first_latest_post"
+                                 class=" first_lastest_blog_img" style="height:560px;">
+                                <t t-call="website.record_cover">
+                                    <t t-set="_record" t-value="first_latest_post"/>
+                                    <t t-set="additionnal_classes"
+                                       t-valuef="o_not_editable h400 rounded-4 overflow-hidden"/>
+                                </t>
+                            </div>
+
+                            <!-- Content -->
+                            <div t-if="first_latest_post"
+                                 class="d-flex flex-column justify-content-between p-4 blog_top_content  position-absolute bg-white w-75 rounded-4">
+                                <div>
+                                    <a t-attf-href="/blog/#{slug(first_latest_post.blog_id)}/#{slug(first_latest_post)}"
+                                       class="d-flex fw-bolder blog_title pb-3 m-0 text-dark  h4"
+                                       t-out="first_latest_post.name"/>
+                                    <h6 class="fw-medium m-0 pb-3 text-dark "
+                                        t-out="first_latest_post.teaser"/>
+                                </div>
+                                <div class="date_more p-0 d-flex flex-row align-items-center justify-content-between">
+                                    <a t-attf-href="/blog/#{slug(first_latest_post.blog_id)}/#{slug(first_latest_post)}"
+                                       class="d-flex flex-row gap-2 align-items-center text-dark">
+                                        More
+                                        <i class="bi bi-arrow-right"/>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </xpath>
+    </template>
+    <!--    Remove The Nav-->
+    <template id="remove_blog_nav" inherit_id="website_blog.blogs_nav">
+        <xpath expr="//nav" position="replace"/>
+    </template>
+    <!--    Card Loops-->
+    <template id="custom_blog_post" inherit_id="website_blog.posts_loop">
+        <xpath expr="//t[@t-if='state_info']" position="before">
+            <div class="pb48">
+
+                <h1 class="pt144">Latest blogs</h1>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et
+                    dolore
+                    magna aliqua. Ut enim Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor
+                    incidunt
+                    ut labore et dolore magna aliqua. Ut enim
+                </h4>
+            </div>
+        </xpath>
+        <xpath expr="//article[@name='blog_post']" position="replace">
+            <article
+                    t-attf-class="contain-card o_wblog_post position-relative #{'card h-100' if opt_blog_cards_design else ''}"
+                    name="blog_post" t-att-style="not blog_post.website_published and 'opacity:0.6;'">
+                <div>
+                    <t t-call="website.record_cover">
+                        <t t-set="_record" t-value="blog_post"/>
+                        <t
+                                t-set="additionnal_classes"
+                                t-valuef="o_not_editable rounded-4 overflow-hidden contain-card-blog"
+                        />
+                    </t>
+                </div>
+                <div class="position-absolute bg-white d-flex flex-column align-items-center rounded-3 p-3 w-75 gap-2 contain-card-txt shadow"
+                     style="bottom: 20px; left: 50%; transform: translateX(-50%);">
+                    <h4 class="fw-bold text-center line-clamp-2">
+                        <a t-attf-href="/blog/#{slug(blog_post.blog_id)}/#{slug(blog_post)}"
+                           class="text-dark text-decoration-none"
+                           t-out="blog_post.name"/>
+                    </h4>
+                    <h6 class="text-center text-muted line-clamp-2" t-out="blog_post.teaser"/>
+                    <a t-attf-href="/blog/#{slug(blog_post.blog_id)}/#{slug(blog_post)}"
+                       class="fw-bold text-dark text-decoration-none">
+                        Read More
+                        <i class="bi bi-arrow-right ms-2"/>
+                    </a>
+                </div>
+                <!-- Add 'unpublished' badge -->
+                <span t-if="not blog_post.website_published"
+                      class="bg-danger small py-1 px-2 position-absolute o_not_editable"
+                      style="top:0; right:0; border-radius: 0 18px 0px 0px;">
+                    unpublished
+                </span>
+            </article>
+        </xpath>
+    </template>
+    <!--    Pager-->
+    <template id="custom_blog_pagination" inherit_id="portal.pager">
+
+
+        <!-- Add class to each LI -->
+        <xpath expr="//t[@t-as='page']/li/a" position="attributes">
+            <attribute name="class" add="btn btn-primary text-dark d-flex justify-content-center px-3" seprator=" "/>
+        </xpath>
+
+        <!-- Add class to each link -->
+        <xpath expr="//span[@title='Previous']" position="attributes">
+            <attribute name="class" add="btn btn-primary bi bi-arrow-left text-dark px-3" seprator=" "
+                       remove="fa fa-chevron-left"/>
+        </xpath>
+        <xpath expr="//span[@title='Next']" position="attributes">
+            <attribute name="class" add="btn btn-primary bi bi-arrow-right text-dark px-3" seprator=" "
+                       remove="fa fa-chevron-right"/>
+        </xpath>
+
+    </template>
+</odoo>

@@ -17,7 +17,7 @@
     'category': 'Theme',
     'version': '0.1',
     'depends': ['theme_common', 'social_media', 'mass_mailing', 'website', 'crm', 'website_service',
-                'multi_themes_base'],
+                'multi_themes_base', 'website_blog'],
     'data': [
 
         'data/pages/home_page.xml',
@@ -26,6 +26,8 @@
         'data/pages/services_page.xml',
         'views/header.xml',
         'views/custom_footer.xml',
+        'views/custom_blog.xml',
+
     ],
     'images': [
         'static/description/maintenance_description.png',
