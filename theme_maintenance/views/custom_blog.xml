@@ -113,14 +113,23 @@
         </xpath>
 
         <!-- Add class to each link -->
-        <xpath expr="//span[@title='Previous']" position="attributes">
-            <attribute name="class" add="btn btn-primary bi bi-arrow-left text-dark px-3" seprator=" "
-                       remove="fa fa-chevron-left"/>
+        <xpath expr="//span[hasclass('fa-chevron-left')]" position="replace">
+            <i class="btn btn-primary bi bi-arrow-left text-dark px-3"/>
         </xpath>
-        <xpath expr="//span[@title='Next']" position="attributes">
-            <attribute name="class" add="btn btn-primary bi bi-arrow-right text-dark px-3" seprator=" "
-                       remove="fa fa-chevron-right"/>
+        <xpath expr="//span[hasclass('fa-chevron-right')]" position="replace">
+            <i class="btn btn-primary bi bi-arrow-right text-dark px-3"/>
+
         </xpath>
 
+    </template>
+
+    <!--    Blog Details-->
+    <template id="custom_blog_post_detail" inherit_id="website_blog.blog_post_complete">
+        <xpath expr="//section[@id='o_wblog_post_top']" position="replace" active="True">
+            <section id="blog_details">
+
+                <h1 class="text-danger">Custom Always Visible Title</h1>
+            </section>
+        </xpath>
     </template>
 </odoo>
