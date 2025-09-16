@@ -123,7 +123,7 @@
 
     </template>
 
-    <!--    Blog Details-->
+    <!--    Blog Details -->
     <template id="custom_blog_post_detail" inherit_id="website_blog.blog_post_complete">
         <xpath expr="//section[@id='o_wblog_post_top']" position="replace" active="True">
             <section id="blog_details">
