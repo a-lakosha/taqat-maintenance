@@ -225,59 +225,20 @@
                                 </div>
                             </div>
                             <div class="col-xl-8">
+                                <t t-set="service_types" t-value="request.env['website.service.type'].search([])"/>
                                 <div class="row justify-content-lg-between">
-                                    <div class="col-lg-4 ps-lg-3 mb-3 mb-lg-0 ">
-                                        <h3 class="text-primary pb-3">Technical services</h3>
-                                        <ul class="list-unstyled">
-                                            <li class="mb-3">
-                                                <a class="text-white">HVAC &amp; Cooling System Care</a>
-                                            </li>
-                                            <li class="mb-3">
-                                                <a class="text-white">Electrical maintenance</a>
-                                            </li>
-                                            <li class="mb-3">
-                                                <a class="text-white">Plumbing</a>
-                                            </li>
-                                            <li class="mb-3">
-                                                <a class="text-white">Fire and safety systems</a>
-                                            </li>
-                                            <li class="mb-3">
-                                                <a class="text-white">Lift &amp; Escalator Care Services</a>
-                                            </li>
-                                            <li class="mb-3">
-                                                <a class="text-white">Smart Control &amp; Monitoring</a>
-                                            </li>
-                                            <li class="mb-3">
-                                                <a class="text-white">Infrastructure works</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-lg-4 ps-lg-3 mb-3 mb-lg-0">
-                                        <h3 class="text-primary pb-3">Soft services</h3>
-                                        <ul class="list-unstyled">
-                                            <li class="mb-3">
-                                                <a class="text-white">Interior and exterior cleaning</a>
-                                            </li>
-                                            <li class="mb-3">
-                                                <a class="text-white">Security services</a>
-                                            </li>
-                                            <li class="mb-3">
-                                                <a class="text-white">Landscape &amp; Garden Services</a>
-                                            </li>
-                                            <li class="mb-3">
-                                                <a class="text-white">Waste management</a>
-                                            </li>
-                                            <li class="mb-3">
-                                                <a class="text-white">Customer service/call center</a>
-                                            </li>
-                                            <li class="mb-3">
-                                                <a class="text-white">Tenant &amp; Resident Support</a>
-                                            </li>
-                                            <li class="mb-3">
-                                                <a class="text-white">Logistics and warehousing</a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                    <t t-foreach="service_types" t-as="service_type">
+                                        <div class="col-lg-4 ps-lg-3 mb-3 mb-lg-0">
+                                            <h3 class="text-primary pb-3" t-field="service_type.name"/>
+                                            <ul class="list-unstyled">
+                                                <t t-foreach="service_type.service_ids" t-as="service">
+                                                    <li class="mb-3">
+                                                        <a href="#" class="text-white" t-field="service.name"/>
+                                                    </li>
+                                                </t>
+                                            </ul>
+                                        </div>
+                                    </t>
                                     <div class="col-lg-4 ps-lg-3 mb-3 mb-lg-0">
                                         <h3 class="text-primary pb-3">Contact</h3>
                                         <ul class="list-unstyled pb-3 pb-lg-5 ">
