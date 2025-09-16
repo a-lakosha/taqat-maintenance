@@ -3,12 +3,14 @@
 from odoo import api, fields, models, _
 from odoo.addons.http_routing.models.ir_http import slug
 from odoo.tools.translate import html_translate
+from odoo.tools import mute_logger
 
 
 class WebsiteService(models.Model):
     _name = 'website.service'
     _inherit = ['mail.thread', 'mail.activity.mixin', 'image.mixin',
                 'website.seo.metadata', 'website.published.multi.mixin',
+                'website.cover_properties.mixin',
                 'website.searchable.mixin']
     _description = 'Service'
     _order = 'sequence, id'
@@ -60,93 +62,10 @@ class WebsiteService(models.Model):
         help="Restrict publishing to a specific website."
     )
 
+    @mute_logger('odoo.addons.base.models.ir_qweb')
     def _get_default_website_description(self):
-        """Return default HTML template for service description"""
-        return '''
-            <section class="container my-5">
-                <!-- Hero Section -->
-                <div class="row mb-5">
-                    <div class="col-12">
-                        <h2 class="display-6 fw-bold mb-3">Clean Spaces... Strong Impressions</h2>
-                        <p class="lead">Professional cleaning services tailored to your needs.</p>
-                        <a href="/contactus" class="btn btn-warning btn-lg">Ask for service →</a>
-                    </div>
-                </div>
-                
-                <!-- Why Us Section -->
-                <div class="row mb-5">
-                    <div class="col-12 text-center mb-4">
-                        <h6 class="text-warning fw-bold">Why us</h6>
-                        <h3 class="fw-bold">What sets us apart in providing....</h3>
-                    </div>
-                    <div class="col-md-6 col-lg-3 mb-4">
-                        <div class="text-center">
-                            <i class="bi bi-check-circle fs-1 text-warning mb-3"></i>
-                            <h5>Responsiveness</h5>
-                            <p>Quick response to all service requests with professional handling.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 mb-4">
-                        <div class="text-center">
-                            <i class="bi bi-people fs-1 text-warning mb-3"></i>
-                            <h5>Specialized teams</h5>
-                            <p>Expert teams trained for specific cleaning requirements.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 mb-4">
-                        <div class="text-center">
-                            <i class="bi bi-clipboard-data fs-1 text-warning mb-3"></i>
-                            <h5>Regular reports</h5>
-                            <p>Detailed reports on service quality and progress.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 mb-4">
-                        <div class="text-center">
-                            <i class="bi bi-gem fs-1 text-warning mb-3"></i>
-                            <h5>Material quality</h5>
-                            <p>Premium quality cleaning materials and equipment.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- FAQ Section -->
-                <div class="row mb-5">
-                    <div class="col-lg-8 mx-auto text-center">
-                        <p class="text-muted small">The value of the service to the beneficiary</p>
-                        <h4 class="fw-bold mb-4">How does this service contribute to real estate preservation?</h4>
-                        <p>Our professional cleaning services help maintain property value by ensuring regular maintenance, preventing deterioration, and creating positive impressions for tenants and visitors.</p>
-                    </div>
-                </div>
-                
-                <!-- Info Cards -->
-                <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold">Lorem Ipsum dolor</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold">Lorem Ipsum dolor</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold">Lorem Ipsum dolor</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        '''
+        return self.env['ir.qweb']._render("website_service.default_website_description",
+                                           raise_if_not_found=False)
 
     @api.depends('name')
     def _compute_website_url(self):
