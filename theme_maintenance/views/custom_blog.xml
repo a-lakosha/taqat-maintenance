@@ -20,7 +20,7 @@
                                 <t t-call="website.record_cover">
                                     <t t-set="_record" t-value="first_latest_post"/>
                                     <t t-set="additionnal_classes"
-                                       t-valuef="o_not_editable h400 rounded-4 overflow-hidden"/>
+                                       t-valuef="o_not_editable rounded-4 overflow-hidden"/>
                                 </t>
                             </div>
 
@@ -128,8 +128,87 @@
         <xpath expr="//section[@id='o_wblog_post_top']" position="replace" active="True">
             <section id="blog_details">
 
-                <h1 class="text-danger">Custom Always Visible Title</h1>
+                <section class="hero_section">
+                    <div class="bottom_bg bottom_bg_blog" style="height:660px;">
+                        <div class="container pt64 text-white position-relative">
+                            <div class="d-flex flex-column  align-items-center text-center ">
+
+                                <h1 class="display-1" t-field="blog_post.name" style="max-width:800px;"/>
+                                <time
+                                        class="mb-lg-5 mb-3 d-block h6 text-light"
+                                        style="font-weight: 300;"
+                                        t-if="blog_post.post_date"
+                                        t-esc="blog_post.post_date.strftime('%d %b %Y')"
+                                />
+                            </div>
+                            <div class="d-flex flex-column flex-lg-row gap-3 gap-lg-2 justify-content-center">
+
+                                <div class="o_wblog_sidebar_block d-flex d-lg-block flex-row  justify-content-center align-items-center gap-lg-0 gap-2 flex-lg-column pt-lg-5 order-lg-1 order-2">
+                                    <h6>Share</h6>
+
+                                    <div class="o_wblog_social_links d-flex flex-lg-column flex-row flex-wrap mx-n1 o_not_editable">
+                                        <t t-set="classes" t-translation="off">text-light mx-1 d-flex align-items-center
+                                            justify-content-center
+                                            text-decoration-none
+                                        </t>
+                                        <a href="#" aria-label="Twitter" title="Share on Twitter"
+                                           t-attf-class="o_twitter #{classes}">
+                                            <i class="fa fa-twitter" aria-label="Twitter"
+                                               title="Twitter"/>
+                                        </a>
+                                        <a href="#" aria-label="LinkedIn" title="Share on LinkedIn"
+                                           t-attf-class="o_linkedin #{classes}">
+                                            <i class="bi bi-linkedin text-light" aria-label="LinkedIn"
+                                               title="LinkedIn"/>
+                                        </a>
+                                        <a href="#" aria-label="Facebook" title="Share on Facebook"
+                                           t-attf-class="o_facebook #{classes}">
+                                            <i class="fa fa-facebook-f text-light bg-transparent"/>
+                                        </a>
+                                        <a href="#" aria-label="LinkedIn" title="Share on LinkedIn"
+                                           t-attf-class="o_linkedin #{classes}">
+                                            <i class="bi bi-link-45deg" aria-label="LinkedIn"
+                                               title="LinkedIn"/>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="w-100 order-2 order-lg-3 blog_cover_photo"
+                                     style="max-width:800px;">
+                                    <t t-call="website.record_cover">
+                                        <t t-set="_record" t-value="blog_post"/>
+                                        <t t-set="additionnal_classes"
+                                           t-valuef="o_not_editable w-100  rounded-4 overflow-hidden"/>
+                                    </t>
+                                </div>
+                                <div t-attf-class="o_not_editable pt-lg-5 position-relative #{additionnal_classes or ''} d-flex d-lg-block flex-row justify-content-center align-items-center flex-lg-column  gap-3 order-lg-3 order-1">
+                                    <h6 class="text-500">
+                                        Author
+                                    </h6>
+                                    <div class="d-flex flex-row flex-lg-column  gap-2">
+
+                                        <div t-if="blog_post.author_avatar"
+                                             t-field="blog_post.author_avatar"
+                                             style="line-height:1"
+                                             t-options='{"widget": "image", "class": "rounded-circle " + "o_wblog_author_avatar me-1" if hide_date else  "o_wblog_author_avatar_date me-2"}'
+                                        />
+                                        <div t-att-class="not hide_date and 'small fw-bold'" style="line-height:1">
+                                            <h6 t-if="editable" t-field="blog_post.author_id.name"/>
+                                            <h4 t-else="" t-esc="blog_post.author_name"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
             </section>
         </xpath>
+    </template>
+
+    <!--    Footer-->
+    <template id="custom_blog_footer" inherit_id="website_blog.opt_blog_post_read_next">
+
     </template>
 </odoo>

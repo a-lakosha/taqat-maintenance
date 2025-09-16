@@ -606,3 +606,22 @@ img_hero4 {
   padding: 10px 20px;
   color: var(--text-dark) !important;
 }
+
+.o_wblog_author_avatar_date {
+  border-radius: 50%;
+}
+
+.bottom_bg_blog {
+  margin-bottom: 120px;
+  @media (min-width: 992px) {
+    margin-bottom: 180px;
+
+  }
+}
+
+.blog_cover_photo {
+  height: 400px;
+  @media (min-width: 992px) {
+    height: 500px;
+  }
+}
