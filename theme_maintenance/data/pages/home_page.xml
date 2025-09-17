@@ -19,14 +19,16 @@
                                 <div class="row">
                                     <!-- Text Column -->
                                     <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column text-center text-md-start gap-lg-4 hero-txt o_animate o_anim_fade_in o_anim_from_left py-lg-5 py-3">
-                                        <h1 class="display-1 fw-bold">Comprehensive Facility Management… Proactive
-                                            Preventive Maintenance… Renovations with integrated Quality
+                                        <h1 class="display-1 fw-bold">Facility Management at Global Standards
                                         </h1>
                                         <h4 class="fw-normal">
                                             We deliver interactive facility management services, from preventive
-                                            maintenance, repairs, and renovations to operations, safety and security
-                                            management, cleaning services, and complaint handling by experts and powered
-                                            by advanced technologies.
+                                            facility management services, repairs, and renovations to operations, safety
+                                            and security management, cleaning services, and complaint handling by
+                                            experts and powered by advanced technologies. We ensure exceptional
+                                            performance, operational efficiency, and user comfort through strict
+                                            adherence to the international standards. Taqat for Facility Management…
+                                            Where Quality, Safety, and Sustainability are integrated Together.
                                         </h4>
                                         <div class="d-flex justify-content-center justify-content-lg-start gap-2 gap-lg-3 my-3 ">
                                             <a t-attf-href="/services"
@@ -51,30 +53,36 @@
 
                                 <!-- Second Row -->
                                 <div class="row pt32">
-                                    <div class="col-lg-7 second-hero-row o_animate o_anim_fade_in">
+                                    <div class="col-lg-6 second-hero-row o_animate o_anim_fade_in">
                                         <img src="/theme_maintenance/static/src/imgs/y_home/bulider.png"
                                              alt="service_bulider" class="w-100 h-100"/>
                                     </div>
-                                    <div class="col-lg-5 second-hero-row o_animate o_anim_fade_in o_anim_from_bottom">
+                                    <div class="col-lg-6 second-hero-row o_animate o_anim_fade_in o_anim_from_bottom">
                                         <h4 class="mb-lg-3">Why Choose Taqat for Facilities Management?</h4>
-                                        <h2 class="trusted-heading fw-semibold">Trusted &amp; Unified services</h2>
+                                        <h2 class="trusted-heading fw-semibold">Trusted Expertise… Customized Solutions…
+                                            24/7 Support
+                                        </h2>
                                         <ul class="list-unstyled d-flex flex-column gap-2 gap-lg-4">
                                             <li>
-                                                <h3 class="fw-semibold">Years of Trusted Property Services</h3>
-                                                <h4 class="fw-normal">Lorem ipsum dolor sit amet, consectetur adipisci
-                                                    elit...
+                                                <h3 class="fw-semibold">Proven experience in facility management
+                                                    services
+                                                </h3>
+                                                <h4 class="fw-normal">An exceptional track record in operating and
+                                                    maintaining facilities to the global standards.
                                                 </h4>
                                             </li>
                                             <li>
-                                                <h3 class="fw-semibold">Flexible Plans for Homes &amp; Businesses</h3>
-                                                <h4 class="fw-normal">Lorem ipsum dolor sit amet, consectetur adipisci
-                                                    elit...
+                                                <h3 class="fw-semibold">Flexible plans customized to both commercial and
+                                                    residential needs
+                                                </h3>
+                                                <h4 class="fw-normal">Bespoke facility management services designed for
+                                                    efficiency, reliability, and cost-effectiveness.
                                                 </h4>
                                             </li>
                                             <li>
-                                                <h3 class="fw-semibold">Certified Support, Anytime You Need It.</h3>
-                                                <h4 class="fw-normal">Lorem ipsum dolor sit amet, consectetur adipisci
-                                                    elit...
+                                                <h3 class="fw-semibold">24/7 Support</h3>
+                                                <h4 class="fw-normal">Highly trained professionals ready to respond
+                                                    promptly and deliver with precision at any time.
                                                 </h4>
                                             </li>
                                         </ul>
@@ -147,12 +155,17 @@
                                         <div>
 
                                             <h4 class="text-primary">About Us</h4>
-                                            <h2>Trusted &amp; Unified services</h2>
+                                            <h4 class="text-primary">Pioneers of Facility Management in Qatar</h4>
+                                            <h2>Trusted Expertise… Customized Solutions… 24/7 Support</h2>
                                         </div>
-                                        <h4>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor
-                                            incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                            nostrum
-                                            exercitationem ullam corporis suscipit laboriosam.
+                                        <h4>Drawing on proven expertise and innovative vision, we provide extraordinary
+                                            facility management solutions founded on quality, sustainability, and
+                                            creative transformation.
+                                            <br/>
+                                            As leaders in Qatar’s facility management industry, we harmonize human
+                                            expertise and advanced technology to shape secure, high-performing, and
+                                            future-focused environments that foster success for organizations and
+                                            individuals.
                                         </h4>
 
                                         <a t-attf-href="/aboutus" class="text-dark">
@@ -171,7 +184,6 @@
                     <section class="pb72 pt72 our_clients">
                         <div class="d-flex flex-column align-items-center py-lg-5">
                             <h4 class="text-primary">Our Clients</h4>
-                            <h1 class="text-white">We are honored to serve</h1>
                         </div>
                         <div id="clientCarousel" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
@@ -186,6 +198,7 @@
                                             <h4 class="h4">HVAC System Maintenance</h4>
                                             <h4 class="h4">Electrical maintenance</h4>
                                             <h4 class="h4">Fire &amp; Safety Systems Maintenance</h4>
+                                            <h4 class="h4">Elevator &amp; Escalator Maintenance</h4>
                                             <h4 class="h4">External infrastructure</h4>
                                         </div>
                                         <div class="col-lg-5 ">
@@ -230,14 +243,15 @@
                                     <div class="row p-4 text-white justify-content-evenly ">
 
                                         <div class="col-lg-6 card-bg-light p-4 d-flex flex-column gap-2 mb-4">
-                                            <h2 class="h2">Lusail Towers</h2>
-                                            <h4 class="h4">We are privileged to provide a suite of high-quality facility
-                                                management services to this iconic Qatari landmark, including:
+                                            <h2 class="h2">Al Khair Tower</h2>
+                                            <h4 class="h4">Our partnership with Al Khair Tower in Doha includes
+                                                delivering comprehensive facility management solutions, such as:
                                             </h4>
-                                            <h4 class="h4">HVAC System Maintenance</h4>
-                                            <h4 class="h4">Electrical maintenance</h4>
-                                            <h4 class="h4">Fire &amp; Safety Systems Maintenance</h4>
-                                            <h4 class="h4">External infrastructure</h4>
+                                            <h4 class="h4">Maintenance of HVAC and electrical systems</h4>
+                                            <h4 class="h4">Maintenance of plumbing, elevators, and fire systems</h4>
+                                            <h4 class="h4">Contract and supplier management</h4>
+                                            <h4 class="h4">Cleaning services management</h4>
+                                            <h4 class="h4">Oversight of regulatory and health compliance</h4>
                                         </div>
                                         <div class="col-lg-5 ">
                                             <div class="row h-100">
@@ -281,14 +295,21 @@
                                     <div class="row p-4 text-white justify-content-evenly ">
 
                                         <div class="col-lg-6 card-bg-light p-4 d-flex flex-column gap-2 mb-4">
-                                            <h2 class="h2">Lusail Towers</h2>
-                                            <h4 class="h4">We are privileged to provide a suite of high-quality facility
-                                                management services to this iconic Qatari landmark, including:
+                                            <h2 class="h2">300 Housing Units</h2>
+                                            <h4 class="h4">Beyond commercial properties, we have also managed facilities
+                                                for 300 housing units in Qatar, providing:
                                             </h4>
-                                            <h4 class="h4">HVAC System Maintenance</h4>
-                                            <h4 class="h4">Electrical maintenance</h4>
-                                            <h4 class="h4">Fire &amp; Safety Systems Maintenance</h4>
-                                            <h4 class="h4">External infrastructure</h4>
+                                            <h4 class="h4">Cleaning services management</h4>
+                                            <h4 class="h4">Handling complaints and feedback to enhance resident
+                                                satisfaction
+                                            </h4>
+                                            <h4 class="h4">Security and safety management</h4>
+                                            <h4 class="h4">Implementation of environmental principles and resource
+                                                conservation
+                                            </h4>
+                                            <h4 class="h4">Maintenance of HVAC, electrical, plumbing, elevator, and fire
+                                                safety systems
+                                            </h4>
                                         </div>
                                         <div class="col-lg-5 ">
                                             <div class="row h-100">
@@ -359,7 +380,10 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-7 d-flex flex-column gap-lg-4 order-2 pt-5 pt-lg-3 order-lg-1">
-                                    <h2 class="pb-2 ">Facility Management Vision - Taqat</h2>
+                                    <h2 class="pb-2 ">Taqat for Facility Management Vision</h2>
+                                    <h3>To be among the leading facility management providers in the Qatari market by
+                                        delivering professional services founded on:
+                                    </h3>
                                     <ul class="list-unstyled d-flex flex-column gap-2 gap-lg-4">
                                         <li class="d-flex gap-3">
                                             <span class="icon-wrapper d-flex align-items-center p-2 justify-content-center bg-primary rounded-2 ">
@@ -368,9 +392,9 @@
                                             <div class="d-flex flex-column gap-lg-2">
                                                 <h3 class="mb-1 fw-semibold">Operational quality and rapid response</h3>
                                                 <h6 class="mb-0 text-muted small">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
-                                                    tempor
-                                                    incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                                    We are committed to providing efficient and accurate services that
+                                                    meet client needs effectively, supported by expert teams available
+                                                    24/7.
                                                 </h6>
                                             </div>
                                         </li>
@@ -379,13 +403,11 @@
                                                 <i class="fa fa-check-circle text-white fs-5"></i>
                                             </span>
                                             <div class="d-flex flex-column gap-lg-2">
-                                                <h3 class="mb-1 fw-semibold">Adherence to international standards (ISO
-                                                    41001)
+                                                <h3 class="mb-1 fw-semibold">Adherence to international standards
                                                 </h3>
                                                 <h6 class="mb-0 text-muted small">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
-                                                    tempor
-                                                    incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                                    We apply global best practices in facility management to ensure
+                                                    compliance, safety, and sustainable operational excellence.
                                                 </h6>
                                             </div>
                                         </li>
@@ -395,11 +417,12 @@
                                                 <i class="fa fa-check-circle text-white fs-5"></i>
                                             </span>
                                             <div class="d-flex flex-column gap-lg-2">
-                                                <h3 class="mb-1 fw-semibold">Data-Driven Performance Improvement</h3>
+                                                <h3 class="mb-1 fw-semibold">Continuous Improvement Through Data
+                                                    Analysis and Performance Evaluation
+                                                </h3>
                                                 <h6 class="mb-0 text-muted small">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
-                                                    tempor
-                                                    incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                                    We utilize advanced digital tools to monitor performance and analyze
+                                                    data to improve informed decision-making and ongoing development.
                                                 </h6>
                                             </div>
                                         </li>
@@ -413,9 +436,9 @@
                                                     transformation.
                                                 </h3>
                                                 <h6 class="mb-0 text-muted small">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
-                                                    tempor
-                                                    incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                                    We integrate environmental solutions and innovative technologies to
+                                                    reduce environmental impact, improve energy efficiency, and enhance
+                                                    service quality.
                                                 </h6>
                                             </div>
                                         </li>
@@ -425,13 +448,12 @@
                                                 <i class="fa fa-check-circle text-white fs-5"></i>
                                             </span>
                                             <div class="d-flex flex-column gap-lg-2">
-                                                <h3 class="mb-1 fw-semibold">Customer Delight Through Experience
-                                                    Excellence
+                                                <h3 class="mb-1 fw-semibold">Delivering Excellence to Elevate Client
+                                                    Satisfaction
                                                 </h3>
                                                 <h6 class="mb-0 text-muted small">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
-                                                    tempor
-                                                    incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                                    From the very first interaction to final delivery, we ensure
+                                                    seamless communication, quick response times, and precise execution.
                                                 </h6>
                                             </div>
                                         </li>
@@ -461,8 +483,8 @@
 
                     <section class="pt120 pb120 reviews_section" t-if="testimonial_ids">
                         <div class="d-flex flex-column align-items-center py-lg-5">
-                            <h4 class="text-primary">Customer Reviews</h4>
-                            <h1 class="text-white text-center">What our customers say about us</h1>
+                            <h4 class="text-primary">Our Clients’ Feedback</h4>
+                            <h1 class="text-white text-center">What are our clients saying about us?</h1>
                         </div>
 
                         <div class="d-flex flex-nowrap justify-content-lg-start gap-5 cards_container pb-lg-5">
@@ -540,15 +562,14 @@
 
                             <!-- Section Header -->
                             <div class="d-flex flex-column align-items-center gap-lg-3 pb-lg-5 pb-3 text-center">
-                                <h4 class="text-primary">Blogs</h4>
+                                <h4 class="text-primary">Our Blog</h4>
                                 <h1>Latest trends &amp; Inspiring Ideas</h1>
                                 <h4 class="text-700">Discover trends and expert perspectives in facility management,
-                                    with in-depth
-                                    analyses on best practices and innovative solutions.
-                                    Gain valuable knowledge from our experts on sustainability, digital transformation,
-                                    and intelligent maintenance strategies.
-                                    Our blog is your reliable hub for insights that drive operational efficiency,
-                                    sustainable practices, and excellence in facility management.
+                                    with in-depth analyses on best practices and innovative solutions. Gain valuable
+                                    knowledge from our experts on sustainability, digital transformation, and
+                                    intelligent maintenance strategies. Our blog is your reliable hub for insights that
+                                    drive operational efficiency, sustainable practices, and excellence in facility
+                                    management.
                                 </h4>
                             </div>
 

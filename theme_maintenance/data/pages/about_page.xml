@@ -31,12 +31,7 @@
                                         environments that foster success for organizations and individuals..
                                     </h4>
                                     <div class="d-flex align-content-center justify-content-center gap-2  disc_blogs">
-                                        <a t-attf-href="/service" class="btn btn-primary text-dark p-2 extra_blog">
-                                            Explore our
-                                            services
-                                            <i class="bi bi-arrow-right ms-lg-2 ms-1"/>
-                                        </a>
-                                        <a t-attf-href="/contact" class="btn btn-primary text-dark p-2">Contact us</a>
+                                        <a t-attf-href="/contact" class="btn btn-primary text-dark">Contact us</a>
                                     </div>
                                 </div>
                             </div>
@@ -50,16 +45,13 @@
 
 
                                         <div class="col-xl-6">
-                                            <h4 class="text-primary">Our Vision</h4>
-                                            <h2>To be the first choice in maintenance</h2>
+                                            <h2>Vision 2023 for Facilities:</h2>
                                         </div>
-                                        <h4 class="col-xl-6">To lead the facility management industry in Qatar, and
-                                            become the top choice
-                                            for
-                                            Qatari clients by delivering creative and sustainable solutions that boost
-                                            facilities performance, while adhering to the highest international
-                                            standards
-                                            and fostering continuous innovation.
+                                        <h4 class="col-xl-6 text-muted">To lead the facility management industry in
+                                            Qatar, and
+                                            become the top choice for Qatari clients by delivering creative and
+                                            sustainable solutions that boost facilities performance, while adhering to
+                                            the highest international standards and fostering continuous innovation.
                                         </h4>
                                     </div>
                                 </div>
@@ -68,11 +60,11 @@
 
 
                                         <div class="col-xl-6">
-                                            <h4 class="text-primary">Our Mission</h4>
-                                            <h2>Keeping every property safe and efficient</h2>
+                                            <h2>Our Mission:</h2>
                                         </div>
-                                        <h4 class="col-xl-6">We are committed to providing integrated facility
-                                            management services through innovative experts and intelligent technology. 
+                                        <h4 class="col-xl-6 text-muted">We are committed to providing integrated
+                                            facility
+                                            management services through innovative experts and intelligent technology.
                                             With passion, we strive to create safe, efficient, and sustainable
                                             facilities to meet our clients’ needs and exceed their expectations.
                                         </h4>
@@ -122,95 +114,53 @@
                                              class="img-fluid rounded-4 position-relative w-cover engineer_img w-100 h-100"
                                              style="z-index:3;"/>
                                     </div>
-                                    <div class="col-xl-6 d-flex flex-column gap-lg-4 justify-content-center txt-eng">
+                                    <div class="col-xl-6 d-flex flex-column gap-lg-2 justify-content-center txt-eng">
                                         <div>
 
-                                            <h4 class="text-primary">Our Values</h4>
-                                            <h2>Values at the Core of Every Step</h2>
+                                            <h2>Our Values</h2>
                                         </div>
-                                        <h4>At Taqaat, we believe that quality work starts from within, from the
-                                            principles
-                                            we uphold every day. We seek to build relationships based on trust,
-                                            commitment,
-                                            and mutual respect.
-                                        </h4>
                                         <ul class="list-unstyled values-list-bs">
                                             <li class="row g-3 align-items-start py-2">
                                                 <div class="col-12 col-md-4 col-lg-3">
-                                                    <h3 class="h5 fw-semibold mb-0">Professionalism</h3>
+                                                    <h3 class="mb-0">Professionalism</h3>
                                                 </div>
-                                                <div class="col-12 col-md-8 col-lg-9 desc">
-                                                    <h6 class="mb-0">Through providing services with extraordinary
-                                                        quality
-                                                        and discipline to exceed client expectations.
-                                                    </h6>
-                                                </div>
+                                                <!--                                                <div class="col-12 col-md-8 col-lg-9 desc">-->
+                                                <!--                                                    <h6 class="mb-0">Through providing services with extraordinary-->
+                                                <!--                                                        quality-->
+                                                <!--                                                        and discipline to exceed client expectations.-->
+                                                <!--                                                    </h6>-->
+                                                <!--                                                </div>-->
                                             </li>
 
                                             <li class="row g-3 align-items-start py-2">
                                                 <div class="col-12 col-md-4 col-lg-3">
-                                                    <h3 class="h5 fw-semibold mb-0">Collaboration</h3>
+                                                    <h3 class="mb-0">Collaboration</h3>
                                                 </div>
-                                                <div class="col-12 col-md-8 col-lg-9 desc">
-                                                    <h6 class="mb-0">By harnessing the power of teamwork to achieve
-                                                        excellence in every project.
-                                                    </h6>
+
+                                            </li>
+                                            <li class="row g-3 align-items-start py-2">
+                                                <div class="col-12 col-md-4 col-lg-3">
+                                                    <h3 class="mb-0">Sustainability</h3>
                                                 </div>
                                             </li>
                                             <li class="row g-3 align-items-start py-2">
                                                 <div class="col-12 col-md-4 col-lg-3">
-                                                    <h3 class="h5 fw-semibold mb-0">Sustainability</h3>
-                                                </div>
-                                                <div class="col-12 col-md-8 col-lg-9 desc">
-                                                    <h6 class="mb-0">Through embedding eco-friendly practices and green
-                                                        technologies to protect future resources.
-                                                    </h6>
-                                                </div>
-                                            </li>
-                                            <li class="row g-3 align-items-start py-2">
-                                                <div class="col-12 col-md-4 col-lg-3">
-                                                    <h3 class="h5 fw-semibold mb-0">Digital Transformation &amp;
+                                                    <h3 class="mb-0">Digital Transformation &amp;
                                                         Innovation
                                                     </h3>
                                                 </div>
-                                                <div class="col-12 col-md-8 col-lg-9 desc">
-                                                    <h6 class="mb-0">We are committed to leveraging the latest
-                                                        technologies
-                                                        in facility management to provide innovative, efficient, and
-                                                        cost-effective solutions.
-                                                    </h6>
+                                            </li>
+                                            <li class="row g-3 align-items-start py-2">
+                                                <div class="col-12 col-md-4 col-lg-3">
+                                                    <h3 class="mb-0">Client Focus</h3>
                                                 </div>
                                             </li>
                                             <li class="row g-3 align-items-start py-2">
                                                 <div class="col-12 col-md-4 col-lg-3">
-                                                    <h3 class="h5 fw-semibold mb-0">Client Focus</h3>
-                                                </div>
-                                                <div class="col-12 col-md-8 col-lg-9 desc">
-                                                    <h6 class="mb-0">We prioritize customer experience in every stage of
-                                                        our
-                                                        solutions development, creating enduring relationships based on
-                                                        trust and satisfaction.
-                                                    </h6>
-                                                </div>
-                                            </li>
-                                            <li class="row g-3 align-items-start py-2">
-                                                <div class="col-12 col-md-4 col-lg-3">
-                                                    <h3 class="h5 fw-semibold mb-0">Agility</h3>
-                                                </div>
-                                                <div class="col-12 col-md-8 col-lg-9 desc">
-                                                    <h6 class="mb-0">By acting quickly and efficiently to address all
-                                                        needs
-                                                        and urgent situations
-                                                    </h6>
+                                                    <h3 class="mb-0">Agility</h3>
                                                 </div>
                                             </li>
                                         </ul>
-
-                                        <a href="#" class="text-dark">
-                                            Read more
-                                            <i class="bi bi-arrow-right ms-lg-3 ms-1"/>
-
-                                        </a>
                                     </div>
 
 
@@ -226,7 +176,8 @@
                                 <div class="col-xl-3 text-center text-xl-start mb-5 mb-xl-0">
                                     <h4 class="text-primary">Our Achievements in Numbers</h4>
                                     <h2>Milestones That Define Our Journey</h2>
-                                    <h4>Since our launch, we have consistently delivered high-quality results,
+                                    <h4 class="text-500">Since our launch, we have consistently delivered high-quality
+                                        results,
                                         strengthened
                                         by diverse projects and long-term client trust.
                                     </h4>
@@ -263,9 +214,9 @@
                         <div class="container text-center  pt-lg-4 pb-lg-5">
 
                             <div class="row justify-content-center mb-5">
-                                <div class="col-lg-10 col-xl-8">
+                                <div class="col-lg-9">
                                     <h2 class="mb-3">Your Questions Matter… Let’s Connect!</h2>
-                                    <h4>
+                                    <h4 class="text-muted">
                                         Whether you’re a first-time client or a long-term partner, here are answers to
                                         some of the most Frequently Asked Questions to help you enjoy a smooth
                                         experience with Taqat for Facility Management.
@@ -274,7 +225,7 @@
                             </div>
 
                             <div class="row justify-content-center g-0 pb-lg-4">
-                                <div class="col-lg-10 col-xl-8">
+                                <div class="col-lg-9">
 
                                     <!-- Item -->
                                     <div class="pb-5 pt-4 border-top border-bottom border-1 border-primary">
@@ -326,11 +277,15 @@
                     <section class="s_three_columns o_cc  pt32 pb32 o_colored_level" data-vcss="001"
                              data-snippet="s_three_columns" data-name="Columns" style="background-image: none;">
                         <div class="container">
-                            <div class="d-flex flex-column text-center gap-3">
+                            <div class="d-flex flex-column justify-content-center align-items-center text-center gap-3">
                                 <h4 class="text-primary">Our team</h4>
-                                <h1>Professionalism Inspiring Excellence…Expertise Creating Impact</h1>
+                                <div style="max-width:950px; ">
 
-                                <h4>We believe outstanding facility management starts with exceptional people. That’s
+                                    <h1>Professionalism Inspiring Excellence…Expertise Creating Impact</h1>
+                                </div>
+
+                                <h4 class="text-muted">We believe outstanding facility management starts with
+                                    exceptional people. That’s
                                     why our team consists of a distinguished team of experts, technicians, and
                                     consultants who have the passion and possess exceptional skills to uphold the
                                     highest standards of quality and sustainability to deliver results that go beyond

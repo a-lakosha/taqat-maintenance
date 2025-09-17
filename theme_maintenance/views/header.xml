@@ -133,7 +133,7 @@
     >
         <xpath expr="//header//nav" position="replace">
             <t t-call="website.navbar">
-                <t t-set="_navbar_classes" t-valuef="d-none d-lg-block shadow-sm px-0"/>
+                <t t-set="_navbar_classes" t-valuef="d-none d-lg-block shadow-sm p-0"/>
                 <div id="o_main_nav" class="o_main_nav">
                     <div class="container">
                         <div class="d-flex justify-content-between flex-wrap align-items-center py-3">
