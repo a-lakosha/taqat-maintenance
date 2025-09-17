@@ -114,10 +114,10 @@
 
         <!-- Add class to each link -->
         <xpath expr="//span[hasclass('fa-chevron-left')]" position="replace">
-            <i class="btn btn-primary bi bi-arrow-left text-dark px-3"/>
+            <i class="btn btn-primary bi bi-arrow-left text-dark px-3" id="arrow_icons"/>
         </xpath>
         <xpath expr="//span[hasclass('fa-chevron-right')]" position="replace">
-            <i class="btn btn-primary bi bi-arrow-right text-dark px-3"/>
+            <i class="btn btn-primary bi bi-arrow-right text-dark px-3" id="arrow_icons"/>
 
         </xpath>
 

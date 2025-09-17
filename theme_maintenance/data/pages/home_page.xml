@@ -131,7 +131,7 @@
                         </div>
                     </section>
 
-                    <section class="pb72 pt72 bg-light bottom_bg">
+                    <section class="pb72 pt72 bg-light bottom_bg eng-sec">
                         <div class="container ">
                             <div class="engineer_section-inner">
 
@@ -143,7 +143,7 @@
                                              class="img-fluid rounded-4 position-relative  engineer_img w-100 h-100"
                                              style="z-index:3;"/>
                                     </div>
-                                    <div class="col-lg-6 d-flex flex-column gap-lg-4 justify-content-center">
+                                    <div class="col-lg-6 d-flex flex-column gap-lg-4 justify-content-center txt-eng">
                                         <div>
 
                                             <h4 class="text-primary">About Us</h4>
@@ -331,7 +331,7 @@
 
 
                             </div>
-                            <div class="d-flex justify-content-center gap-lg-4 gap-2">
+                            <div class="d-flex justify-content-center gap-lg-4 gap-2 buttons-div">
 
                                 <a class="scroll-btn scroll-left btn btn-light  start-50  z-3 px-2"
                                    href="#clientCarousel" role="button" data-bs-slide="prev">
@@ -588,7 +588,7 @@
                             </button>
 
                             <!-- Button -->
-                            <div class="d-flex justify-content-center mt-lg-3">
+                            <div class="d-flex justify-content-center mt-lg-3 disc_blogs">
                                 <a t-attf-href="/blog" class="btn btn-primary text-dark">Discover All Blogs
                                     <i class="bi bi-arrow-right ms-lg-3 ms-1"/>
                                 </a>

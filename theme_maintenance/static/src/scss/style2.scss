@@ -625,3 +625,66 @@ img_hero4 {
     height: 500px;
   }
 }
+
+.o_rtl {
+  .hero_section .hero_section-inner .container .row div a .bi-arrow-right::before {
+    transform: rotateY(180deg);
+  }
+
+  .technical_services .container .row .cards-container-item img {
+    transform: rotateY(180deg);
+  }
+
+  .eng-sec .container .engineer_section-inner .row .txt-eng a .bi-arrow-right::before {
+    transform: rotateY(180deg);
+  }
+
+  .our_clients #clientCarousel .buttons-div .scroll-btn svg {
+    transform: rotateY(180deg);
+  }
+
+  .more_blogs .container .scroll-btn svg {
+    transform: rotateY(180deg);
+  }
+
+  .more_blogs .container .disc_blogs a .bi-arrow-right::before {
+    transform: rotateY(180deg);
+  }
+
+  .footer .container .row .button_contact a svg {
+    transform: rotateY(180deg);
+  }
+
+  .hero_section .hero .hero__text div .disc_blogs a .bi-arrow-right::before {
+    transform: rotateY(180deg);
+  }
+
+  .eng-sec .engineer_section-inner .container .row .txt-eng a .bi-arrow-right::before {
+    transform: rotateY(180deg);
+  }
+
+  .s_three_columns .container .carousel-nav .scroll-btn svg {
+    transform: rotateY(180deg);
+  }
+
+  .hero_section .bottom_bg .container .blog_top .blog_top_content .date_more a .bi-arrow-right::before {
+    transform: rotateY(180deg);
+  }
+
+  .contain-card .contain-card-txt a .bi-arrow-right::before {
+    transform: rotateY(180deg);
+  }
+
+  .bi-arrow-right::before {
+    transform: rotateY(180deg);
+  }
+
+  .bi-arrow-left::before {
+    transform: rotateY(180deg);
+  }
+
+  .owl-carousel {
+    direction: rtl;
+  }
+
+}

@@ -23,7 +23,7 @@
         'data/pages/home_page.xml',
         'data/pages/about_page.xml',
         'data/pages/contact_page.xml',
-        'data/pages/services_page.xml',
+        # 'data/pages/services_page.xml',
         'views/header.xml',
         'views/custom_footer.xml',
         'views/custom_blog.xml',
