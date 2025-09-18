@@ -11,7 +11,6 @@
                    t-value="request.env['blog.post'].search([], order='create_date desc', limit=7)"/>
                 <t t-set="testimonial_ids"
                    t-value="request.env['testimonials.model'].search([], limit=7)"/>
-
                 <div id="wrap" class="oe_structure oe_empty">
                     <section class="pb72 hero_section text-white">
                         <div class="hero_section-inner">
@@ -46,7 +45,7 @@
 
                                     <!-- Image Column -->
                                     <div class="col-lg-6 order-1 order-lg-2 d-flex gap-1 gap-lg-4 o_animate o_anim_fade_in">
-                                        <img src="/theme_maintenance/static/src/imgs/y_home/hero.png" alt="Hero1"
+                                        <img src="/theme_maintenance/static/src/imgs/y_home/hero.webp" alt="Hero1"
                                              class="w-100"/>
                                     </div>
                                 </div>
@@ -54,7 +53,7 @@
                                 <!-- Second Row -->
                                 <div class="row pt32">
                                     <div class="col-lg-6 second-hero-row o_animate o_anim_fade_in">
-                                        <img src="/theme_maintenance/static/src/imgs/y_home/bulider.png"
+                                        <img src="/theme_maintenance/static/src/imgs/y_home/bulider.webp"
                                              alt="service_bulider" class="w-100 h-100"/>
                                     </div>
                                     <div class="col-lg-6 second-hero-row o_animate o_anim_fade_in o_anim_from_bottom">
@@ -148,7 +147,7 @@
                                 <div class="row py-lg-5">
                                     <div class="col-lg-5 position-relative engineer_container p-5 ">
 
-                                        <img src="/theme_maintenance/static/src/imgs/y_home/engineers.png"
+                                        <img src="/theme_maintenance/static/src/imgs/y_home/engineers.webp"
                                              class="img-fluid rounded-4 position-relative  engineer_img w-100 h-100 w-cover"
                                              style="z-index:3;"/>
                                     </div>
@@ -212,37 +211,37 @@
                                             <div class="col-lg-5 ">
                                                 <div class="row h-100">
                                                     <div class="col-lg-4 mb-4 px-0 px-lg-3">
-                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
                                                              alt="lussail" class="w-100 h-100"
                                                              style="border-radius:24px;"/>
                                                     </div>
                                                     <div class="col-lg-4 mb-4 px-0 px-lg-3">
 
-                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
                                                              alt="lussail" class="w-100 h-100"
                                                              style="border-radius:24px;"/>
                                                     </div>
                                                     <div class="col-lg-4 mb-4 px-0 px-lg-3">
 
-                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
                                                              alt="lussail" class="w-100 h-100"
                                                              style="border-radius:24px;"/>
                                                     </div>
                                                     <div class="col-lg-4 mb-4 px-0 px-lg-3">
 
-                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
                                                              alt="lussail" class="w-100 h-100"
                                                              style="border-radius:24px;"/>
                                                     </div>
                                                     <div class="col-lg-4 mb-4 px-0 px-lg-3">
 
-                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
                                                              alt="lussail" class="w-100 h-100"
                                                              style="border-radius:24px;"/>
                                                     </div>
                                                     <div class="col-lg-4 mb-4 px-0 px-lg-3">
 
-                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
                                                              alt="lussail" class="w-100 h-100"
                                                              style="border-radius:24px;"/>
                                                     </div>
@@ -270,37 +269,37 @@
                                             <div class="col-lg-5 ">
                                                 <div class="row h-100">
                                                     <div class="col-lg-4 mb-4 px-0 px-lg-3">
-                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
                                                              alt="lussail" class="w-100 h-100"
                                                              style="border-radius:24px;"/>
                                                     </div>
                                                     <div class="col-lg-4 mb-4 px-0 px-lg-3">
 
-                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
                                                              alt="lussail" class="w-100 h-100"
                                                              style="border-radius:24px;"/>
                                                     </div>
                                                     <div class="col-lg-4 mb-4 px-0 px-lg-3">
 
-                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
                                                              alt="lussail" class="w-100 h-100"
                                                              style="border-radius:24px;"/>
                                                     </div>
                                                     <div class="col-lg-4 mb-4 px-0 px-lg-3">
 
-                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
                                                              alt="lussail" class="w-100 h-100"
                                                              style="border-radius:24px;"/>
                                                     </div>
                                                     <div class="col-lg-4 mb-4 px-0 px-lg-3">
 
-                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
                                                              alt="lussail" class="w-100 h-100"
                                                              style="border-radius:24px;"/>
                                                     </div>
                                                     <div class="col-lg-4 mb-4 px-0 px-lg-3">
 
-                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
                                                              alt="lussail" class="w-100 h-100"
                                                              style="border-radius:24px;"/>
                                                     </div>
@@ -336,37 +335,37 @@
                                             <div class="col-lg-5 ">
                                                 <div class="row h-100">
                                                     <div class="col-lg-4 mb-4 px-0 px-lg-3">
-                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
                                                              alt="lussail" class="w-100 h-100"
                                                              style="border-radius:24px;"/>
                                                     </div>
                                                     <div class="col-lg-4 mb-4 px-0 px-lg-3">
 
-                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
                                                              alt="lussail" class="w-100 h-100"
                                                              style="border-radius:24px;"/>
                                                     </div>
                                                     <div class="col-lg-4 mb-4 px-0 px-lg-3">
 
-                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
                                                              alt="lussail" class="w-100 h-100"
                                                              style="border-radius:24px;"/>
                                                     </div>
                                                     <div class="col-lg-4 mb-4 px-0 px-lg-3">
 
-                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
                                                              alt="lussail" class="w-100 h-100"
                                                              style="border-radius:24px;"/>
                                                     </div>
                                                     <div class="col-lg-4 mb-4 px-0 px-lg-3">
 
-                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
                                                              alt="lussail" class="w-100 h-100"
                                                              style="border-radius:24px;"/>
                                                     </div>
                                                     <div class="col-lg-4 mb-4 px-0 px-lg-3">
 
-                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
                                                              alt="lussail" class="w-100 h-100"
                                                              style="border-radius:24px;"/>
                                                     </div>
@@ -500,9 +499,9 @@
                                     <div class="h-100">
 
 
-                                        <img src="/theme_maintenance/static/src/imgs/y_home/group-confident.jpg"
+                                        <img src="/theme_maintenance/static/src/imgs/y_home/group-confident.webp"
                                              class="img-fluid position-relative w-100 h-100 facility_managment-img1"/>
-                                        <img src="/theme_maintenance/static/src/imgs/y_home/image-bg.png"
+                                        <img src="/theme_maintenance/static/src/imgs/y_home/image-bg.webp"
                                              class="position-absolute w-50  h-100 opacity-50 facility_managment-img2"/>
                                     </div>
                                 </div>
@@ -517,7 +516,7 @@
                             <h1 class="text-white text-center">What are our clients saying about us?</h1>
                         </div>
 
-                        <div class="d-flex flex-nowrap justify-content-lg-start gap-5 cards_container pb-lg-5">
+                        <div class="owl-carousel testimonials-carousel cards_container pb-lg-5">
                             <t t-foreach="testimonial_ids" t-as="review">
                                 <div class="card-bg-light p-4 text-white position-relative">
 
@@ -572,7 +571,7 @@
 
 
                                     <!-- Review text -->
-                                    <h4 class="mb-0 small" t-out="review.description"/>
+                                    <h4 class="mb-0 small line-clamp-5" t-out="review.description"/>
                                 </div>
                             </t>
                         </div>

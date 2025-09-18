@@ -41,7 +41,7 @@ h2, h3 {
   background: linear-gradient(180deg, #1C2126 0%, #22282D 24.36%);
 
   .hero_section-inner {
-    background: url(../imgs/y_home/bg_hero.png) center / contain no-repeat;
+    background: url(../imgs/y_home/bg_hero.webp) center / contain no-repeat;
 
     .hero-txt {
       @media (min-width: 992px) {
@@ -144,7 +144,7 @@ h2, h3 {
 }
 
 .bottom_bg {
-  background: url(../imgs/y_home/bg2.png) bottom / contain no-repeat;
+  background: url(../imgs/y_home/bg2.webp) bottom / contain no-repeat;
 }
 
 .engineer_about_container {
@@ -263,7 +263,7 @@ h2, h3 {
 
 .reviews_section {
   border-radius: 50px;
-  background: url(../imgs/y_home/reviews_bg.png) 50% / cover no-repeat, #1C2126;
+  background: url(../imgs/y_home/reviews_bg.webp) 50% / cover no-repeat, #1C2126;
 
   .cards_container {
     overflow-x: auto;
@@ -288,6 +288,10 @@ h2, h3 {
     }
   }
 
+  .owl-carousel .owl-item img {
+    width: revert-layer;
+  }
+
 }
 
 .contain-card {
@@ -300,24 +304,23 @@ h2, h3 {
   padding-top: 0 !important;
 }
 
-@media (min-width: 992px) {
-  .line-clamp-5 {
-    display: -webkit-box;
-    -webkit-line-clamp: 5; /* clamp to 2 lines */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    height: calc(1.2em * 5); /* optional: ensures consistent box height */
-  }
-  .line-clamp-3 {
-    display: -webkit-box;
-    -webkit-line-clamp: 3; /* clamp to 2 lines */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    height: calc(1.2em * 3); /* optional: ensures consistent box height */
-  }
 
+.line-clamp-5 {
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* clamp to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: calc(1.2em * 5); /* optional: ensures consistent box height */
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* clamp to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: calc(1.2em * 3); /* optional: ensures consistent box height */
 }
 
 
@@ -370,7 +373,7 @@ h2, h3 {
 
 .our_clients {
   border-radius: 50px;
-  background: url(../imgs/y_home/reviews_bg.png) 50% / cover no-repeat, #1C2126;
+  background: url(../imgs/y_home/reviews_bg.webp) 50% / cover no-repeat, #1C2126;
 
   .card-bg-light {
     position: relative;
@@ -436,7 +439,7 @@ img_hero4 {
 /* Base layout */
 .hero {
   position: relative;
-  background: url(../imgs/y_home/bg2.png) bottom / contain no-repeat;
+  background: url(../imgs/y_home/bg2.webp) bottom / contain no-repeat;
 
 }
 
@@ -561,7 +564,7 @@ img_hero4 {
 }
 
 .dark-bg {
-  background: url(../imgs/y_home/reviews_bg.png) 50% / cover no-repeat, #1C2126;
+  background: url(../imgs/y_home/reviews_bg.webp) 50% / cover no-repeat, #1C2126;
   border-radius: 50px;
 }
 
@@ -574,7 +577,7 @@ img_hero4 {
 }
 
 .contact_us {
-  background: url(../imgs/y_services/two-colleagues-factory.png) lightgray 50% / cover no-repeat;
+  background: url(../imgs/y_services/two-colleagues-factory.webp) lightgray 50% / cover no-repeat;
   border-radius: 50px;
 
   .contact_us-inner {
