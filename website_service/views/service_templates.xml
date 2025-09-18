@@ -375,7 +375,7 @@
                 <div class="row justify-content-center align-items-center">
 
 
-                    <div class="col-lg-4">
+                    <div class="col-xl-4">
                         <h4 class="text-primary">Who do we serve?</h4>
                         <h2 class="mb-4">Our clients… Our Partners in Efficiency
                         </h2>
@@ -384,30 +384,30 @@
                             reliable services tailored to the unique nature of each facility.
                         </h4>
                     </div>
-                    <div class="col-lg-8">
+                    <div class="col-xl-8">
                         <div class="row ">
-                            <div class="col-lg-4 pb-3">
+                            <div class="col-xl-4 pb-3">
                                 <h2>Companies</h2>
                             </div>
-                            <div class="col-lg-4 pb-3">
+                            <div class="col-xl-4 pb-3">
                                 <h2>Hospitals</h2>
                             </div>
-                            <div class="col-lg-4 pb-3">
+                            <div class="col-xl-4 pb-3">
                                 <h2>Hotels</h2>
                             </div>
-                            <div class=" col-lg-6 pb-3">
+                            <div class=" col-xl-6 pb-3">
                                 <h2>Residential complexes</h2>
                             </div>
-                            <div class="col-lg-6 pb-3">
+                            <div class="col-xl-6 pb-3">
                                 <h2>Shopping malls</h2>
                             </div>
-                            <div class="col-lg-6 pb-3">
+                            <div class="col-xl-6 pb-3">
                                 <h2>Industrial facilities</h2>
                             </div>
-                            <div class="col-lg-6 pb-3">
+                            <div class="col-xl-6 pb-3">
                                 <h2>Health care facilities</h2>
                             </div>
-                            <div class="col-lg-6 pb-3">
+                            <div class="col-xl-6 pb-3">
                                 <h2>Educational facilities</h2>
                             </div>
 

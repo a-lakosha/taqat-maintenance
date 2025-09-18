@@ -8,7 +8,7 @@
                     <section class="hero_section ">
                         <div class="hero pt72 pb72">
                             <!-- Decorative images -->
-                            <div class="hero__media" aria-hidden="true">
+                            <div class="hero__media opacity-75" aria-hidden="true">
                                 <img src="/theme_maintenance/static/src/imgs/y_about/hero_about1.png" alt="img1"/>
                                 <img src="/theme_maintenance/static/src/imgs/y_about/hero_about4.png" alt="img2"/>
                                 <img src="/theme_maintenance/static/src/imgs/y_about/hero_about2 .png" alt="img3"
@@ -17,8 +17,7 @@
                             </div>
 
                             <!-- Text content -->
-                            <div class="hero__text text-white text-center container"
-                                 style="max-width:700px">
+                            <div class="hero__text text-white text-center container">
                                 <div class="d-flex flex-column gap-lg-4 gap-3">
                                     <h1 class="display-1">Pioneers of Facility Management in Qatar</h1>
                                     <h4>Drawing on proven expertise and innovative vision, we provide extraordinary
@@ -38,7 +37,7 @@
                         </div>
                     </section>
                     <section class="pb72 pt72">
-                        <div class="container ">
+                        <div class="container">
                             <div class="row py-lg-5">
                                 <div class="col-xl-6 mb-xl-0 mb-4">
                                     <div class="row">
@@ -72,35 +71,38 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row flex-lg-nowrap flex-wrap pt-lg-5 pt-2 overflow-x-auto justify-content-start about-mission">
+                        <div class="container-fluid">
 
-                            <div class="col-lg-3">
-                                <img src="/theme_maintenance/static/src/imgs/y_about/person-working.jpg"
-                                     alt="working-man" class=" py-lg-0 py-2 w-100 w-100 h-100 rounded-5 w-cover"/>
-                            </div>
-                            <div class="col-lg-3 col-6">
 
-                                <img src="/theme_maintenance/static/src/imgs/y_about/bearded-gardener.png"
-                                     alt="gardner" class=" py-lg-0 py-2 w-100 h-100 rounded-5 w-cover"/>
-                            </div>
-                            <div class="col-lg-3 col-6">
+                            <div class="row flex-lg-nowrap flex-wrap pt-lg-5 pt-2 overflow-x-auto justify-content-start about-mission">
 
-                                <img src="/theme_maintenance/static/src/imgs/y_about/manager-supervisor.png"
-                                     alt="supervisor" class="w-100 h-100 rounded-5 w-cover py-lg-0 py-2"/>
-                            </div>
-                            <div class="col-lg-3 col-6">
+                                <div class="col-lg-3">
+                                    <img src="/theme_maintenance/static/src/imgs/y_about/person-working.jpg"
+                                         alt="working-man" class=" py-lg-0 py-2 w-100 w-100 h-100 rounded-5 w-cover"/>
+                                </div>
+                                <div class="col-lg-3 col-6">
 
-                                <img src="/theme_maintenance/static/src/imgs/y_about/unrecognizable-man.png"
-                                     alt="man"
-                                     class="w-100 h-100 rounded-5 w-cover py-lg-0 py-2"/>
-                            </div>
-                            <div class="col-lg-3 col-6">
+                                    <img src="/theme_maintenance/static/src/imgs/y_about/bearded-gardener.png"
+                                         alt="gardner" class=" py-lg-0 py-2 w-100 h-100 rounded-5 w-cover"/>
+                                </div>
+                                <div class="col-lg-3 col-6">
 
-                                <img src="/theme_maintenance/static/src/imgs/y_about/team-leader.jpg"
-                                     alt="team-leader" class=" py-lg-0 py-2 w-100 h-100 rounded-5 w-cover"/>
+                                    <img src="/theme_maintenance/static/src/imgs/y_about/manager-supervisor.png"
+                                         alt="supervisor" class="w-100 h-100 rounded-5 w-cover py-lg-0 py-2"/>
+                                </div>
+                                <div class="col-lg-3 col-6">
+
+                                    <img src="/theme_maintenance/static/src/imgs/y_about/unrecognizable-man.png"
+                                         alt="man"
+                                         class="w-100 h-100 rounded-5 w-cover py-lg-0 py-2"/>
+                                </div>
+                                <div class="col-lg-3 col-6">
+
+                                    <img src="/theme_maintenance/static/src/imgs/y_about/team-leader.jpg"
+                                         alt="team-leader" class=" py-lg-0 py-2 w-100 h-100 rounded-5 w-cover"/>
+                                </div>
                             </div>
                         </div>
-
                     </section>
                     <section class="eng-sec pb72 pt72 bg-light bottom_bg ">
                         <div class="engineer_section-inner">
@@ -170,12 +172,12 @@
                     </section>
                     <section class="pb72 pt72 dark-bg text-white">
                         <div class="container">
-                            <div class="row justify-content-around align-items-center">
+                            <div class="row justify-content-around align-items-start">
 
 
-                                <div class="col-xl-3 text-center text-xl-start mb-5 mb-xl-0">
+                                <div class="col-xl-3 pt32 text-center text-xl-start mb-5 mb-xl-0">
                                     <h4 class="text-primary">Our Achievements in Numbers</h4>
-                                    <h2>Milestones That Define Our Journey</h2>
+                                    <h2 class="mb24">Milestones That Define Our Journey</h2>
                                     <h4 class="text-500">Since our launch, we have consistently delivered high-quality
                                         results,
                                         strengthened
@@ -293,8 +295,23 @@
                                 </h4>
 
                             </div>
-                            <div class="row d-flex align-items-stretch mt-lg-5 mt-3">
+                            <div class=" row d-flex align-items-stretch mt-lg-5 mt-3 w-100">
                                 <div class="col-lg-3 s_col_no_bgcolor pt16 pb16">
+                                    <div class=" card rounded-5 rounded-3 text-bg-white h-100 d-flex align-items-center justify-content-end">
+                                        <img class="card-img-top fixed-card-height h-100 w-cover"
+                                             src="/theme_maintenance/static/src/imgs/y_about/person_1.png" alt=""
+                                             loading="lazy" data-mimetype="image/jpeg" data-original-id="259"
+                                             data-original-src="/web/image/website.library_image_11"
+                                             data-mimetype-before-conversion="image/jpeg"/>
+                                        <div class="bg-white p-3 rounded-4  position-absolute w-75 mb-4">
+                                            <h3 class="card-title o_default_snippet_text line-clamp-2">Eslam Hafez</h3>
+                                            <p class="card-text o_default_snippet_text line-clamp-2">Consultant at Lorem
+                                                Ipsum
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="s_col_no_bgcolor pt16 pb16">
                                     <div class=" card rounded-5 rounded-3 text-bg-white h-100 d-flex align-items-center justify-content-end">
                                         <img class="card-img-top fixed-card-height h-100 w-cover"
                                              src="/theme_maintenance/static/src/imgs/y_about/person_1.png" alt=""
@@ -309,7 +326,23 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 s_col_no_bgcolor pt16 pb16">
+                                <div class="s_col_no_bgcolor pt16 pb16">
+                                    <div class=" card rounded-5 rounded-3 text-bg-white h-100 d-flex align-items-center justify-content-end">
+                                        <img class="card-img-top fixed-card-height h-100 w-cover"
+                                             src="/theme_maintenance/static/src/imgs/y_about/person_1.png" alt=""
+                                             loading="lazy" data-mimetype="image/jpeg" data-original-id="259"
+                                             data-original-src="/web/image/website.library_image_11"
+                                             data-mimetype-before-conversion="image/jpeg"/>
+                                        <div class="bg-white p-3 rounded-4  position-absolute   w-75 mb-4">
+                                            <h3 class="card-title o_default_snippet_text line-clamp-2">Eslam Hafez</h3>
+                                            <p class="card-text o_default_snippet_text line-clamp-2">Consultant at Lorem
+                                                Ipsum
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="s_col_no_bgcolor pt16 pb16">
                                     <div class=" card rounded-5 text-bg-white h-100 d-flex align-items-center justify-content-end">
                                         <img class="card-img-top fixed-card-height h-100 w-cover"
                                              src="/theme_maintenance/static/src/imgs/y_about/person_2.png" alt=""
@@ -324,7 +357,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 s_col_no_bgcolor pt16 pb16">
+                                <div class="s_col_no_bgcolor pt16 pb16">
                                     <div class=" card rounded-5 text-bg-white h-100 d-flex align-items-center justify-content-end">
                                         <img class="card-img-top fixed-card-height h-100 w-cover"
                                              src="/theme_maintenance/static/src/imgs/y_about/person_3.png" alt=""
@@ -340,7 +373,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 s_col_no_bgcolor pt16 pb16">
+                                <div class="s_col_no_bgcolor pt16 pb16">
                                     <div class=" card rounded-5 text-bg-white h-100 d-flex align-items-center justify-content-end">
                                         <img class="card-img-top fixed-card-height h-100 w-cover"
                                              src="/theme_maintenance/static/src/imgs/y_about/person_1.png" alt=""
