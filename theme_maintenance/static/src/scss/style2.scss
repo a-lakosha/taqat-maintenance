@@ -19,10 +19,6 @@ h2, h3 {
   height: fit-content;
 }
 
-.w-service-card {
-  max-width: 352px;
-}
-
 .w-cover {
   object-fit: cover;
 }
@@ -301,6 +297,14 @@ h2, h3 {
 }
 
 @media (min-width: 992px) {
+  .line-clamp-5 {
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* clamp to 2 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: calc(1.2em * 5); /* optional: ensures consistent box height */
+  }
   .line-clamp-3 {
     display: -webkit-box;
     -webkit-line-clamp: 3; /* clamp to 2 lines */
