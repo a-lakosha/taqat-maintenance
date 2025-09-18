@@ -332,17 +332,25 @@
                     </h4>
                     <h2 class="mb-2 mb-lg-4">How does this service contribute to real estate preservation?
                     </h2>
-                    <h4 class="text-start text-lg-center" style="max-width:870px;">Lorem ipsum dolor sit
-                        amet, consectetur
-                        adipisci elit, sed eiusmod tempor incidunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem
-                        ullam corporis
+                    <h4 class="text-start text-lg-center line-clamp-5" style="max-width:870px;">Lorem ipsum
+                        dolor sit
+                        Regular maintenance preserves cooling and heating efficiency, ensuring consistent
+                        comfort throughout the year without sudden fluctuations.
                     </h4>
                 </div>
                 <div class="d-flex flex-lg-row flex-column gap-3 gap-lg-4 align-items-center justify-content-center">
                     <div class="d-flex flex-column p-4 bg-light rounded-4 w-service-card text-center">
                         <h3 class="line-clamp-2">Lorem ipsum dolor</h3>
-                        <h4>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor
+                        <h4 class="line-clamp-5">Regular maintenance preserves cooling and heating
+                            efficiency, ensuring
+                            consistent comfort throughout the year without sudden fluctuations.
+                        </h4>
+
+                    </div>
+                    <div class="d-flex flex-column p-4 bg-light rounded-4 w-service-card text-center">
+                        <h3 class="line-clamp-2">Lorem ipsum dolor</h3>
+                        <h4 class="line-clamp-5">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
+                            eiusmod tempor
                             incidunt
                             ut labore et dolore magna aliqua. Ut enim
                         </h4>
@@ -350,15 +358,8 @@
                     </div>
                     <div class="d-flex flex-column p-4 bg-light rounded-4 w-service-card text-center">
                         <h3 class="line-clamp-2">Lorem ipsum dolor</h3>
-                        <h4>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor
-                            incidunt
-                            ut labore et dolore magna aliqua. Ut enim
-                        </h4>
-
-                    </div>
-                    <div class="d-flex flex-column p-4 bg-light rounded-4 w-service-card text-center">
-                        <h3 class="line-clamp-2">Lorem ipsum dolor</h3>
-                        <h4>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor
+                        <h4 class="line-clamp-5">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
+                            eiusmod tempor
                             incidunt
                             ut labore et dolore magna aliqua. Ut enim
                         </h4>
@@ -371,48 +372,45 @@
         </section>
         <section class="pb72 pt72 dark-bg text-white">
             <div class="container py-lg-4">
-                <div class="row justify-content-center gap-5 align-items-center">
+                <div class="row justify-content-center align-items-center">
 
 
-                    <div class="col-lg-4">
+                    <div class="col-xl-4">
                         <h4 class="text-primary">Who do we serve?</h4>
-                        <h2 class="mb-4 w-service-card">Types of clients or properties suitable for this
-                            service
+                        <h2 class="mb-4">Our clients… Our Partners in Efficiency
                         </h2>
-                        <h4>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor
-                            incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum
-                            laboriosam.
+                        <h4>At Taqat for Facility Management, we cater to the air conditioning and cooling
+                            maintenance needs of a wide range of sectors, with highly skilled teams and
+                            reliable services tailored to the unique nature of each facility.
                         </h4>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-xl-8">
                         <div class="row ">
-                            <div class="col-md-4 pb-3">
-                                <h2>Businesses</h2>
+                            <div class="col-xl-4 pb-3">
+                                <h2>Companies</h2>
                             </div>
-                            <div class="col-md-4 pb-3">
-                                <h2>Compunds</h2>
-                            </div>
-                            <div class="col-md-4 pb-3">
-                                <h2>Compunds</h2>
-                            </div>
-                            <div class="col-md-4 col-lg-6 pb-3">
+                            <div class="col-xl-4 pb-3">
                                 <h2>Hospitals</h2>
                             </div>
-                            <div class="col-md-4 col-lg-6 pb-3">
+                            <div class="col-xl-4 pb-3">
                                 <h2>Hotels</h2>
                             </div>
-                            <div class="col-md-4 col-lg-6 pb-3">
-                                <h2>Facilities</h2>
+                            <div class=" col-xl-6 pb-3">
+                                <h2>Residential complexes</h2>
                             </div>
-                            <div class="col-md-4 col-lg-6 pb-3">
-                                <h2>Facilities</h2>
+                            <div class="col-xl-6 pb-3">
+                                <h2>Shopping malls</h2>
                             </div>
-                            <div class="col-md-4 col-lg-6 pb-3">
-                                <h2>Facilities</h2>
+                            <div class="col-xl-6 pb-3">
+                                <h2>Industrial facilities</h2>
                             </div>
-                            <div class="col-md-4 col-lg-6 pb-3">
-                                <h2>Facilities</h2>
+                            <div class="col-xl-6 pb-3">
+                                <h2>Health care facilities</h2>
                             </div>
+                            <div class="col-xl-6 pb-3">
+                                <h2>Educational facilities</h2>
+                            </div>
+
 
                         </div>
                     </div>
@@ -446,147 +444,85 @@
                     <div class="container pt-4 pt-lg-5">
 
 
-                        <!-- DESKTOP/TABLET: Horizontal (md and up) -->
-                        <div class="position-relative d-none d-md-block pt-4">
-                            <!-- Track -->
-                            <div class="position-absolute top-0 start-0 end-0 border-top border-4 border-dark"/>
+                        <!-- Timeline Section -->
+                        <div class="timeline d-flex justify-content-between position-relative flex-wrap">
 
-                            <!-- Steps -->
-                            <div class="row row-cols-5 g-4">
-                                <div class="col position-relative pt-4">
-                                    <span class="position-absolute dot-position translate-middle rounded-circle bg-primary border border-4 border-dark p-2"/>
-                                    <h5 class="fw-semibold mb-1">Ask for service</h5>
-                                    <p class="text-muted small mb-0">Lorem ipsum dolor sit amet, consectetur
-                                        adipisci elit, eiusmod t
-                                    </p>
-                                </div>
-                                <div class="col position-relative pt-4">
-                                    <span class="position-absolute dot-position translate-middle rounded-circle bg-primary border border-4 border-dark p-2"/>
-                                    <h5 class="fw-semibold mb-1">Preview</h5>
-                                    <p class="text-muted small mb-0">Lorem ipsum dolor sit amet, consectetur
-                                        adipisci elit, eiusmod t
-                                    </p>
-                                </div>
-                                <div class="col position-relative pt-4">
-                                    <span class="position-absolute dot-position translate-middle rounded-circle bg-primary border border-4 border-dark p-2"/>
-                                    <h5 class="fw-semibold mb-1">Making an offer</h5>
-                                    <p class="text-muted small mb-0">Lorem ipsum dolor sit amet, consectetur
-                                        adipisci elit, eiusmod t
-                                    </p>
-                                </div>
-                                <div class="col position-relative pt-4">
-                                    <span class="position-absolute dot-position translate-middle rounded-circle bg-primary border border-4 border-dark p-2"/>
-                                    <h5 class="fw-semibold mb-1">Implementation</h5>
-                                    <p class="text-muted small mb-0">Lorem ipsum dolor sit amet, consectetur
-                                        adipisci elit, eiusmod t
-                                    </p>
-                                </div>
-                                <div class="col position-relative pt-4">
-                                    <span class="position-absolute dot-position translate-middle rounded-circle bg-primary border border-4 border-dark p-2"/>
-                                    <h5 class="fw-semibold mb-1">Follow-up</h5>
-                                    <p class="text-muted small mb-0">Lorem ipsum dolor sit amet, consectetur
-                                        adipisci elit, eiusmod t
+                            <!-- Horizontal track for desktop -->
+                            <div class="d-none d-lg-block position-absolute top-0 start-0 end-0 border-top border-4 border-dark"/>
+
+                            <!-- Step 1 -->
+                            <div class="step d-flex flex-row flex-lg-column align-items-start position-relative px-2">
+                                <span class="dot bg-primary border border-4 border-dark rounded-circle"/>
+                                <div>
+
+                                    <h5 class="fw-semibold mt-lg-3">Request</h5>
+                                    <p class="small text-muted">Start your journey by filling out the
+                                        service
+                                        request form or contacting us directly.
                                     </p>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- MOBILE: Vertical (continuous border track, no custom CSS) -->
-                        <div class="d-md-none">
-                            <!-- Wrapper creates room for the line and anchors the absolute track -->
-                            <div class="position-relative ps-4">
+                            <!-- Step 2 -->
+                            <div class="step d-flex flex-row flex-lg-column align-items-start position-relative px-2">
+                                <span class="dot bg-primary border border-4 border-dark rounded-circle"/>
+                                <div>
 
-                                <!-- ONE continuous vertical track -->
-                                <div class="position-absolute top-0 bottom-0 start-0 ms-3 border-start border-4 border-dark z-0"/>
-
-                                <ol class="list-unstyled m-0">
-                                    <!-- 1 -->
-                                    <li class="mb-4">
-                                        <div class="row gx-3">
-                                            <div class="col-auto d-flex flex-column align-items-center">
-                                                <span class="position-relative dot-vertical rounded-circle bg-primary border border-4 border-dark p-2 position-relative z-1"/>
-                                            </div>
-                                            <div class="col">
-                                                <h5 class="fw-semibold mb-1">Ask for service</h5>
-                                                <p class="text-muted small mb-0">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisci elit,
-                                                    eiusmod t
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <!-- 2 -->
-                                    <li class="mb-4">
-                                        <div class="row gx-3">
-                                            <div class="col-auto d-flex flex-column align-items-center">
-                                                <span class="position-relative dot-vertical rounded-circle bg-primary border border-4 border-dark p-2 position-relative z-1"/>
-                                            </div>
-                                            <div class="col">
-                                                <h5 class="fw-semibold mb-1">Preview</h5>
-                                                <p class="text-muted small mb-0">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisci elit,
-                                                    eiusmod t
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <!-- 3 -->
-                                    <li class="mb-4">
-                                        <div class="row gx-3">
-                                            <div class="col-auto d-flex flex-column align-items-center">
-                                                <span class="position-relative dot-vertical rounded-circle bg-primary border border-4 border-dark p-2 position-relative z-1"/>
-                                            </div>
-                                            <div class="col">
-                                                <h5 class="fw-semibold mb-1">Making an offer</h5>
-                                                <p class="text-muted small mb-0">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisci elit,
-                                                    eiusmod t
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <!-- 4 -->
-                                    <li class="mb-4">
-                                        <div class="row gx-3">
-                                            <div class="col-auto d-flex flex-column align-items-center">
-                                                <span class="position-relative dot-vertical rounded-circle bg-primary border border-4 border-dark p-2 position-relative z-1"/>
-                                            </div>
-                                            <div class="col">
-                                                <h5 class="fw-semibold mb-1">Implementation</h5>
-                                                <p class="text-muted small mb-0">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisci elit,
-                                                    eiusmod t
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <!-- 5 -->
-                                    <li>
-                                        <div class="row gx-3">
-                                            <div class="col-auto d-flex flex-column align-items-center">
-                                                <span class="position-relative dot-vertical rounded-circle bg-primary border border-4 border-dark p-2 position-relative z-1"/>
-                                            </div>
-                                            <div class="col">
-                                                <h5 class="fw-semibold mb-1">Follow-up</h5>
-                                                <p class="text-muted small mb-0">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisci elit,
-                                                    eiusmod t
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ol>
+                                    <h5 class="fw-semibold mt-lg-3">Inspection</h5>
+                                    <p class="small text-muted">Our technical team visits the site to assess
+                                        its
+                                        condition and determine the required service.
+                                    </p>
+                                </div>
                             </div>
+
+                            <!-- Step 3 -->
+                            <div class="step d-flex flex-row flex-lg-column align-items-start position-relative px-2">
+                                <span class="dot bg-primary border border-4 border-dark rounded-circle"/>
+                                <div>
+
+                                    <h5 class="fw-semibold mt-lg-3">Proposal</h5>
+                                    <p class="small text-muted">We provide you with a clear proposal
+                                        including
+                                        costs, timelines, and recommended steps.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Step 4 -->
+                            <div class="step d-flex flex-row flex-lg-column align-items-start position-relative px-2">
+                                <span class="dot bg-primary border border-4 border-dark rounded-circle"/>
+                                <div>
+
+                                    <h5 class="fw-semibold mt-lg-3">Execution</h5>
+                                    <p class="small text-muted">The approved service is carried out by our
+                                        professional teams using advanced tools and techniques.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Step 5 -->
+                            <div class="step d-flex flex-row flex-lg-column align-items-start position-relative px-2">
+                                <span class="dot bg-primary border border-4 border-dark rounded-circle"/>
+                                <div>
+
+                                    <h5 class="fw-semibold mt-lg-3">Follow-up</h5>
+                                    <p class="small text-muted">We guarantee quality performance through
+                                        regular
+                                        visits and fast support for any feedback.
+                                    </p>
+                                </div>
+                            </div>
+
                         </div>
+
+
                     </div>
 
 
                 </div>
             </div>
+
         </section>
     </template>
 </odoo>

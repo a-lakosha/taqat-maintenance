@@ -19,9 +19,9 @@
                                 <div class="row">
                                     <!-- Text Column -->
                                     <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column text-center text-md-start gap-lg-4 hero-txt o_animate o_anim_fade_in o_anim_from_left py-lg-5 py-3">
-                                        <h1 class="display-1 fw-bold">Facility Management at Global Standards
+                                        <h1 class="display-1 fw-bold pe-lg-4">Facility Management at Global Standards
                                         </h1>
-                                        <h4 class="fw-normal">
+                                        <h4 class="fw-normal pe-lg-4" style="line-height: 28px;">
                                             We deliver interactive facility management services, from preventive
                                             facility management services, repairs, and renovations to operations, safety
                                             and security management, cleaning services, and complaint handling by
@@ -32,13 +32,13 @@
                                         </h4>
                                         <div class="d-flex justify-content-center justify-content-lg-start gap-2 gap-lg-3 my-3 ">
                                             <a t-attf-href="/services"
-                                               class="btn btn-primary text-dark d-flex align-items-center justify-content-center p-2 ">
+                                               class="btn btn-primary text-dark d-flex align-items-center justify-content-center px-md-4 px-2 ">
                                                 Explore our services
                                                 <i class="bi bi-arrow-right ms-lg-3 ms-1"/>
 
 
                                             </a>
-                                            <a t-attf-href="/contactus" class="btn btn-primary text-dark p-2  ">
+                                            <a t-attf-href="/contactus" class="btn btn-primary text-dark px-md-4 px-2">
                                                 Get in Touch
                                             </a>
                                         </div>
@@ -64,7 +64,7 @@
                                         </h2>
                                         <ul class="list-unstyled d-flex flex-column gap-2 gap-lg-4">
                                             <li>
-                                                <h3 class="fw-semibold">Proven experience in facility management
+                                                <h3 class="fw-semibold mb16">Proven experience in facility management
                                                     services
                                                 </h3>
                                                 <h4 class="fw-normal">An exceptional track record in operating and
@@ -72,7 +72,8 @@
                                                 </h4>
                                             </li>
                                             <li>
-                                                <h3 class="fw-semibold">Flexible plans customized to both commercial and
+                                                <h3 class="fw-semibold mb16">Flexible plans customized to both
+                                                    commercial and
                                                     residential needs
                                                 </h3>
                                                 <h4 class="fw-normal">Bespoke facility management services designed for
@@ -80,7 +81,7 @@
                                                 </h4>
                                             </li>
                                             <li>
-                                                <h3 class="fw-semibold">24/7 Support</h3>
+                                                <h3 class="fw-semibold mb16">24/7 Support</h3>
                                                 <h4 class="fw-normal">Highly trained professionals ready to respond
                                                     promptly and deliver with precision at any time.
                                                 </h4>
@@ -145,20 +146,22 @@
 
 
                                 <div class="row py-lg-5">
-                                    <div class="col-lg-6 position-relative engineer_container p-5 ">
+                                    <div class="col-lg-5 position-relative engineer_container p-5 ">
 
                                         <img src="/theme_maintenance/static/src/imgs/y_home/engineers.png"
-                                             class="img-fluid rounded-4 position-relative  engineer_img w-100 h-100"
+                                             class="img-fluid rounded-4 position-relative  engineer_img w-100 h-100 w-cover"
                                              style="z-index:3;"/>
                                     </div>
-                                    <div class="col-lg-6 d-flex flex-column gap-lg-4 justify-content-center txt-eng">
+                                    <div class="col-lg-7 d-flex flex-column gap-lg-4 justify-content-center txt-eng">
                                         <div>
 
-                                            <h4 class="text-primary">About Us</h4>
-                                            <h4 class="text-primary">Pioneers of Facility Management in Qatar</h4>
+                                            <h4 class="text-primary py-3">About Us</h4>
+                                            <h4 class="text-primary py-1">Pioneers of Facility Management in Qatar</h4>
                                             <h2>Trusted Expertise… Customized Solutions… 24/7 Support</h2>
                                         </div>
-                                        <h4>Drawing on proven expertise and innovative vision, we provide extraordinary
+                                        <h4 class="text-muted" style="line-height: 28px;">Drawing on proven expertise
+                                            and
+                                            innovative vision, we provide extraordinary
                                             facility management solutions founded on quality, sustainability, and
                                             creative transformation.
                                             <br/>
@@ -182,197 +185,224 @@
                     </section>
 
                     <section class="pb72 pt72 our_clients">
-                        <div class="d-flex flex-column align-items-center py-lg-5">
-                            <h4 class="text-primary">Our Clients</h4>
-                        </div>
-                        <div id="clientCarousel" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="row p-4 text-white justify-content-evenly ">
+                        <div class="container">
 
-                                        <div class="col-lg-6 card-bg-light p-4 d-flex flex-column gap-2 mb-4">
-                                            <h2 class="h2">Lusail Towers</h2>
-                                            <h4 class="h4">We are privileged to provide a suite of high-quality facility
-                                                management services to this iconic Qatari landmark, including:
-                                            </h4>
-                                            <h4 class="h4">HVAC System Maintenance</h4>
-                                            <h4 class="h4">Electrical maintenance</h4>
-                                            <h4 class="h4">Fire &amp; Safety Systems Maintenance</h4>
-                                            <h4 class="h4">Elevator &amp; Escalator Maintenance</h4>
-                                            <h4 class="h4">External infrastructure</h4>
-                                        </div>
-                                        <div class="col-lg-5 ">
-                                            <div class="row h-100">
-                                                <div class="col-lg-4 mb-4 px-0 px-lg-3">
-                                                    <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
-                                                         alt="lussail" class="w-100 h-100" style="border-radius:24px;"/>
-                                                </div>
-                                                <div class="col-lg-4 mb-4 px-0 px-lg-3">
-
-                                                    <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
-                                                         alt="lussail" class="w-100 h-100" style="border-radius:24px;"/>
-                                                </div>
-                                                <div class="col-lg-4 mb-4 px-0 px-lg-3">
-
-                                                    <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
-                                                         alt="lussail" class="w-100 h-100" style="border-radius:24px;"/>
-                                                </div>
-                                                <div class="col-lg-4 mb-4 px-0 px-lg-3">
-
-                                                    <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
-                                                         alt="lussail" class="w-100 h-100" style="border-radius:24px;"/>
-                                                </div>
-                                                <div class="col-lg-4 mb-4 px-0 px-lg-3">
-
-                                                    <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
-                                                         alt="lussail" class="w-100 h-100" style="border-radius:24px;"/>
-                                                </div>
-                                                <div class="col-lg-4 mb-4 px-0 px-lg-3">
-
-                                                    <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
-                                                         alt="lussail" class="w-100 h-100" style="border-radius:24px;"/>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="row p-4 text-white justify-content-evenly ">
-
-                                        <div class="col-lg-6 card-bg-light p-4 d-flex flex-column gap-2 mb-4">
-                                            <h2 class="h2">Al Khair Tower</h2>
-                                            <h4 class="h4">Our partnership with Al Khair Tower in Doha includes
-                                                delivering comprehensive facility management solutions, such as:
-                                            </h4>
-                                            <h4 class="h4">Maintenance of HVAC and electrical systems</h4>
-                                            <h4 class="h4">Maintenance of plumbing, elevators, and fire systems</h4>
-                                            <h4 class="h4">Contract and supplier management</h4>
-                                            <h4 class="h4">Cleaning services management</h4>
-                                            <h4 class="h4">Oversight of regulatory and health compliance</h4>
-                                        </div>
-                                        <div class="col-lg-5 ">
-                                            <div class="row h-100">
-                                                <div class="col-lg-4 mb-4 px-0 px-lg-3">
-                                                    <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
-                                                         alt="lussail" class="w-100 h-100" style="border-radius:24px;"/>
-                                                </div>
-                                                <div class="col-lg-4 mb-4 px-0 px-lg-3">
-
-                                                    <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
-                                                         alt="lussail" class="w-100 h-100" style="border-radius:24px;"/>
-                                                </div>
-                                                <div class="col-lg-4 mb-4 px-0 px-lg-3">
-
-                                                    <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
-                                                         alt="lussail" class="w-100 h-100" style="border-radius:24px;"/>
-                                                </div>
-                                                <div class="col-lg-4 mb-4 px-0 px-lg-3">
-
-                                                    <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
-                                                         alt="lussail" class="w-100 h-100" style="border-radius:24px;"/>
-                                                </div>
-                                                <div class="col-lg-4 mb-4 px-0 px-lg-3">
-
-                                                    <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
-                                                         alt="lussail" class="w-100 h-100" style="border-radius:24px;"/>
-                                                </div>
-                                                <div class="col-lg-4 mb-4 px-0 px-lg-3">
-
-                                                    <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
-                                                         alt="lussail" class="w-100 h-100" style="border-radius:24px;"/>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="row p-4 text-white justify-content-evenly ">
-
-                                        <div class="col-lg-6 card-bg-light p-4 d-flex flex-column gap-2 mb-4">
-                                            <h2 class="h2">300 Housing Units</h2>
-                                            <h4 class="h4">Beyond commercial properties, we have also managed facilities
-                                                for 300 housing units in Qatar, providing:
-                                            </h4>
-                                            <h4 class="h4">Cleaning services management</h4>
-                                            <h4 class="h4">Handling complaints and feedback to enhance resident
-                                                satisfaction
-                                            </h4>
-                                            <h4 class="h4">Security and safety management</h4>
-                                            <h4 class="h4">Implementation of environmental principles and resource
-                                                conservation
-                                            </h4>
-                                            <h4 class="h4">Maintenance of HVAC, electrical, plumbing, elevator, and fire
-                                                safety systems
-                                            </h4>
-                                        </div>
-                                        <div class="col-lg-5 ">
-                                            <div class="row h-100">
-                                                <div class="col-lg-4 mb-4 px-0 px-lg-3">
-                                                    <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
-                                                         alt="lussail" class="w-100 h-100" style="border-radius:24px;"/>
-                                                </div>
-                                                <div class="col-lg-4 mb-4 px-0 px-lg-3">
-
-                                                    <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
-                                                         alt="lussail" class="w-100 h-100" style="border-radius:24px;"/>
-                                                </div>
-                                                <div class="col-lg-4 mb-4 px-0 px-lg-3">
-
-                                                    <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
-                                                         alt="lussail" class="w-100 h-100" style="border-radius:24px;"/>
-                                                </div>
-                                                <div class="col-lg-4 mb-4 px-0 px-lg-3">
-
-                                                    <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
-                                                         alt="lussail" class="w-100 h-100" style="border-radius:24px;"/>
-                                                </div>
-                                                <div class="col-lg-4 mb-4 px-0 px-lg-3">
-
-                                                    <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
-                                                         alt="lussail" class="w-100 h-100" style="border-radius:24px;"/>
-                                                </div>
-                                                <div class="col-lg-4 mb-4 px-0 px-lg-3">
-
-                                                    <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
-                                                         alt="lussail" class="w-100 h-100" style="border-radius:24px;"/>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-
-
+                            <div class="d-flex flex-column align-items-center py-lg-5">
+                                <h4 class="text-primary">Our Clients</h4>
                             </div>
-                            <div class="d-flex justify-content-center gap-lg-4 gap-2 buttons-div">
 
-                                <a class="scroll-btn scroll-left btn btn-light  start-50  z-3 px-2"
-                                   href="#clientCarousel" role="button" data-bs-slide="prev">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
-                                         fill="none">
-                                        <path d="M22.6958 14.4379H5.48568M5.48568 14.4379C5.48568 14.4379 10.364 11.2297 11.3552 8.56836M5.48568 14.4379C5.48568 14.4379 9.79826 17.4525 11.3552 20.3075"
-                                              stroke="#1C2126" stroke-width="2.17391" stroke-linecap="square"/>
-                                    </svg>
-                                </a>
-                                <a class="scroll-btn scroll-right btn btn-light start-50 z-3 px-2"
-                                   href="#clientCarousel" role="button" data-bs-slide="next">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
-                                         fill="none">
-                                        <path d="M5.3042 14.4379H22.5143M22.5143 14.4379C22.5143 14.4379 17.636 11.2297 16.6448 8.56836M22.5143 14.4379C22.5143 14.4379 18.2017 17.4525 16.6448 20.3075"
-                                              stroke="#1C2126" stroke-width="2.17391" stroke-linecap="square"/>
-                                    </svg>
-                                </a>
+
+                            <div id="clientCarousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row p-4 text-white justify-content-evenly ">
+
+                                            <div class="col-lg-6 card-bg-light p-4 d-flex flex-column gap-2 mb-4">
+                                                <h2 class="h2">Lusail Towers</h2>
+                                                <h4 class="h4">We are privileged to provide a suite of high-quality
+                                                    facility
+                                                    management services to this iconic Qatari landmark, including:
+                                                </h4>
+                                                <h4 class="h4">HVAC System Maintenance</h4>
+                                                <h4 class="h4">Electrical maintenance</h4>
+                                                <h4 class="h4">Fire &amp; Safety Systems Maintenance</h4>
+                                                <h4 class="h4">Elevator &amp; Escalator Maintenance</h4>
+                                                <h4 class="h4">External infrastructure</h4>
+                                            </div>
+                                            <div class="col-lg-5 ">
+                                                <div class="row h-100">
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row p-4 text-white justify-content-evenly ">
+
+                                            <div class="col-lg-6 card-bg-light p-4 d-flex flex-column gap-2 mb-4">
+                                                <h2 class="h2">Al Khair Tower</h2>
+                                                <h4 class="h4">Our partnership with Al Khair Tower in Doha includes
+                                                    delivering comprehensive facility management solutions, such as:
+                                                </h4>
+                                                <h4 class="h4">Maintenance of HVAC and electrical systems</h4>
+                                                <h4 class="h4">Maintenance of plumbing, elevators, and fire systems</h4>
+                                                <h4 class="h4">Contract and supplier management</h4>
+                                                <h4 class="h4">Cleaning services management</h4>
+                                                <h4 class="h4">Oversight of regulatory and health compliance</h4>
+                                            </div>
+                                            <div class="col-lg-5 ">
+                                                <div class="row h-100">
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row p-4 text-white justify-content-evenly ">
+
+                                            <div class="col-lg-6 card-bg-light p-4 d-flex flex-column gap-2 mb-4">
+                                                <h2 class="h2">300 Housing Units</h2>
+                                                <h4 class="h4">Beyond commercial properties, we have also managed
+                                                    facilities
+                                                    for 300 housing units in Qatar, providing:
+                                                </h4>
+                                                <h4 class="h4">Cleaning services management</h4>
+                                                <h4 class="h4">Handling complaints and feedback to enhance resident
+                                                    satisfaction
+                                                </h4>
+                                                <h4 class="h4">Security and safety management</h4>
+                                                <h4 class="h4">Implementation of environmental principles and resource
+                                                    conservation
+                                                </h4>
+                                                <h4 class="h4">Maintenance of HVAC, electrical, plumbing, elevator, and
+                                                    fire
+                                                    safety systems
+                                                </h4>
+                                            </div>
+                                            <div class="col-lg-5 ">
+                                                <div class="row h-100">
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.png"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="d-flex justify-content-center gap-lg-4 gap-2 buttons-div">
+
+                                    <a class="scroll-btn scroll-left btn btn-light  start-50  z-3 px-2"
+                                       href="#clientCarousel" role="button" data-bs-slide="prev">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                             viewBox="0 0 28 28"
+                                             fill="none">
+                                            <path d="M22.6958 14.4379H5.48568M5.48568 14.4379C5.48568 14.4379 10.364 11.2297 11.3552 8.56836M5.48568 14.4379C5.48568 14.4379 9.79826 17.4525 11.3552 20.3075"
+                                                  stroke="#1C2126" stroke-width="2.17391" stroke-linecap="square"/>
+                                        </svg>
+                                    </a>
+                                    <a class="scroll-btn scroll-right btn btn-light start-50 z-3 px-2"
+                                       href="#clientCarousel" role="button" data-bs-slide="next">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                             viewBox="0 0 28 28"
+                                             fill="none">
+                                            <path d="M5.3042 14.4379H22.5143M22.5143 14.4379C22.5143 14.4379 17.636 11.2297 16.6448 8.56836M22.5143 14.4379C22.5143 14.4379 18.2017 17.4525 16.6448 20.3075"
+                                                  stroke="#1C2126" stroke-width="2.17391" stroke-linecap="square"/>
+                                        </svg>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-
 
                     </section>
 

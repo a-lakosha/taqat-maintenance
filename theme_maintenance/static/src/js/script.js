@@ -66,6 +66,7 @@ $(document).ready(function () {
             margin: 24,
             nav: false,
             dots: true,
+            stagePadding: 35,
             responsive: {
                 0: {items: 1},
                 576: {items: 1},
