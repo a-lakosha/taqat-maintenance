@@ -56,14 +56,16 @@
     <!--    Card Loops-->
     <template id="custom_blog_post" inherit_id="website_blog.posts_loop">
         <xpath expr="//t[@t-if='state_info']" position="before">
-            <div class="pb48">
+            <div class="pb48 pt144">
 
-                <h1 class="pt144">Latest blogs</h1>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et
-                    dolore
-                    magna aliqua. Ut enim Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor
-                    incidunt
-                    ut labore et dolore magna aliqua. Ut enim
+                <h4 class="text-primary py-3">Recent Blogs</h4>
+                <h1 class="mb-2">Latest trends &amp; Inspiring Ideas</h1>
+                <h4>Discover trends and expert perspectives in facility management, with in-depth analyses on best
+                    practices and innovative solutions.
+                    Gain valuable knowledge from our experts on sustainability, digital transformation, and intelligent
+                    maintenance strategies.
+                    Our blog is your reliable hub for insights that drive operational efficiency, sustainable practices,
+                    and excellence in facility management.
                 </h4>
             </div>
         </xpath>
