@@ -1,4 +1,5 @@
-from odoo import models
+from odoo import api, models
+from odoo.addons.http_routing.models.ir_http import slug
 
 
 class ThemeMaintenance(models.AbstractModel):

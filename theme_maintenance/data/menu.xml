@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="menu_home" model="theme.website.menu">
+            <field name="name">Home</field>
+            <field name="url">/</field>
+            <field name="sequence" type="int">10</field>
+        </record>
+
+        <record id="menu_about" model="theme.website.menu">
+            <field name="name">About Us</field>
+            <field name="url">/aboutus</field>
+            <field name="sequence" type="int">20</field>
+        </record>
+
+        <record id="menu_services" model="theme.website.menu">
+            <field name="name">Services</field>
+            <field name="sequence" type="int">30</field>
+        </record>
+
+        <record id="menu_blogs" model="theme.website.menu">
+            <field name="name">Blogs</field>
+            <field name="url">/blog</field>
+            <field name="sequence" type="int">40</field>
+        </record>
+
+    </data>
+</odoo>
