@@ -490,7 +490,6 @@ img_hero4 {
     align-self: end;
     position: absolute;
     bottom: -24px;
-
   }
   .hero__media img:nth-child(4) {
     grid-column: 10 / span 3;
@@ -500,7 +499,6 @@ img_hero4 {
     bottom: -24px;
     right: 30px;
   }
-
   /* Optional: readability panel under text */
   .hero__text {
     max-width: 860px;
@@ -547,7 +545,6 @@ img_hero4 {
     position: relative;
     bottom: 80px;
     padding-right: 24px;
-
   }
 }
 
@@ -555,12 +552,10 @@ img_hero4 {
   scrollbar-width: none;
 }
 
-
 .dark-bg {
   background: url(../imgs/y_home/reviews_bg.png) 50% / cover no-repeat, #1C2126;
   border-radius: 50px;
 }
-
 
 .bg-cover {
   background-size: cover;
@@ -574,11 +569,9 @@ img_hero4 {
   background: url(../imgs/y_services/two-colleagues-factory.png) lightgray 50% / cover no-repeat;
   border-radius: 50px;
 
-
   .contact_us-inner {
     border-radius: 50px;
     background: linear-gradient(270deg, #1C2126 0%, rgba(28, 33, 38, 0.80) 100%);
-
   }
 }
 
@@ -615,7 +608,6 @@ img_hero4 {
   margin-bottom: 120px;
   @media (min-width: 992px) {
     margin-bottom: 180px;
-
   }
 }
 
@@ -623,5 +615,129 @@ img_hero4 {
   height: 400px;
   @media (min-width: 992px) {
     height: 500px;
+  }
+}
+
+.o_rtl {
+  .hero_section .hero_section-inner .container .row div a .bi-arrow-right::before {
+    transform: rotateY(180deg);
+  }
+
+  .technical_services .container .row .cards-container-item img {
+    transform: rotateY(180deg);
+  }
+
+  .eng-sec .container .engineer_section-inner .row .txt-eng a .bi-arrow-right::before {
+    transform: rotateY(180deg);
+  }
+
+  .our_clients #clientCarousel .buttons-div .scroll-btn svg {
+    transform: rotateY(180deg);
+  }
+
+  .more_blogs .container .scroll-btn svg {
+    transform: rotateY(180deg);
+  }
+
+  .more_blogs .container .disc_blogs a .bi-arrow-right::before {
+    transform: rotateY(180deg);
+  }
+
+  .footer .container .row .button_contact a svg {
+    transform: rotateY(180deg);
+  }
+
+  .hero_section .hero .hero__text div .disc_blogs a .bi-arrow-right::before {
+    transform: rotateY(180deg);
+  }
+
+  .eng-sec .engineer_section-inner .container .row .txt-eng a .bi-arrow-right::before {
+    transform: rotateY(180deg);
+  }
+
+  .s_three_columns .container .carousel-nav .scroll-btn svg {
+    transform: rotateY(180deg);
+  }
+
+  .hero_section .bottom_bg .container .blog_top .blog_top_content .date_more a .bi-arrow-right::before {
+    transform: rotateY(180deg);
+  }
+
+  .contain-card .contain-card-txt a .bi-arrow-right::before {
+    transform: rotateY(180deg);
+  }
+
+  .bi-arrow-right::before {
+    transform: rotateY(180deg);
+  }
+
+  .bi-arrow-left::before {
+    transform: rotateY(180deg);
+  }
+
+  .owl-carousel {
+    direction: rtl;
+  }
+}
+
+.hero:has(.s_website_form_end_message:not(.d-none)) {
+  margin-bottom: 200px !important;
+}
+
+.step {
+  bottom: 8px;
+  right: 15px;
+}
+
+.timeline {
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.timeline .dot {
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+}
+
+.timeline .step {
+  flex: 1;
+  min-width: 150px; /* keeps spacing on smaller widths */
+}
+
+/* Mobile view (vertical line + left-aligned) */
+@media (max-width: 991px) {
+  .step {
+    right: 6px;
+  }
+  .timeline {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* vertical track */
+  .timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 12px;
+    width: 4px;
+    background: #000;
+  }
+
+  .timeline .step {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-left: 2.5rem;
+  }
+
+  .timeline .dot {
+    margin-right: 1rem;
+    flex-shrink: 0;
   }
 }

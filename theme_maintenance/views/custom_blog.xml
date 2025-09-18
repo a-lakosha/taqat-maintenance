@@ -114,16 +114,16 @@
 
         <!-- Add class to each link -->
         <xpath expr="//span[hasclass('fa-chevron-left')]" position="replace">
-            <i class="btn btn-primary bi bi-arrow-left text-dark px-3"/>
+            <i class="btn btn-primary bi bi-arrow-left text-dark px-3" id="arrow_icons"/>
         </xpath>
         <xpath expr="//span[hasclass('fa-chevron-right')]" position="replace">
-            <i class="btn btn-primary bi bi-arrow-right text-dark px-3"/>
+            <i class="btn btn-primary bi bi-arrow-right text-dark px-3" id="arrow_icons"/>
 
         </xpath>
 
     </template>
 
-    <!--    Blog Details-->
+    <!--    Blog Details -->
     <template id="custom_blog_post_detail" inherit_id="website_blog.blog_post_complete">
         <xpath expr="//section[@id='o_wblog_post_top']" position="replace" active="True">
             <section id="blog_details">
@@ -219,86 +219,82 @@
             <t t-set="service_type_ids"
                t-value="request.env['website.service.type'].search([])"/>
             <section class="contact_us">
-                <div class="contact_us-inner ">
+                <div class="contact_us-inner s_website_form ">
                     <div class="container py-5">
                         <form action="/website/form/" method="post" enctype="multipart/form-data"
                               class="o_mark_required bg-white p-4 rounded-5" data-mark="*" data-pre-fill="true"
-                              data-model_name="mail.mail" data-success-mode="redirect"
-                              data-success-page="/contactus-thank-you" style="max-width:800px;">
+                              data-model_name="crm.lead"
+                              data-success-mode="message" data-success-page="/contactus-thank-you"
+                              style="max-width:800px;"
+                        >
                             <div class="s_website_form_rows row s_col_no_bgcolor">
                                 <h1 class="mb-lg-4 mb-3">Contact us</h1>
 
+
                                 <div data-name="Field"
-                                     class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required"
+                                     class="s_website_form_field mb-3 col-12 s_website_form_required"
                                      data-type="char" data-translated-name="Field">
-                                    <label class="s_website_form_label" style="width: 200px" for="oimwbkudje5c">
-                                        <span class="s_website_form_label_content fw-bold">Name</span>
+                                    <label class="s_website_form_label" style="width: 200px" for="of9qm8713zwa">
+                                        <span class="s_website_form_label_content fw-bold">Your Name</span>
                                     </label>
-                                    <input class="form-control s_website_form_input" type="text" name="Name"
-                                           required="1" placeholder="" id="oimwbkudje5c" data-fill-with="name"/>
+                                    <input class="form-control s_website_form_input" type="text" name="contact_name"
+                                           required="1" placeholder="" id="of9qm8713zwa" data-fill-with="name"/>
+                                </div>
+                                <div data-name="Field" class="s_website_form_field mb-3 col-12" data-type="tel"
+                                     data-translated-name="Field">
+                                    <label class="s_website_form_label" style="width: 200px" for="ox53z80k05p">
+                                        <span class="s_website_form_label_content fw-bold">Phone Number</span>
+                                    </label>
+                                    <input class="form-control s_website_form_input" type="tel" name="phone"
+                                           placeholder="" id="ox53z80k05p" data-fill-with="phone"/>
+                                </div>
+                                <div data-name="Field"
+                                     class="s_website_form_field mb-3 col-12 s_website_form_required"
+                                     data-type="email" data-translated-name="Field">
+                                    <label class="s_website_form_label" style="width: 200px" for="o64ap46w15on">
+                                        <span class="s_website_form_label_content fw-bold">Your Email</span>
+                                    </label>
+                                    <input class="form-control s_website_form_input" type="email" name="email_from"
+                                           required="1" placeholder="" id="o64ap46w15on" data-fill-with="email"/>
                                 </div>
 
                                 <div data-name="Field"
                                      class="s_website_form_field mb-3 col-12 s_website_form_model_required"
-                                     data-type="email" data-translated-name="Field">
-                                    <label class="s_website_form_label" style="width: 200px" for="o2upiogvfyzs">
-                                        <span class="s_website_form_label_content fw-bold">Email address</span>
-                                    </label>
-                                    <input class="form-control s_website_form_input" type="email"
-                                           name="email_from" required="" placeholder="" id="o2upiogvfyzs"
-                                           data-fill-with="email"/>
-                                </div>
-                                <div data-name="Field"
-                                     class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required"
-                                     data-type="many2one" data-translated-name="Field">
-                                    <label class="s_website_form_label" style="width: 200px" for="omx1lb8s61d">
+                                     data-type="char" data-translated-name="Field">
+                                    <label class="s_website_form_label" style="width: 200px" for="olijz3foppl">
                                         <span class="s_website_form_label_content fw-bold">Service type</span>
                                     </label>
-
-
                                     <select class="form-select s_website_form_input"
-                                            name="service_type_id"
+                                            name="name"
                                             id="service_type_id"
                                             required="required">
 
                                         <!-- Placeholder (default) -->
-                                        <option value="" selected="selected" disabled="disabled">Choose a
+                                        <option t-if="not service" value="" selected="selected"
+                                                disabled="disabled">Choose a
                                             service
                                         </option>
 
                                         <!-- Real options -->
-                                        <t t-foreach="service_type_ids" t-as="service_type">
-                                            <option t-att-value="service_type.id">
-                                                <t t-out="service_type.name"/>
+                                        <t t-foreach="service_ids" t-as="s">
+                                            <option t-attf-value="Requests for {{s.name}}"
+                                                    t-att-selected="selected if service and service.id == s.id else none">
+                                                <t t-out="s.name"/>
                                             </option>
                                         </t>
                                     </select>
+
+                                    <!--                                        <input class="form-control s_website_form_input" type="text" name="name"-->
+                                    <!--                                               required="" placeholder="" id="olijz3foppl"/>-->
                                 </div>
                                 <div data-name="Field"
-                                     class="s_website_form_field mb-3 col-12 s_website_form_model_required d-lg-none o_snippet_desktop_invisible"
-                                     data-type="char" data-translated-name="Field" data-invisible="1">
-                                    <div class="row s_col_no_resize s_col_no_bgcolor">
-                                        <label class="col-form-label col-sm-auto s_website_form_label"
-                                               style="width: 200px" for="oc1ccdni1kv7">
-                                            <span class="s_website_form_label_content">Subject</span>
-                                        </label>
-                                        <div class="col-sm">
-                                            <input class="form-control s_website_form_input" type="text"
-                                                   name="subject" required="" placeholder="" id="oc1ccdni1kv7"/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div data-name="Field"
-                                     class="s_website_form_field mb-3 col-12 s_website_form_custom"
+                                     class="s_website_form_field mb-3 col-12 s_website_form_required"
                                      data-type="text" data-translated-name="Field">
-                                    <label class="s_website_form_label" style="width: 200px" for="o2yw2t9kholt">
-                                        <span class="s_website_form_label_content fw-bold">Message
-                                            <span class="fw-semibold text-muted">(optional)</span>
-                                        </span>
+                                    <label class="s_website_form_label" style="width: 200px" for="oyzuz6xkk6ld">
+                                        <span class="s_website_form_label_content fw-bold">Your Question</span>
                                     </label>
-                                    <textarea class="form-control s_website_form_input"
-                                              name="Message (optional)" placeholder="" id="o2yw2t9kholt"
-                                              rows="3"/>
+                                    <textarea class="form-control s_website_form_input" name="description"
+                                              placeholder="" id="oyzuz6xkk6ld" rows="3"/>
                                 </div>
                                 <div data-name="Field"
                                      class="s_website_form_field mb-3 col-12 s_website_form_dnone">
@@ -309,23 +305,37 @@
                                         </label>
                                         <div class="col-sm">
                                             <input type="hidden" class="form-control s_website_form_input"
-                                                   name="email_to" value="info@yourcompany.example.com"/>
+                                                   name="team_id" value="1"/>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="mb-0 py-2 col-12 s_website_form_submit" data-name="Submit Button">
                                     <div style="width: 200px;" class="s_website_form_label"/>
                                     <a href="#" role="button"
-                                       class="btn btn-primary s_website_form_send o_default_snippet_text d-flex justify-content-center align-items-center text-dark"
-                                       data-bs-original-title="" title="">
+                                       class="btn btn-primary s_website_form_send o_default_snippet_text d-flex justify-content-center align-items-center text-dark">
                                         Send
                                         <i class="bi bi-arrow-right ms-lg-3 ms-1"/>
-
                                     </a>
                                     <span id="s_website_form_result"/>
                                 </div>
                             </div>
                         </form>
+                        <div class="s_website_form_end_message d-none">
+                            <div class="oe_structure">
+                                <section class="s_text_block pt64 pb64 o_colored_level o_cc text-light"
+                                         data-snippet="s_text_block">
+                                    <div class="container">
+                                        <h2 class="text-center">
+                                            <span class="fa fa-check-circle"/>
+                                            Thank You For Your Feedback
+                                        </h2>
+                                        <p class="text-center">Our team will message you back as soon as possible.In
+                                            the meantime we invite you to visit our <a href="/">website</a>.
+                                        </p>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
