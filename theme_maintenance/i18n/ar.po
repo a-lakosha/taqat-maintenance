@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0+e-20250730\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-21 11:32+0000\n"
-"PO-Revision-Date: 2025-09-21 15:21+0300\n"
+"POT-Creation-Date: 2025-09-21 12:46+0000\n"
+"PO-Revision-Date: 2025-09-21 15:48+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ar\n"
@@ -130,7 +130,7 @@ msgid ""
 "                                                                Email\n"
 "                                                            </span>"
 msgstr ""
-"<span class=\"s_website_form_label_content fw-bold\">\n"
+"<span class=\"s_website_form_label_content fw-bold\">Your\n"
 "                                                                البريد الالكتروني\n"
 "                                                            </span>"
 
@@ -275,12 +275,12 @@ msgstr "لا يقتصر عملنا على إدارة المرافق بالوحد
 #. module: theme_maintenance
 #: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_maintenance_footer
 msgid "Blog"
-msgstr ""
+msgstr "مدونتنا"
 
 #. module: theme_maintenance
 #: model:theme.website.menu,name:theme_maintenance.menu_blogs model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_footer
 msgid "Blogs"
-msgstr " المدونات"
+msgstr "المدونات"
 
 #. module: theme_maintenance
 #: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
@@ -348,7 +348,7 @@ msgstr ""
 #. module: theme_maintenance
 #: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_maintenance_footer
 msgid "Contact"
-msgstr ""
+msgstr "تواصل معنا"
 
 #. module: theme_maintenance
 #: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
@@ -633,7 +633,7 @@ msgstr "كوادر متخصصة جاهزة للاستجابة السريعة و�
 #. module: theme_maintenance
 #: model:theme.website.menu,name:theme_maintenance.menu_home model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_maintenance_footer
 msgid "Home"
-msgstr ""
+msgstr "الرئيسية"
 
 #. module: theme_maintenance
 #: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
@@ -663,17 +663,6 @@ msgstr "رؤى متطورة وأفكار ملهمة"
 #. module: theme_maintenance
 #: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_post_detail
 msgid "LinkedIn"
-msgstr ""
-
-#. module: theme_maintenance
-#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_maintenance_footer
-msgid ""
-"Lorem ipsum dolor sit amet, consectetur adipisci\n"
-"                                                elit,\n"
-"                                                sed\n"
-"                                                eiusmod tempor\n"
-"                                                incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis\n"
-"                                                nostrum"
 msgstr ""
 
 #. module: theme_maintenance
@@ -714,12 +703,12 @@ msgstr ""
 msgid ""
 "More\n"
 "                                        <i class=\"bi bi-arrow-right\"/>"
-msgstr " المزيد  <i class=\"bi bi-arrow-right\"/>"
+msgstr "المزيد  <i class=\"bi bi-arrow-right\"/>"
 
 #. module: theme_maintenance
 #: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_maintenance_footer
 msgid "Navigation"
-msgstr ""
+msgstr "التنقل"
 
 #. module: theme_maintenance
 #: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_maintenance_footer
@@ -729,7 +718,7 @@ msgstr "هل تحتاج إلى مساعدة؟ لا تتردد في التواص�
 #. module: theme_maintenance
 #: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_maintenance_footer
 msgid "Newsletter"
-msgstr ""
+msgstr "تابع أحدث المستجدات"
 
 #. module: theme_maintenance
 #: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
@@ -850,28 +839,36 @@ msgstr "خبرة تمتد لسنوات في خدمات إدارة المرافق
 msgid ""
 "Read More\n"
 "                                                    <i class=\"bi bi-arrow-right ms-lg-3 ms-1\"/>"
-msgstr "لقراءة المزيد<i class=\"bi bi-arrow-right ms-lg-3 ms-1\"/>"
+msgstr ""
+"لقراءة المزيد\n"
+"                                                    <i class=\"bi bi-arrow-right ms-lg-3 ms-1\"/>"
 
 #. module: theme_maintenance
 #: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_footer
 msgid ""
 "Read More\n"
 "                                            <i class=\"bi bi-arrow-right ms-lg-3 ms-1\"/>"
-msgstr "لقراءة المزيد   <i class=\"bi bi-arrow-right ms-lg-3 ms-1\"/>"
+msgstr ""
+"لقراءة المزيد\n"
+"                                                    <i class=\"bi bi-arrow-right ms-lg-3 ms-1\"/>"
 
 #. module: theme_maintenance
 #: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_post
 msgid ""
 "Read More\n"
 "                        <i class=\"bi bi-arrow-right ms-2\"/>"
-msgstr "لقراءة المزيد <i class=\"bi bi-arrow-right ms-lg-3 ms-1\"/>"
+msgstr ""
+"لقراءة المزيد\n"
+"                                                    <i class=\"bi bi-arrow-right ms-lg-3 ms-1\"/>"
 
 #. module: theme_maintenance
 #: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
 msgid ""
 "Read more\n"
 "                                            <i class=\"bi bi-arrow-right ms-lg-3 ms-1\"/>"
-msgstr "لقراءة المزيد <i class=\"bi bi-arrow-right ms-lg-3 ms-1\"/>"
+msgstr ""
+"لقراءة المزيد\n"
+"                                                    <i class=\"bi bi-arrow-right ms-lg-3 ms-1\"/>"
 
 #. module: theme_maintenance
 #: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_post
@@ -1087,7 +1084,7 @@ msgid ""
 "                                            Where Quality, Safety, and Sustainability are integrated Together."
 msgstr ""
 "نقدّم حلولًا شاملة لإدارة المرافق، من الصيانة الوقائية، وخدمات إدارة المرافق التجديد والتشغيل، لنصل معك إلى إدارة الأمن والسلامة وخدمات النظافة وإدارة الشكاوى، "
-"بإشراف فرق متخصصة وتقنيات متقدمة. نضمن جودة الأداء، وكفاءة التشغيل، وراحة المستخدمين عبر معايير دولية. \n"
+"بإشراف فرق متخصصة وتقنيات متقدمة. \\vنضمن جودة الأداء، وكفاءة التشغيل، وراحة المستخدمين عبر معايير دولية. \n"
 "طاقات... شريكك الذكي في بيئة عمل آمنة، مستدامة، ومتميزة."
 
 #. module: theme_maintenance
@@ -1113,6 +1110,19 @@ msgid ""
 "                                            technologies, competitive fees, and fast response times… all dedicated to\n"
 "                                            delivering quality and efficiency in every project."
 msgstr "نتميز بفريق محلي معتمد، تقنيات متطورة، أسعار شفافة، واستجابة سريعة تضمن الجودة والكفاءة في كل خدمة."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_maintenance_footer
+msgid ""
+"We provide extraordinary facility management\n"
+"                                                solutions to guarantee exceptional performance, operational efficiency,\n"
+"                                                and user comfort, delivered to the highest international standards by\n"
+"                                                experts and with advanced technologies.\n"
+"                                                Taqat… your competent partner for a safe, sustainable, and exceptional\n"
+"                                                work environment."
+msgstr ""
+"نقدّم حلولًا شاملة لإدارة المرافق، ونضمن جودة الأداء، كفاءة التشغيل، وراحة المستخدمين عبر معايير دولية، بإشراف فرق متخصصة وتقنيات متقدمة. طاقات... شريكك الذكي في "
+"بيئة عمل آمنة، مستدامة، ومتميزة. "
 
 #. module: theme_maintenance
 #: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
