@@ -233,7 +233,8 @@
                                             <ul class="list-unstyled">
                                                 <t t-foreach="service_type.service_ids" t-as="service">
                                                     <li class="mb-3">
-                                                        <a href="#" class="text-white" t-field="service.tec_name"/>
+                                                        <a t-attf-href="/service/{{slug(service)}}" class="text-white"
+                                                           t-field="service.tec_name"/>
                                                     </li>
                                                 </t>
                                             </ul>
