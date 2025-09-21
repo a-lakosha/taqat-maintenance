@@ -106,3 +106,42 @@ $(document).ready(function () {
 
 })(jQuery);
 
+
+$(document).ready(function () {
+    // Blog carousel (existing)
+    $(".blog-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        nav: false,
+        responsive: {
+            0: {items: 1},
+            768: {items: 2},
+            1200: {items: 3}
+        }
+    });
+
+    $(".scroll-left").click(function () {
+        $(".blog-carousel").trigger("prev.owl.carousel");
+    });
+
+    $(".scroll-right").click(function () {
+        $(".blog-carousel").trigger("next.owl.carousel");
+    });
+
+    // Testimonials carousel (new)
+    $(".testimonials-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: false,
+        dots: true,
+        responsive: {
+            0: {items: 1},
+            768: {items: 2},
+        }
+    });
+});
+
+
+

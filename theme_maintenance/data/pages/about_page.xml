@@ -9,11 +9,11 @@
                         <div class="hero pt72 pb72">
                             <!-- Decorative images -->
                             <div class="hero__media opacity-75" aria-hidden="true">
-                                <img src="/theme_maintenance/static/src/imgs/y_about/hero_about1.png" alt="img1"/>
-                                <img src="/theme_maintenance/static/src/imgs/y_about/hero_about4.png" alt="img2"/>
-                                <img src="/theme_maintenance/static/src/imgs/y_about/hero_about2 .png" alt="img3"
+                                <img src="/theme_maintenance/static/src/imgs/y_about/hero_about1.webp" alt="img1"/>
+                                <img src="/theme_maintenance/static/src/imgs/y_about/hero_about4.webp" alt="img2"/>
+                                <img src="/theme_maintenance/static/src/imgs/y_about/hero_about2 .webp" alt="img3"
                                      class="end-50"/>
-                                <img src="/theme_maintenance/static/src/imgs/y_about/hero_about3.png" alt="img4"/>
+                                <img src="/theme_maintenance/static/src/imgs/y_about/hero_about3.webp" alt="img4"/>
                             </div>
 
                             <!-- Text content -->
@@ -77,28 +77,28 @@
                             <div class="row flex-lg-nowrap flex-wrap pt-lg-5 pt-2 overflow-x-auto justify-content-start about-mission">
 
                                 <div class="col-lg-3">
-                                    <img src="/theme_maintenance/static/src/imgs/y_about/person-working.jpg"
+                                    <img src="/theme_maintenance/static/src/imgs/y_about/person-working.webp"
                                          alt="working-man" class=" py-lg-0 py-2 w-100 w-100 h-100 rounded-5 w-cover"/>
                                 </div>
                                 <div class="col-lg-3 col-6">
 
-                                    <img src="/theme_maintenance/static/src/imgs/y_about/bearded-gardener.png"
+                                    <img src="/theme_maintenance/static/src/imgs/y_about/bearded-gardener.webp"
                                          alt="gardner" class=" py-lg-0 py-2 w-100 h-100 rounded-5 w-cover"/>
                                 </div>
                                 <div class="col-lg-3 col-6">
 
-                                    <img src="/theme_maintenance/static/src/imgs/y_about/manager-supervisor.png"
+                                    <img src="/theme_maintenance/static/src/imgs/y_about/manager-supervisor.webp"
                                          alt="supervisor" class="w-100 h-100 rounded-5 w-cover py-lg-0 py-2"/>
                                 </div>
                                 <div class="col-lg-3 col-6">
 
-                                    <img src="/theme_maintenance/static/src/imgs/y_about/unrecognizable-man.png"
+                                    <img src="/theme_maintenance/static/src/imgs/y_about/unrecognizable-man.webp"
                                          alt="man"
                                          class="w-100 h-100 rounded-5 w-cover py-lg-0 py-2"/>
                                 </div>
                                 <div class="col-lg-3 col-6">
 
-                                    <img src="/theme_maintenance/static/src/imgs/y_about/team-leader.jpg"
+                                    <img src="/theme_maintenance/static/src/imgs/y_about/team-leader.webp"
                                          alt="team-leader" class=" py-lg-0 py-2 w-100 h-100 rounded-5 w-cover"/>
                                 </div>
                             </div>
@@ -112,7 +112,7 @@
                                 <div class="row py-lg-5 ">
                                     <div class="col-xl-6 position-relative engineer_about_container p-5 ">
 
-                                        <img src="/theme_maintenance/static/src/imgs/y_about/business-manager.jpg"
+                                        <img src="/theme_maintenance/static/src/imgs/y_about/business-manager.webp"
                                              class="img-fluid rounded-4 position-relative w-cover engineer_img w-100 h-100"
                                              style="z-index:3;"/>
                                     </div>
@@ -299,7 +299,7 @@
                                 <div class="col-lg-3 s_col_no_bgcolor pt16 pb16">
                                     <div class=" card rounded-5 rounded-3 text-bg-white h-100 d-flex align-items-center justify-content-end">
                                         <img class="card-img-top fixed-card-height h-100 w-cover"
-                                             src="/theme_maintenance/static/src/imgs/y_about/person_1.png" alt=""
+                                             src="/theme_maintenance/static/src/imgs/y_about/person_1.webp" alt=""
                                              loading="lazy" data-mimetype="image/jpeg" data-original-id="259"
                                              data-original-src="/web/image/website.library_image_11"
                                              data-mimetype-before-conversion="image/jpeg"/>
@@ -314,7 +314,7 @@
                                 <div class="s_col_no_bgcolor pt16 pb16">
                                     <div class=" card rounded-5 rounded-3 text-bg-white h-100 d-flex align-items-center justify-content-end">
                                         <img class="card-img-top fixed-card-height h-100 w-cover"
-                                             src="/theme_maintenance/static/src/imgs/y_about/person_1.png" alt=""
+                                             src="/theme_maintenance/static/src/imgs/y_about/person_1.webp" alt=""
                                              loading="lazy" data-mimetype="image/jpeg" data-original-id="259"
                                              data-original-src="/web/image/website.library_image_11"
                                              data-mimetype-before-conversion="image/jpeg"/>
@@ -329,7 +329,7 @@
                                 <div class="s_col_no_bgcolor pt16 pb16">
                                     <div class=" card rounded-5 rounded-3 text-bg-white h-100 d-flex align-items-center justify-content-end">
                                         <img class="card-img-top fixed-card-height h-100 w-cover"
-                                             src="/theme_maintenance/static/src/imgs/y_about/person_1.png" alt=""
+                                             src="/theme_maintenance/static/src/imgs/y_about/person_1.webp" alt=""
                                              loading="lazy" data-mimetype="image/jpeg" data-original-id="259"
                                              data-original-src="/web/image/website.library_image_11"
                                              data-mimetype-before-conversion="image/jpeg"/>
@@ -345,7 +345,7 @@
                                 <div class="s_col_no_bgcolor pt16 pb16">
                                     <div class=" card rounded-5 text-bg-white h-100 d-flex align-items-center justify-content-end">
                                         <img class="card-img-top fixed-card-height h-100 w-cover"
-                                             src="/theme_maintenance/static/src/imgs/y_about/person_2.png" alt=""
+                                             src="/theme_maintenance/static/src/imgs/y_about/person_2.webp" alt=""
                                              loading="lazy" data-mimetype="image/jpeg" data-original-id="259"
                                              data-original-src="/web/image/website.library_image_11"
                                              data-mimetype-before-conversion="image/jpeg"/>
@@ -360,7 +360,7 @@
                                 <div class="s_col_no_bgcolor pt16 pb16">
                                     <div class=" card rounded-5 text-bg-white h-100 d-flex align-items-center justify-content-end">
                                         <img class="card-img-top fixed-card-height h-100 w-cover"
-                                             src="/theme_maintenance/static/src/imgs/y_about/person_3.png" alt=""
+                                             src="/theme_maintenance/static/src/imgs/y_about/person_3.webp" alt=""
                                              loading="lazy" data-mimetype="image/jpeg" data-original-id="259"
                                              data-original-src="/web/image/website.library_image_11"
                                              data-mimetype-before-conversion="image/jpeg"/>
@@ -376,7 +376,7 @@
                                 <div class="s_col_no_bgcolor pt16 pb16">
                                     <div class=" card rounded-5 text-bg-white h-100 d-flex align-items-center justify-content-end">
                                         <img class="card-img-top fixed-card-height h-100 w-cover"
-                                             src="/theme_maintenance/static/src/imgs/y_about/person_1.png" alt=""
+                                             src="/theme_maintenance/static/src/imgs/y_about/person_1.webp" alt=""
                                              loading="lazy" data-mimetype="image/jpeg" data-original-id="259"
                                              data-original-src="/web/image/website.library_image_11"
                                              data-mimetype-before-conversion="image/jpeg"/>

@@ -174,7 +174,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="w-100 order-2 order-lg-3 blog_cover_photo"
+                                <div class="w-100 order-2 order-lg-3 blog_cover_photo mx-lg-4"
                                      style="max-width:800px;">
                                     <t t-call="website.record_cover">
                                         <t t-set="_record" t-value="blog_post"/>
