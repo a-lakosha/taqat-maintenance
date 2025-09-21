@@ -140,12 +140,12 @@
                                                 </svg>
 
                                             </span>
-                                            <p class="text-white pt-4">Lorem ipsum dolor sit amet, consectetur adipisci
-                                                elit,
-                                                sed
-                                                eiusmod tempor
-                                                incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                                nostrum
+                                            <p class="text-white pt-4">We provide extraordinary facility management
+                                                solutions to guarantee exceptional performance, operational efficiency,
+                                                and user comfort, delivered to the highest international standards by
+                                                experts and with advanced technologies.
+                                                Taqat… your competent partner for a safe, sustainable, and exceptional
+                                                work environment.
                                             </p>
                                             <div
                                                     t-attf-class="d-flex   pt-4 pt-lg-0 mt-3 mt-lg-0 pt-lg-0 align-items-center #{_div_class} s_social_media o_not_editable oe_unmovable oe_unremovable ">
@@ -271,7 +271,7 @@
                                                                            class="js_subscribe_value rounded-start-3 w-100 form-control"
                                                                            placeholder="your email..."/>
                                                                     <a role="button" href="#"
-                                                                       class="p-2 btn-primary rounded-end-3 js_subscribe_btn o_submit o_default_snippet_text">
+                                                                       class="p-2 btn-primary rounded-end-3 js_subscribe_btn o_submit o_default_snippet_text arrrow_footer">
                                                                         <svg width="24" height="25" viewBox="0 0 24 25"
                                                                              fill="none"
                                                                              xmlns="http://www.w3.org/2000/svg">
