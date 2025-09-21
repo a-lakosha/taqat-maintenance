@@ -387,28 +387,28 @@
                     <div class="col-xl-8">
                         <div class="row ">
                             <div class="col-xl-4 pb-3">
-                                <h2>Companies</h2>
+                                <h3>Companies</h3>
                             </div>
                             <div class="col-xl-4 pb-3">
-                                <h2>Hospitals</h2>
+                                <h3>Hospitals</h3>
                             </div>
                             <div class="col-xl-4 pb-3">
-                                <h2>Hotels</h2>
+                                <h3>Hotels</h3>
                             </div>
                             <div class=" col-xl-6 pb-3">
-                                <h2>Residential complexes</h2>
+                                <h3>Residential complexes</h3>
                             </div>
                             <div class="col-xl-6 pb-3">
-                                <h2>Shopping malls</h2>
+                                <h3>Shopping malls</h3>
                             </div>
                             <div class="col-xl-6 pb-3">
-                                <h2>Industrial facilities</h2>
+                                <h3>Industrial facilities</h3>
                             </div>
                             <div class="col-xl-6 pb-3">
-                                <h2>Health care facilities</h2>
+                                <h3>Health care facilities</h3>
                             </div>
                             <div class="col-xl-6 pb-3">
-                                <h2>Educational facilities</h2>
+                                <h3>Educational facilities</h3>
                             </div>
 
 
