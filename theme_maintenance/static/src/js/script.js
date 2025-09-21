@@ -20,11 +20,11 @@ $(document).ready(function () {
     });
 
     // Blog carousel navigation
-    $(".blog-scroll-left").click(function () {
+    $(".scroll-left").click(function () {
         $(".blog-carousel").trigger("prev.owl.carousel");
     });
 
-    $(".blog-scroll-right").click(function () {
+    $(".scroll-right").click(function () {
         $(".blog-carousel").trigger("next.owl.carousel");
     });
 
