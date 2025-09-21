@@ -63,7 +63,7 @@
                     <group>
                         <group>
                             <field name="type_id"/>
-                            <field name="icon"/>
+                            <field name="icon" widget="text"/>
                             <field name="tec_name"/>
                         </group>
                         <group>

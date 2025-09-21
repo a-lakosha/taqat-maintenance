@@ -33,8 +33,8 @@ class WebsiteService(models.Model):
         help="Brief description of the service"
     )
     icon = fields.Char(
-        string='Icon Class',
-        help="CSS class for the icon (e.g., 'fa fa-star' or 'bi bi-star')"
+        string='SVG Icon',
+        help="SVG code for the icon (e.g., '<svg>...</svg>')",
     )
     description = fields.Text(
         string='Short Description',
