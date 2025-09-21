@@ -110,8 +110,10 @@
                                                     <span class="flip-badge text-white fw-bold pe-4 ps-5 py-3">
                                                         <span class="front bg-primary rounded-pill d-flex align-items-center justify-content-center position-absolute"
                                                               t-out="'%02d.' % (service_index + 1)"/>
+                                                        <span t-raw="service.icon"/>
+
                                                         <span class="back bg-primary rounded-pill d-flex align-items-center justify-content-center position-absolute">
-                                                            <i t-attf-class="bi text-white {{service.icon}}"/>
+                                                            <span t-raw="service.icon"/>
                                                         </span>
                                                     </span>
                                                 </div>
