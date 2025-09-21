@@ -15,7 +15,7 @@
                             <div class="row pt40 pb72">
                                 <div class="col-lg-6 col-xl-7 text-white order-lg-1 order-2 d-flex flex-column align-items-lg-start align-items-center">
                                     <div class="border border-3 border-white rounded-5 p-3 d-flex gap-2 align-items-center py-2 px-3 w-fit mb-3">
-                                        <i t-att-class="service.icon"/>
+                                        <span t-raw="service.icon"/>
                                         <h6 class="m-0">
                                             <t t-esc="service.tec_name"/>
                                         </h6>
