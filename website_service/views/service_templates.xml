@@ -32,7 +32,7 @@
                                             <t t-esc="service.description"/>
                                         </h4>
                                         <a t-attf-href="/contactus" class="btn btn-primary text-dark  w-fit">
-                                            Book Your AC Maintenance
+                                            Request the Service
                                             <i class="bi bi-arrow-right ms-lg-3 ms-1"/>
 
                                         </a>
@@ -226,7 +226,7 @@
                                              style="bottom: 20px; left: 50%; transform: translateX(-50%);">
                                             <h4 class="fw-bold text-center line-clamp-2" t-field="post.name"/>
                                             <h6 class="text-center line-clamp-2" t-out="post.subtitle or ''"/>
-                                            <a t-att-href="post.website_url" class="text-dark">Read More
+                                            <a t-att-href="post.website_url" class="text-dark fw-semibold">Read More
                                                 <i class="bi bi-arrow-right ms-lg-3 ms-1"/>
                                             </a>
                                         </div>
