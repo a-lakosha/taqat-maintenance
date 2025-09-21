@@ -125,9 +125,15 @@
 
     </template>
 
+
     <!--    Blog Details -->
-    <template id="custom_blog_post_detail" inherit_id="website_blog.blog_post_complete">
+    <template id="custom_blog_post_detail" inherit_id="website_blog.blog_post_complete" active="True">
         <xpath expr="//section[@id='o_wblog_post_top']" position="replace" active="True">
+            <!-- Hidden div for Odoo template compatibility -->
+            <div class="d-none">
+                <div id="title" class="d-none"></div>
+            </div>
+
             <section id="blog_details">
 
                 <section class="hero_section">
