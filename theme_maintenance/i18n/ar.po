@@ -1,0 +1,1316 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* theme_maintenance
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e-20250730\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-21 11:32+0000\n"
+"PO-Revision-Date: 2025-09-21 14:48+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Generator: Poedit 3.7\n"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "+300"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid "+97444249494"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "10+"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid "24/7 Support"
+msgstr "خدمات على مدار الساعة"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid "300 Housing Units"
+msgstr "300 وحدة سكنية"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "50+"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "60 minutes"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid "8th Floor, Al Khair Tower, Street 901, Al Sadd - Doha- Qatar"
+msgstr ""
+"الطابق الثامن، برج الخير،\n"
+" الشارع 901، السد - الدوحة - قطر"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "95%"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_post_detail
+msgid "<i class=\"bi bi-link-45deg\" aria-label=\"LinkedIn\" title=\"LinkedIn\"/>"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_post_detail
+msgid "<i class=\"bi bi-linkedin text-light\" aria-label=\"LinkedIn\" title=\"LinkedIn\"/>"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_post_detail
+msgid "<i class=\"fa fa-twitter\" aria-label=\"Twitter\" title=\"Twitter\"/>"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid ""
+"<span class=\"fa fa-check-circle\"/>\n"
+"                                                                Thank You For Your Feedback"
+msgstr ""
+"<span class=\"fa fa-check-circle\"/>\n"
+"                                                              شكرًا لك على ملاحظاتك. نحن نُقدّر وقتك ومساهمتك في تحسين خدماتنا."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_footer
+msgid ""
+"<span class=\"fa fa-check-circle\"/>\n"
+"                                            Thank You For Your Feedback"
+msgstr ""
+"<span class=\"fa fa-check-circle\"/>\n"
+"شكرًا لك على ملاحظاتك. نحن نُقدّر وقتك ومساهمتك في تحسين خدماتنا."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid ""
+"<span class=\"s_website_form_label_content fw-bold\">Phone\n"
+"                                                                Number\n"
+"                                                            </span>"
+msgstr "<span class=\"s_website_form_label_content fw-bold\">الهاتف                                                            </span>"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_footer
+msgid "<span class=\"s_website_form_label_content fw-bold\">Phone Number</span>"
+msgstr "<span class=\"s_website_form_label_content fw-bold\">الهاتف                                                            </span>"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid ""
+"<span class=\"s_website_form_label_content fw-bold\">Service\n"
+"                                                                type\n"
+"                                                            </span>"
+msgstr "<span class=\"s_website_form_label_content fw-bold\">نوع الخدمة</span>"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_footer
+msgid "<span class=\"s_website_form_label_content fw-bold\">Service type</span>"
+msgstr "<span class=\"s_website_form_label_content fw-bold\">نوع الخدمة</span>"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid ""
+"<span class=\"s_website_form_label_content fw-bold\">Your\n"
+"                                                                Email\n"
+"                                                            </span>"
+msgstr ""
+"<span class=\"s_website_form_label_content fw-bold\">Your\n"
+"                                                                البريد الالكتروني\n"
+"                                                            </span>"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid ""
+"<span class=\"s_website_form_label_content fw-bold\">Your\n"
+"                                                                Name\n"
+"                                                            </span>"
+msgstr "<span class=\"s_website_form_label_content fw-bold\">الاسم</span>"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid ""
+"<span class=\"s_website_form_label_content fw-bold\">Your\n"
+"                                                                Question\n"
+"                                                            </span>"
+msgstr "<span class=\"s_website_form_label_content fw-bold\">الرسالة</span>"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_footer
+msgid "<span class=\"s_website_form_label_content fw-bold\">Your Email</span>"
+msgstr "<span class=\"s_website_form_label_content fw-bold\">البريد الالكتروني</span>"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_footer
+msgid "<span class=\"s_website_form_label_content fw-bold\">Your Name</span>"
+msgstr "<span class=\"s_website_form_label_content fw-bold\">الاسم</span>"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_footer
+msgid "<span class=\"s_website_form_label_content fw-bold\">Your Question</span>"
+msgstr "<span class=\"s_website_form_label_content fw-bold\">الرسالة</span>"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_maintenance_footer
+msgid ""
+"<span class=\"text-dark pe-2 \">\n"
+"                                        Contact Us\n"
+"                                    </span>"
+msgstr ""
+"<span class=\"text-dark pe-2 \">\n"
+"                                        تواصل معنا\n"
+"                                    </span>"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.template_header_text
+msgid ""
+"<span class=\"text-white\">\n"
+"                        +97444249494\n"
+"                    </span>"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.template_header_text
+msgid "<span class=\"text-white\">Sun-Thu 08.00 - 17.00</span>"
+msgstr ""
+
+#. module: theme_maintenance
+#: model:theme.website.menu,name:theme_maintenance.aboutus_menu model:theme.website.menu,name:theme_maintenance.menu_about
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid "About Us"
+msgstr "من نحن؟"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_maintenance_footer
+msgid "About us"
+msgstr "من نحن؟"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid ""
+"Absolutely… Our technical teams are on standby\n"
+"                                            day and night, ensuring a rapid response within 60 minutes in our coverage\n"
+"                                            areas."
+msgstr "نعم، فرقنا الفنية جاهزة للاستجابة الفورية على مدار الساعة، مع زمن استجابة لا يتجاوز 60 دقيقة داخل نطاق التغطية."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid ""
+"Absolutely… Our technical teams are on standby day and night, ensuring a\n"
+"                                            rapid response within 60 minutes in our coverage areas."
+msgstr "نعم، فرقنا الفنية جاهزة للاستجابة الفورية على مدار الساعة، مع زمن استجابة لا يتجاوز 60 دقيقة داخل نطاق التغطية."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid "Adherence to international standards"
+msgstr "الالتزام بالمعايير الدولية (ISO 41001 – IFMA)"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "Agility"
+msgstr "الاستجابة السريعة"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid "Al Khair Tower"
+msgstr "برج الخير"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_maintenance_footer
+msgid "All rights reserved 2025. Taqat for facilities management"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid ""
+"An exceptional track record in operating and\n"
+"                                                    maintaining facilities to the global standards."
+msgstr "سجل حافل في إدارة وتشغيل وخدمات إدارة المرافق وفق أعلى المعايير الدولية (ISO 41001 – IFMA)."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "Are emergency services available 24/7?"
+msgstr "هل توفرون خدمات طارئة على مدار الساعة؟"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_post_detail
+msgid "Author"
+msgstr "الكاتب"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "Average emergency response time"
+msgstr "استجابة طارئة خلال أقل من"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid ""
+"Bespoke facility management services designed for\n"
+"                                                    efficiency, reliability, and cost-effectiveness."
+msgstr "حلول إدارة المرافق وقائية وتصحيحية مصممة خصيصًا لتلبية احتياجات كل منشأة بكفاءة ومرونة."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid ""
+"Beyond commercial properties, we have also managed\n"
+"                                                    facilities\n"
+"                                                    for 300 housing units in Qatar, providing:"
+msgstr "لا يقتصر عملنا على إدارة المرافق بالوحدات التجارية، ولكننا أيضا قمنا بعديد من خدمات إدارة المرافق ل300 وحدة سكنية قطرية، من أبرزها:"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_maintenance_footer
+msgid "Blog"
+msgstr ""
+
+#. module: theme_maintenance
+#: model:theme.website.menu,name:theme_maintenance.menu_blogs model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_footer
+msgid "Blogs"
+msgstr " المدونات"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid ""
+"By deploying expert teams, using advanced systems,\n"
+"                                            implementing scheduled maintenance plans, and conducting effective\n"
+"                                            performance reviews."
+msgstr "من خلال فرق متخصصة، أنظمة مراقبة دقيقة، عقود صيانة دورية، وتقييمات أداء منتظمة."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid ""
+"By phone, email, or through the contact form\n"
+"                                            available on the website."
+msgstr "عبر الهاتف، البريد الإلكتروني، أو من خلال نموذج الاتصال على موقعنا الإلكتروني."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid ""
+"Can facility management services be contracted on a partial\n"
+"                                            basis?"
+msgstr "هل يمكن التعاقد على خدمات إدارة مرافق بشكل جزئي؟"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid ""
+"Choose a\n"
+"                                                                service"
+msgstr "اختر خدمة من الخدمات المتاحة."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_footer
+msgid ""
+"Choose a\n"
+"                                            service"
+msgstr "اختر خدمة من الخدمات المتاحة."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid "Choose the service and contact us"
+msgstr "اختر الخدمة المناسبة وتواصل معنا"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid "Cleaning services management"
+msgstr "إدارة خدمات النظافة."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "Client Focus"
+msgstr "رضا العملاء"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "Collaboration"
+msgstr "العمل الجماعي"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid ""
+"Consultant at Lorem\n"
+"                                                Ipsum"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_maintenance_footer
+msgid "Contact"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid ""
+"Contact Us… Get the perfect service your facility\n"
+"                                        deserves"
+msgstr "تواصل معنا... خدمتك تبدأ من هنا"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_footer model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid "Contact us"
+msgstr "تواصل معنا"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid ""
+"Contact us now and get the best\n"
+"                                                    quote"
+msgstr "تواصل معنا... واحصل على أفضل عرض سعر"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid ""
+"Continuous Improvement Through Data\n"
+"                                                    Analysis and Performance Evaluation"
+msgstr "التحسين المستمر عبر تحليل البيانات وتقييم الأداء"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid "Contract and supplier management"
+msgstr "إدارة العقود والموردين."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_footer_maintenance
+msgid "Custom Footer"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_headers
+msgid "Custom Header"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid ""
+"Delivering Excellence to Elevate Client\n"
+"                                                    Satisfaction"
+msgstr "تعزيز رضا العملاء من خلال تجربة متميزة"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid ""
+"Digital Transformation &amp;\n"
+"                                                        Innovation"
+msgstr "الابتكار والتحول الرقمي"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid ""
+"Discover All Blogs\n"
+"                                    <i class=\"bi bi-arrow-right ms-lg-3 ms-1\"/>"
+msgstr ""
+"كل المدونات\n"
+"                                    <i class=\"bi bi-arrow-right ms-lg-3 ms-1\"/>"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_footer
+msgid ""
+"Discover All Blogs\n"
+"                            <i class=\"bi bi-arrow-right ms-lg-3 ms-1\"/>"
+msgstr ""
+"كل المدونات\n"
+"                                    <i class=\"bi bi-arrow-right ms-lg-3 ms-1\"/>"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid ""
+"Discover trends and expert perspectives in facility management,\n"
+"                                    with in-depth analyses on best practices and innovative solutions. Gain valuable\n"
+"                                    knowledge from our experts on sustainability, digital transformation, and\n"
+"                                    intelligent maintenance strategies. Our blog is your reliable hub for insights that\n"
+"                                    drive operational efficiency, sustainable practices, and excellence in facility\n"
+"                                    management."
+msgstr ""
+"تابع آخر المستجدات والرؤى في عالم إدارة المرافق، واستكشف تحليلات متخصصة حول أفضل الممارسات والحلول المبتكرة.\n"
+"نشارككم رؤى وأفكار ملهمة من خبرائنا حول الاستدامة، التحول الرقمي، والصيانة الذكية. مدونتنا... مصدر موثوق لكل من يسعى إلى بيئة عمل أكثر كفاءة وجودة."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_footer
+msgid ""
+"Discover trends and expert perspectives in facility management,\n"
+"                            with in-depth\n"
+"                            analyses on best practices and innovative solutions.\n"
+"                            Gain valuable knowledge from our experts on sustainability, digital transformation,\n"
+"                            and intelligent maintenance strategies.\n"
+"                            Our blog is your reliable hub for insights that drive operational efficiency,\n"
+"                            sustainable practices, and excellence in facility management."
+msgstr ""
+"تابع آخر المستجدات والرؤى في عالم إدارة المرافق، واستكشف تحليلات متخصصة حول أفضل الممارسات والحلول المبتكرة.\n"
+"نشارككم رؤى وأفكار ملهمة من خبرائنا حول الاستدامة، التحول الرقمي، والصيانة الذكية. مدونتنا... مصدر موثوق لكل من يسعى إلى بيئة عمل أكثر كفاءة وجودة."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_post
+msgid ""
+"Discover trends and expert perspectives in facility management, with in-depth analyses on best\n"
+"                    practices and innovative solutions.\n"
+"                    Gain valuable knowledge from our experts on sustainability, digital transformation, and intelligent\n"
+"                    maintenance strategies.\n"
+"                    Our blog is your reliable hub for insights that drive operational efficiency, sustainable practices,\n"
+"                    and excellence in facility management."
+msgstr ""
+"تابع آخر المستجدات والرؤى في عالم إدارة المرافق، واستكشف تحليلات متخصصة حول أفضل الممارسات والحلول المبتكرة.\n"
+"نشارككم رؤى وأفكار ملهمة من خبرائنا حول الاستدامة، التحول الرقمي، والصيانة الذكية. مدونتنا... مصدر موثوق لكل من يسعى إلى بيئة عمل أكثر كفاءة وجودة."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "Do I need an annual contract?"
+msgstr "هل يجب توقيع عقد سنوي للاستفادة من خدماتكم؟"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "Do you serve only residential properties?"
+msgstr "هل تشمل خدماتكم المباني السكنية فقط أم أيضًا المؤسسات والشركات؟"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid ""
+"Do your services include both internal and external\n"
+"                                            maintenance?"
+msgstr "هل تشمل الخدمات أعمال الصيانة الداخلية والخارجية؟"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid ""
+"Does Taqat for Facility Management provide emergency or\n"
+"                                            quick-response services?"
+msgstr "هل توفر \"طاقات\" خدمات طوارئ أو استجابة سريعة؟"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid ""
+"Does Taqat for Facility Management provide regular reports to\n"
+"                                            clients?"
+msgstr "هل توفر \"طاقات\" تقارير دورية للعملاء؟"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid ""
+"Drawing on proven expertise\n"
+"                                            and\n"
+"                                            innovative vision, we provide extraordinary\n"
+"                                            facility management solutions founded on quality, sustainability, and\n"
+"                                            creative transformation.\n"
+"                                            <br/>\n"
+"                                            As leaders in Qatar’s facility management industry, we harmonize human\n"
+"                                            expertise and advanced technology to shape secure, high-performing, and\n"
+"                                            future-focused environments that foster success for organizations and\n"
+"                                            individuals."
+msgstr ""
+"بخبرة موثوقة ورؤية مبتكرة، نوفّر حلول إدارة مرافق متكاملة ترتكز على الجودة، الاستدامة، والتحول الذكي.\n"
+"نُمثّل الريادة في مجال إدارة المرافق في قطر، ونُدمج بين العنصر البشري، والعمليات، والتقنية، لنُحقق بيئة آمنة، منتجة، ومتطورة تدعم المؤسسات والأفراد على حد سواء."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid ""
+"Drawing on proven expertise and innovative vision, we provide extraordinary\n"
+"                                        facility\n"
+"                                        management solutions founded on quality, sustainability, and creative\n"
+"                                        transformation.\n"
+"                                        As leaders in Qatar’s facility management industry, we harmonize human expertise\n"
+"                                        and\n"
+"                                        advanced technology to shape secure, high-performing, and future-focused\n"
+"                                        environments that foster success for organizations and individuals.."
+msgstr ""
+"نُمثّل الريادة في مجال إدارة المرافق في قطر، حيث نوفر حلولًا متكاملة تضمن الكفاءة التشغيلية والاستدامة للمباني والبنية التحتية.\n"
+"نُدمج بين العنصر البشري، والعمليات، والتقنية، لنُحقق بيئة آمنة، منتجة، ومتطورة تدعم المؤسسات والأفراد على حد سواء."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid "Electrical maintenance"
+msgstr "الصيانة الكهربائية."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid "Elevator &amp; Escalator Maintenance"
+msgstr "صيانة المصاعد  والسلالم الكهربائية."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid "Email"
+msgstr "البريد الالكتروني"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "Eslam Hafez"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid ""
+"Explore our services\n"
+"                                                <i class=\"bi bi-arrow-right ms-lg-3 ms-1\"/>"
+msgstr ""
+"اكتشف خدماتنا\n"
+"                                                <i class=\"bi bi-arrow-right ms-lg-3 ms-1\"/>"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid "External infrastructure"
+msgstr "أعمال البنية التحتية الخارجية."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_post_detail
+msgid "Facebook"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "Facilities with full maintenance works completed"
+msgstr "منشأة سكنية خضعت لصيانة شاملة"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid "Facility Management at Global Standards"
+msgstr "من الصيانة إلى التجديد... إدارة مرافق بمعايير عالمية"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid "Fire &amp; Safety Systems Maintenance"
+msgstr "أنظمة الحريق والسلامة."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid ""
+"Flexible plans customized to both\n"
+"                                                    commercial and\n"
+"                                                    residential needs"
+msgstr "خطط إدارة المرافق مرنة ومتكاملة للمؤسسات التجارية والسكنية"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid ""
+"From the very first interaction to final delivery, we ensure\n"
+"                                                    seamless communication, quick response times, and precise execution."
+msgstr "نعطي اهتمامًا بتجربة العميل من بداية التفاعل وحتى إغلاق الطلب، من خلال قنوات تواصل فعّالة، وفِرق دعم جاهزة، واهتمام بأدق التفاصيل."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid "Get in Touch"
+msgstr "تواصل معنا"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid "HVAC System Maintenance"
+msgstr "صيانة أنظمة التبريد والتكييف."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid ""
+"Handling complaints and feedback to enhance resident\n"
+"                                                    satisfaction"
+msgstr "إدارة الشكاوى والملاحظات، ورفع مستوى رضا العملاء والمستأجرين."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid "Head Office"
+msgstr "المقر الرئيسي"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid "Hero1"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid ""
+"Highly trained professionals ready to respond\n"
+"                                                    promptly and deliver with precision at any time."
+msgstr "كوادر متخصصة جاهزة للاستجابة السريعة وتنفيذ المهام بحرفية عالية على مدار 24/7."
+
+#. module: theme_maintenance
+#: model:theme.website.menu,name:theme_maintenance.menu_home model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_maintenance_footer
+msgid "Home"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid "How can I contact your team?"
+msgstr "كيف يمكن التواصل مع فريق \"طاقات\"؟"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid ""
+"How does Taqat for Facility Management maintain high service\n"
+"                                            quality?"
+msgstr "كيف تضمن \"طاقات\" جودة خدماتها؟"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid ""
+"Implementation of environmental principles and resource\n"
+"                                                    conservation"
+msgstr "تطبيق المبادئ البيئية، ترشيد استهلاك الموارد."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_footer model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_post
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid "Latest trends &amp; Inspiring Ideas"
+msgstr "رؤى متطورة وأفكار ملهمة"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_post_detail
+msgid "LinkedIn"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_maintenance_footer
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipisci\n"
+"                                                elit,\n"
+"                                                sed\n"
+"                                                eiusmod tempor\n"
+"                                                incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis\n"
+"                                                nostrum"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid "Lusail Towers"
+msgstr "برج لوسيل"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid "Maintenance of HVAC and electrical systems"
+msgstr "إدارة وصيانة أنظمة التكييف والكهرباء."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid ""
+"Maintenance of HVAC, electrical, plumbing, elevator, and\n"
+"                                                    fire\n"
+"                                                    safety systems"
+msgstr "إدارة وصيانة أنظمة التكييف، الكهرباء، السباكة، المصاعد، أنظمة الحريق."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid "Maintenance of plumbing, elevators, and fire systems"
+msgstr "إدارة وصيانة السباكة، المصاعد، أنظمة الحريق."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "Milestones That Define Our Journey"
+msgstr "إنجازات نفتخر بها وثقة نبني عليها"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "Mohamed Badawy"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.top_banner_maintenance
+msgid ""
+"More\n"
+"                                        <i class=\"bi bi-arrow-right\"/>"
+msgstr " المزيد  <i class=\"bi bi-arrow-right\"/>"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_maintenance_footer
+msgid "Navigation"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_maintenance_footer
+msgid "Need Help? Reach Out Anytime"
+msgstr "هل تحتاج إلى مساعدة؟ لا تتردد في التواصل معنا في أي وقت."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_maintenance_footer
+msgid "Newsletter"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid ""
+"No, we cater to a wide range of properties,\n"
+"                                            including residential communities, commercial towers, government facilities,\n"
+"                                            and industrial sites, with solutions customized for each."
+msgstr "نقدّم خدماتنا لمختلف أنواع العقارات، بما في ذلك المجمعات السكنية، الأبراج التجارية، المرافق الحكومية، والمؤسسات الصناعية، مع تخصيص الحلول وفق طبيعة كل منشأة."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid ""
+"Not at all, as we provide flexible service\n"
+"                                            models, from annual contracts to on-demand requests, with packages designed\n"
+"                                            to fit every requirement."
+msgstr "ليس بالضرورة. نُقدّم خيارات مرنة تشمل العقود السنوية أو الطلب حسب الحاجة، مع باقات متنوعة تناسب جميع الاحتياجات."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid "Operational quality and rapid response"
+msgstr "الجودة التشغيلية والاستجابة السريعة."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "Our Achievements in Numbers"
+msgstr "إنجازاتنا في أرقام"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid "Our Blog"
+msgstr "مدونتنا"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid "Our Clients"
+msgstr "عملائنا"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid "Our Clients’ Feedback"
+msgstr "آراء عملائنا"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "Our Mission:"
+msgstr "رسالتنا:"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "Our Values"
+msgstr "قيمنا"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid ""
+"Our partnership with Al Khair Tower in Doha includes\n"
+"                                                    delivering comprehensive facility management solutions, such as:"
+msgstr "قدمنا عديداً من خدمات إدارة المرافق لبرج الخير بالدوحة، حيث قمنا بالعديد من الخدمات، وأبرزها:"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "Our team"
+msgstr "فريقنا"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid ""
+"Our team will message you back as\n"
+"                                                                soon as possible.In\n"
+"                                                                the meantime we invite you to visit our"
+msgstr ""
+"فريقنا سيرد على رسالتك في أقرب وقت ممكن.  \n"
+"وفي هذه الأثناء، ندعوك لزيارة مكتبنا."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_footer
+msgid ""
+"Our team will message you back as soon as possible.In\n"
+"                                            the meantime we invite you to visit our"
+msgstr ""
+"فريقنا سيرد على رسالتك في أقرب وقت ممكن.  \n"
+"وفي هذه الأثناء، ندعوك لزيارة مكتبنا."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid "Oversight of regulatory and health compliance"
+msgstr "متابعة الامتثال التنظيمي والصحي."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid "Phone"
+msgstr "الهاتف"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid "Pioneers of Facility Management in Qatar"
+msgstr "رواد إدارة المرافق في قطر"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "Professionalism"
+msgstr "الاحترافيـة"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "Professionalism Inspiring Excellence…Expertise Creating Impact"
+msgstr "كفاءات تقود التميز… وخبرة تُحدث فرقاً"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid ""
+"Proven experience in facility management\n"
+"                                                    services"
+msgstr "خبرة تمتد لسنوات في خدمات إدارة المرافق"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid ""
+"Read More\n"
+"                                                    <i class=\"bi bi-arrow-right ms-lg-3 ms-1\"/>"
+msgstr "لقراءة المزيد<i class=\"bi bi-arrow-right ms-lg-3 ms-1\"/>"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_footer
+msgid ""
+"Read More\n"
+"                                            <i class=\"bi bi-arrow-right ms-lg-3 ms-1\"/>"
+msgstr "لقراءة المزيد   <i class=\"bi bi-arrow-right ms-lg-3 ms-1\"/>"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_post
+msgid ""
+"Read More\n"
+"                        <i class=\"bi bi-arrow-right ms-2\"/>"
+msgstr "لقراءة المزيد <i class=\"bi bi-arrow-right ms-lg-3 ms-1\"/>"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid ""
+"Read more\n"
+"                                            <i class=\"bi bi-arrow-right ms-lg-3 ms-1\"/>"
+msgstr "لقراءة المزيد <i class=\"bi bi-arrow-right ms-lg-3 ms-1\"/>"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_post
+msgid "Recent Blogs"
+msgstr "أحدث المدونات"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid "Security and safety management"
+msgstr "إدارة الأمن والسلامة."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid ""
+"Send\n"
+"                                                            <i class=\"bi bi-arrow-right ms-lg-3 ms-1\"/>"
+msgstr "إرسال                                                            <i class=\"bi bi-arrow-right ms-lg-3 ms-1\"/>"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_footer
+msgid ""
+"Send\n"
+"                                        <i class=\"bi bi-arrow-right ms-lg-3 ms-1\"/>"
+msgstr "إرسال                                                            <i class=\"bi bi-arrow-right ms-lg-3 ms-1\"/>"
+
+#. module: theme_maintenance
+#: model:theme.website.menu,name:theme_maintenance.menu_services
+msgid "Services"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_post_detail
+msgid "Share"
+msgstr "مشاركة"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_post_detail
+msgid "Share on Facebook"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_post_detail
+msgid "Share on LinkedIn"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_post_detail
+msgid "Share on Twitter"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "Shikabala"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid ""
+"Since our launch, we have consistently delivered high-quality\n"
+"                                        results,\n"
+"                                        strengthened\n"
+"                                        by diverse projects and long-term client trust."
+msgstr ""
+"منذ انطلاقنا... عملنا على تحقيق نتائج ملموسة تعكس التزامنا بالجودة والكفاءة، ولدينا سجلاً حافلاً بالنجاحات من خلال مشاريع متنوعة وعلاقات طويلة الأمد مع عملائنا، كل "
+"إنجاز هو شهادة على احترافية فريقنا وثقة شركائنا."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "Sustainability"
+msgstr "الاستدامة"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid ""
+"Sustainability and digital\n"
+"                                                    transformation."
+msgstr "التوجه نحو الاستدامة والتحول الرقمي"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid "Taqat for Facility Management Vision"
+msgstr "رؤية طاقات لإدارة المرافق:"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_maintenance_footer
+msgid "Thanks"
+msgstr "شكرا"
+
+#. module: theme_maintenance
+#: model:ir.model,name:theme_maintenance.model_theme_utils
+msgid "Theme Utils"
+msgstr "أدوات السمة"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid ""
+"To be among the leading facility management providers in the Qatari market by\n"
+"                                        delivering professional services founded on:"
+msgstr "هدفنا الأول أن نكون من الرواد في إدارة المرافق في السوق المحلي، من خلال توفير خدمات مهنية ترتكز على:"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid ""
+"To lead the facility management industry in\n"
+"                                            Qatar, and\n"
+"                                            become the top choice for Qatari clients by delivering creative and\n"
+"                                            sustainable solutions that boost facilities performance, while adhering to\n"
+"                                            the highest international standards and fostering continuous innovation."
+msgstr ""
+"أن نكون رواد إدارة المرافق في قطر وأن نكون الخيار الأول لكل العملاء المحليين، من خلال تقديم حلول ذكية ومستدامة ترتقي بكفاءة الأصول وجودة الحياة في البيئات المؤسسية "
+"والسكنية، مع الالتزام بأعلى المعايير الدولية والابتكار المستمر."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid ""
+"Trusted Expertise… Customized Solutions…\n"
+"                                            24/7 Support"
+msgstr "خبرة موثوقة... صيانة شاملة... خدمة على مدار الساعة"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid "Trusted Expertise… Customized Solutions… 24/7 Support"
+msgstr "خبرة موثوقة... خدمات إدارة المرافق شاملة... خدمة على مدار الساعة"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_post_detail
+msgid "Twitter"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_maintenance_footer
+msgid ""
+"User Terms and Conditions | Privacy\n"
+"                                Policy"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "Vision 2023 for Facilities:"
+msgstr "الرؤية 2023 الخاصة بالمرافق:"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid "Visit us at our office"
+msgstr "زرونا في مكتبنا."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid ""
+"We apply global best practices in facility management to ensure\n"
+"                                                    compliance, safety, and sustainable operational excellence."
+msgstr "نطبق أفضل الممارسات العالمية في إدارة المرافق، بما يضمن الامتثال، السلامة، والتميز التشغيلي المستدام."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid ""
+"We are available Sunday\n"
+"                                                    through\n"
+"                                                    Thursday from 8 a.m.\n"
+"                                                    to 5 p.m."
+msgstr "نحن متاحون من الاحد إلى الخميس من الساعة 8 صباحاً حتى 5 مساءً"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid ""
+"We are committed to providing efficient and accurate services that\n"
+"                                                    meet client needs effectively, supported by expert teams available\n"
+"                                                    24/7."
+msgstr "نحرص على تقديم خدمات فعّالة ودقيقة تلبي احتياجات العملاء بسرعة وكفاءة، بفضل فرق عمل متخصصة تعمل على مدار الساعة."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid ""
+"We are committed to providing integrated\n"
+"                                            facility\n"
+"                                            management services through innovative experts and intelligent technology.\n"
+"                                            With passion, we strive to create safe, efficient, and sustainable\n"
+"                                            facilities to meet our clients’ needs and exceed their expectations."
+msgstr ""
+"نلتزم بتوفير خدمات متكاملة في إدارة المرافق، تشمل الصيانة، التشغيل، والتجديد، عبر فرق فنية متخصصة وأنظمة ذكية. كما نعمل بشغف على تحقيق بيئات آمنة وفعّالة ومستدامة "
+"تلبي احتياجات عملائنا وتفوق توقعاتهم."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid ""
+"We are privileged to provide a suite of high-quality\n"
+"                                                    facility\n"
+"                                                    management services to this iconic Qatari landmark, including:"
+msgstr "تشرفنا بتقديم عديد من خدمات إدارة المرافق لهذه الأيقونة القطرية غير المسبوقة، وأبرزها:"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid ""
+"We believe outstanding facility management starts with\n"
+"                                    exceptional people. That’s\n"
+"                                    why our team consists of a distinguished team of experts, technicians, and\n"
+"                                    consultants who have the passion and possess exceptional skills to uphold the\n"
+"                                    highest standards of quality and sustainability to deliver results that go beyond\n"
+"                                    your expectations."
+msgstr ""
+"في طاقات، نؤمن أن نجاح خدمات إدارة المرافق يبدأ من الكفاءات التي تقف خلفها.\n"
+"يضم فريقنا نخبة من الخبراء والفنيين والاستشاريين الذين يمتلكون خبرات محلية وإقليمية، ويعملون بشغف لضمان أعلى مستويات الجودة والاستدامة، ولتحقيق نتائج تفوق التوقعات."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid ""
+"We deliver interactive facility management services, from preventive\n"
+"                                            facility management services, repairs, and renovations to operations, safety\n"
+"                                            and security management, cleaning services, and complaint handling by\n"
+"                                            experts and powered by advanced technologies. We ensure exceptional\n"
+"                                            performance, operational efficiency, and user comfort through strict\n"
+"                                            adherence to the international standards. Taqat for Facility Management…\n"
+"                                            Where Quality, Safety, and Sustainability are integrated Together."
+msgstr ""
+"نقدّم حلولًا شاملة لإدارة المرافق، من الصيانة الوقائية، وخدمات إدارة المرافق التجديد والتشغيل، لنصل معك إلى إدارة الأمن والسلامة وخدمات النظافة وإدارة الشكاوى، "
+"بإشراف فرق متخصصة وتقنيات متقدمة. \vنضمن جودة الأداء، وكفاءة التشغيل، وراحة المستخدمين عبر معايير دولية. \n"
+"طاقات... شريكك الذكي في بيئة عمل آمنة، مستدامة، ومتميزة."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid ""
+"We integrate environmental solutions and innovative technologies to\n"
+"                                                    reduce environmental impact, improve energy efficiency, and enhance\n"
+"                                                    service quality."
+msgstr "نُدمج الحلول البيئية والتقنيات الذكية لتقليل الأثر البيئي وتعزيز كفاءة الطاقة وجودة الخدمات المقدمة."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid ""
+"We provide a full suite of solutions, including system maintenance,\n"
+"                                            cleaning, security, landscaping, waste management, and customized services\n"
+"                                            for residential and commercial properties."
+msgstr "نقدم باقة متكاملة تشمل صيانة الأنظمة، النظافة، الأمن، تنسيق الحدائق، إدارة النفايات، خدمة الدعم الفني، وخدمات متخصصة للمباني السكنية والتجارية."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid ""
+"We provide an experienced team, advanced\n"
+"                                            technologies, competitive fees, and fast response times… all dedicated to\n"
+"                                            delivering quality and efficiency in every project."
+msgstr "نتميز بفريق محلي معتمد، تقنيات متطورة، أسعار شفافة، واستجابة سريعة تضمن الجودة والكفاءة في كل خدمة."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid ""
+"We utilize advanced digital tools to monitor performance and analyze\n"
+"                                                    data to improve informed decision-making and ongoing development."
+msgstr "نستخدم أدوات رقمية متقدمة لمراقبة الأداء وتحليل البيانات، مما يُمكّننا من اتخاذ قرارات مستندة إلى معلومات دقيقة وتحقيق تطور مستمر."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid ""
+"We will respond within one\n"
+"                                                    business\n"
+"                                                    day"
+msgstr "سنقوم بالرد خلال يوم واحد عمل"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid "What are our clients saying about us?"
+msgstr "ماذا يقول عنا عملاؤنا"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "What services do you provide?"
+msgstr "ما هي الخدمات التي تقدمها طاقات في إدارة المرافق؟"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid ""
+"Whether by phone, email, or social media, our team is ready to answer all your\n"
+"                                        inquires quickly."
+msgstr "تواصل معنا بالطريقة التي تفضلها: عبر الهاتف، البريد الإلكتروني، أو من خلال وسائل التواصل الاجتماعي. فريقنا جاهز للرد على كل استفساراتك بسرعة واحترافية."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid ""
+"Whether you need urgent maintenance or seek a\n"
+"                                        long-term partnership to keep your facility in optimal condition, we are here to\n"
+"                                        listen, answer all your inquiries, and provide you with inspiring solutions with\n"
+"                                        maximum speed and efficiency. Contact us now and let’s plan for keeping your\n"
+"                                        property secure, stable, and ready for the future."
+msgstr ""
+"سواء كنت بحاجة إلى صيانة عاجلة، أو ترغب في شراكة طويلة الأمد للحفاظ على منشأتك، نحن هنا لنستمع إليك، ونجيب عن كل استفساراتك، ونقدم لك أفضل الحلول بأقصى سرعة "
+"وكفاءة...\n"
+"لا تتردد، تواصل معنا من أجل عقار أكثر استقراراً وأماناً."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid ""
+"Whether you're a new client or a long-term partner, we know you have questions.\n"
+"                                        Here we answer the most common queries to make your experience with Taqat\n"
+"                                        Property Maintenance easier."
+msgstr ""
+"إليك أبرز الأسئلة وأكثرها تكراراً\n"
+"سواء كنت عميلاً جديداً أو شريكاً طويل الأمد، نعلم أن لديك أسئلة واستفسارات، نجيبك هنا على أكثر الأسئلة شيوعاً، لتسهيل تجربتك مع \"طاقات لإدارة المرافق\""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid ""
+"Whether you’re a first-time client or a long-term partner, here are answers to\n"
+"                                        some of the most Frequently Asked Questions to help you enjoy a smooth\n"
+"                                        experience with Taqat for Facility Management."
+msgstr "سواء كنت عميلاً جديداً أو شريكاً طويل الأمد، نعلم أن لديك أسئلة واستفسارات، هنا نجيبك عن أكثر الاستفسارات شيوعاً لتسهيل تجربتك مع طاقات لإدارة المرافق."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid "Why Choose Taqat for Facilities Management?"
+msgstr "لماذا طاقات لإدارة المرافق؟"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "Why choose Taqat for Facility Management?"
+msgstr "ما الذي يميز طاقات عن الشركات الأخرى؟"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "Years of proven experience"
+msgstr "سنوات من الخبرة المتخصصة"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid ""
+"Yes, our clients can select specific services\n"
+"                                            without subscribing to the full package, based on their facility’s\n"
+"                                            requirements."
+msgstr "نعم، يمكن للعميل اختيار خدمات محددة دون الحاجة إلى اشتراك شامل، حسب متطلبات منشأته."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid ""
+"Yes, our clients receive comprehensive reports on\n"
+"                                            performance, maintenance processes, and operational notes regularly."
+msgstr "نعم، يحصل العملاء على تقارير شاملة حول الأداء، أعمال الصيانة، والملاحظات التشغيلية بشكل منتظم."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid ""
+"Yes, our services include electrical and mechanical\n"
+"                                            maintenance, plumbing, elevators, fire systems maintenance, as well as\n"
+"                                            cleaning and landscaping."
+msgstr "نعم، تشمل الخدمات صيانة كهربائية وميكانيكية، السباكة، المصاعد، أنظمة الحريق، بالإضافة إلى النظافة والبستنة."
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "Your Questions Matter… Let’s Connect!"
+msgstr "أسئلتك تهمّنا... تواصل معنا"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid "Your questions... Here's what you need to know"
+msgstr "إجابة أسئلتك... مهمتنا"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "active maintenance and management projects"
+msgstr "عقد صيانة وإدارة مستمرة"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "client satisfaction rate"
+msgstr "معدل رضا عملائنا عن الخدمات"
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page
+msgid "ex.maintenance@taqat.com"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "gardner"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "img1"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "img2"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "img3"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "img4"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "iron tawfiq"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid "lussail"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "man"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.maintenance_home_page
+msgid "service_bulider"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "supervisor"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "team-leader"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_post
+msgid "unpublished"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.contact_us_page model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_blog_footer
+msgid "website"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.aboutus_template
+msgid "working-man"
+msgstr ""
+
+#. module: theme_maintenance
+#: model_terms:theme.ir.ui.view,arch:theme_maintenance.custom_maintenance_footer
+msgid "your email..."
+msgstr "البريد الالكتروني..."
