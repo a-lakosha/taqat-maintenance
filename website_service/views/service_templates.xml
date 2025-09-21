@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Service Detail Page Template -->
+    <template id="service_detail_template" name="Service Detail">
+        <t t-call="website.layout">
+            <t t-set="latest_posts"
+               t-value="request.env['blog.post'].search([], order='create_date desc', limit=7)"/>
+            <t t-set="service_ids"
+               t-value="request.env['website.service'].search([])"/>
+            <div id="wrap" class="oe_structure">
+                <!-- Hero Section with Service Name and Image -->
+                <section class="hero_section">
+                    <div class="bottom_bg">
+                        <div class="container">
+                            <div class="row pt40 pb72">
+                                <div class="col-lg-6 col-xl-7 text-white order-lg-1 order-2 d-flex flex-column align-items-lg-start align-items-center">
+                                    <div class="border border-3 border-white rounded-5 p-3 d-flex gap-2 align-items-center py-2 px-3 w-fit mb-3">
+                                        <i t-att-class="service.icon"/>
+                                        <h6 class="m-0">
+                                            <t t-esc="service.tec_name"/>
+                                        </h6>
+
+
+                                    </div>
+
+                                    <div class="d-flex flex-column align-items-center align-items-lg-start gap-3 gap-xl-5 text-center text-lg-start"
+                                         style="max-width:685px;">
+                                        <h1 class="display-1 fw-bold">
+                                            <t t-esc="service.name"/>
+                                        </h1>
+                                        <h4>
+                                            <t t-esc="service.description"/>
+                                        </h4>
+                                        <a t-attf-href="/contactus" class="btn btn-primary text-dark  w-fit">
+                                            Request the Service
+                                            <i class="bi bi-arrow-right ms-lg-3 ms-1"/>
+
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-xl-5 order-lg-2 order-1 mb-lg-0 mb-4"
+                                     style="min-height:510px;">
+                                    <t t-call="website.record_cover">
+                                        <t t-set="_record" t-value="service"/>
+                                        <t t-set="additionnal_classes"
+                                           t-valuef="o_not_editable h400 rounded-4 overflow-hidden"/>
+                                    </t>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Main Content from website_description -->
+                <section t-if="service.website_description">
+                    <div class="">
+                        <div class="service-content">
+                            <t t-raw="service.website_description"/>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="contact_us">
+                    <div class="contact_us-inner s_website_form ">
+                        <div class="container py-5">
+                            <form action="/website/form/" method="post" enctype="multipart/form-data"
+                                  class="o_mark_required bg-white p-4 rounded-5" data-mark="*" data-pre-fill="true"
+                                  data-model_name="crm.lead"
+                                  data-success-mode="message" data-success-page="/contactus-thank-you"
+                                  style="max-width:800px;"
+                            >
+                                <div class="s_website_form_rows row s_col_no_bgcolor">
+                                    <h1 class="mb-lg-4 mb-3">Contact us</h1>
+
+
+                                    <div data-name="Field"
+                                         class="s_website_form_field mb-3 col-12 s_website_form_required"
+                                         data-type="char" data-translated-name="Field">
+                                        <label class="s_website_form_label" style="width: 200px" for="of9qm8713zwa">
+                                            <span class="s_website_form_label_content fw-bold">Your Name</span>
+                                        </label>
+                                        <input class="form-control s_website_form_input" type="text" name="contact_name"
+                                               required="1" placeholder="" id="of9qm8713zwa" data-fill-with="name"/>
+                                    </div>
+                                    <div data-name="Field" class="s_website_form_field mb-3 col-12" data-type="tel"
+                                         data-translated-name="Field">
+                                        <label class="s_website_form_label" style="width: 200px" for="ox53z80k05p">
+                                            <span class="s_website_form_label_content fw-bold">Phone Number</span>
+                                        </label>
+                                        <input class="form-control s_website_form_input" type="tel" name="phone"
+                                               placeholder="" id="ox53z80k05p" data-fill-with="phone"/>
+                                    </div>
+                                    <div data-name="Field"
+                                         class="s_website_form_field mb-3 col-12 s_website_form_required"
+                                         data-type="email" data-translated-name="Field">
+                                        <label class="s_website_form_label" style="width: 200px" for="o64ap46w15on">
+                                            <span class="s_website_form_label_content fw-bold">Your Email</span>
+                                        </label>
+                                        <input class="form-control s_website_form_input" type="email" name="email_from"
+                                               required="1" placeholder="" id="o64ap46w15on" data-fill-with="email"/>
+                                    </div>
+
+                                    <div data-name="Field"
+                                         class="s_website_form_field mb-3 col-12 s_website_form_model_required"
+                                         data-type="char" data-translated-name="Field">
+                                        <label class="s_website_form_label" style="width: 200px" for="olijz3foppl">
+                                            <span class="s_website_form_label_content fw-bold">Service type</span>
+                                        </label>
+                                        <select class="form-select s_website_form_input"
+                                                name="name"
+                                                id="service_type_id"
+                                                required="required">
+
+                                            <!-- Placeholder (default) -->
+                                            <option t-if="not service" value="" selected="selected"
+                                                    disabled="disabled">Choose a
+                                                service
+                                            </option>
+
+                                            <!-- Real options -->
+                                            <t t-foreach="service_ids" t-as="s">
+                                                <option t-attf-value="Requests for {{s.name}}"
+                                                        t-att-selected="selected if service and service.id == s.id else none">
+                                                    <t t-out="s.name"/>
+                                                </option>
+                                            </t>
+                                        </select>
+
+                                        <!--                                        <input class="form-control s_website_form_input" type="text" name="name"-->
+                                        <!--                                               required="" placeholder="" id="olijz3foppl"/>-->
+                                    </div>
+                                    <div data-name="Field"
+                                         class="s_website_form_field mb-3 col-12 s_website_form_required"
+                                         data-type="text" data-translated-name="Field">
+                                        <label class="s_website_form_label" style="width: 200px" for="oyzuz6xkk6ld">
+                                            <span class="s_website_form_label_content fw-bold">Your Question</span>
+                                        </label>
+                                        <textarea class="form-control s_website_form_input" name="description"
+                                                  placeholder="" id="oyzuz6xkk6ld" rows="3"/>
+                                    </div>
+                                    <div data-name="Field"
+                                         class="s_website_form_field mb-3 col-12 s_website_form_dnone">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                   style="width: 200px">
+                                                <span class="s_website_form_label_content"/>
+                                            </label>
+                                            <div class="col-sm">
+                                                <input type="hidden" class="form-control s_website_form_input"
+                                                       name="team_id" value="1"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-0 py-2 col-12 s_website_form_submit" data-name="Submit Button">
+                                        <div style="width: 200px;" class="s_website_form_label"/>
+                                        <a href="#" role="button"
+                                           class="btn btn-primary s_website_form_send o_default_snippet_text d-flex justify-content-center align-items-center text-dark">
+                                            Send
+                                            <i class="bi bi-arrow-right ms-lg-3 ms-1"/>
+                                        </a>
+                                        <span id="s_website_form_result"/>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="s_website_form_end_message d-none">
+                                <div class="oe_structure">
+                                    <section class="s_text_block pt64 pb64 o_colored_level o_cc text-light"
+                                             data-snippet="s_text_block">
+                                        <div class="container">
+                                            <h2 class="text-center">
+                                                <span class="fa fa-check-circle"/>
+                                                Thank You For Your Feedback
+                                            </h2>
+                                            <p class="text-center">Our team will message you back as soon as possible.In
+                                                the meantime we invite you to visit our <a href="/">website</a>.
+                                            </p>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+                <section class="more_blogs pt72 pb72">
+                    <div class="container position-relative py-lg-4 ">
+
+                        <!-- Left arrow -->
+                        <button class="scroll-btn scroll-left btn btn-light position-absolute  start-0 translate-middle-y z-3 p-2 d-flex justify-content-center align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+                                 fill="none">
+                                <path d="M22.6958 14.435H5.48568M5.48568 14.435C5.48568 14.435 10.364 11.2268 11.3552 8.56543M5.48568 14.435C5.48568 14.435 9.79826 17.4495 11.3552 20.3046"
+                                      stroke="#1C2126" stroke-width="2.17391" stroke-linecap="square"/>
+                            </svg>
+                        </button>
+
+                        <!-- Section Header -->
+                        <div class="d-flex flex-column align-items-center gap-lg-3 pb-lg-5 pb-3 text-center">
+                            <h4 class="text-primary">Blogs</h4>
+                            <h1>Latest trends &amp; Inspiring Ideas</h1>
+                            <h4 class="text-700">Discover trends and expert perspectives in facility management,
+                                with in-depth
+                                analyses on best practices and innovative solutions.
+                                Gain valuable knowledge from our experts on sustainability, digital transformation,
+                                and intelligent maintenance strategies.
+                                Our blog is your reliable hub for insights that drive operational efficiency,
+                                sustainable practices, and excellence in facility management.
+                            </h4>
+                        </div>
+
+                        <!-- Owl Carousel -->
+                        <div class="owl-carousel blog-carousel">
+                            <t t-foreach="latest_posts" t-as="post">
+                                <t t-set="image_url"
+                                   t-value="post._get_background(height=_resize_height, width=_resize_width).replace('url(', '').replace(')', '').strip('\'\'')"/>
+                                <div class="item">
+                                    <div class="contain-card position-relative overflow-hidden rounded-3 w-100">
+                                        <!-- Background image -->
+                                        <div t-att-style="'background-image: url(%s);' % image_url"
+                                             class="blog_img position-absolute top-0 start-0 w-100 h-100 bg-cover bg-center">
+                                        </div>
+
+                                        <!-- Text overlay -->
+                                        <div class="position-absolute bg-white d-flex flex-column align-items-center rounded-3 p-3 w-75 gap-lg-2 contain-card-txt"
+                                             style="bottom: 20px; left: 50%; transform: translateX(-50%);">
+                                            <h4 class="fw-bold text-center line-clamp-2" t-field="post.name"/>
+                                            <h6 class="text-center line-clamp-2" t-out="post.subtitle or ''"/>
+                                            <a t-att-href="post.website_url" class="text-dark fw-semibold">Read More
+                                                <i class="bi bi-arrow-right ms-lg-3 ms-1"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </t>
+                        </div>
+
+                        <!-- Right arrow -->
+                        <button class="scroll-btn scroll-right btn btn-light position-absolute end-0 translate-middle-y z-3 p-2 d-flex justify-content-center align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+                                 fill="none">
+                                <path d="M5.3042 14.435H22.5143M22.5143 14.435C22.5143 14.435 17.636 11.2268 16.6448 8.56543M22.5143 14.435C22.5143 14.435 18.2017 17.4495 16.6448 20.3046"
+                                      stroke="#1C2126" stroke-width="2.17391" stroke-linecap="square"/>
+                            </svg>
+                        </button>
+
+                        <!-- Button -->
+                        <div class="d-flex justify-content-center mt-lg-5">
+                            <a t-attf-href="/blog" class="btn btn-primary text-dark">Discover All Blogs
+                                <i class="bi bi-arrow-right ms-lg-3 ms-1"/>
+                            </a>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+    <template id="default_website_description" name="Default Website Description">
+        <section class="pt72 pb72">
+            <div class="container pt-lg-4">
+                <div class="row justify-content-evenly gap-4 ">
+                    <div class="col-lg-5 d-flex flex-column gap-2 gap-lg-4">
+                        <h4 class="text-primary">
+                            Why us
+                        </h4>
+                        <h2>What sets us apart in providing ....</h2>
+                        <h4>
+                            Why choose Taqat for “Air Conditioning and Cooling Systems Maintenance”? Because
+                            we combine expertise, speed, and modern technologies to ensure your systems
+                            always perform at their best.
+                        </h4>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="row justify-content-center gap-3">
+                            <div class="col-5 border border-2 rounded-3 p-3 d-flex flex-column px-2 gap-3 align-items-center ">
+                                <div class="bg-primary rounded-3 px-2 py-1 text-white w-fit">
+                                    <i class="bi bi-check-circle-fill"/>
+
+                                </div>
+                                <div class="text-center">
+                                    <h3 class="text-ellipsis">Quick Response</h3>
+                                    <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+                                </div>
+                            </div>
+                            <div class="col-5 border border-2 rounded-3 p-3 d-flex flex-column gap-3 align-items-center ">
+                                <div class="bg-primary rounded-3 px-2 py-1 text-white w-fit">
+                                    <i class="bi bi-check-circle-fill"/>
+
+                                </div>
+                                <div class="text-center">
+                                    <h3 class="text-ellipsis">Specialized teams</h3>
+                                    <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+                                </div>
+                            </div>
+                            <div class="col-5 border border-2 rounded-3 p-3 d-flex flex-column gap-3 align-items-center ">
+                                <div class="bg-primary rounded-3 px-2 py-1 text-white w-fit">
+                                    <i class="bi bi-check-circle-fill"/>
+
+                                </div>
+                                <div class="text-center">
+                                    <h3 class="text-ellipsis">Regular reports</h3>
+                                    <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+                                </div>
+                            </div>
+                            <div class="col-5 border border-2 rounded-3 p-3 d-flex flex-column gap-3 align-items-center ">
+                                <div class="bg-primary rounded-3 px-2 py-1 text-white w-fit">
+                                    <i class="bi bi-check-circle-fill"/>
+
+                                </div>
+                                <div class="text-center">
+                                    <h3>Material quality</h3>
+                                    <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <section class="pt72 pb72">
+            <div class="container pb-lg-4">
+
+
+                <div class="d-flex flex-column align-items-center  mb-5">
+                    <h4 class="text-primary">
+                        The value of the service to the beneficiary
+                    </h4>
+                    <h2 class="mb-2 mb-lg-4">How does this service contribute to real estate preservation?
+                    </h2>
+                    <h4 class="text-start text-lg-center line-clamp-5" style="max-width:870px;">Lorem ipsum
+                        dolor sit
+                        Regular maintenance preserves cooling and heating efficiency, ensuring consistent
+                        comfort throughout the year without sudden fluctuations.
+                    </h4>
+                </div>
+                <div class="d-flex flex-lg-row flex-column gap-3 gap-lg-4 align-items-center justify-content-center">
+                    <div class="d-flex flex-column p-4 bg-light rounded-4 w-service-card text-center">
+                        <h3 class="line-clamp-2">Lorem ipsum dolor</h3>
+                        <h4 class="line-clamp-5">Regular maintenance preserves cooling and heating
+                            efficiency, ensuring
+                            consistent comfort throughout the year without sudden fluctuations.
+                        </h4>
+
+                    </div>
+                    <div class="d-flex flex-column p-4 bg-light rounded-4 w-service-card text-center">
+                        <h3 class="line-clamp-2">Lorem ipsum dolor</h3>
+                        <h4 class="line-clamp-5">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
+                            eiusmod tempor
+                            incidunt
+                            ut labore et dolore magna aliqua. Ut enim
+                        </h4>
+
+                    </div>
+                    <div class="d-flex flex-column p-4 bg-light rounded-4 w-service-card text-center">
+                        <h3 class="line-clamp-2">Lorem ipsum dolor</h3>
+                        <h4 class="line-clamp-5">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed
+                            eiusmod tempor
+                            incidunt
+                            ut labore et dolore magna aliqua. Ut enim
+                        </h4>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <section class="pb72 pt72 dark-bg text-white">
+            <div class="container py-lg-4">
+                <div class="row justify-content-center align-items-center">
+
+
+                    <div class="col-xl-4">
+                        <h4 class="text-primary">Who do we serve?</h4>
+                        <h2 class="mb-4">Our clients… Our Partners in Efficiency
+                        </h2>
+                        <h4>At Taqat for Facility Management, we cater to the air conditioning and cooling
+                            maintenance needs of a wide range of sectors, with highly skilled teams and
+                            reliable services tailored to the unique nature of each facility.
+                        </h4>
+                    </div>
+                    <div class="col-xl-8">
+                        <div class="row ">
+                            <div class="col-xl-4 pb-3">
+                                <h2>Companies</h2>
+                            </div>
+                            <div class="col-xl-4 pb-3">
+                                <h2>Hospitals</h2>
+                            </div>
+                            <div class="col-xl-4 pb-3">
+                                <h2>Hotels</h2>
+                            </div>
+                            <div class=" col-xl-6 pb-3">
+                                <h2>Residential complexes</h2>
+                            </div>
+                            <div class="col-xl-6 pb-3">
+                                <h2>Shopping malls</h2>
+                            </div>
+                            <div class="col-xl-6 pb-3">
+                                <h2>Industrial facilities</h2>
+                            </div>
+                            <div class="col-xl-6 pb-3">
+                                <h2>Health care facilities</h2>
+                            </div>
+                            <div class="col-xl-6 pb-3">
+                                <h2>Educational facilities</h2>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class=" bg-light">
+            <div class="pb72 pt72 bottom_bg">
+
+
+                <div class="container py-lg-4 ">
+                    <div class="d-flex flex-column gap-2 gap-lg-4">
+
+                        <div>
+                            <h4 class="text-primary">
+                                Service Delivery Mechanism
+                            </h4>
+                            <h2>Implementation steps: From request to fulfillment</h2>
+                        </div>
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor
+                            incidunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum
+                            laboriosam.
+                        </h4>
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor
+                            incidunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum
+                            laboriosam.
+                        </h4>
+                    </div>
+                    <div class="container pt-4 pt-lg-5">
+
+
+                        <!-- Timeline Section -->
+                        <div class="timeline d-flex justify-content-between position-relative flex-wrap">
+
+                            <!-- Horizontal track for desktop -->
+                            <div class="d-none d-lg-block position-absolute top-0 start-0 end-0 border-top border-4 border-dark"/>
+
+                            <!-- Step 1 -->
+                            <div class="step d-flex flex-row flex-lg-column align-items-start position-relative px-2">
+                                <span class="dot bg-primary border border-4 border-dark rounded-circle"/>
+                                <div>
+
+                                    <h5 class="fw-semibold mt-lg-3">Request</h5>
+                                    <p class="small text-muted">Start your journey by filling out the
+                                        service
+                                        request form or contacting us directly.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Step 2 -->
+                            <div class="step d-flex flex-row flex-lg-column align-items-start position-relative px-2">
+                                <span class="dot bg-primary border border-4 border-dark rounded-circle"/>
+                                <div>
+
+                                    <h5 class="fw-semibold mt-lg-3">Inspection</h5>
+                                    <p class="small text-muted">Our technical team visits the site to assess
+                                        its
+                                        condition and determine the required service.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Step 3 -->
+                            <div class="step d-flex flex-row flex-lg-column align-items-start position-relative px-2">
+                                <span class="dot bg-primary border border-4 border-dark rounded-circle"/>
+                                <div>
+
+                                    <h5 class="fw-semibold mt-lg-3">Proposal</h5>
+                                    <p class="small text-muted">We provide you with a clear proposal
+                                        including
+                                        costs, timelines, and recommended steps.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Step 4 -->
+                            <div class="step d-flex flex-row flex-lg-column align-items-start position-relative px-2">
+                                <span class="dot bg-primary border border-4 border-dark rounded-circle"/>
+                                <div>
+
+                                    <h5 class="fw-semibold mt-lg-3">Execution</h5>
+                                    <p class="small text-muted">The approved service is carried out by our
+                                        professional teams using advanced tools and techniques.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Step 5 -->
+                            <div class="step d-flex flex-row flex-lg-column align-items-start position-relative px-2">
+                                <span class="dot bg-primary border border-4 border-dark rounded-circle"/>
+                                <div>
+
+                                    <h5 class="fw-semibold mt-lg-3">Follow-up</h5>
+                                    <p class="small text-muted">We guarantee quality performance through
+                                        regular
+                                        visits and fast support for any feedback.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </section>
+    </template>
+</odoo>

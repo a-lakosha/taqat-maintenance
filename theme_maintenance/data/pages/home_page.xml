@@ -4,195 +4,426 @@
         <template name="Taqat Maintenance Home" id="maintenance_home_page" inherit_id="website.homepage" active="True">
 
             <xpath expr="//div[@id='wrap']" position="replace">
+                <t t-set="additional_title" t-valuef="Maintenance Home"/>
+                <t t-set="service_type_ids"
+                   t-value="request.env['website.service.type'].search([])"/>
+                <t t-set="latest_posts"
+                   t-value="request.env['blog.post'].search([], order='create_date desc', limit=7)"/>
+                <t t-set="testimonial_ids"
+                   t-value="request.env['testimonials.model'].search([], limit=7)"/>
                 <div id="wrap" class="oe_structure oe_empty">
                     <section class="pb72 hero_section text-white">
                         <div class="hero_section-inner">
                             <div class="container">
-                                <div class="row pb24 ">
-                                    <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column text-center text-md-start gap-lg-4 hero-txt o_animate o_anim_fade_in o_anim_from_left py-lg-5 py-3 ">
-                                        <h1 class="display-1">Premium maintenance &amp; renovation services</h1>
-                                        <h4>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor
-                                            incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                            nostrum
-                                            exercitationem ullam corporis suscipit laboriosam.
+                                <div class="row">
+                                    <!-- Text Column -->
+                                    <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column text-center text-md-start gap-lg-4 hero-txt o_animate o_anim_fade_in o_anim_from_left py-lg-5 py-3">
+                                        <h1 class="display-1 fw-bold pe-lg-4">Facility Management at Global Standards
+                                        </h1>
+                                        <h4 class="fw-normal pe-lg-4" style="line-height: 28px;">
+                                            We deliver interactive facility management services, from preventive
+                                            facility management services, repairs, and renovations to operations, safety
+                                            and security management, cleaning services, and complaint handling by
+                                            experts and powered by advanced technologies. We ensure exceptional
+                                            performance, operational efficiency, and user comfort through strict
+                                            adherence to the international standards. Taqat for Facility Management…
+                                            Where Quality, Safety, and Sustainability are integrated Together.
                                         </h4>
-                                        <div class="d-flex gap-3 flex-column flex-md-row">
+                                        <div class="d-flex justify-content-center justify-content-lg-start gap-2 gap-lg-3 my-3 ">
+                                            <a t-attf-href="/services"
+                                               class="btn btn-primary text-dark d-flex align-items-center justify-content-center px-md-4 px-2 ">
+                                                Explore our services
+                                                <i class="bi bi-arrow-right ms-lg-3 ms-1"/>
 
 
-                                            <a class="btn btn-primary text-dark">Explore our services
-                                                <i class="fa fa-long-arrow-right ps-3"/>
                                             </a>
-                                            <button class="btn btn-primary text-dark">
-                                                Contact Us
-                                            </button>
+                                            <a t-attf-href="/contactus" class="btn btn-primary text-dark px-md-4 px-2">
+                                                Get in Touch
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="col-lg-7 order-1 order-lg-2 d-flex gap-1 gap-lg-4 o_animate o_anim_fade_in  ">
-                                        <img src="/theme_maintenance/static/src/imgs/y_home/hero.png" alt="Hero1"
-                                             class="w-100"/>
 
+                                    <!-- Image Column -->
+                                    <div class="col-lg-6 order-1 order-lg-2 d-flex gap-1 gap-lg-4 o_animate o_anim_fade_in">
+                                        <img src="/theme_maintenance/static/src/imgs/y_home/hero.webp" alt="Hero1"
+                                             class="w-100"/>
                                     </div>
                                 </div>
 
-                                <div class="row pt32 pb32">
-                                    <div class="col-lg-7   second-hero-row o_animate o_anim_fade_in">
-                                        <img src="/theme_maintenance/static/src/imgs/y_home/bulider.png"
+                                <!-- Second Row -->
+                                <div class="row pt32">
+                                    <div class="col-lg-6 second-hero-row o_animate o_anim_fade_in">
+                                        <img src="/theme_maintenance/static/src/imgs/y_home/bulider.webp"
                                              alt="service_bulider" class="w-100 h-100"/>
                                     </div>
-                                    <div class="col-lg-5  second-hero-row o_animate o_anim_fade_in o_anim_from_bottom">
-                                        <h4 class="mb-lg-3">
-                                            Why Choose Taqat for Facilities Management?
-                                        </h4>
-                                        <h2 class="trusted-heading">
-                                            Trusted &amp; Unified services
+                                    <div class="col-lg-6 second-hero-row o_animate o_anim_fade_in o_anim_from_bottom">
+                                        <h4 class="mb-lg-3">Why Choose Taqat for Facilities Management?</h4>
+                                        <h2 class="trusted-heading fw-semibold">Trusted Expertise… Customized Solutions…
+                                            24/7 Support
                                         </h2>
                                         <ul class="list-unstyled d-flex flex-column gap-2 gap-lg-4">
                                             <li>
-                                                <h3>Years of Trusted Property Services</h3>
-                                                <h4>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
-                                                    tempor incidunt ut labore et dolore magna aliqua
+                                                <h3 class="fw-semibold mb16">Proven experience in facility management
+                                                    services
+                                                </h3>
+                                                <h4 class="fw-normal">An exceptional track record in operating and
+                                                    maintaining facilities to the global standards.
                                                 </h4>
                                             </li>
                                             <li>
-                                                <h3>Flexible Plans for Homes &amp; Businesses</h3>
-                                                <h4>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
-                                                    tempor incidunt ut labore et dolore magna aliqua
+                                                <h3 class="fw-semibold mb16">Flexible plans customized to both
+                                                    commercial and
+                                                    residential needs
+                                                </h3>
+                                                <h4 class="fw-normal">Bespoke facility management services designed for
+                                                    efficiency, reliability, and cost-effectiveness.
                                                 </h4>
                                             </li>
                                             <li>
-                                                <h3>Certified Support, Anytime You Need It.</h3>
-                                                <h4>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
-                                                    tempor incidunt ut labore et dolore magna aliqua
+                                                <h3 class="fw-semibold mb16">24/7 Support</h3>
+                                                <h4 class="fw-normal">Highly trained professionals ready to respond
+                                                    promptly and deliver with precision at any time.
                                                 </h4>
                                             </li>
-
                                         </ul>
                                     </div>
-
                                 </div>
-
-
                             </div>
                         </div>
                     </section>
 
                     <section class="pt72 pb72 technical_services">
                         <div class="container">
-                            <div class="mb-lg-5">
-                                <h1 class="display-1 mb-lg-3">
-                                    First: Technical services
-                                </h1>
-                                <h4>
-                                    are services associated with the building infrastructure that directly affect the
-                                    safety of users and the operation of the facility, and are often legally required
-                                    and difficult to do without. Lorem Ipsum Dollar Set Amet, Concektor Adaiba Yesking
-                                    Alait, Set Do liqua.
-                                </h4>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 col-lg-3">
-                                    <!--                                    <div class=" p-3 ps-0 bg-white position-relative rounded-2 span-div">-->
-
-
-                                    <!--                                        <span class=" translate-middle-y bg-primary text-white fw-bold px-3 py-1 rounded-pill">-->
-                                    <!--                                            01.-->
-                                    <!--                                        </span>-->
-                                    <!--                                    </div>-->
-                                    <img src="/theme_maintenance/static/src/imgs/y_home/wireman.jpg"
-                                         class="technical_services-img w-100"/>
+                            <t t-foreach="service_type_ids" t-as="service_type">
+                                <div class="my-lg-5 my-3 pb-3">
+                                    <h1 class="display-1 mb-lg-3 fw-bold" t-field="service_type.name"/>
+                                    <h4 class="fw-normal" t-field="service_type.description"/>
                                 </div>
-                            </div>
-
-                        </div>
-
-                    </section>
-                    <section class="pt72 pb72 technical_services">
-                        <div class="container">
-                            <div class="mb-lg-5">
-                                <h1 class="display-1 mb-lg-3">
-                                    Second: Soft services
-                                </h1>
-                                <h4>are services associated with the building infrastructure that directly affect the
-                                    safety of users and the operation of the facility, and are often legally required
-                                    and difficult to do without. Lorem Ipsum Dollar Set Amet, Concektor Adaiba Yesking
-                                    Alait, Set Do liqua.
-                                </h4>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 col-lg-3">
-                                    <div class=" p-3 ps-0 bg-white position-relative span-div">
-
-
-                                        <span class=" translate-middle-y bg-primary text-white fw-bold px-3 py-1 rounded-pill">
-                                            01.
-                                        </span>
+                                <div class="row cards-container">
+                                    <t t-foreach="service_type.service_ids" t-as="service">
+                                        <div class="col-lg-6 col-xl-3 cards-container-item mb-5">
+                                            <a t-attf-href="/service/{{slug(service)}}" class="d-block w-100">
+                                                <div class="position-relative span-div w-100"
+                                                     t-attf-style="background-image:url(/web/image/website.service/{{service.id}}/image_512)">
+                                                    <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
+                                                         class="position-absolute"/>
+                                                    <span class="flip-badge text-white fw-bold pe-4 ps-5 py-3">
+                                                        <span class="front bg-primary rounded-pill d-flex align-items-center justify-content-center position-absolute"
+                                                              t-out="'%02d.' % (service_index + 1)"/>
+                                                        <span class="back bg-primary rounded-pill d-flex align-items-center justify-content-center position-absolute">
+                                                            <i t-attf-class="bi text-white {{service.icon}}"/>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center">
+                                                    <h5 class="fw-semibold" t-field="service.tec_name"/>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </t>
+                                    <!-- Contact Card -->
+                                    <div class="col-lg-6 col-xl-3 d-flex flex-column align-items-center justify-content-start cards-container-item mb-5">
+                                        <a href="/contactus" class="w-100" style="aspect-ratio:3/2;">
+                                            <div class="bg-dark position-relative contact-bg p-4 h-100 d-flex justify-content-center align-items-center text-center">
+                                                <h3 class="text-white fw-semibold">Contact us now and get the best
+                                                    quote
+                                                </h3>
+                                            </div>
+                                            <div class="bg-light d-flex text-dark p-2 mt-2 rounded-5 justify-content-center w-100">
+                                                <h5 class="fw-semibold">Contact us</h5>
+                                            </div>
+                                        </a>
                                     </div>
-                                    <img src="/theme_maintenance/static/src/imgs/y_home/wireman.jpg"
-                                         class="technical_services-img w-100"/>
                                 </div>
-                            </div>
-
+                            </t>
                         </div>
-
                     </section>
 
-                    <section class="pb72 pt72 bg-light engineer_section">
+                    <section class="pb72 pt72 bg-light bottom_bg eng-sec">
                         <div class="container ">
-                            <div class="row py-lg-5">
-                                <div class="col-lg-6  p-5 o_animate o_anim_fade_in">
+                            <div class="engineer_section-inner">
 
-                                    <div class="position-relative d-inline-block">
-                                        <!-- Top-left background -->
-                                        <div class="position-absolute bg-white   rounded-3 w-75 h-75 bg-shape1"/>
 
-                                        <!-- Bottom-right background -->
-                                        <div class="position-absolute end-0 bg-white rounded-3 w-75 h-75 bg-shape2"/>
+                                <div class="row py-lg-5">
+                                    <div class="col-lg-5 position-relative engineer_container p-5 ">
 
-                                        <!-- Main image -->
-                                        <img src="/theme_maintenance/static/src/imgs/y_home/engineers.png"
-                                             class="img-fluid rounded-4 position-relative  engineer_img"
+                                        <img src="/theme_maintenance/static/src/imgs/y_home/engineers.webp"
+                                             class="img-fluid rounded-4 position-relative  engineer_img w-100 h-100 w-cover"
                                              style="z-index:3;"/>
                                     </div>
-                                </div>
-                                <div class="col-lg-6 d-flex flex-column gap-lg-4 justify-content-center o_animate o_anim_fade_in o_anim_from_right">
-                                    <div>
+                                    <div class="col-lg-7 d-flex flex-column gap-lg-4 justify-content-center txt-eng">
+                                        <div>
 
-                                        <h4 class="text-primary">About Us</h4>
-                                        <h2>Trusted &amp; Unified services</h2>
+                                            <h4 class="text-primary py-3">About Us</h4>
+                                            <h4 class="text-primary py-1">Pioneers of Facility Management in Qatar</h4>
+                                            <h2>Trusted Expertise… Customized Solutions… 24/7 Support</h2>
+                                        </div>
+                                        <h4 class="text-muted" style="line-height: 28px;">Drawing on proven expertise
+                                            and
+                                            innovative vision, we provide extraordinary
+                                            facility management solutions founded on quality, sustainability, and
+                                            creative transformation.
+                                            <br/>
+                                            As leaders in Qatar’s facility management industry, we harmonize human
+                                            expertise and advanced technology to shape secure, high-performing, and
+                                            future-focused environments that foster success for organizations and
+                                            individuals.
+                                        </h4>
+
+                                        <a t-attf-href="/aboutus" class="text-dark fw-semibold">
+                                            Read more
+                                            <i class="bi bi-arrow-right ms-lg-3 ms-1"/>
+
+                                        </a>
                                     </div>
-                                    <h4>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor
-                                        incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum
-                                        exercitationem ullam corporis suscipit laboriosam.
-                                    </h4>
 
-                                    <a href="#" class="text-dark">
-                                        Read more
-                                        <i class="fa fa-long-arrow-right ps-3"/>
 
-                                    </a>
                                 </div>
-
-
                             </div>
                         </div>
+                    </section>
+
+                    <section class="pb72 pt72 our_clients">
+                        <div class="container">
+
+                            <div class="d-flex flex-column align-items-center py-lg-5">
+                                <h4 class="text-primary">Our Clients</h4>
+                            </div>
+
+
+                            <div id="clientCarousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row p-4 text-white justify-content-evenly ">
+
+                                            <div class="col-lg-6 card-bg-light p-4 d-flex flex-column gap-2 mb-4">
+                                                <h2 class="h2">Lusail Towers</h2>
+                                                <h4 class="h4">We are privileged to provide a suite of high-quality
+                                                    facility
+                                                    management services to this iconic Qatari landmark, including:
+                                                </h4>
+                                                <h4 class="h4">HVAC System Maintenance</h4>
+                                                <h4 class="h4">Electrical maintenance</h4>
+                                                <h4 class="h4">Fire &amp; Safety Systems Maintenance</h4>
+                                                <h4 class="h4">Elevator &amp; Escalator Maintenance</h4>
+                                                <h4 class="h4">External infrastructure</h4>
+                                            </div>
+                                            <div class="col-lg-5 ">
+                                                <div class="row h-100">
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row p-4 text-white justify-content-evenly ">
+
+                                            <div class="col-lg-6 card-bg-light p-4 d-flex flex-column gap-2 mb-4">
+                                                <h2 class="h2">Al Khair Tower</h2>
+                                                <h4 class="h4">Our partnership with Al Khair Tower in Doha includes
+                                                    delivering comprehensive facility management solutions, such as:
+                                                </h4>
+                                                <h4 class="h4">Maintenance of HVAC and electrical systems</h4>
+                                                <h4 class="h4">Maintenance of plumbing, elevators, and fire systems</h4>
+                                                <h4 class="h4">Contract and supplier management</h4>
+                                                <h4 class="h4">Cleaning services management</h4>
+                                                <h4 class="h4">Oversight of regulatory and health compliance</h4>
+                                            </div>
+                                            <div class="col-lg-5 ">
+                                                <div class="row h-100">
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row p-4 text-white justify-content-evenly ">
+
+                                            <div class="col-lg-6 card-bg-light p-4 d-flex flex-column gap-2 mb-4">
+                                                <h2 class="h2">300 Housing Units</h2>
+                                                <h4 class="h4">Beyond commercial properties, we have also managed
+                                                    facilities
+                                                    for 300 housing units in Qatar, providing:
+                                                </h4>
+                                                <h4 class="h4">Cleaning services management</h4>
+                                                <h4 class="h4">Handling complaints and feedback to enhance resident
+                                                    satisfaction
+                                                </h4>
+                                                <h4 class="h4">Security and safety management</h4>
+                                                <h4 class="h4">Implementation of environmental principles and resource
+                                                    conservation
+                                                </h4>
+                                                <h4 class="h4">Maintenance of HVAC, electrical, plumbing, elevator, and
+                                                    fire
+                                                    safety systems
+                                                </h4>
+                                            </div>
+                                            <div class="col-lg-5 ">
+                                                <div class="row h-100">
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-4 px-0 px-lg-3">
+
+                                                        <img src="/theme_maintenance/static/src/imgs/y_home/blanck_img.webp"
+                                                             alt="lussail" class="w-100 h-100"
+                                                             style="border-radius:24px;"/>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="d-flex justify-content-center gap-lg-4 gap-2 buttons-div">
+
+                                    <a class="scroll-btn scroll-left btn btn-light  start-50  z-3 px-2"
+                                       href="#clientCarousel" role="button" data-bs-slide="prev">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                             viewBox="0 0 28 28"
+                                             fill="none">
+                                            <path d="M22.6958 14.4379H5.48568M5.48568 14.4379C5.48568 14.4379 10.364 11.2297 11.3552 8.56836M5.48568 14.4379C5.48568 14.4379 9.79826 17.4525 11.3552 20.3075"
+                                                  stroke="#1C2126" stroke-width="2.17391" stroke-linecap="square"/>
+                                        </svg>
+                                    </a>
+                                    <a class="scroll-btn scroll-right btn btn-light start-50 z-3 px-2"
+                                       href="#clientCarousel" role="button" data-bs-slide="next">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                             viewBox="0 0 28 28"
+                                             fill="none">
+                                            <path d="M5.3042 14.4379H22.5143M22.5143 14.4379C22.5143 14.4379 17.636 11.2297 16.6448 8.56836M22.5143 14.4379C22.5143 14.4379 18.2017 17.4525 16.6448 20.3075"
+                                                  stroke="#1C2126" stroke-width="2.17391" stroke-linecap="square"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
                     </section>
 
                     <section class="pt72 pb72 facility_managment">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-7 d-flex flex-column gap-lg-4 order-2 pt-5 pt-lg-3 order-lg-1">
-                                    <h2>Facility Management Vision - Taqat</h2>
+                                    <h2 class="pb-2 ">Taqat for Facility Management Vision</h2>
+                                    <h3>To be among the leading facility management providers in the Qatari market by
+                                        delivering professional services founded on:
+                                    </h3>
                                     <ul class="list-unstyled d-flex flex-column gap-2 gap-lg-4">
                                         <li class="d-flex gap-3">
                                             <span class="icon-wrapper d-flex align-items-center p-2 justify-content-center bg-primary rounded-2 ">
-                                                <i class="fa fa-check-circle text-white fs-5"></i>
+                                                <i class="fa fa-check-circle text-white fs-5"/>
                                             </span>
                                             <div class="d-flex flex-column gap-lg-2">
                                                 <h3 class="mb-1 fw-semibold">Operational quality and rapid response</h3>
                                                 <h6 class="mb-0 text-muted small">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
-                                                    tempor
-                                                    incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                                    We are committed to providing efficient and accurate services that
+                                                    meet client needs effectively, supported by expert teams available
+                                                    24/7.
                                                 </h6>
                                             </div>
                                         </li>
@@ -201,13 +432,11 @@
                                                 <i class="fa fa-check-circle text-white fs-5"></i>
                                             </span>
                                             <div class="d-flex flex-column gap-lg-2">
-                                                <h3 class="mb-1 fw-semibold">Adherence to international standards (ISO
-                                                    41001)
+                                                <h3 class="mb-1 fw-semibold">Adherence to international standards
                                                 </h3>
                                                 <h6 class="mb-0 text-muted small">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
-                                                    tempor
-                                                    incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                                    We apply global best practices in facility management to ensure
+                                                    compliance, safety, and sustainable operational excellence.
                                                 </h6>
                                             </div>
                                         </li>
@@ -217,11 +446,12 @@
                                                 <i class="fa fa-check-circle text-white fs-5"></i>
                                             </span>
                                             <div class="d-flex flex-column gap-lg-2">
-                                                <h3 class="mb-1 fw-semibold">Data-Driven Performance Improvement</h3>
+                                                <h3 class="mb-1 fw-semibold">Continuous Improvement Through Data
+                                                    Analysis and Performance Evaluation
+                                                </h3>
                                                 <h6 class="mb-0 text-muted small">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
-                                                    tempor
-                                                    incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                                    We utilize advanced digital tools to monitor performance and analyze
+                                                    data to improve informed decision-making and ongoing development.
                                                 </h6>
                                             </div>
                                         </li>
@@ -235,9 +465,9 @@
                                                     transformation.
                                                 </h3>
                                                 <h6 class="mb-0 text-muted small">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
-                                                    tempor
-                                                    incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                                    We integrate environmental solutions and innovative technologies to
+                                                    reduce environmental impact, improve energy efficiency, and enhance
+                                                    service quality.
                                                 </h6>
                                             </div>
                                         </li>
@@ -247,13 +477,12 @@
                                                 <i class="fa fa-check-circle text-white fs-5"></i>
                                             </span>
                                             <div class="d-flex flex-column gap-lg-2">
-                                                <h3 class="mb-1 fw-semibold">Customer Delight Through Experience
-                                                    Excellence
+                                                <h3 class="mb-1 fw-semibold">Delivering Excellence to Elevate Client
+                                                    Satisfaction
                                                 </h3>
                                                 <h6 class="mb-0 text-muted small">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
-                                                    tempor
-                                                    incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                                    From the very first interaction to final delivery, we ensure
+                                                    seamless communication, quick response times, and precise execution.
                                                 </h6>
                                             </div>
                                         </li>
@@ -270,9 +499,9 @@
                                     <div class="h-100">
 
 
-                                        <img src="/theme_maintenance/static/src/imgs/y_home/group-confident.jpg"
+                                        <img src="/theme_maintenance/static/src/imgs/y_home/group-confident.webp"
                                              class="img-fluid position-relative w-100 h-100 facility_managment-img1"/>
-                                        <img src="/theme_maintenance/static/src/imgs/y_home/image-bg.png"
+                                        <img src="/theme_maintenance/static/src/imgs/y_home/image-bg.webp"
                                              class="position-absolute w-50  h-100 opacity-50 facility_managment-img2"/>
                                     </div>
                                 </div>
@@ -280,6 +509,144 @@
                         </div>
 
                     </section>
+
+                    <section class="pt120 pb120 reviews_section" t-if="testimonial_ids">
+                        <div class="d-flex flex-column align-items-center py-lg-5">
+                            <h4 class="text-primary">Our Clients’ Feedback</h4>
+                            <h1 class="text-white text-center">What are our clients saying about us?</h1>
+                        </div>
+
+                        <div class="owl-carousel testimonials-carousel cards_container pb-lg-5">
+                            <t t-foreach="testimonial_ids" t-as="review">
+                                <div class="card-bg-light p-4 text-white position-relative">
+
+                                    <!-- Quote Icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128"
+                                         class="position-absolute end-0 top-0 text-white-50 me-0 me-lg-0 "
+                                         viewBox="0 0 128 128" fill="none">
+                                        <path d="M84.8534 65.9756H109.867C109.44 90.8823 104.533 94.989 89.2267 104.056C87.4667 105.122 86.88 107.362 87.9467 109.176C89.0134 110.936 91.2534 111.522 93.0667 110.456C111.093 99.789 117.387 93.2823 117.387 62.2423V33.4956C117.387 24.3756 109.973 17.0156 100.907 17.0156H84.9067C75.52 17.0156 68.4267 24.109 68.4267 33.4956V49.4956C68.3734 58.8823 75.4667 65.9756 84.8534 65.9756Z"
+                                              fill="#667085" fill-opacity="0.3"/>
+                                        <path d="M27.1466 65.9756H52.16C51.7333 90.8823 46.8266 94.989 31.52 104.056C29.76 105.122 29.1733 107.362 30.24 109.176C31.3066 110.936 33.5466 111.522 35.36 110.456C53.3866 99.789 59.68 93.2823 59.68 62.2423V33.4956C59.68 24.3756 52.2666 17.0156 43.2 17.0156H27.2C17.76 17.0156 10.6666 24.109 10.6666 33.4956V49.4956C10.6666 58.8823 17.76 65.9756 27.1466 65.9756Z"
+                                              fill="#667085" fill-opacity="0.3"/>
+                                    </svg>
+                                    <!-- User info -->
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img t-att-src="'/web/image/testimonials.model/%s/img_url' % review.id or '/theme_maintenance/static/src/imgs/y_home/person.svg'"
+                                             t-att-alt="review.name"
+                                             class="rounded-circle me-3"
+                                             width="48" height="48" style="object-fit:cover;"/>
+                                        <div>
+                                            <h6 class="mb-0 fw-bold" t-field="review.name"/>
+                                            <small class="text-light" t-field="review.job_title"/>
+                                        </div>
+                                    </div>
+
+                                    <!-- Rating -->
+                                    <div class="d-flex align-items-center mb-3">
+                                        <div class="me-2 fs-3" style="color:#FD853A;">
+                                            <!-- Set full_stars (integer value) and half_star as boolean (True/False) -->
+                                            <t t-set="full_stars" t-value="int(float(review.rating))"/>
+                                            <t t-set="half_star" t-value="(float(review.rating) - full_stars) >= 0.5"/>
+
+                                            <!-- Empty stars calculation -->
+                                            <t t-set="empty_stars" t-value="5 - full_stars - (1 if half_star else 0)"/>
+
+                                            <!-- Full stars -->
+                                            <t t-foreach="range(full_stars)" t-as="star">
+                                                <i class="fa fa-star"/>
+                                            </t>
+
+                                            <!-- Half star -->
+                                            <t t-if="half_star">
+                                                <i class="fa fa-star-half-o"/>
+                                            </t>
+
+                                            <!-- Empty stars -->
+                                            <t t-foreach="range(empty_stars)" t-as="star">
+                                                <i class="fa fa-star-o"/>
+                                            </t>
+                                        </div>
+                                        <span class="fw-bold" t-out="review.rating"/>
+                                    </div>
+
+
+                                    <!-- Review text -->
+                                    <h4 class="mb-0 small line-clamp-5" t-out="review.description"/>
+                                </div>
+                            </t>
+                        </div>
+                    </section>
+
+                    <section class="more_blogs pt72 pb72">
+                        <div class="container position-relative py-lg-5">
+
+                            <!-- Left arrow -->
+                            <button class="scroll-btn scroll-left btn btn-light position-absolute  start-0 translate-middle-y z-3 p-2 d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+                                     fill="none">
+                                    <path d="M22.6958 14.4379H5.48568M5.48568 14.4379C5.48568 14.4379 10.364 11.2297 11.3552 8.56836M5.48568 14.4379C5.48568 14.4379 9.79826 17.4525 11.3552 20.3075"
+                                          stroke="#1C2126" stroke-width="2.17391" stroke-linecap="square"/>
+                                </svg>
+                            </button>
+
+                            <!-- Section Header -->
+                            <div class="d-flex flex-column align-items-center gap-lg-3 pb-lg-5 pb-3 text-center">
+                                <h4 class="text-primary">Our Blog</h4>
+                                <h1>Latest trends &amp; Inspiring Ideas</h1>
+                                <h4 class="text-700">Discover trends and expert perspectives in facility management,
+                                    with in-depth analyses on best practices and innovative solutions. Gain valuable
+                                    knowledge from our experts on sustainability, digital transformation, and
+                                    intelligent maintenance strategies. Our blog is your reliable hub for insights that
+                                    drive operational efficiency, sustainable practices, and excellence in facility
+                                    management.
+                                </h4>
+                            </div>
+
+                            <!-- Owl Carousel -->
+                            <div class="owl-carousel blog-carousel">
+                                <t t-foreach="latest_posts" t-as="post">
+                                    <t t-set="image_url"
+                                       t-value="post._get_background(height=_resize_height, width=_resize_width).replace('url(', '').replace(')', '').strip('\'\'')"/>
+                                    <div class="item">
+                                        <div class="contain-card position-relative overflow-hidden rounded-3 w-100">
+                                            <!-- Background image -->
+                                            <div t-att-style="'background-image: url(%s);' % image_url"
+                                                 class="blog_img position-absolute top-0 start-0 w-100 h-100 bg-cover bg-center">
+                                            </div>
+
+                                            <!-- Text overlay -->
+                                            <div class="position-absolute bg-white d-flex flex-column align-items-center rounded-3 p-3 w-75 gap-lg-2 contain-card-txt"
+                                                 style="bottom: 20px; left: 50%; transform: translateX(-50%);">
+                                                <h4 class="fw-bold text-center line-clamp-1" t-field="post.name"/>
+                                                <h6 class="text-center line-clamp-2" t-out="post.subtitle or ''"/>
+                                                <a t-att-href="post.website_url" class="text-dark fw-semibold">Read More
+                                                    <i class="bi bi-arrow-right ms-lg-3 ms-1"/>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </t>
+                            </div>
+
+                            <!-- Right arrow -->
+                            <button class="scroll-btn scroll-right btn btn-light position-absolute end-0 translate-middle-y z-3 p-2 d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+                                     fill="none">
+                                    <path d="M5.3042 14.4379H22.5143M22.5143 14.4379C22.5143 14.4379 17.636 11.2297 16.6448 8.56836M22.5143 14.4379C22.5143 14.4379 18.2017 17.4525 16.6448 20.3075"
+                                          stroke="#1C2126" stroke-width="2.17391" stroke-linecap="square"/>
+                                </svg>
+                            </button>
+
+                            <!-- Button -->
+                            <div class="d-flex justify-content-center mt-lg-3 disc_blogs">
+                                <a t-attf-href="/blog" class="btn btn-primary text-dark">Discover All Blogs
+                                    <i class="bi bi-arrow-right ms-lg-3 ms-1"/>
+                                </a>
+                            </div>
+
+                        </div>
+                    </section>
+
                 </div>
 
             </xpath>

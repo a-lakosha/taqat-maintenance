@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--        Partners          -->
+        <record id="id_form_view_partners" model="ir.ui.view">
+            <field name="name">Partners</field>
+            <field name="model">website.partners</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name" invisible="company_filter not in ['taqatechno' , 'indoqat']"
+                                       required="company_filter not in ['taqatechno' , 'indoqat']"/>
+                                <field name="image" widget="image" options="{'size': [200,'']}"
+                                       invisible="company_filter not in ['taqatechno', 'indoqat']"
+                                       required="company_filter not in ['taqatechno' , 'indoqat']"/>
+                                <field name="website_id" invisible="1"/>
+                                <field name="company_filter" invisible="1"/>
+                                <field name="sequence" invisible="1"/>
+                                <field name="company_id" invisible="1"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="id_tree_view_partners" model="ir.ui.view">
+            <field name="name">Partners</field>
+            <field name="model">website.partners</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="sequence" widget="handle"/>
+                    <field name="name"/>
+                    <field name="image" class="oe_avatar" widget="image"
+                           options="{'size': [0, 100]}"/>
+                    <field name="website_id"/>
+                    <field name="company_id"/>
+                </tree>
+            </field>
+        </record>
+        <record id="id_action_partners" model="ir.actions.act_window">
+            <field name="name">Partners</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">website.partners</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_ids"
+                   eval="[(5, 0, 0),
+            (0, 0, {'view_mode': 'tree', 'view_id': ref('id_tree_view_partners')}),
+            (0, 0, {'view_mode': 'form', 'view_id': ref('id_form_view_partners')}),
+        ]"/>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a Website Partners
+                </p>
+                <p>
+                    Create and manage the Partners in your website
+                </p>
+            </field>
+        </record>
+        <menuitem id="menu_website_content"
+                  parent="website.menu_website_configuration"
+                  sequence="35"
+                  name="Website Content"/>
+        <menuitem id="menu_partners"
+                  parent="multi_themes_base.menu_website_content"
+                  sequence="10"
+                  name="Partners"
+                  action="id_action_partners"/>
+        <record id="website_content_rule" model="ir.rule">
+            <field name="name">Partners</field>
+            <field name="model_id" ref="model_website_partners"/>
+            <field name="domain_force">[('company_id', 'in', company_ids + [False])]</field>
+        </record>
+        <!--        Partners          -->
+    </data>
+</odoo>
