@@ -271,7 +271,7 @@
                                                                            class="js_subscribe_value rounded-start-3 w-100 form-control"
                                                                            placeholder="your email..."/>
                                                                     <a role="button" href="#"
-                                                                       class="p-2 btn-primary rounded-end-3 js_subscribe_btn o_submit o_default_snippet_text">
+                                                                       class="p-2 btn-primary rounded-end-3 js_subscribe_btn o_submit o_default_snippet_text arrrow_footer">
                                                                         <svg width="24" height="25" viewBox="0 0 24 25"
                                                                              fill="none"
                                                                              xmlns="http://www.w3.org/2000/svg">

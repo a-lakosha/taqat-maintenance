@@ -689,6 +689,10 @@ img_hero4 {
   .owl-carousel {
     direction: rtl;
   }
+
+  .footer .container .arrrow_footer svg {
+    transform: rotateY(180deg);
+  }
 }
 
 .hero:has(.s_website_form_end_message:not(.d-none)) {
