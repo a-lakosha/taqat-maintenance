@@ -637,6 +637,10 @@ img_hero4 {
   margin-right: 24px;
 }
 
+.span_div-img {
+  left: -2px !important;
+}
+
 .o_rtl {
   .hero_section .hero_section-inner .container .row div a .bi-arrow-right::before {
     transform: rotateY(180deg);

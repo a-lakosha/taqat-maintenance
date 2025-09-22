@@ -106,7 +106,7 @@
                                                 <div class="position-relative span-div w-100"
                                                      t-attf-style="background-image:url(/web/image/website.service/{{service.id}}/image_512)">
                                                     <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
-                                                         class="position-absolute"/>
+                                                         class="position-absolute span_div-img"/>
                                                     <span class="flip-badge text-white fw-bold pe-4 ps-4 py-2 position-relative"
                                                           style="top:5px;">
                                                         <span class="front bg-primary rounded-pill d-flex align-items-center justify-content-center position-absolute"
