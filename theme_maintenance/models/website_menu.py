@@ -1,9 +1,9 @@
 from odoo import models
 
-class WebsiteMenu(models.Model):
-    _inherit = 'website.menu'
 
-    def _check_menu_hierarchy(self):
-        """Override to allow more than 2 levels of menu hierarchy"""
-        # Skip the original validation by returning True
+class WebsiteMenu(models.Model):
+    _inherit = "website.menu"
+
+    def _validate_parent_menu(self):
+        # Disable the 2-level validation
         return True
