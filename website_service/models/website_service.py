@@ -131,7 +131,7 @@ class WebsiteService(models.Model):
     def write(self, vals):
         """Regenerate menus when services are updated"""
         result = super().write(vals)
-        if 'name' in vals or 'type_id' in vals or 'sequence' in vals:
+        if 'name' in vals or 'tec_name' in vals or 'type_id' in vals or 'sequence' in vals:
             self.env['website.service.type']._generate_service_menus()
         return result
 
