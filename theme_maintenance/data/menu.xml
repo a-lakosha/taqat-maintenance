@@ -18,13 +18,19 @@
             <field name="sequence" type="int">30</field>
         </record>
 
+        <record id="menu_services_core" model="theme.website.menu">
+            <field name="name">Core Services</field>
+            <field name="parent_id" ref="menu_services"/>
+            <field name="sequence" type="int">50</field>
+        </record>
+
         <record id="menu_blogs" model="theme.website.menu">
             <field name="name">Blogs</field>
             <field name="url">/blog</field>
             <field name="sequence" type="int">40</field>
         </record>
 
-        <function model="website.service.type" name="_generate_service_menus"/>
+        <!--        <function model="website.service.type" name="_generate_service_menus"/>-->
 
     </data>
 </odoo>
