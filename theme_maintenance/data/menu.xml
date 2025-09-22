@@ -18,123 +18,124 @@
             <field name="sequence" type="int">30</field>
         </record>
 
-        <record id="menu_services_core" model="theme.website.menu">
-            <field name="name">Core Services</field>
-            <field name="parent_id" ref="menu_services"/>
-            <field name="sequence" type="int">50</field>
-        </record>
+        <!--        <record id="menu_services_core" model="theme.website.menu">-->
+        <!--            <field name="name">Core Services</field>-->
+        <!--            <field name="parent_id" ref="menu_services"/>-->
+        <!--            <field name="sequence" type="int">50</field>-->
+        <!--        </record>-->
 
-        <record id="menu_services_support" model="theme.website.menu">
-            <field name="name">Support Services</field>
-            <field name="parent_id" ref="menu_services"/>
-            <field name="sequence" type="int">60</field>
-        </record>
+        <!--        <record id="menu_services_support" model="theme.website.menu">-->
+        <!--            <field name="name">Support Services</field>-->
+        <!--            <field name="parent_id" ref="menu_services"/>-->
+        <!--            <field name="sequence" type="int">60</field>-->
+        <!--        </record>-->
 
-        <record id="menu_services_item_1" model="theme.website.menu">
-            <field name="name">React Apps</field>
-            <field name="url">/services/item-1</field>
-            <field name="parent_id" ref="menu_services_core"/>
-            <field name="sequence" type="int">70</field>
-        </record>
+        <!--        <record id="menu_services_item_1" model="theme.website.menu">-->
+        <!--            <field name="name">React Apps</field>-->
+        <!--            <field name="url">/services/item-1</field>-->
+        <!--            <field name="parent_id" ref="menu_services_core"/>-->
+        <!--            <field name="sequence" type="int">70</field>-->
+        <!--        </record>-->
 
-        <record id="menu_services_item_2" model="theme.website.menu">
-            <field name="name">Angular App</field>
-            <field name="url">/services/item-2</field>
-            <field name="parent_id" ref="menu_services_core"/>
-            <field name="sequence" type="int">80</field>
-        </record>
+        <!--        <record id="menu_services_item_2" model="theme.website.menu">-->
+        <!--            <field name="name">Angular App</field>-->
+        <!--            <field name="url">/services/item-2</field>-->
+        <!--            <field name="parent_id" ref="menu_services_core"/>-->
+        <!--            <field name="sequence" type="int">80</field>-->
+        <!--        </record>-->
 
-        <record id="menu_services_item_3" model="theme.website.menu">
-            <field name="name">NodeJS App</field>
-            <field name="url">/services/item-3</field>
-            <field name="parent_id" ref="menu_services_core"/>
-            <field name="sequence" type="int">90</field>
-        </record>
+        <!--        <record id="menu_services_item_3" model="theme.website.menu">-->
+        <!--            <field name="name">NodeJS App</field>-->
+        <!--            <field name="url">/services/item-3</field>-->
+        <!--            <field name="parent_id" ref="menu_services_core"/>-->
+        <!--            <field name="sequence" type="int">90</field>-->
+        <!--        </record>-->
 
-        <record id="menu_services_item_4" model="theme.website.menu">
-            <field name="name">Python App</field>
-            <field name="url">/services/item-4</field>
-            <field name="parent_id" ref="menu_services_core"/>
-            <field name="sequence" type="int">100</field>
-        </record>
+        <!--        <record id="menu_services_item_4" model="theme.website.menu">-->
+        <!--            <field name="name">Python App</field>-->
+        <!--            <field name="url">/services/item-4</field>-->
+        <!--            <field name="parent_id" ref="menu_services_core"/>-->
+        <!--            <field name="sequence" type="int">100</field>-->
+        <!--        </record>-->
 
-        <record id="menu_services_item_5" model="theme.website.menu">
-            <field name="name">Mobile Apps</field>
-            <field name="url">/services/item-5</field>
-            <field name="parent_id" ref="menu_services_core"/>
-            <field name="sequence" type="int">110</field>
-        </record>
+        <!--        <record id="menu_services_item_5" model="theme.website.menu">-->
+        <!--            <field name="name">Mobile Apps</field>-->
+        <!--            <field name="url">/services/item-5</field>-->
+        <!--            <field name="parent_id" ref="menu_services_core"/>-->
+        <!--            <field name="sequence" type="int">110</field>-->
+        <!--        </record>-->
 
-        <record id="menu_services_item_6" model="theme.website.menu">
-            <field name="name">Web Development</field>
-            <field name="url">/services/item-6</field>
-            <field name="parent_id" ref="menu_services_core"/>
-            <field name="sequence" type="int">120</field>
-        </record>
+        <!--        <record id="menu_services_item_6" model="theme.website.menu">-->
+        <!--            <field name="name">Web Development</field>-->
+        <!--            <field name="url">/services/item-6</field>-->
+        <!--            <field name="parent_id" ref="menu_services_core"/>-->
+        <!--            <field name="sequence" type="int">120</field>-->
+        <!--        </record>-->
 
-        <record id="menu_services_item_7" model="theme.website.menu">
-            <field name="name">Database Design</field>
-            <field name="url">/services/item-7</field>
-            <field name="parent_id" ref="menu_services_core"/>
-            <field name="sequence" type="int">130</field>
-        </record>
+        <!--        <record id="menu_services_item_7" model="theme.website.menu">-->
+        <!--            <field name="name">Database Design</field>-->
+        <!--            <field name="url">/services/item-7</field>-->
+        <!--            <field name="parent_id" ref="menu_services_core"/>-->
+        <!--            <field name="sequence" type="int">130</field>-->
+        <!--        </record>-->
 
-        <record id="menu_support_item_1" model="theme.website.menu">
-            <field name="name">Technical Support</field>
-            <field name="url">/services/support-1</field>
-            <field name="parent_id" ref="menu_services_support"/>
-            <field name="sequence" type="int">140</field>
-        </record>
+        <!--        <record id="menu_support_item_1" model="theme.website.menu">-->
+        <!--            <field name="name">Technical Support</field>-->
+        <!--            <field name="url">/services/support-1</field>-->
+        <!--            <field name="parent_id" ref="menu_services_support"/>-->
+        <!--            <field name="sequence" type="int">140</field>-->
+        <!--        </record>-->
 
-        <record id="menu_support_item_2" model="theme.website.menu">
-            <field name="name">Maintenance</field>
-            <field name="url">/services/support-2</field>
-            <field name="parent_id" ref="menu_services_support"/>
-            <field name="sequence" type="int">150</field>
-        </record>
+        <!--        <record id="menu_support_item_2" model="theme.website.menu">-->
+        <!--            <field name="name">Maintenance</field>-->
+        <!--            <field name="url">/services/support-2</field>-->
+        <!--            <field name="parent_id" ref="menu_services_support"/>-->
+        <!--            <field name="sequence" type="int">150</field>-->
+        <!--        </record>-->
 
-        <record id="menu_support_item_3" model="theme.website.menu">
-            <field name="name">Consulting</field>
-            <field name="url">/services/support-3</field>
-            <field name="parent_id" ref="menu_services_support"/>
-            <field name="sequence" type="int">160</field>
-        </record>
+        <!--        <record id="menu_support_item_3" model="theme.website.menu">-->
+        <!--            <field name="name">Consulting</field>-->
+        <!--            <field name="url">/services/support-3</field>-->
+        <!--            <field name="parent_id" ref="menu_services_support"/>-->
+        <!--            <field name="sequence" type="int">160</field>-->
+        <!--        </record>-->
 
-        <record id="menu_support_item_4" model="theme.website.menu">
-            <field name="name">Training</field>
-            <field name="url">/services/support-4</field>
-            <field name="parent_id" ref="menu_services_support"/>
-            <field name="sequence" type="int">170</field>
-        </record>
+        <!--        <record id="menu_support_item_4" model="theme.website.menu">-->
+        <!--            <field name="name">Training</field>-->
+        <!--            <field name="url">/services/support-4</field>-->
+        <!--            <field name="parent_id" ref="menu_services_support"/>-->
+        <!--            <field name="sequence" type="int">170</field>-->
+        <!--        </record>-->
 
-        <record id="menu_support_item_5" model="theme.website.menu">
-            <field name="name">Documentation</field>
-            <field name="url">/services/support-5</field>
-            <field name="parent_id" ref="menu_services_support"/>
-            <field name="sequence" type="int">180</field>
-        </record>
+        <!--        <record id="menu_support_item_5" model="theme.website.menu">-->
+        <!--            <field name="name">Documentation</field>-->
+        <!--            <field name="url">/services/support-5</field>-->
+        <!--            <field name="parent_id" ref="menu_services_support"/>-->
+        <!--            <field name="sequence" type="int">180</field>-->
+        <!--        </record>-->
 
-        <record id="menu_support_item_6" model="theme.website.menu">
-            <field name="name">System Migration</field>
-            <field name="url">/services/support-6</field>
-            <field name="parent_id" ref="menu_services_support"/>
-            <field name="sequence" type="int">190</field>
-        </record>
+        <!--        <record id="menu_support_item_6" model="theme.website.menu">-->
+        <!--            <field name="name">System Migration</field>-->
+        <!--            <field name="url">/services/support-6</field>-->
+        <!--            <field name="parent_id" ref="menu_services_support"/>-->
+        <!--            <field name="sequence" type="int">190</field>-->
+        <!--        </record>-->
 
-        <record id="menu_support_item_7" model="theme.website.menu">
-            <field name="name">Quality Assurance</field>
-            <field name="url">/services/support-7</field>
-            <field name="parent_id" ref="menu_services_support"/>
-            <field name="sequence" type="int">200</field>
-        </record>
+        <!--        <record id="menu_support_item_7" model="theme.website.menu">-->
+        <!--            <field name="name">Quality Assurance</field>-->
+        <!--            <field name="url">/services/support-7</field>-->
+        <!--            <field name="parent_id" ref="menu_services_support"/>-->
+        <!--            <field name="sequence" type="int">200</field>-->
+        <!--        </record>-->
+
+        <function model="website.service.type" name="_generate_service_menus"/>
+
 
         <record id="menu_blogs" model="theme.website.menu">
             <field name="name">Blogs</field>
             <field name="url">/blog</field>
             <field name="sequence" type="int">40</field>
         </record>
-
-        <!--        <function model="website.service.type" name="_generate_service_menus"/>-->
 
     </data>
 </odoo>
