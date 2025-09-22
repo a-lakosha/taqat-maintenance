@@ -157,21 +157,21 @@ class WebsiteServiceType(models.Model):
                         for sub_sequence, service in enumerate(service_type.service_ids, 1):
                             # Create theme submenu
                             service_theme_menu_vals = {
-                                'name': service.name,
+                                'name': service.tec_name or service.name,
                                 'url': f'/service/{service.id}',
                                 'parent_id': theme_type_menu.id,
                                 'sequence': sub_sequence * 10,
                             }
                             theme_service_menu = ThemeMenuModel.create(service_theme_menu_vals)
                             print(
-                                f"DEBUG: Created theme service submenu '{service.name}' with ID {theme_service_menu.id}")
+                                f"DEBUG: Created theme service submenu '{service.tec_name or service.name}' with ID {theme_service_menu.id}")
 
                             # Convert to website submenu
                             service_menu_data = theme_service_menu._convert_to_base_model(website)
                             if service_menu_data:
                                 website_service_menu = WebsiteMenuModel.create(service_menu_data)
                                 print(
-                                    f"DEBUG: Created website service submenu '{service.name}' with ID {website_service_menu.id}")
+                                    f"DEBUG: Created website service submenu '{service.tec_name or service.name}' with ID {website_service_menu.id}")
 
             except Exception as e:
                 print(f"DEBUG: Error creating menu: {e}")
