@@ -87,7 +87,7 @@ h2, h3 {
 
       .span-div {
         border-radius: 30px;
-        overflow: hidden;
+        overflow: unset;
         aspect-ratio: 3 / 2;
         background-size: 100%;
         background-position: center top;
@@ -639,6 +639,7 @@ img_hero4 {
 
 .span_div-img {
   left: -2px !important;
+  top: -2px !important;
 }
 
 .o_rtl {
