@@ -24,5 +24,7 @@
             <field name="sequence" type="int">40</field>
         </record>
 
+        <function model="website.service.type" name="_generate_service_menus"/>
+
     </data>
 </odoo>
