@@ -120,3 +120,23 @@ class WebsiteService(models.Model):
         res['default_opengraph']['og:image'] = res['default_twitter']['twitter:image'] = self.env['website'].image_url(
             self, 'image_1920')
         return res
+
+    @api.model_create_multi
+    def create(self, vals_list):
+        """Regenerate menus when services are created"""
+        result = super().create(vals_list)
+        self.env['website.service.type']._generate_service_menus()
+        return result
+
+    def write(self, vals):
+        """Regenerate menus when services are updated"""
+        result = super().write(vals)
+        if 'name' in vals or 'type_id' in vals or 'sequence' in vals:
+            self.env['website.service.type']._generate_service_menus()
+        return result
+
+    def unlink(self):
+        """Regenerate menus when services are deleted"""
+        result = super().unlink()
+        self.env['website.service.type']._generate_service_menus()
+        return result

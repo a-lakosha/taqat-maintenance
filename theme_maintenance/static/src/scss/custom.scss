@@ -208,3 +208,95 @@ section.s_three_columns {
   }
 }
 
+// Multi-level dropdown menu styles
+nav {
+  .dropdown {
+    position: relative;
+
+    .dropdown-menu {
+      margin-top: 0;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      border-radius: 6px;
+      max-height: max-content !important;
+      overflow: unset !important;
+
+      .dropdown {
+        position: relative;
+
+        .dropdown-toggle {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          border: none;
+          background: none;
+
+          //&::after {
+          //  content: '\203A';
+          //  border: none;
+          //  font-size: 18px;
+          //  font-weight: bold;
+          //  margin-left: auto;
+          //  transform: rotate(0deg);
+          //  transition: transform 0.2s ease;
+          //}
+
+          &[aria-expanded="true"]::after {
+            transform: rotate(-90deg);
+          }
+        }
+
+        .dropdown-menu {
+          position: absolute;
+          top: 0;
+          left: 100%;
+          margin-left: 8px;
+          min-width: 200px;
+          z-index: 1050;
+
+          // Handle right side positioning when menu goes off-screen
+          &.dropdown-menu-right {
+            left: auto;
+            right: 100%;
+            margin-left: 0;
+            margin-right: 8px;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+// Mobile responsive for multi-level menus
+@media (max-width: 991.98px) {
+  nav .dropdown .dropdown-menu .dropdown .dropdown-menu {
+    position: static !important;
+    margin-left: 20px;
+    margin-top: 5px;
+    box-shadow: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
+
+// Dark theme support for dropdowns
+//.navbar.bg-dark .dropdown-menu {
+//  background-color: var(--bs-dark);
+//  border-color: rgba(255, 255, 255, 0.1);
+//
+//  .dropdown-item {
+//    color: var(--bs-light) !important;
+//
+//    &:hover,
+//    &:focus {
+//      background-color: rgba(255, 255, 255, 0.1);
+//      color: var(--bs-white) !important;
+//    }
+//  }
+//}
+//
+//.dropdown-toggle.show + .dropdown-menu {
+//  display: block;
+//}
