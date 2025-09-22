@@ -629,6 +629,14 @@ img_hero4 {
   }
 }
 
+.reviews_section .cards_container .quote_icon {
+  inset-inline-end: 0;
+}
+
+.reviews_section .cards_container .user_info .person_img {
+  margin-right: 24px;
+}
+
 .o_rtl {
   .hero_section .hero_section-inner .container .row div a .bi-arrow-right::before {
     transform: rotateY(180deg);
@@ -692,6 +700,12 @@ img_hero4 {
 
   .footer .container .arrrow_footer svg {
     transform: rotateY(180deg);
+  }
+
+
+  .reviews_section .cards_container .user_info .person_img {
+    margin-right: 0;
+    margin-left: 24px;
   }
 }
 

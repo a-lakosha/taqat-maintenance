@@ -107,7 +107,8 @@
                                                      t-attf-style="background-image:url(/web/image/website.service/{{service.id}}/image_512)">
                                                     <img src="/theme_maintenance/static/src/imgs/y_home/Frame.svg"
                                                          class="position-absolute"/>
-                                                    <span class="flip-badge text-white fw-bold pe-4 ps-5 py-3">
+                                                    <span class="flip-badge text-white fw-bold pe-4 ps-4 py-2 position-relative"
+                                                          style="top:5px;">
                                                         <span class="front bg-primary rounded-pill d-flex align-items-center justify-content-center position-absolute"
                                                               t-out="'%02d.' % (service_index + 1)"/>
                                                         <span t-raw="service.icon"/>
@@ -524,7 +525,7 @@
 
                                     <!-- Quote Icon -->
                                     <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128"
-                                         class="position-absolute end-0 top-0 text-white-50 me-0 me-lg-0 "
+                                         class="position-absolute top-0 text-white-50 me-0  quote_icon "
                                          viewBox="0 0 128 128" fill="none">
                                         <path d="M84.8534 65.9756H109.867C109.44 90.8823 104.533 94.989 89.2267 104.056C87.4667 105.122 86.88 107.362 87.9467 109.176C89.0134 110.936 91.2534 111.522 93.0667 110.456C111.093 99.789 117.387 93.2823 117.387 62.2423V33.4956C117.387 24.3756 109.973 17.0156 100.907 17.0156H84.9067C75.52 17.0156 68.4267 24.109 68.4267 33.4956V49.4956C68.3734 58.8823 75.4667 65.9756 84.8534 65.9756Z"
                                               fill="#667085" fill-opacity="0.3"/>
@@ -532,10 +533,10 @@
                                               fill="#667085" fill-opacity="0.3"/>
                                     </svg>
                                     <!-- User info -->
-                                    <div class="d-flex align-items-center mb-3">
+                                    <div class="d-flex align-items-center mb-3 user_info">
                                         <img t-att-src="'/web/image/testimonials.model/%s/img_url' % review.id or '/theme_maintenance/static/src/imgs/y_home/person.svg'"
                                              t-att-alt="review.name"
-                                             class="rounded-circle me-3"
+                                             class="rounded-circle person_img"
                                              width="48" height="48" style="object-fit:cover;"/>
                                         <div>
                                             <h6 class="mb-0 fw-bold" t-field="review.name"/>
