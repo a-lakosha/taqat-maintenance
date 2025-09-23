@@ -19,7 +19,7 @@
     'depends': ['theme_common', 'social_media', 'mass_mailing', 'website', 'crm', 'website_service',
                 'multi_themes_base', 'website_blog', 'portal'],
     'data': [
-        # 'data/menu.xml',
+        'data/menu.xml',
         'data/pages/home_page.xml',
         'data/pages/about_page.xml',
         'data/pages/contact_page.xml',
