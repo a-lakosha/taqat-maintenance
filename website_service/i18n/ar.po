@@ -1,0 +1,930 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* website_service
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-23 05:42+0000\n"
+"PO-Revision-Date: 2025-09-23 08:48+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Generator: Poedit 3.6\n"
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.view_website_service_kanban
+msgid ""
+"<i class=\"fa fa-globe\"/>\n"
+"                                            View"
+msgstr ""
+"<i class=\"fa fa-globe\"/>\n"
+"                                            عرض"
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.service_detail_template
+msgid ""
+"<span class=\"fa fa-check-circle\"/>\n"
+"                                                Thank You For Your Feedback"
+msgstr ""
+"<span class=\"fa fa-check-circle\"/>\n"
+"                                                شكرًا لك على ملاحظاتك"
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.service_detail_template
+msgid "<span class=\"s_website_form_label_content fw-bold\">Phone Number</span>"
+msgstr "<span class=\"s_website_form_label_content fw-bold\">الهاتف</span>"
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.service_detail_template
+msgid "<span class=\"s_website_form_label_content fw-bold\">Service type</span>"
+msgstr "<span class=\"s_website_form_label_content fw-bold\">نوع الخدمة</span>"
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.service_detail_template
+msgid "<span class=\"s_website_form_label_content fw-bold\">Your Email</span>"
+msgstr "<span class=\"s_website_form_label_content fw-bold\">البريد الالكتروني</span>"
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.service_detail_template
+msgid "<span class=\"s_website_form_label_content fw-bold\">Your Name</span>"
+msgstr "<span class=\"s_website_form_label_content fw-bold\">الاسم</span>"
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.service_detail_template
+msgid "<span class=\"s_website_form_label_content fw-bold\">Your Question</span>"
+msgstr "<span class=\"s_website_form_label_content fw-bold\">الرسالة&amp;nbsp;</span>"
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid ""
+"At Taqat for Facility Management, we cater to the air conditioning and cooling\n"
+"                            maintenance needs of a wide range of sectors, with highly skilled teams and\n"
+"                            reliable services tailored to the unique nature of each facility."
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.service_detail_template
+msgid "Blogs"
+msgstr "مدونتنا"
+
+#. module: website_service
+#: model:ir.model.fields,help:website_service.field_website_service__description
+#: model:ir.model.fields,help:website_service.field_website_service__tec_name
+msgid "Brief description of the service"
+msgstr "وصف موجز للخدمة"
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.view_website_service_form
+msgid "Brief description..."
+msgstr "وصف موجز..."
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__can_publish
+msgid "Can Publish"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.service_detail_template
+msgid ""
+"Choose a\n"
+"                                                service"
+msgstr ""
+"اختر\n"
+"                                                الخدمة"
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid "Companies"
+msgstr "الشركات"
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.service_detail_template
+msgid "Contact us"
+msgstr "تواصل معنا"
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__cover_properties
+msgid "Cover Properties"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.actions.act_window,help:website_service.action_website_service_type
+msgid "Create service types"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.actions.act_window,help:website_service.action_website_service
+msgid "Create your first service"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__create_uid
+#: model:ir.model.fields,field_description:website_service.field_website_service_type__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__create_date
+#: model:ir.model.fields,field_description:website_service.field_website_service_type__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service_type__description
+#: model_terms:ir.ui.view,arch_db:website_service.view_website_service_form
+#: model_terms:ir.ui.view,arch_db:website_service.view_website_service_type_form
+msgid "Description"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.service_detail_template
+msgid ""
+"Discover All Blogs\n"
+"                                <i class=\"bi bi-arrow-right ms-lg-3 ms-1\"/>"
+msgstr ""
+"اكتشف جميع المدونات\n"
+"                                <i class=\"bi bi-arrow-right ms-lg-3 ms-1\"/>"
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.service_detail_template
+msgid ""
+"Discover trends and expert perspectives in facility management,\n"
+"                                with in-depth\n"
+"                                analyses on best practices and innovative solutions.\n"
+"                                Gain valuable knowledge from our experts on sustainability, digital transformation,\n"
+"                                and intelligent maintenance strategies.\n"
+"                                Our blog is your reliable hub for insights that drive operational efficiency,\n"
+"                                sustainable practices, and excellence in facility management."
+msgstr ""
+"تابع آخر المستجدات والرؤى في عالم إدارة المرافق، واستكشف تحليلات متخصصة حول أفضل الممارسات والحلول المبتكرة.\n"
+"نشارككم رؤى وأفكار ملهمة من خبرائنا حول الاستدامة، التحول الرقمي، والصيانة الذكية. مدونتنا... مصدر موثوق لكل من يسعى إلى بيئة عمل أكثر كفاءة وجودة."
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__display_name
+#: model:ir.model.fields,field_description:website_service.field_website_service_type__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid "Educational facilities"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid "Execution"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid "Follow-up"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,help:website_service.field_website_service__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,help:website_service.field_website_service__website_description
+msgid "Full description to be displayed on the website"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,help:website_service.field_website_service__sequence
+msgid "Gives the sequence order when displaying a list of services."
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,help:website_service.field_website_service_type__sequence
+msgid "Gives the sequence order when displaying a list of types."
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.view_website_service_search
+msgid "Group By"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid "Health care facilities"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid "Hospitals"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid "Hotels"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid "How does this service contribute to real estate preservation?"
+msgstr "كيف تساهم هذه الخدمة في الحفاظ على العقارات؟"
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__id
+#: model:ir.model.fields,field_description:website_service.field_website_service_type__id
+msgid "ID"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,help:website_service.field_website_service__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,help:website_service.field_website_service__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,help:website_service.field_website_service__message_has_error
+#: model:ir.model.fields,help:website_service.field_website_service__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__image_1920
+msgid "Image"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__image_1024
+msgid "Image 1024"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__image_128
+msgid "Image 128"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__image_256
+msgid "Image 256"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__image_512
+msgid "Image 512"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid "Implementation steps: From request to fulfillment"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid "Industrial facilities"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid "Inspection"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__is_published
+msgid "Is Published"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__write_uid
+#: model:ir.model.fields,field_description:website_service.field_website_service_type__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__write_date
+#: model:ir.model.fields,field_description:website_service.field_website_service_type__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.service_detail_template
+msgid "Latest trends &amp; Inspiring Ideas"
+msgstr "رؤى حديثة وأفكار ملهمة"
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid ""
+"Lorem ipsum\n"
+"                        dolor sit\n"
+"                        Regular maintenance preserves cooling and heating efficiency, ensuring consistent\n"
+"                        comfort throughout the year without sudden fluctuations."
+msgstr ""
+"تحافظ الصيانة المنتظمة على كفاءة التبريد والتدفئة، مما يضمن ثبات\n"
+"راحة ثابتة على مدار العام دون تقلبات مفاجئة."
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid "Lorem ipsum dolor"
+msgstr "لوريم ipsum دولور"
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid "Lorem ipsum dolor sit amet, consectetur"
+msgstr "Lorem ipsum ipsum dolor sit amet, consectetur"
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed\n"
+"                            eiusmod tempor\n"
+"                            incidunt\n"
+"                            ut labore et dolore magna aliqua. Ut enim"
+msgstr ""
+"Lorem ips ipsum dolor sit amet, consectetur adipisci elit, sed\n"
+"                            eiusmod tempor\n"
+"                            incidunt\n"
+"                            Ut labore et dolore magna aliqua. Ut enim"
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor\n"
+"                            incidunt\n"
+"                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum\n"
+"                            laboriosam."
+msgstr ""
+"Lorem ips ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor\n"
+"                            incidunt\n"
+"                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum\n"
+"                            laboriosam."
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid "Material quality"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.view_website_service_form
+msgid "Meta Description"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.view_website_service_form
+msgid "Meta Keywords"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.view_website_service_form
+msgid "Meta Title"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: website_service
+#: model:ir.actions.act_window,name:website_service.website_service_action_add
+msgid "New Project"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.view_website_service_kanban
+#: model_terms:ir.ui.view,arch_db:website_service.view_website_service_search
+msgid "Not Published"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service_type__service_count
+msgid "Number of Services"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,help:website_service.field_website_service__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,help:website_service.field_website_service__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.view_website_service_form
+msgid "OG Image"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.actions.act_window,help:website_service.action_website_service_type
+msgid "Organize your services into different types."
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid "Our clients… Our Partners in Efficiency"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.service_detail_template
+msgid ""
+"Our team will message you back as soon as possible.In\n"
+"                                                the meantime we invite you to visit our"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid ""
+"Our technical team visits the site to assess\n"
+"                                        its\n"
+"                                        condition and determine the required service."
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.website_service_view_form_add
+msgid "Project Title"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid "Proposal"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.view_website_service_kanban
+#: model_terms:ir.ui.view,arch_db:website_service.view_website_service_search
+msgid "Published"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid "Quick Response"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.service_detail_template
+msgid ""
+"Read More\n"
+"                                                <i class=\"bi bi-arrow-right ms-lg-3 ms-1\"/>"
+msgstr ""
+"قراءة المزيد\n"
+"                                                <i class=\"bi bi-arrow-right ms-lg-3 ms-1\"/>"
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid ""
+"Regular maintenance preserves cooling and heating\n"
+"                            efficiency, ensuring\n"
+"                            consistent comfort throughout the year without sudden fluctuations."
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid "Regular reports"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid "Request"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.service_detail_template
+msgid ""
+"Request the Service\n"
+"                                            <i class=\"bi bi-arrow-right ms-lg-3 ms-1\"/>"
+msgstr ""
+"طلب الخدمة\n"
+"                                            <i class=\"bi bi-arrow-right ms-lg-3 ms-1\"/>"
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid "Residential complexes"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,help:website_service.field_website_service__website_id
+msgid "Restrict publishing to a specific website."
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.view_website_service_form
+msgid "SEO"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__is_seo_optimized
+msgid "SEO optimized"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__icon
+msgid "SVG Icon"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,help:website_service.field_website_service__icon
+msgid "SVG code for the icon (e.g., '<svg>...</svg>')"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.view_website_service_type_search
+msgid "Search Service Types"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.view_website_service_search
+msgid "Search Services"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.website_service_view_form_add
+msgid "Select the Type"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.service_detail_template
+msgid ""
+"Send\n"
+"                                            <i class=\"bi bi-arrow-right ms-lg-3 ms-1\"/>"
+msgstr "ارسال&amp;nbsp;"
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__seo_name
+msgid "Seo name"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__sequence
+#: model:ir.model.fields,field_description:website_service.field_website_service_type__sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model,name:website_service.model_website_service model_terms:ir.ui.view,arch_db:website_service.view_website_service_form
+#: model_terms:ir.ui.view,arch_db:website_service.view_website_service_kanban
+msgid "Service"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid "Service Delivery Mechanism"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__name
+#: model_terms:ir.ui.view,arch_db:website_service.view_website_service_form
+msgid "Service Name"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model,name:website_service.model_website_service_type
+#: model:ir.model.fields,field_description:website_service.field_website_service__type_id
+#: model_terms:ir.ui.view,arch_db:website_service.view_website_service_type_form
+msgid "Service Type"
+msgstr ""
+
+#. module: website_service
+#: model:ir.actions.act_window,name:website_service.action_website_service_type model:ir.ui.menu,name:website_service.menu_website_service_type
+#: model_terms:ir.ui.view,arch_db:website_service.view_website_service_type_tree
+msgid "Service Types"
+msgstr ""
+
+#. module: website_service
+#: model:ir.actions.act_window,name:website_service.action_website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service_type__service_ids
+#: model:ir.ui.menu,name:website_service.menu_website_service model:ir.ui.menu,name:website_service.menu_website_service_root
+#: model_terms:ir.ui.view,arch_db:website_service.view_website_service_type_form
+#: model_terms:ir.ui.view,arch_db:website_service.view_website_service_type_tree
+msgid "Services"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.actions.act_window,help:website_service.action_website_service
+msgid "Services will be displayed on your website."
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid "Shopping malls"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__description
+msgid "Short Description"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid "Specialized teams"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid ""
+"Start your journey by filling out the\n"
+"                                        service\n"
+"                                        request form or contacting us directly."
+msgstr ""
+"ابدأ رحلتك بملء استمارة\n"
+"                                        الخدمة\n"
+"                                        أو الاتصال بنا مباشرةً."
+
+#. module: website_service
+#: model:ir.model.fields,help:website_service.field_website_service__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__tec_name
+msgid "Technical Name"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid ""
+"The approved service is carried out by our\n"
+"                                        professional teams using advanced tools and techniques."
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,help:website_service.field_website_service__website_url
+msgid "The full URL to access the document through the website."
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid "The value of the service to the beneficiary"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.view_website_service_search
+msgid "Type"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service_type__name
+#: model_terms:ir.ui.view,arch_db:website_service.view_website_service_type_form
+msgid "Type Name"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.view_website_service_type_form
+msgid "Type description..."
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,help:website_service.field_website_service__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.view_website_service_form
+msgid "Use the HTML editor to design your service page..."
+msgstr ""
+
+#. module: website_service
+#. odoo-python
+#: code:addons/website_service/models/website.py:0
+#, python-format
+msgid "View Services"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.view_website_service_kanban
+msgid "View on Website"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__website_published
+msgid "Visible on current website"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid ""
+"We guarantee quality performance through\n"
+"                                        regular\n"
+"                                        visits and fast support for any feedback."
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid ""
+"We provide you with a clear proposal\n"
+"                                        including\n"
+"                                        costs, timelines, and recommended steps."
+msgstr ""
+"نقدم لك عرضاً واضحاً\n"
+"                                        بما في ذلك\n"
+"                                        التكاليف والجداول الزمنية والخطوات الموصى بها."
+
+#. module: website_service
+#: model:ir.model,name:website_service.model_website model:ir.model.fields,field_description:website_service.field_website_service__website_id
+msgid "Website"
+msgstr "الموقع الإلكتروني"
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.view_website_service_form
+msgid "Website Content"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__website_description
+msgid "Website Description"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: website_service
+#. odoo-python
+#: code:addons/website_service/models/website.py:0
+#, python-format
+msgid "Website Service"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__website_url
+msgid "Website URL"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,help:website_service.field_website_service__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__website_meta_description
+msgid "Website meta description"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__website_meta_keywords
+msgid "Website meta keywords"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__website_meta_title
+msgid "Website meta title"
+msgstr ""
+
+#. module: website_service
+#: model:ir.model.fields,field_description:website_service.field_website_service__website_meta_og_img
+msgid "Website opengraph image"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid "What sets us apart in providing ...."
+msgstr "ما يميزنا في توفير ...."
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid "Who do we serve?"
+msgstr "من نخدم؟"
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid ""
+"Why choose Taqat for “Air Conditioning and Cooling Systems Maintenance”? Because\n"
+"                            we combine expertise, speed, and modern technologies to ensure your systems\n"
+"                            always perform at their best."
+msgstr ""
+"لماذا تختار شركة طاقات لـ \"صيانة أنظمة التكييف والتبريد\"؟ لأننا\n"
+"                            نحن نجمع بين الخبرة والسرعة والتقنيات الحديثة لضمان أن أنظمتك\n"
+"                            دائماً في أفضل حالاتها."
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.default_website_description
+msgid "Why us"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.view_website_service_type_form
+msgid "e.g. Cleaning Services"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.view_website_service_form
+msgid "e.g. Office Cleaning"
+msgstr ""
+
+#. module: website_service
+#: model_terms:ir.ui.view,arch_db:website_service.service_detail_template
+msgid "website"
+msgstr ""
