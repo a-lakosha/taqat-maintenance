@@ -27,6 +27,7 @@
         'views/header.xml',
         'views/custom_footer.xml',
         'views/custom_blog.xml',
+        'views/blog_card.xml',
 
     ],
     'images': [
