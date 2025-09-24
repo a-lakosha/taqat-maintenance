@@ -580,17 +580,9 @@
                         </div>
                     </section>
 
-                    <section class="more_blogs pt72 pb72">
+                    <section class="more_blogs pt72 pb72" t-if="latest_posts">
                         <div class="container position-relative py-lg-5">
 
-                            <!-- Left arrow -->
-                            <button class="scroll-btn scroll-left btn btn-light position-absolute  start-0 translate-middle-y z-3 p-2 d-flex justify-content-center align-items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
-                                     fill="none">
-                                    <path d="M22.6958 14.4379H5.48568M5.48568 14.4379C5.48568 14.4379 10.364 11.2297 11.3552 8.56836M5.48568 14.4379C5.48568 14.4379 9.79826 17.4525 11.3552 20.3075"
-                                          stroke="#1C2126" stroke-width="2.17391" stroke-linecap="square"/>
-                                </svg>
-                            </button>
 
                             <!-- Section Header -->
                             <div class="d-flex flex-column align-items-center gap-lg-3 pb-lg-5 pb-3 text-center">
@@ -604,29 +596,23 @@
                                     management.
                                 </h4>
                             </div>
+                            <!-- Left arrow -->
+                            <button class="scroll-btn scroll-left btn btn-light position-absolute  start-0 translate-middle-y z-3 p-2 d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+                                     fill="none">
+                                    <path d="M22.6958 14.4379H5.48568M5.48568 14.4379C5.48568 14.4379 10.364 11.2297 11.3552 8.56836M5.48568 14.4379C5.48568 14.4379 9.79826 17.4525 11.3552 20.3075"
+                                          stroke="#1C2126" stroke-width="2.17391" stroke-linecap="square"/>
+                                </svg>
+                            </button>
 
                             <!-- Owl Carousel -->
                             <div class="owl-carousel blog-carousel">
                                 <t t-foreach="latest_posts" t-as="post">
-                                    <t t-set="image_url"
-                                       t-value="post._get_background(height=_resize_height, width=_resize_width).replace('url(', '').replace(')', '').strip('\'\'')"/>
                                     <div class="item">
-                                        <div class="contain-card position-relative overflow-hidden rounded-3 w-100">
-                                            <!-- Background image -->
-                                            <div t-att-style="'background-image: url(%s);' % image_url"
-                                                 class="blog_img position-absolute top-0 start-0 w-100 h-100 bg-cover bg-center">
-                                            </div>
+                                        <t t-call="theme_maintenance.blog_card_component">
+                                            <t t-set="additional_classes" t-value="'my-3'"/>
+                                        </t>
 
-                                            <!-- Text overlay -->
-                                            <div class="position-absolute bg-white d-flex flex-column align-items-center rounded-3 p-3 w-75 gap-lg-2 contain-card-txt"
-                                                 style="bottom: 20px; left: 50%; transform: translateX(-50%);">
-                                                <h4 class="fw-bold text-center line-clamp-1" t-field="post.name"/>
-                                                <h6 class="text-center line-clamp-2" t-field="post.subtitle"/>
-                                                <a t-att-href="post.website_url" class="text-dark fw-semibold">Read More
-                                                    <i class="bi bi-arrow-right ms-lg-3 ms-1"/>
-                                                </a>
-                                            </div>
-                                        </div>
                                     </div>
                                 </t>
                             </div>

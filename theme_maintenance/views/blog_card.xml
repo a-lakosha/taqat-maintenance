@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template name="Blog Card Component" id="blog_card_component" active="True">
+            <t t-set="image_url"
+               t-value="post._get_background(height=_resize_height, width=_resize_width).replace('url(', '').replace(')', '').strip('\'\'')"/>
+
+            <div class="contain-card position-relative overflow-hidden rounded-3 w-100">
+                <!-- Background image -->
+                <div t-att-style="'background-image: url(%s);' % image_url"
+                     class="blog_img position-absolute top-0 start-0 w-100 h-100 bg-cover bg-center">
+                </div>
+
+                <!-- Text overlay -->
+                <div class="position-absolute bg-white d-flex flex-column align-items-center rounded-3 p-3 w-75 gap-lg-2 contain-card-txt"
+                     style="bottom: 20px; left: 50%; transform: translateX(-50%);">
+                    <h4 class="fw-bold text-center line-clamp-1" t-field="post.name"/>
+                    <h6 class="text-center line-clamp-2" t-field="post.subtitle"/>
+                    <a t-att-href="post.website_url" class="text-dark fw-semibold">Read More
+                        <i class="bi bi-arrow-right ms-lg-3 ms-1"/>
+                    </a>
+                </div>
+            </div>
+
+        </template>
+    </data>
+</odoo>
