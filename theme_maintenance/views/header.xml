@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+
     <template
             id="custom_header_inherit"
             inherit_id="website.template_header_sales_two"
@@ -129,6 +130,22 @@
 
                 </ul>
             </div>
+        </xpath>
+    </template>
+
+
+    <template id="custom_headers" inherit_id="website.snippet_options">
+        <xpath
+                expr="//div/we-select[@data-variable='header-template']"
+                position="inside"
+        >
+            <we-button
+                    title="Custom Header"
+                    data-name="header_custom_opt"
+                    data-customize-website-views="theme_maintenance.custom_header_inherit"
+                    data-customize-website-variable="'header-template'"
+                    data-img="/website/static/src/img/snippets_options/header_template_search.svg"
+            />
         </xpath>
     </template>
 
