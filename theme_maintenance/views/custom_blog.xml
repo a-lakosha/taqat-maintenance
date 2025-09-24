@@ -32,7 +32,7 @@
                                        class="d-flex fw-bolder blog_title pb-3 m-0 text-dark  h4"
                                        t-out="first_latest_post.name"/>
                                     <h6 class="fw-medium m-0 pb-3 text-dark "
-                                        t-out="first_latest_post.teaser"/>
+                                        t-field="first_latest_post.teaser"/>
                                 </div>
                                 <div class="date_more p-0 d-flex flex-row align-items-center justify-content-between">
                                     <a t-attf-href="/blog/#{slug(first_latest_post.blog_id)}/#{slug(first_latest_post)}"
@@ -89,7 +89,7 @@
                            class="text-dark text-decoration-none"
                            t-out="blog_post.name"/>
                     </h4>
-                    <h6 class="text-center text-muted line-clamp-2" t-out="blog_post.teaser"/>
+                    <h6 class="text-center text-muted line-clamp-2" t-field="blog_post.teaser"/>
                     <a t-attf-href="/blog/#{slug(blog_post.blog_id)}/#{slug(blog_post)}"
                        class="fw-bold text-dark text-decoration-none">
                         Read More
@@ -286,9 +286,8 @@
                                         <!-- Real options -->
                                         <t t-foreach="service_ids" t-as="s">
                                             <option t-attf-value="Requests for {{s.name}}"
-                                                    t-att-selected="selected if service and service.id == s.id else none">
-                                                <t t-out="s.name"/>
-                                            </option>
+                                                    t-att-selected="selected if service and service.id == s.id else none"
+                                                    t-field="s.name"/>
                                         </t>
                                     </select>
 
@@ -391,7 +390,7 @@
                                     <div class="position-absolute bg-white d-flex flex-column align-items-center rounded-3 p-3 w-75 gap-lg-2 contain-card-txt"
                                          style="bottom: 20px; left: 50%; transform: translateX(-50%);">
                                         <h4 class="fw-bold text-center line-clamp-2" t-field="post.name"/>
-                                        <h6 class="text-center line-clamp-2" t-out="post.subtitle or ''"/>
+                                        <h6 class="text-center line-clamp-2" t-field="post.subtitle"/>
                                         <a t-att-href="post.website_url" class="text-dark">Read More
                                             <i class="bi bi-arrow-right ms-lg-3 ms-1"/>
                                         </a>

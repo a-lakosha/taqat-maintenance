@@ -81,6 +81,39 @@ nav {
 }
 
 
+.o_grid_header_3_cols {
+  grid-template-columns: auto 1fr 1fr !important;
+}
+
+.o_border_contrast {
+  border-color: #FFFFFF99 !important;
+}
+
+#top .o_main_nav .o_header_hide_on_scroll .container li {
+  flex: 1;
+  margin: 0 40px;
+}
+
+#top .o_main_nav .o_searchbar_form {
+  border-radius: 42px;
+  border: 0.862px solid rgba(255, 255, 255, 0.60);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(4px);
+  padding: 5px 0;
+}
+
+.o_border_contrast .container {
+  justify-content: center !important;
+}
+
+.o_header_language_selector {
+  margin: 0 10px !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white !important;
+}
+
 .table-responsive {
   background-color: white !important;
 }

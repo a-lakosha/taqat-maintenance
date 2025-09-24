@@ -100,9 +100,8 @@
                                                             <!-- Real options -->
                                                             <t t-foreach="service_ids" t-as="s">
                                                                 <option t-attf-value="Requests for {{s.name}}"
-                                                                        t-att-selected="selected if service and service.id == s.id else none">
-                                                                    <t t-out="s.name"/>
-                                                                </option>
+                                                                        t-att-selected="selected if service and service.id == s.id else none"
+                                                                        t-field="s.name"/>
                                                             </t>
                                                         </select>
 

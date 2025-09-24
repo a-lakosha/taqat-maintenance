@@ -7,6 +7,7 @@ class ThemeMaintenance(models.AbstractModel):
 
     def _theme_maintenance_post_copy(self, mod):
         self.disable_view('website_blog.opt_blog_post_breadcrumb')
+        self.disable_view('website.header_call_to_action')
         self.enable_view('website_blog.opt_blog_post_regular_cover')
         self.disable_view('website_blog.opt_blog_post_readable')
         self.disable_view('website_blog.opt_blog_cover_post_fullwidth_design')
