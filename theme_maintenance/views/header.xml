@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-
-    <!--    Islam Code-->
-
     <template
             id="custom_header_inherit"
             inherit_id="website.template_header_sales_two"
